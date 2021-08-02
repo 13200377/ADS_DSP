@@ -1,0 +1,368 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/intelFPGA_lite/ADS_project
+Eads_project
+Z0 w1627557656
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+Z3 dF:/intelFPGA_lite/ADS_project/modelsim
+Z4 8../ADS_project.vhd
+Z5 F../ADS_project.vhd
+l0
+L4 1
+V>[o44nRWc;4hj3^FXY>Yh2
+!s100 M5UW4SXm@fMECW;lOjCG^0
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1627567030
+!i10b 1
+Z8 !s108 1627567030.000000
+Z9 !s90 -reportprogress|300|../ADS_project.vhd|../FIFO.vhd|../FIFO_tb.vhd|../SPI_module.vhd|../counter.vhd|../parallel_reg.vhd|../seven_seg.vhd|../seven_seg_display.vhd|
+Z10 !s107 ../seven_seg_display.vhd|../seven_seg.vhd|../parallel_reg.vhd|../counter.vhd|../SPI_module.vhd|../FIFO_tb.vhd|../FIFO.vhd|../ADS_project.vhd|
+!i113 1
+Z11 tExplicit 1 CvgOpt 0
+Aads
+R1
+R2
+DEx4 work 11 ads_project 0 22 >[o44nRWc;4hj3^FXY>Yh2
+!i122 3
+l79
+L19 75
+VU><6;_AmM]^A>5>RE2BJE2
+!s100 W0Q^m2gbRCQ^UhGO7]hhh2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Ecounter
+Z12 w1627480092
+R1
+R2
+!i122 3
+R3
+Z13 8../counter.vhd
+Z14 F../counter.vhd
+l0
+L43 1
+VEkk>S?O1g]H>4j>G:m`;M0
+!s100 68e7I0FkhU<SE7SQ_?imm2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Asyn
+R1
+R2
+DEx4 work 7 counter 0 22 Ekk>S?O1g]H>4j>G:m`;M0
+!i122 3
+l72
+L52 39
+VEHME]g_;=8`g`Wl_MAf>f0
+!s100 S2B8K9Xno1I^D5ANG[H>92
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Efifo
+Z15 w1627573552
+Z16 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R1
+R2
+!i122 95
+R3
+Z17 8../fifo.vhd
+Z18 F../fifo.vhd
+l0
+L5 1
+VG9Qi369JM3OCR3kdPeMlc2
+!s100 ;QbVY2QDFSTc^VdWHze_G3
+R6
+32
+Z19 !s110 1627644925
+!i10b 1
+Z20 !s108 1627644925.000000
+Z21 !s90 -work|work|../fifo.vhd|
+Z22 !s107 ../fifo.vhd|
+!i113 1
+Z23 o-work work
+R11
+Acircular_fifo
+R16
+R1
+R2
+Z24 DEx4 work 4 fifo 0 22 G9Qi369JM3OCR3kdPeMlc2
+!i122 95
+l26
+L17 64
+VEMblic6gGIkS>CNA2@E]F3
+!s100 BFTPU`UHTz_FWddS>OMbc2
+R6
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R23
+R11
+Efifo_tb
+Z25 w1627644918
+Z26 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R16
+R1
+R2
+!i122 96
+R3
+Z27 8../fifo_tb.vhd
+Z28 F../fifo_tb.vhd
+l0
+L8 1
+V4CbGY6hHQhfFeg_E]NTd62
+!s100 :zI>:Km>8a<IX27za8hNN1
+R6
+32
+R19
+!i10b 1
+R20
+Z29 !s90 -work|work|../fifo_tb.vhd|
+Z30 !s107 ../fifo_tb.vhd|
+!i113 1
+R23
+R11
+Atb
+R24
+R26
+R16
+R1
+R2
+DEx4 work 7 fifo_tb 0 22 4CbGY6hHQhfFeg_E]NTd62
+!i122 96
+l22
+L11 80
+VUAcEAPK6NU@mbM_h?H76a1
+!s100 MV5_ijV;=YF>E5a;Z60eT0
+R6
+32
+R19
+!i10b 1
+R20
+R29
+R30
+!i113 1
+R23
+R11
+Eparallel_reg
+Z31 w1627546094
+R1
+R2
+!i122 3
+R3
+Z32 8../parallel_reg.vhd
+Z33 F../parallel_reg.vhd
+l0
+L4 1
+V@YHfVOBCoE<E>f`K87@WI3
+!s100 22FOMTAfY:NU^dj2][]7T2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Areg
+R1
+R2
+DEx4 work 12 parallel_reg 0 22 @YHfVOBCoE<E>f`K87@WI3
+!i122 3
+l13
+L11 12
+V:m`c2WgF@SHRhPCnJbkVW3
+!s100 e_cMbkidW1djc_ojP<?zJ0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Eseven_seg
+w1625306364
+R1
+R2
+!i122 3
+R3
+8../seven_seg.vhd
+F../seven_seg.vhd
+l0
+L4 1
+V<OO[jljZI=Ng[_7EYz]N;0
+!s100 6XbIL^0HkgX@KR?Uig0dI0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Eshift_register
+Z34 w1627653336
+R16
+R1
+R2
+!i122 154
+R3
+Z35 8../shift_register.vhd
+Z36 F../shift_register.vhd
+l0
+L20 1
+VTd8MMe_ojVe_1L]c8C?9e3
+!s100 L1l6AeWY>dW@a^Tc]Fj?]3
+R6
+32
+Z37 !s110 1627660303
+!i10b 1
+Z38 !s108 1627660303.000000
+Z39 !s90 -work|work|../shift_register.vhd|
+Z40 !s107 ../shift_register.vhd|
+!i113 1
+R23
+R11
+Asr
+R16
+R1
+R2
+Z41 DEx4 work 14 shift_register 0 22 Td8MMe_ojVe_1L]c8C?9e3
+!i122 154
+l48
+L33 71
+VTC3GV6@EmfcEC_ZnE8VkY1
+!s100 6dWPKFNQX]^X=34zGW?ma2
+R6
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R23
+R11
+Eshift_register_tb
+Z42 w1627652136
+R26
+R16
+R1
+R2
+!i122 155
+R3
+Z43 8../shift_register_tb.vhd
+Z44 F../shift_register_tb.vhd
+l0
+L8 1
+V1E]^RT^aL4V?Qa[A74=7_0
+!s100 _CdnDz4W>5C;O@``GM1eo2
+R6
+32
+Z45 !s110 1627660304
+!i10b 1
+R38
+Z46 !s90 -work|work|../shift_register_tb.vhd|
+Z47 !s107 ../shift_register_tb.vhd|
+!i113 1
+R23
+R11
+Asr_tb
+R41
+R26
+R16
+R1
+R2
+Z48 DEx4 work 17 shift_register_tb 0 22 1E]^RT^aL4V?Qa[A74=7_0
+!i122 155
+l29
+Z49 L12 79
+Z50 V?f]HJIQ2XOz?2I^HBZajN3
+Z51 !s100 jdVFhT4gWzflT3Sb5nG@l2
+R6
+32
+R45
+!i10b 1
+R38
+R46
+R47
+!i113 1
+R23
+R11
+Espi_module
+Z52 w1627482636
+R16
+R1
+R2
+!i122 3
+R3
+Z53 8../SPI_module.vhd
+Z54 F../SPI_module.vhd
+l0
+L5 1
+VeAE1TcC1TE_mhP4[Qo;3E2
+!s100 7AnCMSo7UKo`oo?_P8MB_2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Aspi
+R16
+R1
+R2
+DEx4 work 10 spi_module 0 22 eAE1TcC1TE_mhP4[Qo;3E2
+!i122 3
+l26
+L18 49
+VJ[0PfW[G8m9>R4De6?S2k1
+!s100 C2Qb<hbNJEgK[o:_1^dCS1
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11

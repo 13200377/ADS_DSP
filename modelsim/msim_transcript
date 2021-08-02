@@ -1,0 +1,19 @@
+# vsim -c -onfinish stop -l msim_transcript work.shift_register_tb -do "run -all" -do "exit" 
+# Start time: 01:51:45 on Jul 31,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.shift_register_tb(sr_tb)
+# Loading work.shift_register(sr)
+# run -all
+# ** Note: Simulation finished, output written to sr_tb_output.txt
+#    Time: 34 ns  Iteration: 0  Instance: /shift_register_tb
+# ** Failure: Simulation Finished
+#    Time: 34 ns  Iteration: 0  Process: /shift_register_tb/test File: ../shift_register_tb.vhd
+# Break in Process test at ../shift_register_tb.vhd line 88
+# Stopped at ../shift_register_tb.vhd line 88
+# exit
+# End time: 01:51:46 on Jul 31,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

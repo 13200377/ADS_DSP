@@ -1,0 +1,1 @@
+vsim -c -onfinish stop -l msim_transcript work.fifo_tb

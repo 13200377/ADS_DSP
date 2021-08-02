@@ -1,0 +1,338 @@
+Determining the location of the ModelSim executable...
+
+Using: F:\intelFPGA_lite\20.1\modelsim_ase\win32aloem\
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ADS_project -c ADS_project --vector_source="F:/intelFPGA_lite/ADS_project/fifo_test.vwf" --testbench_file="F:/intelFPGA_lite/ADS_project/simulation/qsim/Waveform.vwf.vht"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Thu Jul 29 22:40:21 2021
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ADS_project -c ADS_project --vector_source=F:/intelFPGA_lite/ADS_project/fifo_test.vwf --testbench_file=F:/intelFPGA_lite/ADS_project/simulation/qsim/Waveform.vwf.vht
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+ry: 4631 megabytes
+    Info: Processing ended: Thu Jul 29 22:40:21 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="F:/intelFPGA_lite/ADS_project/simulation/qsim/" ADS_project -c ADS_project
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Thu Jul 29 22:40:22 2021
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=F:/intelFPGA_lite/ADS_project/simulation/qsim/ ADS_project -c ADS_project
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file ADS_project.vho in folder "F:/intelFPGA_lite/ADS_project/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Thu Jul 29 22:40:22 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+F:/intelFPGA_lite/ADS_project/simulation/qsim/ADS_project.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem//vsim -c -do ADS_project.do
+
+Reading pref.tcl
+
+# 2020.1
+
+
+# do ADS_project.do
+# ** Warning: (vlib-34) Library already exists at "work".
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:40:24 on Jul 29,2021
+# vcom -work work ADS_project.vho 
+
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity ADS_project
+# -- Compiling architecture structure of ADS_project
+
+# End time: 22:40:24 on Jul 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:40:24 on Jul 29,2021
+# vcom -work work Waveform.vwf.vht 
+
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADS_project_vhd_vec_tst
+# -- Compiling architecture ADS_project_arch of ADS_project_vhd_vec_tst
+# End time: 22:40:24 on Jul 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ADS_project_vhd_vec_tst 
+# Start time: 22:40:24 on Jul 29,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ads_project_vhd_vec_tst(ads_project_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading altera.dffeas_pack
+# Loading altera.altera_primitives_components
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.ads_project(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_clkctrl(vital_clkctrl)
+# Loading cycloneive.cycloneive_ena_reg(behave)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading altera.dffeas(vital_dffeas)
+# ** Warning: Design size of 20201 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#35
+
+# End time: 22:40:25 on Jul 29,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading F:/intelFPGA_lite/ADS_project/fifo_test.vwf...
+
+Reading F:/intelFPGA_lite/ADS_project/simulation/qsim/ADS_project.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: fifo_out[7] - signal not found in VCD.
+
+Warning: fifo_out[6] - signal not found in VCD.
+
+Warning: fifo_out[5] - signal not found in VCD.
+
+Warning: fifo_out[4] - signal not found in VCD.
+
+Warning: fifo_out[3] - signal not found in VCD.
+
+Warning: fifo_out[2] - signal not found in VCD.
+
+Warning: fifo_out[1] - signal not found in VCD.
+
+Warning: fifo_out[0] - signal not found in VCD.
+
+Warning: FIFO:mem|clk - signal not found in VCD.
+
+Warning: FIFO:mem|count[31] - signal not found in VCD.
+
+Warning: FIFO:mem|count[30] - signal not found in VCD.
+
+Warning: FIFO:mem|count[29] - signal not found in VCD.
+
+Warning: FIFO:mem|count[28] - signal not found in VCD.
+
+Warning: FIFO:mem|count[27] - signal not found in VCD.
+
+Warning: FIFO:mem|count[26] - signal not found in VCD.
+
+Warning: FIFO:mem|count[25] - signal not found in VCD.
+
+Warning: FIFO:mem|count[24] - signal not found in VCD.
+
+Warning: FIFO:mem|count[23] - signal not found in VCD.
+
+Warning: FIFO:mem|count[22] - signal not found in VCD.
+
+Warning: FIFO:mem|count[21] - signal not found in VCD.
+
+Warning: FIFO:mem|count[20] - signal not found in VCD.
+
+Warning: FIFO:mem|count[19] - signal not found in VCD.
+
+Warning: FIFO:mem|count[18] - signal not found in VCD.
+
+Warning: FIFO:mem|count[17] - signal not found in VCD.
+
+Warning: FIFO:mem|count[16] - signal not found in VCD.
+
+Warning: FIFO:mem|count[15] - signal not found in VCD.
+
+Warning: FIFO:mem|count[14] - signal not found in VCD.
+
+Warning: FIFO:mem|count[13] - signal not found in VCD.
+
+Warning: FIFO:mem|count[12] - signal not found in VCD.
+
+Warning: FIFO:mem|count[11] - signal not found in VCD.
+
+Warning: FIFO:mem|count[10] - signal not found in VCD.
+
+Warning: FIFO:mem|count[9] - signal not found in VCD.
+
+Warning: FIFO:mem|count[8] - signal not found in VCD.
+
+Warning: FIFO:mem|count[7] - signal not found in VCD.
+
+Warning: FIFO:mem|count[6] - signal not found in VCD.
+
+Warning: FIFO:mem|count[5] - signal not found in VCD.
+
+Warning: FIFO:mem|count[4] - signal not found in VCD.
+
+Warning: FIFO:mem|count[3] - signal not found in VCD.
+
+Warning: FIFO:mem|count[2] - signal not found in VCD.
+
+Warning: FIFO:mem|count[1] - signal not found in VCD.
+
+Warning: FIFO:mem|count[0] - signal not found in VCD.
+
+Warning: FIFO:mem|fifo_in[7] - signal not found in VCD.
+
+Warning: FIFO:mem|fifo_in[6] - signal not found in VCD.
+
+Warning: FIFO:mem|fifo_in[5] - signal not found in VCD.
+
+Warning: FIFO:mem|fifo_in[4] - signal not found in VCD.
+
+Warning: FIFO:mem|fifo_in[3] - signal not found in VCD.
+
+Warning: FIFO:mem|fifo_in[2] - signal not found in VCD.
+
+Warning: FIFO:mem|fifo_in[1] - signal not found in VCD.
+
+Warning: FIFO:mem|fifo_in[0] - signal not found in VCD.
+
+Warning: FIFO:mem|write_en - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[31] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[30] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[29] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[28] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[27] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[26] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[25] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[24] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[23] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[22] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[21] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[20] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[19] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[18] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[17] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[16] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[15] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[14] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[13] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[12] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[11] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[10] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[9] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[8] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[7] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[6] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[5] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[4] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[3] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[2] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[1] - signal not found in VCD.
+
+Warning: FIFO:mem|read_index[0] - signal not found in VCD.
+
+Warning: FIFO:mem|read_en - signal not found in VCD.
+
+Warning: FIFO:mem|is_empty - signal not found in VCD.
+
+Warning: FIFO:mem|is_full - signal not found in VCD.
+
+Writing the resulting VWF to F:/intelFPGA_lite/ADS_project/simulation/qsim/ADS_project_20210729224026.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

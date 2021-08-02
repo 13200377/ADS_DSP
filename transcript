@@ -1,0 +1,36 @@
+do testbench.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:16:54 on Jul 29,2021
+# vcom -reportprogress 300 ../ADS_project.vhd ../FIFO.vhd ../FIFO_tb.vhd ../SPI_module.vhd ../counter.vhd ../parallel_reg.vhd ../seven_seg.vhd ../seven_seg_display.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADS_project
+# -- Compiling architecture ADS of ADS_project
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FIFO
+# -- Compiling architecture circular_FIFO of FIFO
+# -- Compiling entity FIFO_tb
+# -- Compiling architecture tb of FIFO_tb
+# -- Loading entity FIFO
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# -- Compiling entity counter
+# -- Compiling architecture SYN of counter
+# -- Compiling entity parallel_reg
+# -- Compiling architecture reg of parallel_reg
+# -- Compiling entity seven_seg
+# -- Compiling architecture s_seg of seven_seg
+# ** Error (suppressible): ../seven_seg.vhd(12): (vcom-1339) Selected signal assignment choices cover only 16 out of 6561 cases.
+# ** Note: ../seven_seg.vhd(30): VHDL Compiler exiting
+# End time: 23:16:55 on Jul 29,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./testbench.tcl line 17
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom ../*.vhd"
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
