@@ -1,0 +1,18 @@
+# system info platformDesign on 2021.08.09.16:36:09
+system_info:
+name,value
+DEVICE,EP4CE6E22C8
+DEVICE_FAMILY,Cyclone IV E
+GENERATION_ID,1628490968
+#
+#
+# Files generated for platformDesign on 2021.08.09.16:36:09
+files:
+filepath,kind,attributes,module,is_top
+simulation/platformDesign.vhd,VHDL,,platformDesign,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+platformDesign.seven_seg_display_0,platformDesign_seven_seg_display_0
+platformDesign.rst_controller,altera_reset_controller

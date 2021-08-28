@@ -1,2 +1,0 @@
-# No design specified
-vsim -onfinish stop -gui -l msim_transcript work.fifo_tb

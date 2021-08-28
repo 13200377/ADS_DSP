@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use work.filter_types.all;
 
 entity ADS_project is 
 	port(
@@ -11,11 +12,11 @@ entity ADS_project is
 		clk: in std_logic;
 		
 		seg_select: out std_logic_vector(3 downto 0);
-		segments: out std_logic_vector(6 downto 0);
+		segments: out std_logic_vector(7 downto 0);
 		
 		vals: out std_logic_vector(3 downto 0)
 		
-		);
+	);
 end entity;
 
 architecture ADS of ADS_project is
@@ -23,7 +24,7 @@ architecture ADS of ADS_project is
 		port( clk : in std_logic;
 				num : in std_logic_vector(15 downto 0);
 				dig: out std_logic_vector(3 downto 0);
-				seg: out std_logic_vector(6 downto 0));
+				seg: out std_logic_vector(7 downto 0));
 	end component;
 	
 	component counter
@@ -35,6 +36,9 @@ architecture ADS of ADS_project is
 	end component;
 	
 	component SPI_module is
+		generic(
+			frame_size: positive := 8
+		);
 		port(
 		clk: in std_logic;
 		sck: in std_logic;
@@ -81,6 +85,21 @@ architecture ADS of ADS_project is
 			VALS : out std_logic_vector(3 downto 0) );
 	end component;
 	
+	component PFB is
+		generic(
+			dataWidth: integer := 8;
+			phaseCount: integer;
+			tapCount: integer
+		);
+		port (
+			x_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
+			h_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
+			y_k : out int_arr(0 to phaseCount-1)(dataWidth-1 downto 0)
+		);
+	end component;
+
+
+	
 	signal q: std_logic_vector(25 downto 0);
 	
 	signal display_num: std_logic_vector(15 downto 0);
@@ -111,12 +130,18 @@ architecture ADS of ADS_project is
 	signal byte: std_logic_vector(7 downto 0);
 	signal led_clk: std_logic := '0';
 	
+	constant phaseCount: integer := 3;
+	constant tapCount: integer := 4;
+	signal x_n: int_arr(0 to phaseCount*tapCount-1)(7 downto 0);
+	signal h_n: int_arr(0 to phaseCount*tapCount-1)(7 downto 0);
+	signal y_k : int_arr(0 to phaseCount-1)(7 downto 0);
 begin
 	display: seven_seg_display port map(display_clk, display_num, seg_select, segments);
 	clocking: counter port map(clk, q);
 	spi: SPI_module port map (clk, sck, mosi, miso, cs, input_shiftreg, output_shiftreg, out_data_ready, in_data_ready, tx_empty);
 	--mem: FIFO generic map (8, 4) port map (fifo_in, fifo_out, fifo_clk, read_en, write_en, is_full, is_empty);
 	mem:  shift_register generic map (DATA_WIDTH, DATA_DEPTH) port map (sr_in, sr_out, sr_data, sr_clk, sr_read_en, sr_write_en, sr_is_full, sr_is_empty);
+	filter: pfb generic map (8, phaseCount,  tapCount) port map(x_n, h_n, y_k);
 	
 	led_bar: leds port map (byte, led_clk, vals);
 	display_clk <= q(16);

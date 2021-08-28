@@ -10,68 +10,2760 @@
 # Copying F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {F:/intelFPGA_lite/ADS_project/ADS_project.vhd}
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/shift_register.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:40 on Jul 30,2021
-# vcom -reportprogress 300 -93 -work work F:/intelFPGA_lite/ADS_project/ADS_project.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity ADS_project
-# -- Compiling architecture ADS of ADS_project
-# End time: 15:13:41 on Jul 30,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/intelFPGA_lite/ADS_project/counter.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:41 on Jul 30,2021
-# vcom -reportprogress 300 -93 -work work F:/intelFPGA_lite/ADS_project/counter.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity counter
-# -- Compiling architecture SYN of counter
-# End time: 15:13:41 on Jul 30,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/intelFPGA_lite/ADS_project/FIFO.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:41 on Jul 30,2021
-# vcom -reportprogress 300 -93 -work work F:/intelFPGA_lite/ADS_project/FIFO.vhd 
+# Start time: 00:08:00 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/shift_register.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
-# -- Compiling entity FIFO
-# -- Compiling architecture circular_FIFO of FIFO
-# End time: 15:13:41 on Jul 30,2021, Elapsed time: 0:00:00
+# -- Compiling entity shift_register
+# -- Compiling architecture sr of shift_register
+# End time: 00:08:00 on Aug 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/intelFPGA_lite/ADS_project/seven_seg_display.vhd}
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PFB.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:41 on Jul 30,2021
-# vcom -reportprogress 300 -93 -work work F:/intelFPGA_lite/ADS_project/seven_seg_display.vhd 
+# Start time: 00:08:00 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 00:08:01 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:08:01 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_seg_display
 # -- Compiling architecture display of seven_seg_display
-# End time: 15:13:41 on Jul 30,2021, Elapsed time: 0:00:00
+# End time: 00:08:01 on Aug 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {F:/intelFPGA_lite/ADS_project/seven_seg.vhd}
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:13:41 on Jul 30,2021
-# vcom -reportprogress 300 -93 -work work F:/intelFPGA_lite/ADS_project/seven_seg.vhd 
+# Start time: 00:08:01 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity seven_seg
 # -- Compiling architecture s_seg of seven_seg
-# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/seven_seg.vhd(12): (vcom-1339) Selected signal assignment choices cover only 16 out of 6561 cases.
-# ** Note: F:/intelFPGA_lite/ADS_project/seven_seg.vhd(30): VHDL Compiler exiting
-# End time: 15:13:41 on Jul 30,2021, Elapsed time: 0:00:00
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd(12): (vcom-1339) Selected signal assignment choices cover only 16 out of 6561 cases.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd(31): VHDL Compiler exiting
+# End time: 00:08:01 on Aug 27,2021, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./ADS_project_run_msim_rtl_vhdl.do line 12
+# Error in macro ./ADS_project_run_msim_rtl_vhdl.do line 11
 # F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
 #     while executing
-# "vcom -93 -work work {F:/intelFPGA_lite/ADS_project/seven_seg.vhd}"
-# reading F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
-# Loading project ADS_Project
+# "vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd}"
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:08:20 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# ** Warning: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(2): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(22): (vcom-1441) ARRAY ELEMENT CONSTRAINT is not defined for this version of the language.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(33): (vcom-1441) ARRAY ELEMENT CONSTRAINT is not defined for this version of the language.
+# ** Warning: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(61): VHDL Compiler exiting
+# End time: 00:08:20 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 2
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:08:27 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(14): (vcom-1441) ARRAY ELEMENT CONSTRAINT is not defined for this version of the language.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(17): VHDL Compiler exiting
+# End time: 00:08:27 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:08:33 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(14): (vcom-1441) ARRAY ELEMENT CONSTRAINT is not defined for this version of the language.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(17): VHDL Compiler exiting
+# End time: 00:08:33 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:08:56 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(23): (vcom-1141) Identifier "sumArr" does not identify a component declaration.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(30): VHDL Compiler exiting
+# End time: 00:08:56 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:09:05 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(23): (vcom-1141) Identifier "sumArr" does not identify a component declaration.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(30): VHDL Compiler exiting
+# End time: 00:09:05 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:14:07 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(23): (vcom-1141) Identifier "sumArr" does not identify a component declaration.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(30): VHDL Compiler exiting
+# End time: 00:14:07 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:20:44 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(23): (vcom-1141) Identifier "sumArr" does not identify a component declaration.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(30): VHDL Compiler exiting
+# End time: 00:20:44 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:21:01 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(23): (vcom-1141) Identifier "sumArr" does not identify a component declaration.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(30): VHDL Compiler exiting
+# End time: 00:21:01 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:21:02 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(23): (vcom-1141) Identifier "sumArr" does not identify a component declaration.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(30): VHDL Compiler exiting
+# End time: 00:21:02 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:36:49 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# End time: 00:36:50 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:36:53 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# ** Warning: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 00:36:53 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:37:15 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# End time: 00:37:16 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.sumarr_tb
+# vsim work.sumarr_tb 
+# Start time: 00:37:18 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/sumarr_tb/arr
+add wave -position end  sim:/sumarr_tb/arr1
+add wave -position end  sim:/sumarr_tb/arrSize
+add wave -position end  sim:/sumarr_tb/dataWidth
+add wave -position end  sim:/sumarr_tb/num
+add wave -position end  sim:/sumarr_tb/numOut
+add wave -position end  sim:/sumarr_tb/sum1
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 10 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 20 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:38:15 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# End time: 00:38:16 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.sumarr_tb
+# End time: 00:38:19 on Aug 27,2021, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 0
+# vsim work.sumarr_tb 
+# Start time: 00:38:19 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/sumarr_tb/arr
+add wave -position end  sim:/sumarr_tb/arr1
+add wave -position end  sim:/sumarr_tb/arrSize
+add wave -position end  sim:/sumarr_tb/dataWidth
+add wave -position end  sim:/sumarr_tb/num
+add wave -position end  sim:/sumarr_tb/numOut
+add wave -position end  sim:/sumarr_tb/sum1
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /sumarr_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 49
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 10 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 20 ps  Iteration: 0  Process: /sumarr_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 49
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 20 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 30 ps  Iteration: 0  Process: /sumarr_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 49
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 30 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 40 ps  Iteration: 0  Process: /sumarr_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 49
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 40 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 50 ps  Iteration: 0  Process: /sumarr_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 49
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 50 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 60 ps  Iteration: 0  Process: /sumarr_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 49
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 60 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 70 ps  Iteration: 0  Process: /sumarr_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 49
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 70 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 80 ps  Iteration: 0  Process: /sumarr_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 49
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:43:24 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# End time: 00:43:25 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.sumarr_tb
+# End time: 00:43:28 on Aug 27,2021, Elapsed time: 0:05:09
+# Errors: 8, Warnings: 0
+# vsim work.sumarr_tb 
+# Start time: 00:43:28 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/sumarr_tb/arr
+add wave -position end  sim:/sumarr_tb/arr1
+add wave -position end  sim:/sumarr_tb/arrSize
+add wave -position end  sim:/sumarr_tb/dataWidth
+add wave -position end  sim:/sumarr_tb/num
+add wave -position end  sim:/sumarr_tb/numOut
+add wave -position end  sim:/sumarr_tb/sum1
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 10 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 20 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 30 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 40 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 50 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 60 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 59
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:48:51 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of sumArr_tb
+# -- Loading entity sumArr_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(32): (vcom-1115) Subtype indication found where type mark is required.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(34): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "UNRESOLVED_SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(38): near "array": (vcom-1576) expecting STRING or IDENTIFIER or << or '('.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(40): (vcom-1136) Unknown identifier "array90".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(40): near "to": (vcom-1576) expecting ';'.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46): near "beg": (vcom-1576) expecting BEGIN.
+# End time: 10:48:51 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:51:38 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(12): near ":": (vcom-1576) expecting IDENTIFIER.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(13): VHDL Compiler exiting
+# End time: 10:51:38 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:52:04 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of sumArr_tb
+# -- Loading entity sumArr_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(38): (vcom-1115) Subtype indication found where type mark is required.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(40): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "UNRESOLVED_SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(48): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(49): (vcom-1604) No feasible entries for subprogram "int" with expected return type "<ERROR>".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(38)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(50): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(51): (vcom-1604) No feasible entries for subprogram "int" with expected return type "<ERROR>".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(38)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(56): near "beg": (vcom-1576) expecting BEGIN.
+# End time: 10:52:04 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:52:28 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of sumArr_tb
+# -- Loading entity sumArr_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46): (vcom-1115) Subtype indication found where type mark is required.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(48): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "UNRESOLVED_SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(56): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "<ERROR>".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(58): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1604) No feasible entries for subprogram "int" with expected return type "<ERROR>".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(64): near "beg": (vcom-1576) expecting BEGIN.
+# End time: 10:52:28 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:53:26 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of sumArr_tb
+# -- Loading entity sumArr_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46): (vcom-1115) Subtype indication found where type mark is required.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(48): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "UNRESOLVED_SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(56): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "<ERROR>".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(58): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1604) No feasible entries for subprogram "int" with expected return type "<ERROR>".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(70): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:53:27 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:54:05 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of sumArr_tb
+# -- Loading entity sumArr_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46): (vcom-1115) Subtype indication found where type mark is required.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(48): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "UNRESOLVED_SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(56): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1136) Unknown identifier "int".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(58): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1136) Unknown identifier "int".
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(70): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:54:05 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:54:57 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of sumArr_tb
+# -- Loading entity sumArr_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(56): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1136) Unknown identifier "int".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(58): (vcom-1136) Unknown identifier "test_data_arr".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1136) Unknown identifier "int".
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(70): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:54:58 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:55:48 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1136) Unknown identifier "int".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1136) Unknown identifier "int".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:55:48 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:55:56 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46): (vcom-1115) Subtype indication found where type mark is required.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(48): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "UNRESOLVED_SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:55:56 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:56:24 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46): (vcom-1115) Subtype indication found where type mark is required.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(48): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "UNRESOLVED_SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:56:24 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:57:34 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(48): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:57:34 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:57:47 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:57:47 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:57:55 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.test_types.test_data_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(91): VHDL Compiler exiting
+# End time: 10:57:55 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:59:23 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.filter_types.int_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(61): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(73): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(73): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(61): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(93): VHDL Compiler exiting
+# End time: 10:59:24 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:02:04 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46): (vcom-1115) Subtype indication found where type mark is required.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.filter_types.int_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(61): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(73): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(73): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(61): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(93): VHDL Compiler exiting
+# End time: 11:02:04 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:02:15 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(57): (vcom-1604) No feasible entries for subprogram "int" with expected return type "work.filter_types.int_arr".
+#    Visible subprograms are:
+#       (explicit) pfb_test.int[INTEGER return SIGNED] at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(46)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(61): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(73): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(73): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(59): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(61): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(93): VHDL Compiler exiting
+# End time: 11:02:15 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:34:14 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(58): (vcom-1604) No feasible entries for subprogram "TO_UNSIGNED" with expected return type "work.filter_types.int_arr".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, NATURAL return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1464)
+#       (explicit) NUMERIC_STD.TO_UNSIGNED[NATURAL, UNRESOLVED_UNSIGNED return UNRESOLVED_UNSIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1478)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(60): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(62): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(60): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(62): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(94): VHDL Compiler exiting
+# End time: 11:34:14 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:34:52 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(58): (vcom-1604) No feasible entries for subprogram "TO_SIGNED" with expected return type "work.filter_types.int_arr".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_SIGNED[INTEGER, NATURAL return UNRESOLVED_SIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1472)
+#       (explicit) NUMERIC_STD.TO_SIGNED[INTEGER, UNRESOLVED_SIGNED return UNRESOLVED_SIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1483)
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(60): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(62): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(60): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(62): (vcom-1272) Length of expected is 1; length of actual is 16 (at array depth 2).
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(94): VHDL Compiler exiting
+# End time: 11:34:52 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:39:57 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(60): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(62): Constant "test_x1" is type work.filter_types.int_arr; expecting type work.test_types.test_data_arr.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(58): (vcom-1192) Array length is 1; aggregate length is 2.
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(60): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(62): (vcom-1272) Length of expected is 2; length of actual is 1.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(94): VHDL Compiler exiting
+# End time: 11:39:57 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:40:49 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(58): (vcom-1192) Array length is 1; aggregate length is 2.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(94): VHDL Compiler exiting
+# End time: 11:40:50 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:42:00 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(74): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(94): VHDL Compiler exiting
+# End time: 11:42:01 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:43:07 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(71): (vcom-1136) Unknown identifier "test_x".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(72): Cannot resolve indexed name (type ieee.NUMERIC_STD.UNRESOLVED_SIGNED) as type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(92): VHDL Compiler exiting
+# End time: 11:43:07 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:43:32 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 11:43:32 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:44:37 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 11:44:37 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:45:44 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 11:45:44 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:02:41 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:02:41 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:02:44 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 14:02:45 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:02:47 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:02:48 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 14:03:03 on Aug 27,2021, Elapsed time: 13:19:35
+# Errors: 0, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 14:03:03 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Loading work.pfb(polyphase_filter_bank)
+# ** Error: (vsim-13) Recompile work.sumarr because work.filter_types has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.sumarr(dosumarr) after work.sumarr is recompiled.
+# ** Error: (vsim-13) Recompile work.sumarr(dosumarr) because work.filter_types has changed.
+# Load interrupted
+# Error loading design
+# End time: 14:03:04 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 8
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:03:19 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:03:20 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# vsim work.pfb_tb 
+# Start time: 14:03:21 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Loading work.pfb(polyphase_filter_bank)
+# ** Error: (vsim-13) Recompile work.sumarr because work.filter_types has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.sumarr(dosumarr) after work.sumarr is recompiled.
+# ** Error: (vsim-13) Recompile work.sumarr(dosumarr) because work.filter_types has changed.
+# Load interrupted
+# Error loading design
+# End time: 14:03:22 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 8
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:03:35 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:03:35 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# vsim work.pfb_tb 
+# Start time: 14:03:43 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Loading work.pfb(polyphase_filter_bank)
+# ** Error: (vsim-13) Recompile work.sumarr because work.filter_types has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.sumarr(dosumarr) after work.sumarr is recompiled.
+# ** Error: (vsim-13) Recompile work.sumarr(dosumarr) because work.filter_types has changed.
+# Load interrupted
+# Error loading design
+# End time: 14:03:44 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 8
+vcom -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:06:17 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# End time: 14:06:17 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:06:21 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 14:06:21 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:06:24 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:06:24 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# vsim work.pfb_tb 
+# Start time: 14:06:26 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 113
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:13:21 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Warning: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(61): (vcom-1136) Unknown identifier "s3".
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(144): VHDL Compiler exiting
+# End time: 14:13:22 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:13:47 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:13:47 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 14:13:55 on Aug 27,2021, Elapsed time: 0:07:29
+# Errors: 1, Warnings: 8
+# vsim work.pfb_tb 
+# Start time: 14:13:55 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:14:00 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:14:01 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 113
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 120
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 127
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 30 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 113
+run -continue
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 30 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 120
+run -continue
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 30 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 127
+run -continue
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 40 ps  Iteration: 0  Instance: /pfb_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 142
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 50 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 113
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 50 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 120
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 50 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 127
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 70 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 113
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 70 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 120
+run -continue
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 70 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 127
+run -continue
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 80 ps  Iteration: 0  Instance: /pfb_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 142
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 90 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 113
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:30:12 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:30:12 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 14:30:15 on Aug 27,2021, Elapsed time: 0:16:20
+# Errors: 13, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 14:30:15 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 126
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:31:50 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:31:51 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 14:31:55 on Aug 27,2021, Elapsed time: 0:01:40
+# Errors: 1, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 14:31:55 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 126
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:37:50 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 14:37:50 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:37:52 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:37:53 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 14:38:07 on Aug 27,2021, Elapsed time: 0:06:12
+# Errors: 1, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 14:38:07 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 126
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:41:24 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:41:25 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:41:47 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:41:47 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:41:59 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:42:00 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 14:42:06 on Aug 27,2021, Elapsed time: 0:03:59
+# Errors: 1, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 14:42:06 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+vsim work.pfb_tb
+# End time: 14:42:14 on Aug 27,2021, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 14:42:14 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 119
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:46:42 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(117): (vcom-1136) Unknown identifier "o1".
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(117): Target type (error) in variable assignment is different from expression type ieee.NUMERIC_STD.UNRESOLVED_SIGNED.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(117): (vcom-1136) Unknown identifier "o1".
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(153): VHDL Compiler exiting
+# End time: 14:46:42 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:46:53 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(117): (vcom-1272) Length of expected is 16; length of actual is 32.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(153): VHDL Compiler exiting
+# End time: 14:46:53 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:50:56 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(117): (vcom-1600) No feasible entries for subprogram "TO_SIGNED".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_SIGNED[INTEGER, NATURAL return UNRESOLVED_SIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1472)
+#       (explicit) NUMERIC_STD.TO_SIGNED[INTEGER, UNRESOLVED_SIGNED return UNRESOLVED_SIGNED] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1483)
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(153): VHDL Compiler exiting
+# End time: 14:50:57 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:51:21 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(117): near "(": (vcom-1576) expecting ';'.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(153): VHDL Compiler exiting
+# End time: 14:51:22 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:51:41 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(117): near "(": (vcom-1576) expecting ';'.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(153): VHDL Compiler exiting
+# End time: 14:51:42 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:03 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# ** Error (suppressible): F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(117): (vcom-1272) Length of expected is 16; length of actual is 32.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd(153): VHDL Compiler exiting
+# End time: 14:52:04 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:28 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:52:28 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:39 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:52:39 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 14:53:38 on Aug 27,2021, Elapsed time: 0:11:24
+# Errors: 1, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 14:53:38 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 122
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:29 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 14:55:29 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 14:55:35 on Aug 27,2021, Elapsed time: 0:01:57
+# Errors: 1, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 14:55:35 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 122
+run
+# ** Failure: 
+# FAIL!
+# Unexpected output value
+# ----------------
+#    Time: 10 ps  Iteration: 0  Process: /pfb_tb/p_main_test File: F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Break in ForLoop loop at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 131
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:52 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 15:25:52 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:25:56 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 15:25:56 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 15:26:10 on Aug 27,2021, Elapsed time: 0:30:35
+# Errors: 2, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 15:26:10 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:21 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 15:26:21 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 16 (15 downto 0). Right is 32 (31 downto 0).
+#    Time: 0 ps  Iteration: 0  Process: /pfb_tb/sum/gen_filter(2)/gen_phase(3)/line__50 File: F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Fatal error in Generate gen_phase at F:/intelFPGA_lite/ADS_project/src/PFB.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at F:/intelFPGA_lite/ADS_project/src/PFB.vhd 50 Generate gen_phase
+# 
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:26 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 15:27:26 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:31 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 15:27:32 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 15:27:36 on Aug 27,2021, Elapsed time: 0:01:26
+# Errors: 1, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 15:27:36 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 16 (15 downto 0). Right is 32 (31 downto 0).
+#    Time: 0 ps  Iteration: 0  Process: /pfb_tb/sum/gen_filter(2)/gen_phase(3)/line__50 File: F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Fatal error in Generate gen_phase at F:/intelFPGA_lite/ADS_project/src/PFB.vhd line 50
+# 
+# HDL call sequence:
+# Stopped at F:/intelFPGA_lite/ADS_project/src/PFB.vhd 50 Generate gen_phase
+# 
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:41 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 15:29:42 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:47 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 15:29:48 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 15:29:53 on Aug 27,2021, Elapsed time: 0:02:17
+# Errors: 1, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 15:29:53 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:01 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 15:30:02 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:04 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 15:30:04 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:07 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 15:30:07 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 15:30:13 on Aug 27,2021, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 15:30:13 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 40 ps  Iteration: 0  Instance: /pfb_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 155
+vcom -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:03:01 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(34): near "=": (vcom-1576) expecting ';'.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(37): (vcom-1136) Unknown identifier "lowerIndex".
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(37): (vcom-1590) Bad expression in right operand of infix expression '='.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(37): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Warning: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(37): (vcom-1148) Condition in IF GENERATE must be static.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(41): (vcom-1136) Unknown identifier "lowerIndex".
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(41): (vcom-1590) Bad expression in right operand of infix expression '/='.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(41): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Warning: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(41): (vcom-1148) Condition in IF GENERATE must be static.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(42): (vcom-1136) Unknown identifier "lowerIndex".
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(42): (vcom-1590) Bad expression in left operand of infix expression '-'.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(42): (vcom-1136) Unknown identifier "lowerIndex".
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(42): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(42): Type error resolving infix expression "-" as type std.STANDARD.INTEGER.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(42): Type error in range expression.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(46): (vcom-1136) Unknown identifier "lowerIndex".
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(46): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Warning: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(46): (vcom-1148) Condition in IF GENERATE must be static.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(50): (vcom-1136) Unknown identifier "lowerIndex".
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(50): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+# ** Warning: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(50): (vcom-1148) Condition in IF GENERATE must be static.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(51): (vcom-1136) Unknown identifier "lowerIndex".
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(51): (vcom-1136) Unknown identifier "lowerIndex".
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(51): Type error resolving infix expression "+" as type std.STANDARD.INTEGER.
+# ** Error: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(51): Type error in range expression.
+# ** Note: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd(55): VHDL Compiler exiting
+# End time: 18:03:01 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 4
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:23 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# End time: 18:04:23 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:04:26 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# End time: 18:04:27 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.sumarr_tb
+# End time: 18:04:43 on Aug 27,2021, Elapsed time: 2:34:30
+# Errors: 0, Warnings: 0
+# vsim work.sumarr_tb 
+# Start time: 18:04:44 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+# ** Error: (vsim-3732) No default binding for component instance 'sum'.
+#    The following component port is not on the entity:
+#           num
+#    Time: 0 ps  Iteration: 0  Instance: /sumarr_tb/sum File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd Line: 36
+# ** Fatal: (vsim-3357) At depth 1, port length (1) does not match actual length (2) for port "/sumarr_tb/sum/upper_sum/sum1/arr".
+#    Time: 0 ps  Iteration: 0  Instance: /sumarr_tb/sum/upper_sum/sum1 File: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd Line: 13
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:04:44 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vsim work.sumarr_tb
+# vsim work.sumarr_tb 
+# Start time: 18:04:52 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+# ** Error: (vsim-3732) No default binding for component instance 'sum'.
+#    The following component port is not on the entity:
+#           num
+#    Time: 0 ps  Iteration: 0  Instance: /sumarr_tb/sum File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd Line: 36
+# ** Fatal: (vsim-3357) At depth 1, port length (1) does not match actual length (2) for port "/sumarr_tb/sum/upper_sum/sum1/arr".
+#    Time: 0 ps  Iteration: 0  Instance: /sumarr_tb/sum/upper_sum/sum1 File: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd Line: 13
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:04:53 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:05:02 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# End time: 18:05:03 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:05:05 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# End time: 18:05:06 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.sumarr_tb
+# vsim work.sumarr_tb 
+# Start time: 18:05:08 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+# ** Error: (vsim-3732) No default binding for component instance 'sum'.
+#    The following component port is not on the entity:
+#           num
+#    Time: 0 ps  Iteration: 0  Instance: /sumarr_tb/sum File: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd Line: 36
+# ** Fatal: (vsim-3357) At depth 1, port length (1) does not match actual length (2) for port "/sumarr_tb/sum/upper_sum/sum1/arr".
+#    Time: 0 ps  Iteration: 0  Instance: /sumarr_tb/sum/upper_sum/sum1 File: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd Line: 13
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:05:08 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:28 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# ** Error: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(35): Signal "arr" is type work.filter_types.int_arr; expecting type ieee.NUMERIC_STD.SIGNED.
+# ** Error: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(35): Signal "numOut" is type ieee.NUMERIC_STD.SIGNED; expecting type work.filter_types.int_arr.
+# ** Note: F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd(60): VHDL Compiler exiting
+# End time: 18:09:28 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:10:04 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# End time: 18:10:04 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.sumarr_tb
+# vsim work.sumarr_tb 
+# Start time: 18:10:06 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+# ** Fatal: (vsim-3357) At depth 1, port length (1) does not match actual length (2) for port "/sumarr_tb/sum/upper_sum/sum1/arr".
+#    Time: 0 ps  Iteration: 0  Instance: /sumarr_tb/sum/upper_sum/sum1 File: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd Line: 13
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:10:07 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:23 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# End time: 18:11:24 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.sumarr_tb
+# vsim work.sumarr_tb 
+# Start time: 18:11:25 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+# ** Fatal: (vsim-3357) At depth 1, port length (1) does not match actual length (2) for port "/sumarr_tb/sum/upper_sum/sum1/arr".
+#    Time: 0 ps  Iteration: 0  Instance: /sumarr_tb/sum/upper_sum/sum1 File: F:/intelFPGA_lite/ADS_project/src/sumArr.vhd Line: 13
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 18:11:26 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:34 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture doSumArr of sumArr
+# End time: 18:11:34 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:11:37 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr_tb
+# -- Compiling architecture sumArr_test of sumArr_tb
+# End time: 18:11:37 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.sumarr_tb
+# vsim work.sumarr_tb 
+# Start time: 18:11:38 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types
+# Loading work.sumarr_tb(sumarr_test)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/sumarr_tb/arr
+add wave -position end  sim:/sumarr_tb/arr1
+add wave -position end  sim:/sumarr_tb/arrSize
+add wave -position end  sim:/sumarr_tb/dataWidth
+add wave -position end  sim:/sumarr_tb/numOut
+add wave -position end  sim:/sumarr_tb/sum1
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 10 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 57
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 20 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 57
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 30 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 57
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 40 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 57
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 50 ps  Iteration: 0  Instance: /sumarr_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd line 57
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:13:17 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 18:13:17 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:13:20 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 18:13:21 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# End time: 18:13:27 on Aug 27,2021, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 0
+# vsim work.pfb_tb 
+# Start time: 18:13:27 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+# ** Error: (vsim-3732) No default binding for component instance 'sum'.
+#    The following component port is not on the entity:
+#           num
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb/sum/gen_filter(0)/sum File: F:/intelFPGA_lite/ADS_project/src/PFB.vhd Line: 55
+# ** Error: (vsim-3732) No default binding for component instance 'sum'.
+#    The following component port is not on the entity:
+#           num
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb/sum/gen_filter(1)/sum File: F:/intelFPGA_lite/ADS_project/src/PFB.vhd Line: 55
+# ** Error: (vsim-3732) No default binding for component instance 'sum'.
+#    The following component port is not on the entity:
+#           num
+#    Time: 0 ps  Iteration: 0  Instance: /pfb_tb/sum/gen_filter(2)/sum File: F:/intelFPGA_lite/ADS_project/src/PFB.vhd Line: 55
+# Error loading design
+# End time: 18:13:28 on Aug 27,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:13:52 on Aug 27,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Loading package filter_types
+# -- Compiling entity PFB
+# -- Compiling architecture polyphase_filter_bank of PFB
+# End time: 18:13:52 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:13:55 on Aug 27,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package test_types
+# -- Loading package std_logic_textio
+# -- Loading package test_types
+# -- Compiling entity PFB_tb
+# -- Compiling architecture pfb_test of PFB_tb
+# End time: 18:13:55 on Aug 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.pfb_tb
+# vsim work.pfb_tb 
+# Start time: 18:13:56 on Aug 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.test_types
+# Loading work.pfb_tb(pfb_test)
+# Loading work.pfb(polyphase_filter_bank)
+# Loading work.sumarr(dosumarr)
+add wave -position end  sim:/pfb_tb/dataWidth
+add wave -position end  sim:/pfb_tb/h_n
+add wave -position end  sim:/pfb_tb/numTests
+add wave -position end  sim:/pfb_tb/phaseCount
+add wave -position end  sim:/pfb_tb/tapCount
+add wave -position end  sim:/pfb_tb/test_h
+add wave -position end  sim:/pfb_tb/test_x
+add wave -position end  sim:/pfb_tb/x_n
+add wave -position end  sim:/pfb_tb/y_k
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 40 ps  Iteration: 0  Instance: /pfb_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 155
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 80 ps  Iteration: 0  Instance: /pfb_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 155
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 120 ps  Iteration: 0  Instance: /pfb_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 155
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 160 ps  Iteration: 0  Instance: /pfb_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd line 155
+# End time: 20:32:33 on Aug 27,2021, Elapsed time: 2:18:37
+# Errors: 0, Warnings: 0
