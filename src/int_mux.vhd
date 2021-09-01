@@ -1,0 +1,47 @@
+--library IEEE;
+--use IEEE.std_logic_1164.all;
+--use IEEE.numeric_std.all;
+--
+--entity int_mux is
+--	generic(
+--		dataWidth: integer := 8;
+--		numInputs: integer
+--	);
+--	port (
+--		x : in int_arr(0 to numInputs-1)(dataWidth-1 downto 0);
+--		sel : in unsigned(dataWidth-1 downto 0);
+--		y : out signed(dataWidth-1 downto 0)
+--	);
+--end entity;
+--
+--architecture polyphase_filter_bank of int_mux is
+--	component sumArr is
+--		generic(
+--			dataWidth: integer := 8;
+--			arrSize: integer:= 1
+--		);
+--		port(
+--			arr : in int_arr(0 to arrSize-1)(dataWidth-1 downto 0);
+--			numOut : out signed(dataWidth-1 downto 0)
+--		);
+--	end component;
+--	
+--	--x_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
+--	signal x_bank: int_arr(0 to tapCount-1)(dataWidth-1 downto 0);
+--	signal h_bank: int_arr(0 to tapCount-1)(dataWidth-1 downto 0);
+--begin
+--	gen_outputs:
+--	for phase in 0 to tapCount-1 generate
+--		signal tapOptions : int_arr(0 to tapCount-1)(dataWidth-1 downto 0);
+--	begin
+--		gen_phase:
+--		for tap in 0 to tapCount-1 generate
+--		signal product : signed(dataWidth*2-1 downto 0);
+--		begin
+--			product <= x_n(phaseCount*tap + phase)*h_n(phaseCount*tap + phase);
+--			phaseVals(tap) <= product(dataWidth-1 downto 0); -- truncate multiplication
+--		end generate;
+--		sum: sumArr generic map(dataWidth, tapCount) port map (phaseVals, phaseSum);
+--		y_k(phase) <= phaseSum;
+--	end generate;
+--end architecture;
