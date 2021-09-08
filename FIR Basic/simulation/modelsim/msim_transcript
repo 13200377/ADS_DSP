@@ -1,0 +1,414 @@
+# Reading pref.tcl
+# do FIR_basic_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:30:45 on Sep 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling package types
+# End time: 13:30:45 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:30:45 on Sep 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_basic
+# -- Compiling architecture filter of fir_basic
+# End time: 13:30:45 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:01 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(25): Enumeration literal '1' is not of type ieee.NUMERIC_STD.SIGNED.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(34): (vcom-1136) Unknown identifier "y_out".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(45): near "wait": (vcom-1576) expecting ';'.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(58): (vcom-1136) Unknown identifier "stop".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(60): near "main_test": (vcom-1576) expecting PROCESS.
+# ** Note: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(62): VHDL Compiler exiting
+# End time: 13:31:01 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 1
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:03 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(25): Enumeration literal '1' is not of type ieee.NUMERIC_STD.SIGNED.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(34): (vcom-1136) Unknown identifier "y_out".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(45): near "wait": (vcom-1576) expecting ';'.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(58): (vcom-1136) Unknown identifier "stop".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(60): near "main_test": (vcom-1576) expecting PROCESS.
+# ** Note: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(62): VHDL Compiler exiting
+# End time: 13:31:03 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 1
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:05 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(25): Enumeration literal '1' is not of type ieee.NUMERIC_STD.SIGNED.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(34): (vcom-1136) Unknown identifier "y_out".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(45): near "wait": (vcom-1576) expecting ';'.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(58): (vcom-1136) Unknown identifier "stop".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(60): near "main_test": (vcom-1576) expecting PROCESS.
+# ** Note: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(62): VHDL Compiler exiting
+# End time: 13:31:05 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 1
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:47 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(3): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# End time: 13:32:47 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:33:00 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(3): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# End time: 13:33:00 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -93 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:33:05 on Sep 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_basic
+# -- Compiling architecture filter of fir_basic
+# End time: 13:33:05 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.fir_tb
+# vsim work.fir_tb 
+# Start time: 13:33:09 on Sep 08,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.math_real(body)
+# Loading work.types
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Region: /types File: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd
+# Loading work.fir_tb(top)
+# Loading work.fir_basic(filter)
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:36:39 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(3): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# End time: 13:36:39 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.fir_tb
+# End time: 13:36:54 on Sep 08,2021, Elapsed time: 0:03:45
+# Errors: 0, Warnings: 1
+# vsim work.fir_tb 
+# Start time: 13:36:54 on Sep 08,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.math_real(body)
+# Loading work.types
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Region: /types File: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd
+# Loading work.fir_tb(top)
+# Loading work.fir_basic(filter)
+vcom -93 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:08 on Sep 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_basic
+# -- Compiling architecture filter of fir_basic
+# End time: 13:37:08 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.fir_tb
+# End time: 13:37:21 on Sep 08,2021, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 1
+# vsim work.fir_tb 
+# Start time: 13:37:21 on Sep 08,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.math_real(body)
+# Loading work.types
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Region: /types File: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd
+# Loading work.fir_tb(top)
+# Loading work.fir_basic(filter)
+add wave -position insertpoint  \
+sim:/fir_tb/fir_1/clk \
+sim:/fir_tb/fir_1/x_in \
+sim:/fir_tb/fir_1/y_out \
+sim:/fir_tb/fir_1/tdl \
+sim:/fir_tb/fir_1/products \
+sim:/fir_tb/fir_1/sum
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 640 ps  Iteration: 0  Instance: /fir_tb
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:47 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(3): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# End time: 13:40:47 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -93 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:54 on Sep 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_basic
+# -- Compiling architecture filter of fir_basic
+# End time: 13:40:54 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.fir_tb
+# End time: 13:41:06 on Sep 08,2021, Elapsed time: 0:03:45
+# Errors: 0, Warnings: 1
+# vsim work.fir_tb 
+# Start time: 13:41:06 on Sep 08,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.math_real(body)
+# Loading work.types
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Region: /types File: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd
+# Loading work.fir_tb(top)
+# Loading work.fir_basic(filter)
+add wave -position insertpoint  \
+sim:/fir_tb/fir_1/clk \
+sim:/fir_tb/fir_1/x_in \
+sim:/fir_tb/fir_1/y_out \
+sim:/fir_tb/fir_1/tdl \
+sim:/fir_tb/fir_1/products \
+sim:/fir_tb/fir_1/sum
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 640 ps  Iteration: 0  Instance: /fir_tb
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:58:16 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(3): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# End time: 13:58:16 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:58:20 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(3): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# End time: 13:58:20 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.fir_tb
+# End time: 13:58:28 on Sep 08,2021, Elapsed time: 0:17:22
+# Errors: 0, Warnings: 1
+# vsim work.fir_tb 
+# Start time: 13:58:28 on Sep 08,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.math_real(body)
+# Loading work.types
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Region: /types File: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd
+# Loading work.fir_tb(top)
+# Loading work.fir_basic(filter)
+vcom -93 -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:58:57 on Sep 08,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_basic
+# -- Compiling architecture filter of fir_basic
+# End time: 13:58:57 on Sep 08,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:59:00 on Sep 08,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd(3): (vcom-1516) Package "STD.ENV" does not exist in this language version.
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package MATH_REAL
+# -- Loading package types
+# -- Compiling entity fir_tb
+# -- Compiling architecture top of fir_tb
+# End time: 13:59:01 on Sep 08,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+vsim work.fir_tb
+# End time: 13:59:08 on Sep 08,2021, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 1
+# vsim work.fir_tb 
+# Start time: 13:59:08 on Sep 08,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.math_real(body)
+# Loading work.types
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Region: /types File: C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd
+# Loading work.fir_tb(top)
+# Loading work.fir_basic(filter)
+add wave -position insertpoint  \
+sim:/fir_tb/fir_1/clk \
+sim:/fir_tb/fir_1/x_in \
+sim:/fir_tb/fir_1/y_out \
+sim:/fir_tb/fir_1/tdl \
+sim:/fir_tb/fir_1/products
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 640 ps  Iteration: 0  Instance: /fir_tb
+# End time: 14:10:42 on Sep 08,2021, Elapsed time: 0:11:34
+# Errors: 0, Warnings: 1

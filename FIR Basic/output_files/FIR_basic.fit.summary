@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Sep 08 13:57:50 2021
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FIR_basic
+Top-level Entity Name : fir_basic
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 106 / 6,272 ( 2 % )
+    Total combinational functions : 72 / 6,272 ( 1 % )
+    Dedicated logic registers : 80 / 6,272 ( 1 % )
+Total registers : 80
+Total pins : 25 / 92 ( 27 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

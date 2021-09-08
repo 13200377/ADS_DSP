@@ -1,0 +1,133 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/simulation/modelsim
+Efir_basic
+Z1 w1631073446
+Z2 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z3 DPx4 work 5 types 0 22 Fi<0S_<C>RPCGD7Sa9VQd0
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 14
+R0
+Z7 8C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd
+Z8 FC:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd
+l0
+L9 1
+V;DZ_D[_6=d>dcTdlFX4z[2
+!s100 ImNS@Nzn8Nc8`0Cm2J^MF0
+Z9 OV;C;2020.1;71
+31
+Z10 !s110 1631073537
+!i10b 1
+Z11 !s108 1631073537.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd|
+Z13 !s107 C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/fir_basic.vhd|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
+Afilter
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 fir_basic 0 22 ;DZ_D[_6=d>dcTdlFX4z[2
+!i122 14
+l49
+L22 57
+VDN]FhCYGf]jRcNEjm_9Zd3
+!s100 3FbLPm2Rm?eg5[n@:A1An2
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Efir_tb
+Z16 w1631071948
+R2
+R3
+Z17 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R4
+R6
+R5
+Z18 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+!i122 15
+R0
+Z19 8C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd
+Z20 FC:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd
+l0
+L15 1
+V1e2j_OD?YFW@U9[X]FZL_3
+!s100 <MhDzL0;2>SIi;:4;k28d0
+R9
+32
+Z21 !s110 1631073541
+!i10b 1
+Z22 !s108 1631073540.000000
+Z23 !s90 -reportprogress|300|-work|work|C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd|
+Z24 !s107 C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/test/fir_tb.vhd|
+!i113 1
+Z25 o-work work
+R15
+Atop
+R2
+R3
+R17
+R4
+R6
+R5
+R18
+Z26 DEx4 work 6 fir_tb 0 22 1e2j_OD?YFW@U9[X]FZL_3
+!i122 15
+l39
+Z27 L19 51
+Z28 V@j]52n`I`1912jTc5@cbA1
+Z29 !s100 ]ZdZh^2_@HS::Q]MG5cfb1
+R9
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R25
+R15
+Ptypes
+R2
+R4
+R5
+R6
+!i122 0
+w1631018363
+R0
+8C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd
+FC:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd
+l0
+L7 1
+VFi<0S_<C>RPCGD7Sa9VQd0
+!s100 ;M]n;A1Qm<8=X7:zfTGJ50
+R9
+31
+!s110 1631071845
+!i10b 1
+!s108 1631071845.000000
+!s90 -reportprogress|300|-93|-work|work|C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd|
+!s107 C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/FilterScripts/FIR_basic/src/types.vhd|
+!i113 1
+R14
+R15

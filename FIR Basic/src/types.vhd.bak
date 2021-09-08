@@ -1,0 +1,16 @@
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+USE ieee.math_real.all;
+
+PACKAGE types IS
+
+  CONSTANT taps        : INTEGER := 4; --number of fir filter taps
+  CONSTANT data_width  : INTEGER := 8; --width of data input including sign bit
+  
+  TYPE coefficient_array IS ARRAY (0 TO taps-1) OF std_logic_vector(data_width-1 DOWNTO 0);  --array of all coefficients
+--   TYPE data_array IS ARRAY (0 TO taps-1) OF SIGNED(data_width-1 DOWNTO 0);                   
+  TYPE product_array IS ARRAY (0 TO taps-1) OF SIGNED((data_width + data_width)-1 DOWNTO 0); 
+  
+END PACKAGE types;

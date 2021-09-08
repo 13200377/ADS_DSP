@@ -1,0 +1,22 @@
+-- Implement a tapped delay line 
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+entity fir4 is
+port(
+    clk:    in std_logic; 
+    x_in:   in signed(data_width -1 downto 0); -- Next incoming sample
+    -- h_in:   out array(0 to 3) of signed(7 downto 0) );
+    x_filt: out signed(data_width -1 downto 0); -- Next outgoing sample
+end fir4;
+
+architecture filter of fir4 is
+signal h : coefficient_array;
+
+begin 
+
+    process(clk)
+        begin 
+            if (rising_edge(clk)) then
+                -- Shift in the next value

@@ -1,0 +1,33 @@
+---- Implement a tapped delay line 
+--LIBRARY ieee;
+--USE ieee.std_logic_1164.all;
+--USE ieee.numeric_std.all;
+--
+--use work.types.all;
+--
+--
+--entity tdl8 is 
+--port(
+--    clk:    in std_logic;
+--    x_in:   in std_logic;
+--    x_tdl:  out int_arr(0 to 7)(7 downto 0));
+--end tdl8;
+--
+--architecture tapdelay of tdl8 is 
+--
+---- we need a variable in order to shift the values along the tap line
+--variable x_tmp: int_arr(0 to 7)(7 downto 0);
+--begin 
+--    process(clk)
+--    begin
+--        if (rising_edge(clk)) then
+--				-- Move every value 1 towards the end of the array 
+--				for i in 7 downto 1 loop
+--					x_tmp(i) := x_tdl(i-1);
+--				end loop;
+--				-- Slot the new value in at the start
+--				x_tmp(0) := x_in;
+--        end if;
+--    end process;
+--	 x_tdl <= x_tmp;
+--end tapdelay;
