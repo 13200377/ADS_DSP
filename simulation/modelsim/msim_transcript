@@ -2496,3 +2496,169 @@ run
 # ----------------
 #    Time: 980 ps  Iteration: 0  Instance: /pfb2_tb
 # Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd line 178
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:32:59 on Sep 19,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 19:33:00 on Sep 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:33:05 on Sep 19,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 19:33:06 on Sep 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.spi_module_tb
+# End time: 19:33:22 on Sep 19,2021, Elapsed time: 1:45:20
+# Errors: 0, Warnings: 0
+# vsim work.spi_module_tb 
+# Start time: 19:33:22 on Sep 19,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.spi_module_tb(test)
+# Loading work.spi_module(spi)
+add wave -position end  sim:/spi_module_tb/CLK_PERIOD
+add wave -position end  sim:/spi_module_tb/cs
+add wave -position end  sim:/spi_module_tb/global_clk
+add wave -position end  sim:/spi_module_tb/in_data_ready
+add wave -position end  sim:/spi_module_tb/input_shiftreg
+add wave -position end  sim:/spi_module_tb/miso
+add wave -position end  sim:/spi_module_tb/mosi
+add wave -position end  sim:/spi_module_tb/out_data_ready
+add wave -position end  sim:/spi_module_tb/output_shiftreg
+add wave -position end  sim:/spi_module_tb/sck
+add wave -position end  sim:/spi_module_tb/SCK_PERIOD
+add wave -position end  sim:/spi_module_tb/tx_empty
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /spi_module_tb/SPI
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 10 ps  Iteration: 1  Instance: /spi_module_tb/SPI
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 30 ps  Iteration: 1  Instance: /spi_module_tb/SPI
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 50 ps  Iteration: 1  Instance: /spi_module_tb/SPI
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 70 ps  Iteration: 1  Instance: /spi_module_tb/SPI
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 90 ps  Iteration: 1  Instance: /spi_module_tb/SPI
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 110 ps  Iteration: 1  Instance: /spi_module_tb/SPI
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 130 ps  Iteration: 1  Instance: /spi_module_tb/SPI
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 1065040 ps  Iteration: 0  Instance: /spi_module_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd line 212
+vcom -work work F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:59:30 on Sep 19,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 19:59:30 on Sep 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:59:46 on Sep 19,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 19:59:46 on Sep 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:59:50 on Sep 19,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 19:59:50 on Sep 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.spi_module_tb
+# End time: 19:59:57 on Sep 19,2021, Elapsed time: 0:26:35
+# Errors: 0, Warnings: 8
+# vsim work.spi_module_tb 
+# Start time: 19:59:57 on Sep 19,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.spi_module_tb(test)
+# Loading work.spi_module(spi)
+vcom -work work F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 20:00:06 on Sep 19,2021
+# vcom -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 20:00:06 on Sep 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.spi_module_tb
+# End time: 20:00:08 on Sep 19,2021, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 0
+# vsim work.spi_module_tb 
+# Start time: 20:00:08 on Sep 19,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.spi_module_tb(test)
+# Loading work.spi_module(spi)
+add wave -position end  sim:/spi_module_tb/CLK_PERIOD
+add wave -position end  sim:/spi_module_tb/cs
+add wave -position end  sim:/spi_module_tb/global_clk
+add wave -position end  sim:/spi_module_tb/in_data_ready
+add wave -position end  sim:/spi_module_tb/indicate_read
+add wave -position end  sim:/spi_module_tb/input_shiftreg
+add wave -position end  sim:/spi_module_tb/miso
+add wave -position end  sim:/spi_module_tb/mosi
+add wave -position end  sim:/spi_module_tb/out_data_ready
+add wave -position end  sim:/spi_module_tb/output_shiftreg
+add wave -position end  sim:/spi_module_tb/sck
+add wave -position end  sim:/spi_module_tb/SCK_PERIOD
+add wave -position end  sim:/spi_module_tb/tx_empty
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /spi_module_tb/SPI
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 1054800 ps  Iteration: 0  Instance: /spi_module_tb
+# Break in Process p_main_test at F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd line 222

@@ -24,6 +24,7 @@ architecture test of SPI_module_tb is
 			output_shiftreg: in std_logic_vector(7 downto 0);
 			out_data_ready: in std_logic;
 			in_data_ready: out std_logic;
+			indicate_read: in std_logic;
 			tx_empty: out std_logic := '1'
 		);
 	end component;
@@ -37,6 +38,7 @@ architecture test of SPI_module_tb is
 	signal output_shiftreg: std_logic_vector(7 downto 0);
 	signal out_data_ready: std_logic := '0';
 	signal in_data_ready: std_logic;
+	signal indicate_read: std_logic := '0';
 	signal tx_empty: std_logic;
 	
 	constant CLK_PERIOD: time := 20 ps;  -- 50MHz
@@ -55,7 +57,7 @@ architecture test of SPI_module_tb is
 begin
 	SPI: SPI_module port map (global_clk, sck, mosi, miso, cs, 
 											input_shiftreg, output_shiftreg, out_data_ready,
-											in_data_ready, tx_empty);
+											in_data_ready, indicate_read, tx_empty);
 	-- Clock generation
 	-- This runs in parallel with the p_main_test
 	p_clock : process is
@@ -115,6 +117,8 @@ begin
 			
 			cs <='1';
 			
+			wait for CLK_PERIOD*4;
+			
 			-- Check the module is indicating data has been received
 			if in_data_ready = '0' then
 				report LF
@@ -123,9 +127,7 @@ begin
 				  & "----------------"
 				  severity failure;
 			end if;
-			
-			wait for CLK_PERIOD*8;
-			
+						
 			-- Check the data received is correct
 			if reverse_vector(input_shiftreg(7 downto 0)) /= tx_signal(7 downto 0) then
 				report LF
@@ -134,6 +136,14 @@ begin
 				  & "----------------"
 				  severity failure;
 			end if;
+			
+			-- Now indicate we have read this value
+			indicate_read <= '1';
+			
+			wait for CLK_PERIOD*2;
+			
+			indicate_read <= '0';
+			
 
 			wait for CLK_PERIOD*8;
 			

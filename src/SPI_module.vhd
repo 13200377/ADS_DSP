@@ -16,6 +16,7 @@ entity SPI_module is
 		output_shiftreg: in std_logic_vector(7 downto 0);
 		out_data_ready: in std_logic;
 		in_data_ready: out std_logic;
+		indicate_read: in std_logic;
 		tx_empty: out std_logic := '1'
 	);
 
@@ -58,16 +59,15 @@ begin
 	begin
 		if rising_edge(clk) then
 			-- Indicate readiness a full clock cycle after bitcounter filling up
-			if bitcounter >= 8 then
-				in_data_ready <= '1';
-			else
+			
+			-- Data input (mosi)
+			if indicate_read = '1' then
 				in_data_ready <= '0';
 			end if;
 			
-			-- Data input (mosi)
-			
 			if cs_record(2 downto 1) = "01" then -- transfer finished
 				input_shiftreg <= in_reg;
+				in_data_ready <= '1';
 				
 				in_reg := "00000000";
 				current_state <= '0';             -- Indicate transfer is inactive

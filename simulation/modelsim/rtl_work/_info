@@ -157,10 +157,10 @@ R1
 R2
 R3
 R25
-Z32 DEx4 work 7 pfb2_tb 0 22 l<i1?m_Z_1YIiX6i51USh2
+DEx4 work 7 pfb2_tb 0 22 l<i1?m_Z_1YIiX6i51USh2
 !i122 64
 l103
-Z33 L32 149
+L32 149
 V2iCCR<dnN9[Okl`YiRJoG2
 !s100 ZWg2[e83j]nz@<C4HBiJO3
 R7
@@ -174,8 +174,8 @@ R31
 R12
 R13
 Epfb_tb
-Z34 w1630897303
-Z35 DPx4 work 10 test_types 0 22 =W5L1kf7NSL8l64QMj98R3
+Z32 w1630897303
+Z33 DPx4 work 10 test_types 0 22 =W5L1kf7NSL8l64QMj98R3
 R15
 R24
 R1
@@ -184,24 +184,24 @@ R3
 R25
 !i122 10
 R0
-Z36 8F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
-Z37 FF:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+Z34 8F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+Z35 FF:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
 l0
 L28 1
 V0WAYohBo^T@OWz]KF;ZCC3
 !s100 Oc<b_bIAneoLn<Ekfj]8H3
 R7
 33
-Z38 !s110 1631495113
+Z36 !s110 1631495113
 !i10b 1
-Z39 !s108 1631495112.000000
-Z40 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd|
-Z41 !s107 F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd|
+Z37 !s108 1631495112.000000
+Z38 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd|
+Z39 !s107 F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd|
 !i113 1
 R12
 R13
 Apfb_test
-R35
+R33
 R15
 R24
 R1
@@ -216,11 +216,11 @@ V1MBJj_nRM7f1zNc_<P1U33
 !s100 ^T`Zj<R?Qg:M87P5TdKh]3
 R7
 33
-R38
+R36
 !i10b 1
+R37
+R38
 R39
-R40
-R41
 !i113 1
 R12
 R13
@@ -238,36 +238,36 @@ V=01lSJnkNFWQN0fP7;TVC1
 !s100 Ko<[;Bc?PHEA[kDI08N]32
 R7
 33
-Z42 !s110 1631494858
+Z40 !s110 1631494858
 !i10b 1
-Z43 !s108 1631494858.000000
+Z41 !s108 1631494858.000000
 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd|
 !s107 F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd|
 !i113 1
-Z44 o-2008 -work work
-Z45 tExplicit 1 CvgOpt 0
+Z42 o-2008 -work work
+Z43 tExplicit 1 CvgOpt 0
 Eseven_seg_display
-Z46 w1629985159
+Z44 w1629985159
 R2
 R3
 !i122 2
 R0
-Z47 8F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd
-Z48 FF:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd
+Z45 8F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd
+Z46 FF:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd
 l0
 L5 1
 VOAckEeAH0Ba`lfF;_;2@`3
 !s100 47eG1R1CXY37Z48]TPJhS2
 R7
 33
-R42
+R40
 !i10b 1
-R43
-Z49 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd|
-Z50 !s107 F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd|
+R41
+Z47 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd|
+Z48 !s107 F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd|
 !i113 1
-R44
-R45
+R42
+R43
 Adisplay
 R2
 R3
@@ -279,37 +279,37 @@ VR:zWERzI>7JbCFHNhNale0
 !s100 E2hIRbk?n?mg>`dggQSO01
 R7
 33
-R42
+R40
 !i10b 1
-R43
-R49
-R50
+R41
+R47
+R48
 !i113 1
-R44
-R45
+R42
+R43
 Eshift_register
-Z51 w1627880399
+Z49 w1627880399
 R1
 R2
 R3
 !i122 0
 R0
-Z52 8F:/intelFPGA_lite/ADS_project/src/shift_register.vhd
-Z53 FF:/intelFPGA_lite/ADS_project/src/shift_register.vhd
+Z50 8F:/intelFPGA_lite/ADS_project/src/shift_register.vhd
+Z51 FF:/intelFPGA_lite/ADS_project/src/shift_register.vhd
 l0
 L20 1
 VQfC5SVQMY8]<bBn>X5MMI1
 !s100 L7c0AQdl<=?Ykj`bL`YHa0
 R7
 33
-Z54 !s110 1631494857
+Z52 !s110 1631494857
 !i10b 1
-Z55 !s108 1631494857.000000
-Z56 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/shift_register.vhd|
-Z57 !s107 F:/intelFPGA_lite/ADS_project/src/shift_register.vhd|
+Z53 !s108 1631494857.000000
+Z54 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/shift_register.vhd|
+Z55 !s107 F:/intelFPGA_lite/ADS_project/src/shift_register.vhd|
 !i113 1
-R44
-R45
+R42
+R43
 Asr
 R1
 R2
@@ -322,35 +322,123 @@ VljW;VS=10@M;30K_RY2US1
 !s100 D?L0L>?z[<V::VNmMN2:J3
 R7
 33
-R54
+R52
 !i10b 1
+R53
+R54
 R55
-R56
-R57
 !i113 1
-R44
-R45
+R42
+R43
+Espi_module
+Z56 w1632045140
+R1
+R2
+R3
+!i122 68
+R0
+Z57 8F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd
+Z58 FF:/intelFPGA_lite/ADS_project/src/SPI_module.vhd
+l0
+L5 1
+VG=4=QQJKJYQcBYhBOid2c2
+!s100 CGH4KdAaddN[cTkckfF[M2
+R7
+33
+Z59 !s110 1632045586
+!i10b 1
+Z60 !s108 1632045586.000000
+Z61 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd|
+Z62 !s107 F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd|
+!i113 1
+R12
+R13
+Aspi
+R1
+R2
+R3
+DEx4 work 10 spi_module 0 22 G=4=QQJKJYQcBYhBOid2c2
+!i122 68
+l40
+L25 108
+V41H:<cJzVfamaViJSaKNj3
+!s100 _ZEOH8PcAiR4Nhldm7he83
+R7
+33
+R59
+!i10b 1
+R60
+R61
+R62
+!i113 1
+R12
+R13
+Espi_module_tb
+Z63 w1632045459
+R1
+R2
+R3
+R25
+!i122 70
+R0
+Z64 8F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd
+Z65 FF:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd
+l0
+L9 1
+V7=Xn67CSbU3@b;^aaOVLm3
+!s100 m2IJOjeIlbCl:0fSlOKKz2
+R7
+33
+Z66 !s110 1632045606
+!i10b 1
+Z67 !s108 1632045606.000000
+Z68 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd|
+Z69 !s107 F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd|
+!i113 1
+R12
+R13
+Atest
+R1
+R2
+R3
+R25
+Z70 DEx4 work 13 spi_module_tb 0 22 7=Xn67CSbU3@b;^aaOVLm3
+!i122 70
+l57
+Z71 L12 215
+Z72 VJ1W[3kNJ@:V]F?12Ldi]Y0
+Z73 !s100 :L77F9;`_AaENW@MgUDId3
+R7
+33
+R66
+!i10b 1
+R67
+R68
+R69
+!i113 1
+R12
+R13
 Esumarr
-Z58 w1630898888
+Z74 w1630898888
 R15
 R1
 R2
 R3
 !i122 13
 R0
-Z59 8F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
-Z60 FF:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+Z75 8F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+Z76 FF:/intelFPGA_lite/ADS_project/src/sumArr.vhd
 l0
 L7 1
 V9mjJ1Y_bYf_HV_@:cl?Q=0
 !s100 jXK<_Om^`hTB0]IoVL2fg3
 R7
 33
-Z61 !s110 1631495289
+Z77 !s110 1631495289
 !i10b 1
-Z62 !s108 1631495289.000000
-Z63 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/src/sumArr.vhd|
-Z64 !s107 F:/intelFPGA_lite/ADS_project/src/sumArr.vhd|
+Z78 !s108 1631495289.000000
+Z79 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/src/sumArr.vhd|
+Z80 !s107 F:/intelFPGA_lite/ADS_project/src/sumArr.vhd|
 !i113 1
 R12
 R13
@@ -367,11 +455,11 @@ VV069WF<j`6DICUV@;XAi@1
 !s100 YZao?0j0DGkH=TzaHeY]J3
 R7
 33
-R61
+R77
 !i10b 1
-R62
-R63
-R64
+R78
+R79
+R80
 !i113 1
 R12
 R13
