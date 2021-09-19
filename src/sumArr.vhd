@@ -34,19 +34,25 @@ architecture sum_array of sumArr is
 	constant lowerIndex: integer := arrSize/2 - 1; -- Upper index of lower half
 begin
 	-- upper sum
+	-- if the upper element of the upper sum is equal to the lower element of the upper sum
+	-- i.e. uppersum is only a single element
 	last_upper_sum: if arrSize - 1 = lowerIndex + 1 generate
 		upperSum <= arr(arrSize - 1);
 	end generate;
 	
+	-- else case
 	upper_sum: if arrSize - 1 /= lowerIndex + 1 generate
 		sum1: sumArr generic map (dataWidth, arrSize - 1 - lowerIndex) port map (arr(lowerIndex + 1 to arrSize-1), upperSum);
 	end generate;
 	
 	-- lower sum
+	-- if upper index of lower sum is equal to lower index of lower sum
+	-- i.e. lower sum is only a single element
 	last_lower_sum: if lowerIndex = 0 generate
 		lowerSum <= arr(0);
 	end generate;
 	
+	-- else case
 	lower_sum: if lowerIndex /= 0 generate
 		sum2: sumArr generic map (dataWidth, lowerIndex + 1) port map (arr(0 to lowerIndex), lowerSum);
 	end generate;

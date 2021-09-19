@@ -8,9 +8,9 @@ use ieee.numeric_std.all;
 
 use work.filter_types.all;
 
-package test_types is
-	type test_data_arr is array (natural range <>) of int_arr;
-end package;
+--package test_types is
+--	type test_data_arr is array (natural range <>) of int_arr;
+--end package;
 
 library std;
 use std.env.all;
@@ -112,7 +112,7 @@ begin
 			x_n <= test_x(test_num);
 			h_n <= test_h(test_num);
 			
-			wait for 10 ps;
+			wait for 100 ps;
 			
 			p1 := x_n(0)*h_n(0) + x_n(3)*h_n(3) + x_n(6)*h_n(6) + x_n(9)*h_n(9);
 			if y_k(0) /= p1(dataWidth-1 downto 0) then

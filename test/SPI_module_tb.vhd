@@ -57,6 +57,7 @@ begin
 											input_shiftreg, output_shiftreg, out_data_ready,
 											in_data_ready, tx_empty);
 	-- Clock generation
+	-- This runs in parallel with the p_main_test
 	p_clock : process is
 	begin
 		wait for CLK_PERIOD/2;
@@ -67,24 +68,34 @@ begin
 	p_main_test : process is
 		variable test_success: boolean := true;
 		
+		-- tx_val is the test number we will use for MOSI
 		variable tx_val: unsigned(7 downto 0) := to_unsigned(0,8);
+		-- tx_signal is tx_val, but as a logic vector
 		variable tx_signal: std_logic_vector(7 downto 0);
+		-- bit count is which bit we are up to in the byte (technically data frame)
 		variable bit_count: integer := 0;
 		
+		-- rx_val is the test number we will use for MISO
 		variable rx_val: unsigned(7 downto 0) := to_unsigned(0,8);
+		-- rx_signal is rx_val as a logic vector
 		variable rx_signal: std_logic_vector(7 downto 0);
 	begin
 		--------------
 		-- test MOSI
 		--------------
+		
+		-- In this test the testbench acts as a master transmitting to the slave
+		
 		wait for CLK_PERIOD*4;
 
 		-- cycle through different test values
 		while tx_val <= 255 loop
-			tx_signal := std_logic_vector(tx_val); -- convert incrementer to logic vector
+			tx_signal := std_logic_vector(tx_val); -- convert tx_val to logic vector
 			cs <= '0';
+			
 			wait for CLK_PERIOD*8;
-			-- begin transmitting bites
+			
+			-- begin transmitting bits
 			bit_count := 0;
 			while bit_count < 8 loop
 				mosi <= tx_signal(bit_count);
@@ -99,10 +110,12 @@ begin
 				
 				bit_count := bit_count + 1;
 			end loop;
+			
 			wait for CLK_PERIOD*8;
 			
 			cs <='1';
 			
+			-- Check the module is indicating data has been received
 			if in_data_ready = '0' then
 				report LF
 				  & "FAIL!" & LF
@@ -113,6 +126,7 @@ begin
 			
 			wait for CLK_PERIOD*8;
 			
+			-- Check the data received is correct
 			if reverse_vector(input_shiftreg(7 downto 0)) /= tx_signal(7 downto 0) then
 				report LF
 				  & "FAIL!" & LF
@@ -143,18 +157,21 @@ begin
 			
 			wait for CLK_PERIOD*2;
 			out_data_ready <= '1'; -- Indicate data is ready
-			wait for CLK_PERIOD*2; -- Wait to load into internal register
+			wait for CLK_PERIOD*2; -- Wait to load data into internal register
 			out_data_ready <= '0';
 			
 			wait for CLK_PERIOD*2;
 			cs <= '0';
 			wait for CLK_PERIOD*4;
 			
+			-- We now test each bit output from the module
+			-- to ensure it is the value we expect
 			bit_count := 7;
 			while bit_count >= 0 loop
 				sck <= '1';
 				wait for SCK_PERIOD/2;
 				
+				-- Check miso pin has correct value
 				if miso /= rx_signal(bit_count) then
 					report LF
 					  & "FAIL!" & LF

@@ -13,217 +13,217 @@ Pfilter_types
 Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 1
-Z4 w1630052027
+!i122 14
+Z4 w1631495204
 R0
-Z5 8F:/intelFPGA_lite/ADS_project/src/PFB.vhd
-Z6 FF:/intelFPGA_lite/ADS_project/src/PFB.vhd
+Z5 8F:/intelFPGA_lite/ADS_project/src/PFB2.vhd
+Z6 FF:/intelFPGA_lite/ADS_project/src/PFB2.vhd
 l0
 L5 1
-V]8CPm5]UZP;QlAH:d3;lC1
+Vj^O6VD7`MSC`MJ0jk`Km80
 !s100 dQoDC=A?fJ8elI;IG?oW?2
 Z7 OV;C;2020.1;71
 33
-Z8 !s110 1630504108
+Z8 !s110 1631495291
 !i10b 1
-Z9 !s108 1630504108.000000
-Z10 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/PFB.vhd|
-Z11 !s107 F:/intelFPGA_lite/ADS_project/src/PFB.vhd|
+Z9 !s108 1631495291.000000
+Z10 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/src/PFB2.vhd|
+Z11 !s107 F:/intelFPGA_lite/ADS_project/src/PFB2.vhd|
 !i113 1
-Z12 o-2008 -work work
-Z13 tExplicit 1 CvgOpt 0
+Z12 o-work work
+Z13 tExplicit 1 NoCoverage 1 CvgOpt 0
 Epfb
-R4
-Z14 DPx4 work 12 filter_types 0 22 ]8CPm5]UZP;QlAH:d3;lC1
+Z14 w1630052027
+Z15 DPx4 work 12 filter_types 0 22 j^O6VD7`MSC`MJ0jk`Km80
 R1
 R2
 R3
-!i122 1
+!i122 8
 R0
-R5
-R6
+Z16 8F:/intelFPGA_lite/ADS_project/src/PFB.vhd
+Z17 FF:/intelFPGA_lite/ADS_project/src/PFB.vhd
 l0
-Z15 L16 1
-V=:G>O2;CkzXK5>^a0_T?l0
+L16 1
+VX@Jm@DUTmiZB6?7Vk1_Ui1
 !s100 MZM6>I]Gb1a6Y<_i0ZHLk3
 R7
 33
-R8
+Z18 !s110 1631495107
 !i10b 1
-R9
-R10
-R11
+Z19 !s108 1631495106.000000
+Z20 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/src/PFB.vhd|
+Z21 !s107 F:/intelFPGA_lite/ADS_project/src/PFB.vhd|
 !i113 1
 R12
 R13
 Apolyphase_filter_bank
-R14
+R15
 R1
 R2
 R3
-DEx4 work 3 pfb 0 22 =:G>O2;CkzXK5>^a0_T?l0
-!i122 1
+DEx4 work 3 pfb 0 22 X@Jm@DUTmiZB6?7Vk1_Ui1
+!i122 8
 l40
 L29 29
-VcbC:`g=KLARcGMKbLkIaf2
+Vi6D4`;o5_[;Q;F`i1^ZMH2
 !s100 kIJ7e=dZ0XQ2Zf@dEP8EG2
 R7
 33
-R8
+R18
 !i10b 1
-R9
-R10
-R11
+R19
+R20
+R21
 !i113 1
 R12
 R13
 Epfb2
-Z16 w1630503645
-R14
-R1
-R2
-R3
-!i122 12
-R0
-Z17 8F:/intelFPGA_lite/ADS_project/src/PFB2.vhd
-Z18 FF:/intelFPGA_lite/ADS_project/src/PFB2.vhd
-l0
+R4
 R15
-VUVTkZ`kKIZ3ET[;k:6`6A1
-!s100 C=82M@cmFcegSOL=USLh81
+R1
+R2
+R3
+!i122 14
+R0
+R5
+R6
+l0
+L17 1
+V82za_4]HX;Ska<41e2:QQ0
+!s100 PCB168Jld175GaBFPh:Wk3
 R7
 33
-Z19 !s110 1630504503
+R8
 !i10b 1
-Z20 !s108 1630504502.000000
-Z21 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/src/PFB2.vhd|
-Z22 !s107 F:/intelFPGA_lite/ADS_project/src/PFB2.vhd|
+R9
+R10
+R11
 !i113 1
-Z23 o-work work
-Z24 tExplicit 1 NoCoverage 1 CvgOpt 0
+R12
+R13
 Apolyphase_filter_bank
-R14
+R15
 R1
 R2
 R3
-DEx4 work 4 pfb2 0 22 UVTkZ`kKIZ3ET[;k:6`6A1
-!i122 12
-l47
-L30 51
-V2YRmfBQ_V>aGdonZ=F3Lg1
-!s100 5PSmdi<3?9fdZJD4D3aVk2
+DEx4 work 4 pfb2 0 22 82za_4]HX;Ska<41e2:QQ0
+!i122 14
+l48
+L31 51
+V>j3X>4aH5E4jDPX:?oJPf2
+!s100 :zgU=H325]E4Z_9;k0YCN3
 R7
 33
-R19
+R8
 !i10b 1
-R20
-R21
-R22
+R9
+R10
+R11
 !i113 1
-R23
-R24
+R12
+R13
 Epfb2_tb
-Z25 w1630504231
-Z26 DPx4 work 10 test_types 0 22 =W5L1kf7NSL8l64QMj98R3
-R14
-Z27 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z22 w1631518588
+Z23 DPx4 work 10 test_types 0 22 =W5L1kf7NSL8l64QMj98R3
+R15
+Z24 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
 R1
 R2
 R3
-Z28 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
-!i122 13
+Z25 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+!i122 40
 R0
-Z29 8F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd
-Z30 FF:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd
+Z26 8F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd
+Z27 FF:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd
 l0
-L14 1
-V6zY8o7]`oOV9?eDhMH9OF0
-!s100 9B2e8:P^XgdAC7fOC3NJz0
+Z28 L28 1
+VDQcGf7BId<NVWbGS5Y_FA0
+!s100 b?Y8_^I9Q9i5IR=Lfo6d_2
 R7
 33
-Z31 !s110 1630504507
+Z29 !s110 1631518595
 !i10b 1
-Z32 !s108 1630504507.000000
-Z33 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd|
-Z34 !s107 F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd|
+Z30 !s108 1631518595.000000
+Z31 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd|
+Z32 !s107 F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd|
 !i113 1
-R23
-R24
+R12
+R13
 Apfb2_test
-R26
-R14
-R27
+R23
+R15
+R24
 R1
 R2
 R3
-R28
-Z35 DEx4 work 7 pfb2_tb 0 22 6zY8o7]`oOV9?eDhMH9OF0
-!i122 13
-l87
-Z36 L17 144
-Z37 V4]K7mV6F61d]LcPE56LE03
-Z38 !s100 @P?7]iH_lgdVUbEoXB4nS0
+R25
+Z33 DEx4 work 7 pfb2_tb 0 22 DQcGf7BId<NVWbGS5Y_FA0
+!i122 40
+l102
+Z34 L31 137
+VM`HER7V2ci@YQg0NJH9TE0
+!s100 2:S:`mU[0ej3MSf^^m2H13
 R7
 33
-R31
+R29
 !i10b 1
+R30
+R31
 R32
-R33
-R34
 !i113 1
-R23
-R24
+R12
+R13
 Epfb_tb
-Z39 w1630040111
-R26
-R14
-R27
+Z35 w1630897303
+R23
+R15
+R24
 R1
 R2
 R3
-R28
-!i122 11
+R25
+!i122 10
 R0
-Z40 8F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
-Z41 FF:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+Z36 8F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
+Z37 FF:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd
 l0
-L28 1
+R28
 V0WAYohBo^T@OWz]KF;ZCC3
 !s100 Oc<b_bIAneoLn<Ekfj]8H3
 R7
 33
-Z42 !s110 1630504447
+Z38 !s110 1631495113
 !i10b 1
-Z43 !s108 1630504447.000000
-Z44 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd|
-Z45 !s107 F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd|
+Z39 !s108 1631495112.000000
+Z40 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd|
+Z41 !s107 F:/intelFPGA_lite/ADS_project/test/PFB_tb.vhd|
 !i113 1
-R23
-R24
+R12
+R13
 Apfb_test
-R26
-R14
-R27
+R23
+R15
+R24
 R1
 R2
 R3
-R28
+R25
 DEx4 work 6 pfb_tb 0 22 0WAYohBo^T@OWz]KF;ZCC3
-!i122 11
+!i122 10
 l98
 L31 127
-VZi]`N7[=8mUI2cmEgRG7@1
-!s100 gOAH:fij_54`_0Qgm5`O;2
+V1MBJj_nRM7f1zNc_<P1U33
+!s100 ^T`Zj<R?Qg:M87P5TdKh]3
 R7
 33
-R42
+R38
 !i10b 1
-R43
-R44
-R45
+R39
+R40
+R41
 !i113 1
-R23
-R24
+R12
+R13
 Eseven_seg
 w1628476732
 R2
@@ -238,14 +238,14 @@ V=01lSJnkNFWQN0fP7;TVC1
 !s100 Ko<[;Bc?PHEA[kDI08N]32
 R7
 33
-R8
+Z42 !s110 1631494858
 !i10b 1
-R9
+Z43 !s108 1631494858.000000
 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd|
 !s107 F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd|
 !i113 1
-R12
-R13
+Z44 o-2008 -work work
+Z45 tExplicit 1 CvgOpt 0
 Eseven_seg_display
 Z46 w1629985159
 R2
@@ -260,14 +260,14 @@ VOAckEeAH0Ba`lfF;_;2@`3
 !s100 47eG1R1CXY37Z48]TPJhS2
 R7
 33
-R8
+R42
 !i10b 1
-R9
+R43
 Z49 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd|
 Z50 !s107 F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd|
 !i113 1
-R12
-R13
+R44
+R45
 Adisplay
 R2
 R3
@@ -279,14 +279,14 @@ VR:zWERzI>7JbCFHNhNale0
 !s100 E2hIRbk?n?mg>`dggQSO01
 R7
 33
-R8
+R42
 !i10b 1
-R9
+R43
 R49
 R50
 !i113 1
-R12
-R13
+R44
+R45
 Eshift_register
 Z51 w1627880399
 R1
@@ -302,14 +302,14 @@ VQfC5SVQMY8]<bBn>X5MMI1
 !s100 L7c0AQdl<=?Ykj`bL`YHa0
 R7
 33
-Z54 !s110 1630504107
+Z54 !s110 1631494857
 !i10b 1
-Z55 !s108 1630504107.000000
+Z55 !s108 1631494857.000000
 Z56 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/shift_register.vhd|
 Z57 !s107 F:/intelFPGA_lite/ADS_project/src/shift_register.vhd|
 !i113 1
-R12
-R13
+R44
+R45
 Asr
 R1
 R2
@@ -328,30 +328,75 @@ R55
 R56
 R57
 !i113 1
-R12
-R13
-Ptest_types
-R14
+R44
+R45
+Esumarr
+Z58 w1630898888
+R15
 R1
 R2
 R3
-R28
-!i122 11
-R39
+!i122 13
 R0
-R40
-R41
+Z59 8F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+Z60 FF:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+l0
+L7 1
+V9mjJ1Y_bYf_HV_@:cl?Q=0
+!s100 jXK<_Om^`hTB0]IoVL2fg3
+R7
+33
+Z61 !s110 1631495289
+!i10b 1
+Z62 !s108 1631495289.000000
+Z63 !s90 -reportprogress|300|-work|work|F:/intelFPGA_lite/ADS_project/src/sumArr.vhd|
+Z64 !s107 F:/intelFPGA_lite/ADS_project/src/sumArr.vhd|
+!i113 1
+R12
+R13
+Asum_array
+R15
+R1
+R2
+R3
+DEx4 work 6 sumarr 0 22 9mjJ1Y_bYf_HV_@:cl?Q=0
+!i122 13
+l35
+L20 42
+VV069WF<j`6DICUV@;XAi@1
+!s100 YZao?0j0DGkH=TzaHeY]J3
+R7
+33
+R61
+!i10b 1
+R62
+R63
+R64
+!i113 1
+R12
+R13
+Ptest_types
+R15
+R1
+R2
+R3
+R25
+!i122 40
+R22
+R0
+R26
+R27
 l0
 L11 1
 V=W5L1kf7NSL8l64QMj98R3
 !s100 d6PlljLF<0?XTjL7W:aCS3
 R7
 33
-R42
+R29
 !i10b 1
-R43
-R44
-R45
+R30
+R31
+R32
 !i113 1
-R23
-R24
+R12
+R13

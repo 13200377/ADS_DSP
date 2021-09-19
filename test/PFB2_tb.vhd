@@ -5,6 +5,20 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+
+use work.filter_types.all;
+
+package test_types is
+	type test_data_arr is array (natural range <>) of int_arr;
+end package;
+
+library std;
+use std.env.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
 use std.textio.all;
 use ieee.std_logic_textio.all; -- require for writing/reading std_logic etc.
 
@@ -32,37 +46,38 @@ architecture pfb2_test of PFB2_tb is
 	constant dataWidth: integer := 16;
 	constant phaseCount: integer := 3;
 	constant tapCount: integer := 4;
-	constant numTests: integer := 2;
+	constant filterOrder: integer := phaseCount * tapCount;
+	constant numSamples: integer := 24;
 	
 	function int(num: integer) return signed is
 	begin
         return to_signed(num, dataWidth);
 	end function;
 	 
-	constant test_x : test_data_arr(0 to numTests-1)(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0)
+	constant test_x : int_arr(0 to numSamples-1)(dataWidth-1 downto 0)
 						 := (
-								(int(1), int(1), int(1), 
+								int(1), int(1), int(1), 
 								 int(1), int(1), int(1), 
 								 int(1), int(1), int(1), 
-								 int(1), int(1), int(1) ),
+								 int(1), int(1), int(1),
 								 
-								 (int(-234), int(322), int(-234), 
-								  int(933), int(-259), int(325), 
-								  int(-135), int(310), int(241),  
-								  int(232), int(324), int(241))
+								  int(-2), int(2), int(-4), 
+								  int(3),  int(-9),int(5), 
+								  int(-5), int(3), int(4),  
+								  int(2),  int(4), int(2)
 							 );
 							  
-	constant test_h : test_data_arr(0 to numTests-1)(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0)
+	constant test_h : int_arr(0 to filterOrder-1)(dataWidth-1 downto 0)
 						 := (
-								(int(1), int(2), int(4), 
+								int(1), int(2), int(4), 
 								 int(8), int(16), int(32),
 								 int(64),  int(128), int(256), 
-								 int(512),  int(1024),  int(2048)),
+								 int(512),  int(1024),  int(2048)
 								 
-								 (int(-23), int(32), int(-41), 
-								  int(23), int(-29), int(35), 
-								  int(-51), int(34), int(31),  
-								  int(22), int(-31), int(41))
+--								 (int(-23), int(32), int(-41), 
+--								  int(23), int(-29), int(35), 
+--								  int(-51), int(34), int(31),  
+--								  int(22), int(-31), int(41))
 							 );
 							 
 --	constant test_y : test_data_arr(0 to numTests-1)(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0)
@@ -89,62 +104,54 @@ begin
 	
 	p_main_test:
 	process is
-		variable p1: signed(dataWidth*2-1 downto 0);
-		variable p2: signed(dataWidth*2-1 downto 0);
-		variable p3: signed(dataWidth*2-1 downto 0);
+		variable startIndex: integer;
+		variable phaseIndex: integer;
+		variable prevSampleNum: integer;
+		variable expectedTapSum: integer;
 	begin
---		file_open(input_buf, "PFB_test1.csv", read_mode);
---		readline(input_buf, file_row);
+		h_n <= test_h;
 		
-		for test_num in 0 to numTests-1 loop
-			h_n <= test_h(test_num);
+		wait for 20 ps;
+		
+		for sample_num in 0 to numSamples-1 loop
 			
-			wait for 10 ps;
-			
-			for i in 0 to phasecount*tapCount-1 loop
-				-- load values for x
-				for j in 0 to i loop
-					x_n(i-j) <= test_x(test_num)(j);
+			-- Once we have enough samples for valid data
+			-- The lowest phase fills up at tapCount*(phaseCount-1) + 1 samples
+			-- this equals an index of tapCount*(phaseCount-1) 
+			-- we perform this test a full clock cycle after it is entered though,
+			-- so we check tapCount*(phaseCount-1) + 1
+			if sample_num >= phaseCount*(tapCount-1) + 1 then
+				prevSampleNum := sample_Num - 1;
+				phaseIndex := phaseCount  - (prevSampleNum mod phaseCount) - 1;
+				expectedTapSum := 0;
+				for tapNum in 0 to tapCount - 1 loop
+					expectedTapSum := expectedTapSum + to_integer(x_n(phaseCount*tapNum)*h_n(phaseCount*tapNum + phaseIndex));
 				end loop;
+				if expectedTapSum /= y_k(phaseIndex) then
+					report LF
+				  & "FAIL!" & LF
+				  & "Unexpected phase output" & LF
+				  & "----------------"
+				  severity failure;
+				end if;
+			end if;
 			
-				clk <= '1';
-				
-				wait for 20 ps;
-				
-				clk <= '0';
-				
-				wait for 20 ps;
-				
+			-- place test_x
+			startIndex := sample_num-filterOrder+1;
+			for j in startIndex to sample_num loop
+				if j >= 0 then
+					x_n(sample_num-j) <= test_x(j);
+				end if;
 			end loop;
 			
---			p1 := x_n(0)*h_n(0) + x_n(3)*h_n(3) + x_n(6)*h_n(6) + x_n(9)*h_n(9);
---			if y_k(0) /= p1(dataWidth-1 downto 0) then
---				report LF
---			  & "FAIL!" & LF
---			  & "Unexpected output value" & LF
---			  & "----------------"
---			  severity failure;
---			end if;
---			
---			p2 := x_n(1)*h_n(1) + x_n(4)*h_n(4) + x_n(7)*h_n(7) + x_n(10)*h_n(10);
---			if y_k(1) /= p2(dataWidth-1 downto 0) then
---				report LF
---			  & "FAIL!" & LF
---			  & "Unexpected output value" & LF
---			  & "----------------"
---			  severity failure;
---			end if;
---			
---			p3 := x_n(2)*h_n(2) + x_n(5)*h_n(5) + x_n(8)*h_n(8) + x_n(11)*h_n(11);
---			if y_k(2) /= p3(dataWidth-1 downto 0) then
---				report LF
---			  & "FAIL!" & LF
---			  & "Unexpected output value" & LF
---			  & "----------------"
---			  severity failure;
---			end if;
+			clk <= '1';
 			
-			wait for 10 ps;
+			wait for 20 ps;
+			
+			clk <= '0';
+			
+			wait for 20 ps;
+				
 			
 		end loop;
 		

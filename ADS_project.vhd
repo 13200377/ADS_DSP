@@ -97,7 +97,20 @@ architecture ADS of ADS_project is
 			y_k : out int_arr(0 to phaseCount-1)(dataWidth-1 downto 0)
 		);
 	end component;
-
+	
+	component PFB2 is
+		generic(
+			dataWidth: integer := 8;
+			phaseCount: integer;
+			tapCount: integer
+		);
+		port (
+			x_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
+			h_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
+			clk: in std_logic;
+			y_k : out int_arr(0 to phaseCount-1)(dataWidth-1 downto 0)
+		);
+	end component;
 
 	
 	signal q: std_logic_vector(25 downto 0);
@@ -142,7 +155,7 @@ begin
 	--mem: FIFO generic map (8, 4) port map (fifo_in, fifo_out, fifo_clk, read_en, write_en, is_full, is_empty);
 	mem:  shift_register generic map (DATA_WIDTH, DATA_DEPTH) port map (sr_in, sr_out, sr_data, sr_clk, sr_read_en, sr_write_en, sr_is_full, sr_is_empty);
 	filter: pfb generic map (8, phaseCount,  tapCount) port map(x_n, h_n, y_k);
-	
+	filter2: pfb2 generic map (8, phaseCount, tapCount) port map(x_n, h_n, clk);
 	led_bar: leds port map (byte, led_clk, vals);
 	display_clk <= q(16);
 	
