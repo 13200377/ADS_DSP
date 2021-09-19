@@ -42,6 +42,8 @@ architecture polyphase_filter_bank of PFB2 is
 	
 	signal tap_bank: int_arr(0 to tapCount-1)(2*dataWidth - 1 downto 0);
 	signal tap_bank_truncated: int_arr(0 to tapCount-1)(dataWidth - 1 downto 0);
+	--signal commutator_buffer: int_arr(0 to tapCount-1)(dataWidth-1 downto 0);
+	
 	signal tap_sum: signed(dataWidth-1 downto 0);
 	
 	signal phaseIndex : integer := 0;
@@ -49,7 +51,8 @@ begin
 	shift_index: -- shift the phase index. phaseIndex mux's taps, and demux's/commutates banks
 	process(clk) is
 		
-		variable tempSum : int_arr(0 to tapCount-1)(dataWidth-1 downto 0);
+		variable tempSum : int_arr(0 to phaseCount-1)(dataWidth-1 downto 0);
+		variable commutator_buffer : int_arr(0 to phaseCount-1)(dataWidth-1 downto 0);
 	begin
 		if rising_edge(clk) then
 			if phaseIndex = 0 then
@@ -62,7 +65,11 @@ begin
 		-- Output 
 		if falling_edge(clk) then
 			tempSum(phaseIndex) := tap_sum;
-			y_k(phaseIndex) <= tempSum(phaseIndex);
+			if phaseIndex = 0 then
+				commutator_buffer := tempSum;
+				y_k <= commutator_buffer;
+			end if;
+			--y_k(phaseIndex) <= tempSum(phaseIndex);
 		end if;
 	end process;
 	

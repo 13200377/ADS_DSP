@@ -10,6 +10,7 @@ use work.filter_types.all;
 
 package test_types is
 	type test_data_arr is array (natural range <>) of int_arr;
+	type integer_arr is array (natural range <>) of integer;
 end package;
 
 library std;
@@ -105,36 +106,18 @@ begin
 	p_main_test:
 	process is
 		variable startIndex: integer;
-		variable phaseIndex: integer;
+		variable phase: integer;
+		--variable phaseIndex: integer;
 		variable prevSampleNum: integer;
 		variable expectedTapSum: integer;
+		
+		variable expectedOutput: integer_arr (0 to phaseCount-1);
 	begin
 		h_n <= test_h;
 		
 		wait for 20 ps;
 		
 		for sample_num in 0 to numSamples-1 loop
-			
-			-- Once we have enough samples for valid data
-			-- The lowest phase fills up at tapCount*(phaseCount-1) + 1 samples
-			-- this equals an index of tapCount*(phaseCount-1) 
-			-- we perform this test a full clock cycle after it is entered though,
-			-- so we check tapCount*(phaseCount-1) + 1
-			if sample_num >= phaseCount*(tapCount-1) + 1 then
-				prevSampleNum := sample_Num - 1;
-				phaseIndex := phaseCount  - (prevSampleNum mod phaseCount) - 1;
-				expectedTapSum := 0;
-				for tapNum in 0 to tapCount - 1 loop
-					expectedTapSum := expectedTapSum + to_integer(x_n(phaseCount*tapNum)*h_n(phaseCount*tapNum + phaseIndex));
-				end loop;
-				if expectedTapSum /= y_k(phaseIndex) then
-					report LF
-				  & "FAIL!" & LF
-				  & "Unexpected phase output" & LF
-				  & "----------------"
-				  severity failure;
-				end if;
-			end if;
 			
 			-- place test_x
 			startIndex := sample_num-filterOrder+1;
@@ -151,6 +134,36 @@ begin
 			clk <= '0';
 			
 			wait for 20 ps;
+			
+			-- A full set of data arrives after phaseCount*tapCount clocks
+			-- as an index we subtract 1 from this, but we check in the proceding clock cycle
+			-- so we add 1 again
+			if sample_num >= phaseCount*tapCount - 1  then
+				prevSampleNum := sample_Num - 1;
+				--phase := phaseCount  - (prevSampleNum mod phaseCount) - 1;
+				phase := phaseCount  - (sample_num mod phaseCount) - 1;
+				if phase = 0 then -- We check for phaseIndex of 0 to indicate completed set
+					for phaseIndex in 0 to phaseCount -1 loop -- loop through full set
+						expectedTapSum := 0;
+						for tapNum in 0 to tapCount - 1 loop
+							expectedTapSum := expectedTapSum + to_integer(x_n(phaseCount*tapNum + phaseIndex)*h_n(phaseCount*tapNum + phaseIndex));
+						end loop;
+						expectedOutput(phaseIndex) := expectedTapSum;
+					end loop;
+				end if;
+				
+				if phase = phaseCount -1 then
+					for phaseIndex in 0 to phaseCount -1 loop
+						if expectedOutput(phaseIndex) /= y_k(phaseIndex) then
+							report LF
+						  & "FAIL!" & LF
+						  & "Unexpected phase output" & LF
+						  & "----------------"
+						  severity failure;
+						end if;
+					end loop;
+				end if;
+			end if;
 				
 			
 		end loop;
