@@ -48,7 +48,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name VHDL_FILE ADS_project_echo.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -68,9 +67,6 @@ set_location_assignment PIN_129 -to segments[3]
 set_location_assignment PIN_125 -to segments[2]
 set_location_assignment PIN_121 -to segments[1]
 set_location_assignment PIN_128 -to segments[0]
-set_global_assignment -name QIP_FILE counter.qip
-set_global_assignment -name VHDL_FILE FIFO.vhd
-set_global_assignment -name VECTOR_WAVEFORM_FILE fifo_test.vwf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
@@ -80,19 +76,25 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
-set_global_assignment -name VHDL_FILE FIFO_tb.vhd
-set_global_assignment -name VHDL_TEST_BENCH_FILE FIFO_tb.vht
-set_global_assignment -name VHDL_FILE shift_register.vhd
-set_global_assignment -name VHDL_FILE shift_register_tb.vhd
 set_location_assignment PIN_84 -to vals[0]
 set_location_assignment PIN_85 -to vals[1]
 set_location_assignment PIN_86 -to vals[2]
 set_location_assignment PIN_87 -to vals[3]
 set_global_assignment -name IP_SEARCH_PATHS "f:\\intelfpga_lite\\ads_project\\src"
-set_global_assignment -name VHDL_FILE test/SPI_module_tb.vhd
 set_global_assignment -name SEARCH_PATH src
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
 set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name VHDL_FILE src/filter_types.vhd
+set_global_assignment -name VHDL_FILE src/Polyphase_decimator.vhd
+set_global_assignment -name VHDL_FILE ADS_project.vhd
+set_global_assignment -name QIP_FILE counter.qip
+set_global_assignment -name VHDL_FILE FIFO.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE fifo_test.vwf
+set_global_assignment -name VHDL_FILE FIFO_tb.vhd
+set_global_assignment -name VHDL_TEST_BENCH_FILE FIFO_tb.vht
+set_global_assignment -name VHDL_FILE shift_register.vhd
+set_global_assignment -name VHDL_FILE shift_register_tb.vhd
+set_global_assignment -name VHDL_FILE test/SPI_module_tb.vhd
 set_global_assignment -name VHDL_FILE src/PFB.vhd
 set_global_assignment -name VHDL_FILE src/seven_seg_display.vhd
 set_global_assignment -name VHDL_FILE src/sumArr.vhd
