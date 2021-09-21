@@ -11,22 +11,22 @@ end entity;
 
 architecture test of SPI_module_tb is
 	component SPI_module is 
-		generic(
-			frame_size: positive := 8
-		);
-		port (
-			clk: in std_logic;
-			sck: in std_logic;
-			mosi: in std_logic;
-			miso: out std_logic;
-			cs: in std_logic;
-			input_shiftreg: out std_logic_vector(7 downto 0);
-			output_shiftreg: in std_logic_vector(7 downto 0);
-			out_data_ready: in std_logic;
-			in_data_ready: out std_logic;
-			indicate_read: in std_logic;
-			tx_empty: out std_logic := '1'
-		);
+	generic(
+		frame_size: positive := 8
+	);
+	port (
+		clk: in std_logic;
+		sck: in std_logic;
+		mosi: in std_logic;
+		miso: out std_logic;
+		cs: in std_logic;
+		input_shiftreg: out std_logic_vector(frame_size-1 downto 0);
+		output_shiftreg: in std_logic_vector(frame_size-1 downto 0);
+		out_data_ready: in std_logic;
+		in_data_ready: out std_logic;
+		indicate_read: in std_logic;
+		tx_empty: out std_logic := '1'
+	);
 	end component;
 	
 	signal global_clk : std_logic := '0';
