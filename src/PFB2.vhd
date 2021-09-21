@@ -42,36 +42,35 @@ architecture polyphase_filter_bank of PFB2 is
 		);
 	end component;
 	
+	-- Contains all the individual x[n]*h[n] taps for the current phase
 	signal tap_bank: int_arr(0 to tapCount-1)(sampleWidth+coeffWidth - 1 downto 0);
-	-- signal tap_bank_truncated: int_arr(0 to tapCount-1)(sampleWidth - 1 downto 0);
-	--signal commutator_buffer: int_arr(0 to tapCount-1)(sampleWidth-1 downto 0);
-	
+	-- The result of summing all values in tap_bank
 	signal tap_sum: signed(sampleWidth+coeffWidth-1 downto 0);
 	
-	signal phaseIndex : integer := 0;
+	signal phaseIndex : integer := 0; -- Which phase we are currently calculating. This effectively starts at phaseCount - 1
 begin
 	shift_index: -- shift the phase index. phaseIndex mux's taps, and demux's/commutates banks
 	process(clk) is
-		
+		-- tempSum stores the results for a single set until they are all ready to be output
 		variable tempSum : int_arr(0 to phaseCount-1)(sampleWidth+coeffWidth-1 downto 0);
+		-- commutator buffer will perform a shallow copy of tempSum when a full set of outputs is ready
 		variable commutator_buffer : int_arr(0 to phaseCount-1)(sampleWidth+coeffWidth-1 downto 0);
 	begin
 		if rising_edge(clk) then
+			-- Safely decrement phaseIndex, wrapping if necessary
 			if phaseIndex = 0 then
 				phaseIndex <= phaseCount - 1;
 			else
 				phaseIndex <= phaseIndex - 1;
 			end if;
-		-- end if;
-	
-		-- Output 
+			-- On the rising edge we allow the multiplications and additions to buffer
+			-- in our generated circuit
 		elsif falling_edge(clk) then
-			tempSum(phaseIndex) := tap_sum;
-			if phaseIndex = 0 then
-				commutator_buffer := tempSum;
-				y_k <= commutator_buffer;
+			tempSum(phaseIndex) := tap_sum;    -- Place the sum result into tempSum
+			if phaseIndex = 0 then             -- If a full output set is ready
+				commutator_buffer := tempSum;  -- Shallow copy to commutator_buffer
+				y_k <= commutator_buffer;      -- Then output
 			end if;
-			--y_k(phaseIndex) <= tempSum(phaseIndex);
 		end if;
 	end process;
 	
@@ -82,9 +81,8 @@ begin
 	gen_taps:
 	for tap in 0 to tapCount-1 generate
 	begin
-		--x_n isn't affected by phaseCount here, because x_n is changed externally
+		--x_n isn't affected by phaseCount here, because x_n is shifted externally
 		tap_bank(tap) <=  h_n(tap*phaseCount + phaseIndex)*x_n(tap*phaseCount);
-		-- tap_bank_truncated(tap) <= tap_bank(tap)(sampleWidth-1 downto 0);
 	end generate;
 	
 end architecture;

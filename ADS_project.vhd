@@ -124,8 +124,6 @@ architecture ADS of ADS_project is
 	signal in_data_ready: std_logic := '0';
 	signal tx_empty: std_logic;
 	
-	signal prev_data_ready: std_logic := '0';
-	
 	constant DATA_DEPTH : integer := 4;
 	constant DATA_WIDTH : integer := 8;
 	
@@ -143,6 +141,7 @@ architecture ADS of ADS_project is
 	signal byte: std_logic_vector(7 downto 0);
 	signal led_clk: std_logic := '0';
 	
+	-- PFB signals
 	constant phaseCount: integer := 3;
 	constant tapCount: integer := 4;
 	signal x_n: int_arr(0 to phaseCount*tapCount-1)(7 downto 0);
@@ -163,9 +162,6 @@ begin
 	
 	sr_in <= input_shiftreg;
 	
---	sr_read_en <= '0';
---	sr_write_en <= '1';
-	
 	
 	output_shiftreg <= sr_out;
 	
@@ -176,48 +172,38 @@ begin
 	
 	check_end_tx: process(clk)
 	begin
-	if rising_edge(clk) then
-		if tx_mode_active = '0' then
-			if in_data_ready = '1' then
-				sr_clk <= '1';
+		if rising_edge(clk) then
+			if tx_mode_active = '0' then   -- If still in receive mode
+				if in_data_ready = '1' then -- If data is ready
+					sr_clk <= '1';           -- Assert shift register clock
+				else
+					sr_clk <= '0';
+				end if;
+			else                                                  -- If in transmit mode
+				if out_data_ready = '1' and tx_empty = '1' then    -- If we are ready to send data, and the SPI module is ready to tx
+					sr_clk <= '1';                                  -- Assert shift register clock
+				else 
+					sr_clk <= '0';
+				end if;
+			end if;
+			
+		elsif falling_edge(clk) then
+			-- If just received a valid 0xFF
+			if sr_out = "11111111" and in_data_ready = '1' then
+				-- Toggle RW mode
+				if tx_mode_active = '0' then -- If we're in receive mdoe
+					sr_read_en <= '1';        -- Read value from shift register
+					sr_write_en <= '0';       -- Tell shift register not to receive values any more
+					tx_mode_active <= '1';
+				end if;
+			end if;
+						
+			if tx_mode_active = '1' and tx_empty = '1' then -- If tx mode is active, and the SPI is ready to tx
+				out_data_ready <= '1';                       -- Indicate to SPI that data is ready
 			else
-				sr_clk <= '0';
-			end if;
-		else
-			if out_data_ready = '1' and tx_empty = '1' then
-				sr_clk <= '1';
-			else
-				sr_clk <= '0';
+				out_data_ready <= '0';
 			end if;
 		end if;
-		
-	elsif falling_edge(clk) then
-		-- If just received a 0xFF
-		if sr_out = "11111111" and in_data_ready = '1' then
-			-- Toggle RW mode
-			if tx_mode_active = '0' then
-				sr_read_en <= '1';
-				sr_write_en <= '0';
-				tx_mode_active <= '1';
-			-- elsif tx_mode_active ='1' then
-			-- 	sr_read_en <= '0';
-			-- 	sr_write_en <= '1';
-			-- 	tx_mode_active <= '0';
-			end if;
-		end if;
-		
-		if in_data_ready = '1' then
-			prev_data_ready <= '1';
-		elsif in_data_ready = '0' then
-			prev_data_ready <= '0';
-		end if;
-										
-		if tx_mode_active = '1' and tx_empty = '1' then
-			out_data_ready <= '1';
-		else
-			out_data_ready <= '0';
-		end if;
-	end if;
 	end process;
 
 end architecture;
