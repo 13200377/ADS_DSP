@@ -16,7 +16,7 @@ entity SPI_module is
 		input_shiftreg: out std_logic_vector(frame_size-1 downto 0);
 		output_shiftreg: in std_logic_vector(frame_size-1 downto 0);
 		out_data_ready: in std_logic;
-		in_data_ready: out std_logic;
+		in_data_ready: out std_logic :='0';
 		indicate_read: in std_logic;
 		tx_empty: out std_logic := '1'
 	);

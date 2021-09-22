@@ -48,7 +48,8 @@ architecture ADS of ADS_project is
 		input_shiftreg: out std_logic_vector(7 downto 0);
 		output_shiftreg: in std_logic_vector(7 downto 0);
 		out_data_ready: in std_logic;
-		in_data_ready: out std_logic;
+		in_data_ready: out std_logic := '0';
+		indicate_read: in std_logic;
 		tx_empty: out std_logic
 		);
 	end component;
@@ -112,21 +113,25 @@ architecture ADS of ADS_project is
 		);
 	end component;
 
-	
+	-- Counter
 	signal q: std_logic_vector(25 downto 0);
 	
+	-- 7 seg display
 	signal display_num: std_logic_vector(15 downto 0);
 	signal display_clk: std_logic;
 	
+	-- SPI signals
 	signal input_shiftreg: std_logic_vector(7 downto 0);
 	signal output_shiftreg: std_logic_vector(7 downto 0) := "00000000";
 	signal out_data_ready: std_logic := '0';
 	signal in_data_ready: std_logic := '0';
+	signal indicate_read: std_logic := '0';
 	signal tx_empty: std_logic;
 	
 	constant DATA_DEPTH : integer := 4;
 	constant DATA_WIDTH : integer := 8;
 	
+	-- Memory signals
 	signal sr_in: std_logic_vector(DATA_WIDTH-1 downto 0);
 	signal sr_out: std_logic_vector(DATA_WIDTH-1 downto 0);
 	signal sr_data: std_logic_vector(DATA_WIDTH*DATA_DEPTH-1 downto 0);
@@ -136,8 +141,10 @@ architecture ADS of ADS_project is
 	signal sr_is_full: std_logic;
 	signal sr_is_empty: std_logic;
 	
+	-- FSM
 	signal tx_mode_active: std_logic := '0';
 	
+	-- LED bar
 	signal byte: std_logic_vector(7 downto 0);
 	signal led_clk: std_logic := '0';
 	
@@ -150,31 +157,31 @@ architecture ADS of ADS_project is
 begin
 	display: seven_seg_display port map(display_clk, display_num, seg_select, segments);
 	clocking: counter port map(clk, q);
-	spi: SPI_module port map (clk, sck, mosi, miso, cs, input_shiftreg, output_shiftreg, out_data_ready, in_data_ready, tx_empty);
-	--mem: FIFO generic map (8, 4) port map (fifo_in, fifo_out, fifo_clk, read_en, write_en, is_full, is_empty);
+	spi: SPI_module generic map (8) port map (clk, sck, mosi, miso, cs, input_shiftreg, output_shiftreg, out_data_ready, in_data_ready, indicate_read, tx_empty);
 	mem:  shift_register generic map (DATA_WIDTH, DATA_DEPTH) port map (sr_in, sr_out, sr_data, sr_clk, sr_read_en, sr_write_en, sr_is_full, sr_is_empty);
---	filter: pfb generic map (8, phaseCount,  tapCount) port map(x_n, h_n, y_k);
---	filter2: pfb2 generic map (8, phaseCount, tapCount) port map(x_n, h_n, clk,y_k);
 	led_bar: leds port map (byte, led_clk, vals);
 	display_clk <= q(16);
 	
-	display_num(15 downto 0) <= sr_data(15 downto 0);
+	--display_num(15 downto 0) <= sr_data(15 downto 0);
+	display_num(7 downto 0) <= input_shiftreg;
+	display_num(15 downto 8) <= sr_out;
 	
 	sr_in <= input_shiftreg;
-	
-	
 	output_shiftreg <= sr_out;
 	
 	byte(0) <= not tx_empty;
 	byte(1) <= not tx_mode_active;
-	byte(2) <= not out_data_ready;--sr_is_empty;
-	byte(3) <= not sr_read_en;--sr_clk;
+	byte(2) <= not in_data_ready;
+	byte(3) <= not sr_read_en;
+	
+	indicate_read <= '1';
 	
 	check_end_tx: process(clk)
 	begin
 		if rising_edge(clk) then
 			if tx_mode_active = '0' then   -- If still in receive mode
 				if in_data_ready = '1' then -- If data is ready
+					
 					sr_clk <= '1';           -- Assert shift register clock
 				else
 					sr_clk <= '0';
