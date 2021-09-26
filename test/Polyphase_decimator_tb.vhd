@@ -33,17 +33,16 @@ end entity;
 architecture decimator_test of Polyphase_decimator_tb is
 	-- declare the polyphase decimator
 	component Polyphase_decimator
-	generic(
-        sampleWidth: integer;
-		coeffWidth: integer;
-		phaseCount: integer;
-		tapCount: integer
-    );
+	-- generic(
+    --     sampleWidth: integer;
+	-- 	coeffWidth: integer;
+	-- 	phaseCount: integer;
+	-- 	tapCount: integer
+    -- );
     port (
-		x_n : in int_arr(0 to phaseCount*tapCount-1)(sampleWidth-1 downto 0);
-		h_n : in int_arr(0 to phaseCount*tapCount-1)(coeffWidth-1 downto 0);
+		x_n : in fi_7Q8;
 		clk: in std_logic;
-		y_m : out signed(sampleWidth+coeffWidth-1 downto 0)
+		y_m : out signed(sampleWidth-1 downto 0)
     );
 	end component;
 
@@ -55,65 +54,49 @@ architecture decimator_test of Polyphase_decimator_tb is
 	constant filterOrder: integer := phaseCount * tapCount;
 	constant numSamples: integer := 24;
 
-	function int(num: integer; bit_count: integer) return signed is
-		begin
-			return to_signed(num, bit_count);
-		end function;
+	-- function int(num: integer; bit_count: integer) return signed is
+	-- 	begin
+	-- 		return to_integer(num, bit_count);
+	-- 	end function;
 		
-		-- create a synthetic signal input
-		constant test_h : int_arr(0 to filterOrder-1)(coeffWidth-1 downto 0)
-		:= (
-			int(1,coeffWidth), int(2,coeffWidth), int(4,coeffWidth), 
-			int(8,coeffWidth), int(16,coeffWidth), int(32,coeffWidth),
-			int(64,coeffWidth),  int(128,coeffWidth), int(256,coeffWidth),
-			int(512,coeffWidth),  int(1024,coeffWidth),  int(2048,coeffWidth)
 			
-			-- int(1), int(1), int(1), 
-			-- int(1),  int(1),int(1), 
-			-- int(1), int(1), int(1),  
-			-- int(1),  int(1), int(1)
-			);
-			
-		-- create filter coefficients
-		constant test_x : int_arr(0 to numSamples-1)(sampleWidth-1 downto 0)
-						:= (
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(-1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth),
+		-- create signal 
+	constant test_x : int_arr(0 to numSamples-1)(sampleWidth*2-1 downto 0)
+					:= (
+						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
+						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
+						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
+						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'),
 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth)
-							);
+						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
+						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
+						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
+						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0')
+						);
 	-- Create signals for data io to filter
-	signal x_n : int_arr(0 to phaseCount*tapCount-1)(sampleWidth-1 downto 0);
-	signal h_n : int_arr(0 to phaseCount*tapCount-1)(coeffWidth-1 downto 0);
-	signal y_k : signed(sampleWidth+coeffWidth-1 downto 0);
+	signal x_n : fi_7Q8;
+	signal y_k : signed(sampleWidth-1 downto 0);
 
 	signal clk: std_logic := '0';
 
 	begin
 		-- Instantiate filter
-		fir_filt: Polyphase_decimator generic map (sampleWidth, coeffWidth, phaseCount,tapCount) port map (x_n, h_n, clk, y_k);
+		fir_filt: Polyphase_decimator port map (x_n, clk, y_k);
 
 		p_main_test: 
 		process is
 			variable startIndex: integer;
 			variable phase: integer;
 
+			-- variable sampleNum : integer;
+
 		begin
-			h_n <= test_h;
+			
 			wait for 20 ps;
 
-			for sample_num in 0 to numSamples-1 loop
-				startIndex := sample_num-filterOrder+1;
-				for j in startIndex to sample_num loop
-					if j >= 0 then
-						x_n(sample_num-j) <= test_x(j);
-					end if;
-				end loop;
+			for sampleNum in 0 to numSamples-1 loop
+				-- Next sample 
+				x_n <= test_x(sampleNum);
 
 				clk <= '1';
 			
