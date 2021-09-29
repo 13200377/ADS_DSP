@@ -25,6 +25,7 @@ use ieee.std_logic_textio.all; -- require for writing/reading std_logic etc.
 
 use work.filter_types.all;
 use work.test_types.all;
+use work.testBenchFilterIO.all; -- Filter Input / output arrays
 
 
 entity Polyphase_decimator_tb is 
@@ -52,7 +53,7 @@ architecture decimator_test of Polyphase_decimator_tb is
 	constant phaseCount: integer := 4;
 	constant tapCount: integer := 3;
 	constant filterOrder: integer := phaseCount * tapCount;
-	constant numSamples: integer := 24;
+	-- constant numSamples: integer := 24;
 
 	-- function int(num: integer; bit_count: integer) return signed is
 	-- 	begin
@@ -60,22 +61,16 @@ architecture decimator_test of Polyphase_decimator_tb is
 	-- 	end function;
 		
 			
-		-- create signal 
-	constant test_x : int_arr(0 to numSamples-1)(sampleWidth*2-1 downto 0)
-					:= (
-						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
-						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
-						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
-						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'),
+	-- Input signal (defined by the package)
+	signal test_x : int_arr(0 to numSamples-1)(sampleWidth-1 downto 0);
+	signal expected_y :  int_arr(0 to numSamples/phaseCount-1)(sampleWidth-1 downto 0);
 
-						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
-						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
-						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), 
-						to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0'), to_fi_7Q8(4,'0')
-						);
 	-- Create signals for data io to filter
 	signal x_n : fi_7Q8;
 	signal y_k : signed(sampleWidth-1 downto 0);
+	signal y_ex : signed(sampleWidth-1 downto 0) ;
+	signal phase: integer := 0;
+	signal sample_indicator : integer :=0;
 
 	signal clk: std_logic := '0';
 
@@ -83,11 +78,14 @@ architecture decimator_test of Polyphase_decimator_tb is
 		-- Instantiate filter
 		fir_filt: Polyphase_decimator port map (x_n, clk, y_k);
 
+		-- Assign Our input signal the constant array defined in filterIO package
+		test_x <= test_input_I;
+		-- Expected output signal, as defined by the filterIO package
+		expected_y <= test_output_I;
+
 		p_main_test: 
 		process is
-			variable startIndex: integer;
-			variable phase: integer;
-
+			variable expecIndex: integer := 0;
 			-- variable sampleNum : integer;
 
 		begin
@@ -95,16 +93,36 @@ architecture decimator_test of Polyphase_decimator_tb is
 			wait for 20 ps;
 
 			for sampleNum in 0 to numSamples-1 loop
+				sample_indicator <= sampleNum;
 				-- Next sample 
-				x_n <= test_x(sampleNum);
+				x_n <= to_fi_7Q8(to_integer(test_x(sampleNum)),'0');
 
 				clk <= '1';
-			
 				wait for 20 ps;
-				
 				clk <= '0';
-				
 				wait for 20 ps;
+				
+				-- Keep track of phase
+				if phase < phaseCount-1 then
+					phase <= phase+1;
+				elsif phase = phaseCount-1 then
+					phase <= 0;
+				end if;
+
+
+				if phase = phaseCount-1 then
+					y_ex <= expected_y(expecIndex);
+					expecIndex := expecIndex + 1;
+					wait for 1 ps;
+					if y_ex /= y_k then
+						report LF
+						& "FAIL!" & LF
+						& "Unexpected filter output" & LF
+						& "-------------"
+						severity failure;
+					end if;
+				end if;
+
 
 			end loop;
 

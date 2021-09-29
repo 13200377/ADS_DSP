@@ -59,15 +59,15 @@ architecture fir of Polyphase_decimator is
 										to_fi_7Q8(0,'1'),	to_fi_7Q8(0,'1') );	
 
 	signal filt_out : pfb_output_arr;
-	signal filt_sum : signed(15 downto 0);
+	signal filt_sum : signed(31 downto 0);
 
 	begin 
 	-- Create the PFB and map the outputs
 	filter: PFB3 port map(tdl, clk, filt_out);
 	-- Sum the outputs from each phase using sumArr
-	firsum: sumArr generic map(16,phaseCount) port map (int_arr(filt_out), filt_sum);
+	firsum: sumArr generic map(32,phaseCount) port map (int_arr(filt_out), filt_sum);
 	-- truncate the filter output here
-	y_m <= filt_sum(15 downto 8);
+	y_m <= fi_filtsum_to_output(filt_sum);
 	
 		shift_x :
 		process (clk) is

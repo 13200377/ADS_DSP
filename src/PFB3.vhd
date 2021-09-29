@@ -76,7 +76,7 @@ begin
 	
 		-- Output 
 		elsif falling_edge(clk) then
-			tempSum(phaseIndex) := fi_product_to_output(tap_sum);
+			tempSum(phaseIndex) := tap_sum;
 			if phaseIndex = 0 then
 				commutator_buffer := tempSum;
 				y_k <= commutator_buffer;
