@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="platformDesign_0"
+ megafunction_name="PLATFORMDESIGN"
+ intended_family="Cyclone IV E"
+ specifies="all_ports">
+ <global>
+  <pin name="clk_clk" direction="input" scope="external" />
+  <pin name="reset_reset_n" direction="input" scope="external" />
+ </global>
+</pinplan>

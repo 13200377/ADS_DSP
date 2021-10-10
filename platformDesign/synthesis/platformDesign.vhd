@@ -14,6 +14,30 @@ entity platformDesign is
 end entity platformDesign;
 
 architecture rtl of platformDesign is
+	component platformDesign_fft_ii_0 is
+		port (
+			clk          : in  std_logic                     := 'X';             -- clk
+			reset_n      : in  std_logic                     := 'X';             -- reset_n
+			sink_valid   : in  std_logic                     := 'X';             -- valid
+			sink_ready   : out std_logic;                                        -- ready
+			sink_error   : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- error
+			sink_sop     : in  std_logic                     := 'X';             -- startofpacket
+			sink_eop     : in  std_logic                     := 'X';             -- endofpacket
+			inverse      : in  std_logic                     := 'X';             -- data
+			fftpts_in    : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- data
+			sink_imag    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data
+			sink_real    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- data
+			source_valid : out std_logic;                                        -- valid
+			source_ready : in  std_logic                     := 'X';             -- ready
+			source_error : out std_logic_vector(1 downto 0);                     -- error
+			source_sop   : out std_logic;                                        -- startofpacket
+			source_eop   : out std_logic;                                        -- endofpacket
+			fftpts_out   : out std_logic_vector(3 downto 0);                     -- data
+			source_imag  : out std_logic_vector(19 downto 0);                    -- data
+			source_real  : out std_logic_vector(19 downto 0)                     -- data
+		);
+	end component platformDesign_fft_ii_0;
+
 	component seven_seg_display is
 		port (
 			clk : in  std_logic                     := 'X';             -- clk
@@ -90,10 +114,41 @@ architecture rtl of platformDesign is
 		);
 	end component altera_reset_controller;
 
-	signal rst_controller_reset_out_reset : std_logic; -- rst_controller:reset_out -> seven_seg_display_0:rst
-	signal reset_reset_n_ports_inv        : std_logic; -- reset_reset_n:inv -> rst_controller:reset_in0
+	signal rst_controller_reset_out_reset           : std_logic;                     -- rst_controller:reset_out -> [rst_controller_reset_out_reset:in, seven_seg_display_0:rst]
+	signal reset_reset_n_ports_inv                  : std_logic;                     -- reset_reset_n:inv -> rst_controller:reset_in0
+	signal rst_controller_reset_out_reset_ports_inv : std_logic;                     -- rst_controller_reset_out_reset:inv -> fft_ii_0:reset_n
+	signal fft_ii_0_inverse                         : std_logic;                     -- port fragment
+	signal fft_ii_0_source_imag                     : std_logic_vector(19 downto 0); -- port fragment
+	signal fft_ii_0_source_real                     : std_logic_vector(19 downto 0); -- port fragment
+	signal fft_ii_0_sink_real                       : std_logic_vector(15 downto 0); -- port fragment
+	signal fft_ii_0_fftpts_out                      : std_logic_vector(3 downto 0);  -- port fragment
+	signal fft_ii_0_fftpts_in                       : std_logic_vector(3 downto 0);  -- port fragment
+	signal fft_ii_0_sink_imag                       : std_logic_vector(15 downto 0); -- port fragment
 
 begin
+
+	fft_ii_0 : component platformDesign_fft_ii_0
+		port map (
+			inverse      => open,                                     -- fragmented-port.data
+			source_real  => open,                                     -- fragmented-port.data
+			source_imag  => open,                                     -- fragmented-port.data
+			sink_real    => open,                                     -- fragmented-port.data
+			fftpts_out   => open,                                     -- fragmented-port.data
+			sink_imag    => open,                                     -- fragmented-port.data
+			fftpts_in    => open,                                     -- fragmented-port.data
+			clk          => clk_clk,                                  --             clk.clk
+			reset_n      => rst_controller_reset_out_reset_ports_inv, --             rst.reset_n
+			sink_valid   => open,                                     --            sink.valid
+			sink_ready   => open,                                     --                .ready
+			sink_error   => open,                                     --                .error
+			sink_sop     => open,                                     --                .startofpacket
+			sink_eop     => open,                                     --                .endofpacket
+			source_valid => open,                                     --          source.valid
+			source_ready => open,                                     --                .ready
+			source_error => open,                                     --                .error
+			source_sop   => open,                                     --                .startofpacket
+			source_eop   => open                                      --                .endofpacket
+		);
 
 	seven_seg_display_0 : component seven_seg_display
 		port map (
@@ -170,5 +225,7 @@ begin
 		);
 
 	reset_reset_n_ports_inv <= not reset_reset_n;
+
+	rst_controller_reset_out_reset_ports_inv <= not rst_controller_reset_out_reset;
 
 end architecture rtl; -- of platformDesign

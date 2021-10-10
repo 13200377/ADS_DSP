@@ -1,0 +1,628 @@
+F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_core.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_core.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:43 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_core.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_core.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_core.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_core.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_core.vhd(1): VHDL Compiler exiting
+End time: 13:31:43 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:42 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx.vhd(1): VHDL Compiler exiting
+End time: 13:31:43 on Sep 29,2021, Elapsed time: 0:00:01
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:31 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity seven_seg
+-- Compiling architecture s_seg of seven_seg
+End time: 13:31:32 on Sep 29,2021, Elapsed time: 0:00:01
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/FFT_8port_fft_ii_0.sv {1 {vlog -work work -sv F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/FFT_8port_fft_ii_0.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:29 on Sep 29,2021
+vlog -reportprogress 300 -work work -sv F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/FFT_8port_fft_ii_0.sv 
+-- Compiling module FFT_8port_fft_ii_0
+
+Top level modules:
+	FFT_8port_fft_ii_0
+End time: 13:31:29 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/shift_register.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/shift_register.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:32 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/shift_register.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_register
+-- Compiling architecture sr of shift_register
+End time: 13:31:32 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:45 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd(1): VHDL Compiler exiting
+End time: 13:31:45 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_counter.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:45 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_counter.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_counter.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_counter.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_counter.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_counter.vhd(1): VHDL Compiler exiting
+End time: 13:31:45 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_single_port_rom.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_single_port_rom.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:42 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_single_port_rom.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_single_port_rom.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_single_port_rom.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_single_port_rom.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_single_port_rom.vhd(1): VHDL Compiler exiting
+End time: 13:31:42 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:43 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd(1): VHDL Compiler exiting
+End time: 13:31:43 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:43 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd(1): VHDL Compiler exiting
+End time: 13:31:43 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/test/Polyphase_decimator_tb.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/Polyphase_decimator_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:30 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/Polyphase_decimator_tb.vhd 
+-- Loading package STANDARD
+-- Loading package ENV
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling package test_types
+-- Loading package std_logic_textio
+-- Loading package test_types
+-- Compiling entity Polyphase_decimator_tb
+-- Compiling architecture decimator_test of Polyphase_decimator_tb
+End time: 13:31:31 on Sep 29,2021, Elapsed time: 0:00:01
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/counter_module.sv {0 {vlog -work work -sv F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/counter_module.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:42 on Sep 29,2021
+vlog -reportprogress 300 -work work -sv F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/counter_module.sv 
+** Error: (vlog-13067) F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/counter_module.sv(1:0): Syntax error, unexpected non-printable character with the hex value '0x8b'.
+** Error: (vlog-13069) F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/counter_module.sv(1): syntax error, unexpected $undefined, expecting class.
+End time: 13:31:42 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {5.0 7.0} {}} F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:32 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity seven_seg_display
+-- Compiling architecture display of seven_seg_display
+End time: 13:31:32 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_can.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_can.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:42 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_can.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_can.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_can.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_can.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_can.vhd(1): VHDL Compiler exiting
+End time: 13:31:42 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_text_pkg.vhd {1 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_text_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:30 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_text_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package auk_dspip_text_pkg
+-- Compiling package body auk_dspip_text_pkg
+-- Loading package auk_dspip_text_pkg
+End time: 13:31:30 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:44 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd(1): VHDL Compiler exiting
+End time: 13:31:44 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:31 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/SPI_module_tb.vhd 
+-- Loading package STANDARD
+-- Loading package ENV
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SPI_module_tb
+-- Compiling architecture test of SPI_module_tb
+End time: 13:31:31 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_core.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_core.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:45 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_core.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_core.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_core.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_core.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_core.vhd(1): VHDL Compiler exiting
+End time: 13:31:45 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx_1825.v {0 {vlog -work work F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx_1825.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:42 on Sep 29,2021
+vlog -reportprogress 300 -work work F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx_1825.v 
+** Error: (vlog-13067) F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx_1825.v(1:0): Syntax error, unexpected non-printable character with the hex value '0x8b'.
+** Error: (vlog-13069) F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/apn_fft_mult_cpx_1825.v(1): syntax error, unexpected $undefined, expecting class.
+End time: 13:31:42 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {5.0 7.0} {}} F:/intelFPGA_lite/ADS_project/src/Polyphase_decimator.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/Polyphase_decimator.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:31 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/Polyphase_decimator.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity Polyphase_decimator
+-- Compiling architecture fir of Polyphase_decimator
+End time: 13:31:31 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:43 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd(1): VHDL Compiler exiting
+End time: 13:31:43 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:46 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd(1): VHDL Compiler exiting
+End time: 13:31:46 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:46 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd(1): VHDL Compiler exiting
+End time: 13:31:46 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/filter_types.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/filter_types.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:30 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/filter_types.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package filter_types
+End time: 13:31:30 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stage.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stage.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:45 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stage.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stage.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stage.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stage.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stage.vhd(1): VHDL Compiler exiting
+End time: 13:31:46 on Sep 29,2021, Elapsed time: 0:00:01
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:43 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd(1): VHDL Compiler exiting
+End time: 13:31:43 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:44 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd(1): VHDL Compiler exiting
+End time: 13:31:45 on Sep 29,2021, Elapsed time: 0:00:01
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_mult_add.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_mult_add.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:42 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_mult_add.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_mult_add.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_mult_add.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_mult_add.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_mult_add.vhd(1): VHDL Compiler exiting
+End time: 13:31:42 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:44 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd(1): VHDL Compiler exiting
+End time: 13:31:44 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:44 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd(1): VHDL Compiler exiting
+End time: 13:31:44 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:43 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd(1): VHDL Compiler exiting
+End time: 13:31:43 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_rom.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_rom.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:42 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_rom.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_rom.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_rom.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_rom.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_rom.vhd(1): VHDL Compiler exiting
+End time: 13:31:42 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_roundsat.vhd {1 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_roundsat.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:29 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_roundsat.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity auk_dspip_roundsat
+-- Compiling architecture beh of auk_dspip_roundsat
+End time: 13:31:29 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/test/FFT_tb.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/FFT_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:31 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/FFT_tb.vhd 
+-- Loading package STANDARD
+-- Loading package ENV
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package filter_types
+-- Compiling entity FFT_tb
+-- Compiling architecture FFT_testbench of FFT_TB
+End time: 13:31:31 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_lib_pkg.vhd {1 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_lib_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:29 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_lib_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package auk_dspip_math_pkg
+-- Compiling package auk_dspip_lib_pkg
+End time: 13:31:29 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_ram.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_ram.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:42 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_ram.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_ram.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_ram.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_ram.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/altera_fft_dual_port_ram.vhd(1): VHDL Compiler exiting
+End time: 13:31:42 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:32 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/sumArr_tb.vhd 
+-- Loading package STANDARD
+-- Loading package ENV
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity sumArr_tb
+-- Compiling architecture sumArr_test of sumArr_tb
+End time: 13:31:32 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:30 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/PFB2_tb.vhd 
+-- Loading package STANDARD
+-- Loading package ENV
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling package test_types
+-- Loading package std_logic_textio
+-- Loading package test_types
+-- Compiling entity PFB2_tb
+-- Compiling architecture pfb2_test of PFB2_tb
+End time: 13:31:30 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/shift_register_tb.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/shift_register_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:32 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/shift_register_tb.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity shift_register_tb
+-- Compiling architecture sr_tb of shift_register_tb
+-- Loading entity shift_register
+End time: 13:31:32 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/leds.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/leds.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:31 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/leds.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity leds
+-- Compiling architecture my_leds of leds
+End time: 13:31:31 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_math_pkg.vhd {1 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_math_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:29 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_math_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package auk_dspip_math_pkg
+-- Compiling package body auk_dspip_math_pkg
+-- Loading package auk_dspip_math_pkg
+End time: 13:31:29 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:44 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma.vhd(1): VHDL Compiler exiting
+End time: 13:31:44 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:32 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/SPI_module.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity SPI_module
+-- Compiling architecture SPI of SPI_Module
+End time: 13:31:32 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_top.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_top.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:46 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_top.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_top.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_top.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_top.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_top.vhd(1): VHDL Compiler exiting
+End time: 13:31:46 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/PFB2.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/PFB2.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:31 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/PFB2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity PFB2
+-- Compiling architecture polyphase_filter_bank of PFB2
+End time: 13:31:31 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/sumArr.vhd {1 {vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:30 on Sep 29,2021
+vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/src/sumArr.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity sumArr
+-- Compiling architecture sum_array of sumArr
+End time: 13:31:30 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:46 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd(1): VHDL Compiler exiting
+End time: 13:31:46 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:45 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd(1): VHDL Compiler exiting
+End time: 13:31:45 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_delay.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_delay.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:45 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_delay.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_delay.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_delay.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_delay.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_delay.vhd(1): VHDL Compiler exiting
+End time: 13:31:45 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_fft_pkg.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_fft_pkg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:46 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_fft_pkg.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_fft_pkg.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_fft_pkg.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_fft_pkg.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_fft_pkg.vhd(1): VHDL Compiler exiting
+End time: 13:31:46 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/FFT_8port.vhd {1 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/FFT_8port.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:32 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/FFT_8port.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FFT_8port
+-- Compiling architecture rtl of FFT_8port
+End time: 13:31:33 on Sep 29,2021, Elapsed time: 0:00:01
+
+} {} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:44 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd(1): VHDL Compiler exiting
+End time: 13:31:44 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:43 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd(1): VHDL Compiler exiting
+End time: 13:31:44 on Sep 29,2021, Elapsed time: 0:00:01
+
+} {6.0 9.0} {}} F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd {0 {vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 13:31:45 on Sep 29,2021
+vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd 
+-- Loading package STANDARD
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd(1): near "<byte 0x8b>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd(1): near "<byte 0x13>": illegal character found in source
+** Error: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd(1): near "<byte 0x9c>": illegal character found in source
+** Note: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd(1): VHDL Compiler exiting
+End time: 13:31:45 on Sep 29,2021, Elapsed time: 0:00:00
+
+} {6.0 9.0} {}}

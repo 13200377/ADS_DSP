@@ -1,7 +1,8 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use work.filter_types.all;
-
+library FFT_8port;
+use FFT_8port.all;
 entity ADS_project is 
 	port(
 		miso: out std_logic;
@@ -111,6 +112,38 @@ architecture ADS of ADS_project is
 			y_k : out int_arr(0 to phaseCount-1)(dataWidth-1 downto 0)
 		);
 	end component;
+	
+		component FFT_8port is
+		port (
+			clk          : in  std_logic                     := 'X';             -- clk
+			reset_n      : in  std_logic                     := 'X';             -- reset_n
+			sink_valid   : in  std_logic                     := 'X';             -- sink_valid
+			sink_ready   : out std_logic;                                        -- sink_ready
+			sink_error   : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- sink_error
+			sink_sop     : in  std_logic                     := 'X';             -- sink_sop
+			sink_eop     : in  std_logic                     := 'X';             -- sink_eop
+			sink_real    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- sink_real
+			sink_imag    : in  std_logic_vector(15 downto 0) := (others => 'X'); -- sink_imag
+			fftpts_in    : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- fftpts_in
+			inverse      : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- inverse
+			source_valid : out std_logic;                                        -- source_valid
+			source_ready : in  std_logic                     := 'X';             -- source_ready
+			source_error : out std_logic_vector(1 downto 0);                     -- source_error
+			source_sop   : out std_logic;                                        -- source_sop
+			source_eop   : out std_logic;                                        -- source_eop
+			source_real  : out std_logic_vector(19 downto 0);                    -- source_real
+			source_imag  : out std_logic_vector(19 downto 0);                    -- source_imag
+			fftpts_out   : out std_logic_vector(3 downto 0)                      -- fftpts_out
+		);
+	end component FFT_8port;
+	
+	component platformDesign is
+		port (
+			clk_clk       : in std_logic := 'X'; -- clk
+			reset_reset_n : in std_logic := 'X'  -- reset_n
+		);
+	end component platformDesign;
+
 
 	
 	signal q: std_logic_vector(25 downto 0);
@@ -147,15 +180,39 @@ architecture ADS of ADS_project is
 	signal x_n: int_arr(0 to phaseCount*tapCount-1)(7 downto 0);
 	signal h_n: int_arr(0 to phaseCount*tapCount-1)(7 downto 0);
 	signal y_k : int_arr(0 to phaseCount-1)(7 downto 0);
+
+	-- FFT signals
+	--signal clk            : std_logic;                     
+	signal reset_n        : std_logic;                     
+	signal sink_valid     : std_logic;                     
+	signal sink_ready     : std_logic;                    
+	signal sink_error     : std_logic_vector(1 downto 0);  
+	signal sink_sop       : std_logic;                     
+	signal sink_eop       : std_logic;                     
+	signal sink_real      : std_logic_vector(15 downto 0); 
+	signal sink_imag      : std_logic_vector(15 downto 0); 
+	signal fftpts_in      : std_logic_vector(3 downto 0);  
+	signal inverse        : std_logic_vector(0 downto 0);  
+	signal source_valid   : std_logic;                    
+	signal source_ready   : std_logic;                     
+	signal source_error   : std_logic_vector(1 downto 0); 
+	signal source_sop     : std_logic;                    
+	signal source_eop     : std_logic;                    
+	signal source_real    : std_logic_vector(19 downto 0);
+	signal source_imag    : std_logic_vector(19 downto 0);
+	signal fftpts_out     : std_logic_vector(3 downto 0);  
 begin
 	display: seven_seg_display port map(display_clk, display_num, seg_select, segments);
 	clocking: counter port map(clk, q);
 	spi: SPI_module port map (clk, sck, mosi, miso, cs, input_shiftreg, output_shiftreg, out_data_ready, in_data_ready, tx_empty);
-	--mem: FIFO generic map (8, 4) port map (fifo_in, fifo_out, fifo_clk, read_en, write_en, is_full, is_empty);
 	mem:  shift_register generic map (DATA_WIDTH, DATA_DEPTH) port map (sr_in, sr_out, sr_data, sr_clk, sr_read_en, sr_write_en, sr_is_full, sr_is_empty);
---	filter: pfb generic map (8, phaseCount,  tapCount) port map(x_n, h_n, y_k);
---	filter2: pfb2 generic map (8, phaseCount, tapCount) port map(x_n, h_n, clk,y_k);
 	led_bar: leds port map (byte, led_clk, vals);
+	fft: FFT_8port port map (clk, reset_n, sink_valid, sink_ready, sink_error,  
+							sink_sop, sink_eop, sink_real, sink_imag, fftpts_in,   
+							inverse, source_valid, source_ready, source_error,
+							source_sop,  source_eop, source_real, source_imag, 
+							fftpts_out  );
+	--plat:  platformDesign port map (clk, reset_n);
 	display_clk <= q(16);
 	
 	display_num(15 downto 0) <= sr_data(15 downto 0);

@@ -3,11 +3,11 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="47" />
+   <connections preferredWidth="31" />
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
  <library expandedCategories="Library,Project" />
  <window width="1366" height="728" x="0" y="0" />
- <generation greybox="0" synthesis="VHDL" simulation="NONE" />
+ <generation greybox="0" synthesis="VHDL" simulation="VHDL" block_symbol_file="0" />
 </preferences>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2021.08.09.16:36:44"
+ date="2021.10.03.18:55:32"
  outputDirectory="F:/intelFPGA_lite/ADS_project/platformDesign/">
  <perimeter>
   <parameter
@@ -65,13 +65,13 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="platformDesign:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE6E22C8,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1628491003,AUTO_UNIQUE_ID=(clock_source:20.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(seven_seg_display:1.0:)(clock:20.1:)(reset:20.1:)"
+   parameterizationKey="platformDesign:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE6E22C8,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1633247729,AUTO_UNIQUE_ID=(clock_source:20.1:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_fft_ii:20.1:CALC_LATENCY=8,THROUGHPUT_LATENCY=8,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=QSYS,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=16,in_width_derived=16,length=8,num_engines=1,num_engines_derived=1,out_order=Digit Reverse,out_width=20,out_width_derived=20,selected_device_family=Cyclone IV E,twid_width=16,twid_width_derived=16)(seven_seg_display:1.0:)(clock:20.1:)(clock:20.1:)(reset:20.1:)(reset:20.1:)"
    instancePathKey="platformDesign"
    kind="platformDesign"
    version="1.0"
    name="platformDesign">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1628491003" />
+  <parameter name="AUTO_GENERATION_ID" value="1633247729" />
   <parameter name="AUTO_DEVICE" value="EP4CE6E22C8" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -84,6 +84,178 @@
        type="VHDL" />
   </generatedFiles>
   <childGeneratedFiles>
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/platformDesign_fft_ii_0_opt_twr1.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/platformDesign_fft_ii_0_opt_twi1.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_text_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_math_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_lib_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_roundsat.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/apn_fft_mult_can.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/apn_fft_mult_cpx_1825.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/apn_fft_mult_cpx.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_top.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/hyper_opt_OFF_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/altera_fft_dual_port_ram.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/altera_fft_dual_port_rom.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/altera_fft_mult_add.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/altera_fft_single_port_rom.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_fft_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/hyper_pipeline_interface.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/counter_module.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_bit_reverse_core.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_cma.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_core.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_counter.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_delay.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_stage.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_top.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/platformDesign_fft_ii_0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
    <file
        path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/seven_seg_display.vhd"
        type="VHDL"
@@ -105,7 +277,11 @@
    <file path="F:/intelFPGA_lite/ADS_project/platformDesign.qsys" />
   </sourceFiles>
   <childSourceFiles>
-   <file path="F:/intelFPGA_lite/ADS_project/seven_seg_display_hw.tcl" />
+   <file
+       path="F:/intelfpga_lite/20.1/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
+   <file
+       path="F:/intelFPGA_lite/20.1/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+   <file path="F:/intelFPGA_lite/ADS_project/src/seven_seg_display_hw.tcl" />
    <file
        path="F:/intelfpga_lite/20.1/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
   </childSourceFiles>
@@ -114,14 +290,9 @@
    <message level="Progress" culprit="min"></message>
    <message level="Progress" culprit="max"></message>
    <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
    <message level="Debug">Transform: CustomInstructionTransform</message>
    <message level="Debug">No custom instruction connections, skipping transform </message>
-   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>2</b> modules, <b>2</b> connections]]></message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>3</b> modules, <b>4</b> connections]]></message>
    <message level="Debug">Transform: MMTransform</message>
    <message level="Debug">Transform: InterruptMapperTransform</message>
    <message level="Debug">Transform: InterruptSyncTransform</message>
@@ -131,18 +302,237 @@
    <message level="Progress" culprit="min"></message>
    <message level="Progress" culprit="max"></message>
    <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Progress" culprit="current"></message>
-   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>3</b> modules, <b>4</b> connections]]></message>
+   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>4</b> modules, <b>6</b> connections]]></message>
+   <message level="Debug" culprit="platformDesign"><![CDATA["<b>platformDesign</b>" reuses <b>altera_fft_ii</b> "<b>submodules/platformDesign_fft_ii_0</b>"]]></message>
    <message level="Debug" culprit="platformDesign"><![CDATA["<b>platformDesign</b>" reuses <b>seven_seg_display</b> "<b>submodules/seven_seg_display</b>"]]></message>
    <message level="Debug" culprit="platformDesign"><![CDATA["<b>platformDesign</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="platformDesign">queue size: 2 starting:altera_fft_ii "submodules/platformDesign_fft_ii_0"</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: platformDesign_fft_ii_0_opt_twr1.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: platformDesign_fft_ii_0_opt_twi1.hex</message>
+   <message level="Info" culprit="fft_ii_0"><![CDATA["<b>platformDesign</b>" instantiated <b>altera_fft_ii</b> "<b>fft_ii_0</b>"]]></message>
    <message level="Debug" culprit="platformDesign">queue size: 1 starting:seven_seg_display "submodules/seven_seg_display"</message>
    <message level="Info" culprit="seven_seg_display_0"><![CDATA["<b>platformDesign</b>" instantiated <b>seven_seg_display</b> "<b>seven_seg_display_0</b>"]]></message>
    <message level="Debug" culprit="platformDesign">queue size: 0 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
    <message level="Info" culprit="rst_controller"><![CDATA["<b>platformDesign</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_fft_ii:20.1:CALC_LATENCY=8,THROUGHPUT_LATENCY=8,data_flow=Variable Streaming,data_rep=Fixed Point,design_env=QSYS,direction=Bi-directional,dsp_resource_opt=false,engine_arch=Quad Output,hard_fp=false,hyper_opt=false,in_order=Natural,in_width=16,in_width_derived=16,length=8,num_engines=1,num_engines_derived=1,out_order=Digit Reverse,out_width=20,out_width_derived=20,selected_device_family=Cyclone IV E,twid_width=16,twid_width_derived=16"
+   instancePathKey="platformDesign:.:fft_ii_0"
+   kind="altera_fft_ii"
+   version="20.1"
+   name="platformDesign_fft_ii_0">
+  <parameter name="THROUGHPUT_LATENCY" value="8" />
+  <parameter name="in_width_derived" value="16" />
+  <parameter name="in_order" value="Natural" />
+  <parameter name="hyper_opt" value="false" />
+  <parameter name="num_engines_derived" value="1" />
+  <parameter name="twid_width_derived" value="16" />
+  <parameter name="length" value="8" />
+  <parameter name="out_order" value="Digit Reverse" />
+  <parameter name="selected_device_family" value="Cyclone IV E" />
+  <parameter name="dsp_resource_opt" value="false" />
+  <parameter name="CALC_LATENCY" value="8" />
+  <parameter name="design_env" value="QSYS" />
+  <parameter name="data_rep" value="Fixed Point" />
+  <parameter name="in_width" value="16" />
+  <parameter name="engine_arch" value="Quad Output" />
+  <parameter name="data_flow" value="Variable Streaming" />
+  <parameter name="out_width" value="20" />
+  <parameter name="num_engines" value="1" />
+  <parameter name="out_width_derived" value="20" />
+  <parameter name="hard_fp" value="false" />
+  <parameter name="twid_width" value="16" />
+  <parameter name="direction" value="Bi-directional" />
+  <generatedFiles>
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/platformDesign_fft_ii_0_opt_twr1.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/platformDesign_fft_ii_0_opt_twi1.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_text_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_math_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_lib_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_avalon_streaming_block_sink.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_avalon_streaming_block_source.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_roundsat.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/apn_fft_mult_can.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/apn_fft_mult_cpx_1825.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/apn_fft_mult_cpx.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_top.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/hyper_opt_OFF_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/altera_fft_dual_port_ram.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/altera_fft_dual_port_rom.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/altera_fft_mult_add.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/altera_fft_single_port_rom.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_fft_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/hyper_pipeline_interface.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/counter_module.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_lib_pkg.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_bit_reverse_addr_control.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_bit_reverse_core.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_bit_reverse_reverse_carry_adder.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_adder_fp.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_addsub.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_bfi.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_bfii.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_bf_control.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_cma.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_cma_adder_fp.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_cma_bfi_fp.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_cma_fp.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_core.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_counter.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_delay.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_enable_control.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_stage.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_stg_out_pipe.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_stg_pipe.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_top.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/auk_dspip_r22sdf_twrom.vhd"
+       type="VHDL"
+       attributes="" />
+   <file
+       path="F:/intelFPGA_lite/ADS_project/platformDesign/synthesis/submodules/platformDesign_fft_ii_0.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="F:/intelfpga_lite/20.1/ip/altera/dsp/altera_fft_ii/altera_fft_ii_hw.tcl" />
+   <file
+       path="F:/intelFPGA_lite/20.1/ip/altera/dsp/altera_fft_ii/fft_helper.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="platformDesign" as="fft_ii_0" />
+  <messages>
+   <message level="Debug" culprit="platformDesign">queue size: 2 starting:altera_fft_ii "submodules/platformDesign_fft_ii_0"</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: platformDesign_fft_ii_0_opt_twr1.hex</message>
+   <message level="Info" culprit="fft_ii_0">--- add file: platformDesign_fft_ii_0_opt_twi1.hex</message>
+   <message level="Info" culprit="fft_ii_0"><![CDATA["<b>platformDesign</b>" instantiated <b>altera_fft_ii</b> "<b>fft_ii_0</b>"]]></message>
   </messages>
  </entity>
  <entity
@@ -160,7 +550,7 @@
   </generatedFiles>
   <childGeneratedFiles/>
   <sourceFiles>
-   <file path="F:/intelFPGA_lite/ADS_project/seven_seg_display_hw.tcl" />
+   <file path="F:/intelFPGA_lite/ADS_project/src/seven_seg_display_hw.tcl" />
   </sourceFiles>
   <childSourceFiles/>
   <instantiator instantiator="platformDesign" as="seven_seg_display_0" />

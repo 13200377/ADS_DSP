@@ -1,36 +1,49 @@
-do testbench.tcl
-# ** Warning: (vlib-34) Library already exists at "work".
+vcom -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/FFT_8port.vhd
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:16:54 on Jul 29,2021
-# vcom -reportprogress 300 ../ADS_project.vhd ../FIFO.vhd ../FIFO_tb.vhd ../SPI_module.vhd ../counter.vhd ../parallel_reg.vhd ../seven_seg.vhd ../seven_seg_display.vhd 
+# Start time: 13:40:28 on Sep 29,2021
+# vcom -reportprogress 300 -work work -2002 -explicit F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/FFT_8port.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
-# -- Compiling entity ADS_project
-# -- Compiling architecture ADS of ADS_project
 # -- Loading package NUMERIC_STD
-# -- Compiling entity FIFO
-# -- Compiling architecture circular_FIFO of FIFO
-# -- Compiling entity FIFO_tb
-# -- Compiling architecture tb of FIFO_tb
-# -- Loading entity FIFO
-# -- Compiling entity SPI_module
-# -- Compiling architecture SPI of SPI_Module
-# -- Compiling entity counter
-# -- Compiling architecture SYN of counter
-# -- Compiling entity parallel_reg
-# -- Compiling architecture reg of parallel_reg
-# -- Compiling entity seven_seg
-# -- Compiling architecture s_seg of seven_seg
-# ** Error (suppressible): ../seven_seg.vhd(12): (vcom-1339) Selected signal assignment choices cover only 16 out of 6561 cases.
-# ** Note: ../seven_seg.vhd(30): VHDL Compiler exiting
-# End time: 23:16:55 on Jul 29,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# ** Error: F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-# Error in macro ./testbench.tcl line 17
-# F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
-#     while executing
-# "vcom ../*.vhd"
-# Compile of FIFO.vhd was successful.
-# Compile of FIFO_tb.vhd was successful.
-# 2 compiles, 0 failed with no errors.
+# -- Compiling entity FFT_8port
+# -- Compiling architecture rtl of FFT_8port
+# End time: 13:40:28 on Sep 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/FFT_tb.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:32 on Sep 29,2021
+# vcom -reportprogress 300 -work work -2008 -explicit F:/intelFPGA_lite/ADS_project/test/FFT_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package filter_types
+# -- Compiling entity FFT_tb
+# -- Compiling architecture FFT_testbench of FFT_TB
+# End time: 13:40:32 on Sep 29,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.fft_tb
+# vsim work.fft_tb 
+# Start time: 13:40:34 on Sep 29,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types
+# Loading work.fft_tb(fft_testbench)
+# Loading work.fft_8port(rtl)
+# Loading sv_std.std
+# Loading work.FFT_8port_fft_ii_0
+# ** Error: (vsim-3033) Instantiation of 'auk_dspip_r22sdf_top' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /fft_tb/fft/fft_ii_0 File: F:/intelFPGA_lite/ADS_project/src/FFT_8port/synthesis/submodules/FFT_8port_fft_ii_0.sv Line: 52
+#         Searched libraries:
+#             F:/intelFPGA_lite/ADS_project/work
+# Error loading design
+# End time: 13:40:34 on Sep 29,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+cd F:/intelFPGA_lite/ADS_project/src/FFT_4port/simulation/mentor

@@ -6,9 +6,7 @@ entity seven_seg_display is
 	port( clk : in std_logic;
 			num : in std_logic_vector(15 downto 0);
 			dig: out std_logic_vector(3 downto 0);
-			seg: out std_logic_vector(7 downto 0);
-			rst: in std_logic
-			);
+			seg: out std_logic_vector(7 downto 0));
 end entity;
 
 architecture display of seven_seg_display is 
