@@ -49,6 +49,7 @@ architecture ADS of ADS_project is
 		output_shiftreg: in std_logic_vector(7 downto 0);
 		out_data_ready: in std_logic;
 		in_data_ready: out std_logic;
+		indicate_read: in std_logic;
 		tx_empty: out std_logic
 		);
 	end component;
@@ -84,36 +85,8 @@ architecture ADS of ADS_project is
 			CLK : in std_logic;
 			VALS : out std_logic_vector(3 downto 0) );
 	end component;
-	
-	component PFB is
-		generic(
-			dataWidth: integer := 8;
-			phaseCount: integer;
-			tapCount: integer
-		);
-		port (
-			x_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
-			h_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
-			y_k : out int_arr(0 to phaseCount-1)(dataWidth-1 downto 0)
-		);
-	end component;
-	
-	component PFB2 is
-		generic(
-			dataWidth: integer := 8;
-			phaseCount: integer;
-			tapCount: integer
-		);
-		port (
-			x_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
-			h_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
-			clk: in std_logic;
-			y_k : out int_arr(0 to phaseCount-1)(dataWidth-1 downto 0)
-		);
-	end component;
 
-	
-	signal q: std_logic_vector(25 downto 0);
+		signal q: std_logic_vector(25 downto 0);
 	
 	signal display_num: std_logic_vector(15 downto 0);
 	signal display_clk: std_logic;
@@ -123,6 +96,7 @@ architecture ADS of ADS_project is
 	signal out_data_ready: std_logic := '0';
 	signal in_data_ready: std_logic := '0';
 	signal tx_empty: std_logic;
+	signal indicate_read: std_logic;
 	
 	signal prev_data_ready: std_logic := '0';
 	
@@ -142,6 +116,8 @@ architecture ADS of ADS_project is
 	
 	signal byte: std_logic_vector(7 downto 0);
 	signal led_clk: std_logic := '0';
+
+	signal x_prev: std_logic_vector(7 downto 0);
 	
 	constant phaseCount: integer := 3;
 	constant tapCount: integer := 4;
@@ -151,74 +127,34 @@ architecture ADS of ADS_project is
 begin
 	display: seven_seg_display port map(display_clk, display_num, seg_select, segments);
 	clocking: counter port map(clk, q);
-	spi: SPI_module port map (clk, sck, mosi, miso, cs, input_shiftreg, output_shiftreg, out_data_ready, in_data_ready, tx_empty);
+	spi: SPI_module port map (clk, sck, mosi, miso, cs, input_shiftreg, output_shiftreg, out_data_ready, in_data_ready, indicate_read, tx_empty);
 	--mem: FIFO generic map (8, 4) port map (fifo_in, fifo_out, fifo_clk, read_en, write_en, is_full, is_empty);
 	mem:  shift_register generic map (DATA_WIDTH, DATA_DEPTH) port map (sr_in, sr_out, sr_data, sr_clk, sr_read_en, sr_write_en, sr_is_full, sr_is_empty);
-	filter: pfb generic map (8, phaseCount,  tapCount) port map(x_n, h_n, y_k);
-	filter2: pfb2 generic map (8, phaseCount, tapCount) port map(x_n, h_n, clk);
-	led_bar: leds port map (byte, led_clk, vals);
+	-- filter: pfb generic map (8, phaseCount,  tapCount) port map(x_n, h_n, y_k);
+	-- filter2: pfb2 generic map (8, phaseCount, tapCount) port map(x_n, h_n, clk);
+	-- led_bar: leds port map (byte, led_clk, vals);
 	display_clk <= q(16);
 	
 	display_num(15 downto 0) <= sr_data(15 downto 0);
 	
-	sr_in <= input_shiftreg;
-	
---	sr_read_en <= '0';
---	sr_write_en <= '1';
-	
-	
-	output_shiftreg <= sr_out;
-	
-	byte(0) <= not tx_empty;
-	byte(1) <= not tx_mode_active;
-	byte(2) <= not out_data_ready;--sr_is_empty;
-	byte(3) <= not sr_read_en;--sr_clk;
-	
 	check_end_tx: process(clk)
 	begin
-	if rising_edge(clk) then
-		if tx_mode_active = '0' then
+		if rising_edge(clk) then
+			--On rising edge we check to see if slave has received anything
 			if in_data_ready = '1' then
-				sr_clk <= '1';
-			else
-				sr_clk <= '0';
+				x_prev <= input_shiftreg;
+				indicate_read <= '1';
 			end if;
-		else
-			if out_data_ready = '1' and tx_empty = '1' then
-				sr_clk <= '1';
-			else
-				sr_clk <= '0';
-			end if;
-		end if;
-		
-	elsif falling_edge(clk) then
-		-- If just received a 0xFF
-		if sr_out = "11111111" and in_data_ready = '1' then
-			-- Toggle RW mode
-			if tx_mode_active = '0' then
-				sr_read_en <= '1';
-				sr_write_en <= '0';
-				tx_mode_active <= '1';
---			elsif tx_mode_active ='1' then
---				sr_read_en <= '0';
---				sr_write_en <= '1';
---				tx_mode_active <= '0';
+
+		elsif falling_edge(clk) then
+			-- When a new byte has been read update the output shiftreg
+			if indicate_read = '1' then
+				output_shiftreg <= x_prev;
+				out_data_ready <= '1';
 			end if;
 		end if;
-		
-		if in_data_ready = '1' then
-			prev_data_ready <= '1';
-		elsif in_data_ready = '0' then
-			prev_data_ready <= '0';
-		end if;
-										
-		if tx_mode_active = '1' and tx_empty = '1' then
-			out_data_ready <= '1';
-		else
-			out_data_ready <= '0';
-		end if;
-	end if;
 	end process;
+
 
 end architecture;
 		
