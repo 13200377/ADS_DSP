@@ -1,0 +1,250 @@
+# Compile of Complex3Multiply.vhd was successful.
+# Compile of HDL_DUT_pkg.vhd was successful.
+# Compile of HDL_DUT_tb_pkg.vhd was successful.
+# Compile of RADIX22FFT_CTRL1_1.vhd was successful.
+# Compile of RADIX22FFT_CTRL1_1_block.vhd was successful.
+# Compile of RADIX22FFT_CTRL1_2.vhd was successful.
+# Compile of SimpleDualPortRAM_generic.vhd was successful.
+# Compile of TWDLROM_3_1.vhd was successful.
+# Compile of FFT_HDL_Optimized.vhd failed with 16 errors.
+# Compile of HDL_DUT.vhd was successful.
+# Compile of HDL_DUT_tb.vhd was successful.
+# Compile of RADIX2FFT_bitNatural.vhd was successful.
+# Compile of RADIX22FFT_SDF1_1.vhd failed with 4 errors.
+# Compile of RADIX22FFT_SDF1_3.vhd failed with 4 errors.
+# Compile of RADIX22FFT_SDF2_2.vhd failed with 4 errors.
+# Compile of SDFCommutator1.vhd was successful.
+# Compile of SDFCommutator2.vhd was successful.
+# Compile of SDFCommutator3.vhd was successful.
+# 18 compiles, 4 failed with 28 errors.
+# Errors: 0, Warnings: 0
+# Compile of Complex3Multiply.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of HDL_DUT_pkg.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of HDL_DUT_tb_pkg.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of RADIX22FFT_CTRL1_1.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of RADIX22FFT_CTRL1_1_block.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of RADIX22FFT_CTRL1_2.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of SimpleDualPortRAM_generic.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of TWDLROM_3_1.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of FFT_HDL_Optimized.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of HDL_DUT.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of HDL_DUT_tb.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of RADIX2FFT_bitNatural.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of RADIX22FFT_SDF1_1.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of RADIX22FFT_SDF1_3.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of RADIX22FFT_SDF2_2.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of SDFCommutator1.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of SDFCommutator2.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of SDFCommutator3.vhd was successful.
+# Compile of Complex3Multiply.vhd was successful.
+# Compile of HDL_DUT_pkg.vhd was successful.
+# Compile of HDL_DUT_tb_pkg.vhd was successful.
+# Compile of RADIX22FFT_CTRL1_1.vhd was successful.
+# Compile of RADIX22FFT_CTRL1_1_block.vhd was successful.
+# Compile of RADIX22FFT_CTRL1_2.vhd was successful.
+# Compile of SimpleDualPortRAM_generic.vhd was successful.
+# Compile of TWDLROM_3_1.vhd was successful.
+# Compile of FFT_HDL_Optimized.vhd was successful.
+# Compile of HDL_DUT.vhd was successful.
+# Compile of HDL_DUT_tb.vhd was successful.
+# Compile of RADIX2FFT_bitNatural.vhd was successful.
+# Compile of RADIX22FFT_SDF1_1.vhd was successful.
+# Compile of RADIX22FFT_SDF1_3.vhd was successful.
+# Compile of RADIX22FFT_SDF2_2.vhd was successful.
+# Compile of SDFCommutator1.vhd was successful.
+# Compile of SDFCommutator2.vhd was successful.
+# Compile of SDFCommutator3.vhd was successful.
+# 18 compiles, 0 failed with no errors.
+vsim work.hdl_dut_tb
+# vsim work.hdl_dut_tb 
+# Start time: 17:25:34 on Oct 10,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.hdl_dut_pkg
+# Loading work.hdl_dut_tb_pkg(body)
+# Loading work.hdl_dut_tb(rtl)
+# Loading work.hdl_dut(rtl)
+# Loading work.fft_hdl_optimized(rtl)
+# Loading work.radix22fft_ctrl1_1(rtl)
+# Loading work.radix22fft_sdf1_1(rtl)
+# Loading work.simpledualportram_generic(rtl)
+# Loading work.sdfcommutator1(rtl)
+# Loading work.radix22fft_ctrl1_2(rtl)
+# Loading work.radix22fft_sdf2_2(rtl)
+# Loading work.sdfcommutator2(rtl)
+# Loading work.twdlrom_3_1(rtl)
+# Loading work.radix22fft_ctrl1_1_block(rtl)
+# Loading work.radix22fft_sdf1_3(rtl)
+# Loading work.complex3multiply(rtl)
+# Loading work.sdfcommutator3(rtl)
+# Loading work.radix2fft_bitnatural(rtl)
+run
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Note: **************TEST COMPLETED (PASSED)**************
+#    Time: 1180 ns  Iteration: 1  Instance: /hdl_dut_tb
+add wave -position insertpoint  \
+sim:/hdl_dut_tb/u_HDL_DUT/reset \
+sim:/hdl_dut_tb/u_HDL_DUT/fftValidOut \
+sim:/hdl_dut_tb/u_HDL_DUT/fftValidIn \
+sim:/hdl_dut_tb/u_HDL_DUT/fftOut_re \
+sim:/hdl_dut_tb/u_HDL_DUT/fftOut_im \
+sim:/hdl_dut_tb/u_HDL_DUT/fftIn_re \
+sim:/hdl_dut_tb/u_HDL_DUT/fftIn_im \
+sim:/hdl_dut_tb/u_HDL_DUT/clk_enable \
+sim:/hdl_dut_tb/u_HDL_DUT/clk \
+sim:/hdl_dut_tb/u_HDL_DUT/ce_out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tood  Hostname: DESKTOP-KN970A4  ProcessID: 5068
+#           Attempting to use alternate WLF file "./wlft4q28zq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4q28zq
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Note: **************TEST COMPLETED (PASSED)**************
+#    Time: 1180 ns  Iteration: 1  Instance: /hdl_dut_tb
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Note: **************TEST COMPLETED (PASSED)**************
+#    Time: 1180 ns  Iteration: 1  Instance: /hdl_dut_tb
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Note: **************TEST COMPLETED (PASSED)**************
+#    Time: 1180 ns  Iteration: 1  Instance: /hdl_dut_tb
+# End time: 18:32:54 on Oct 10,2021, Elapsed time: 1:07:20
+# Errors: 0, Warnings: 14

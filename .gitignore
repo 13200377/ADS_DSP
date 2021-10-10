@@ -72,3 +72,11 @@ simulation/
 output_files/
 
 .vscode/
+
+work/
+
+Modelsim_Project/
+
+vlog.opt
+
+vsim.wlf

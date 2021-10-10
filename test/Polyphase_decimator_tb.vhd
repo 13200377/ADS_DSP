@@ -25,6 +25,7 @@ use ieee.std_logic_textio.all; -- require for writing/reading std_logic etc.
 
 use work.filter_types.all;
 use work.test_types.all;
+use work.testBenchFilterIO.all; -- Filter Input / output arrays
 
 
 entity Polyphase_decimator_tb is 
@@ -33,17 +34,16 @@ end entity;
 architecture decimator_test of Polyphase_decimator_tb is
 	-- declare the polyphase decimator
 	component Polyphase_decimator
-	generic(
-        sampleWidth: integer;
-		coeffWidth: integer;
-		phaseCount: integer;
-		tapCount: integer
-    );
+	-- generic(
+    --     sampleWidth: integer;
+	-- 	coeffWidth: integer;
+	-- 	phaseCount: integer;
+	-- 	tapCount: integer
+    -- );
     port (
-		x_n : in int_arr(0 to phaseCount*tapCount-1)(sampleWidth-1 downto 0);
-		h_n : in int_arr(0 to phaseCount*tapCount-1)(coeffWidth-1 downto 0);
+		x_n : in fi_7Q8;
 		clk: in std_logic;
-		y_m : out signed(sampleWidth+coeffWidth-1 downto 0)
+		y_m : out signed(sampleWidth-1 downto 0)
     );
 	end component;
 
@@ -53,75 +53,76 @@ architecture decimator_test of Polyphase_decimator_tb is
 	constant phaseCount: integer := 4;
 	constant tapCount: integer := 3;
 	constant filterOrder: integer := phaseCount * tapCount;
-	constant numSamples: integer := 24;
+	-- constant numSamples: integer := 24;
 
-	function int(num: integer; bit_count: integer) return signed is
-		begin
-			return to_signed(num, bit_count);
-		end function;
+	-- function int(num: integer; bit_count: integer) return signed is
+	-- 	begin
+	-- 		return to_integer(num, bit_count);
+	-- 	end function;
 		
-		-- create a synthetic signal input
-		constant test_h : int_arr(0 to filterOrder-1)(coeffWidth-1 downto 0)
-		:= (
-			int(1,coeffWidth), int(2,coeffWidth), int(4,coeffWidth), 
-			int(8,coeffWidth), int(16,coeffWidth), int(32,coeffWidth),
-			int(64,coeffWidth),  int(128,coeffWidth), int(256,coeffWidth),
-			int(512,coeffWidth),  int(1024,coeffWidth),  int(2048,coeffWidth)
 			
-			-- int(1), int(1), int(1), 
-			-- int(1),  int(1),int(1), 
-			-- int(1), int(1), int(1),  
-			-- int(1),  int(1), int(1)
-			);
-			
-		-- create filter coefficients
-		constant test_x : int_arr(0 to numSamples-1)(sampleWidth-1 downto 0)
-						:= (
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(-1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth),
+	-- Input signal (defined by the package)
+	signal test_x : int_arr(0 to numSamples-1)(sampleWidth-1 downto 0);
+	signal expected_y :  int_arr(0 to numSamples/phaseCount-1)(sampleWidth-1 downto 0);
 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth), 
-							int(1,sampleWidth), int(1,sampleWidth), int(1,sampleWidth)
-							);
 	-- Create signals for data io to filter
-	signal x_n : int_arr(0 to phaseCount*tapCount-1)(sampleWidth-1 downto 0);
-	signal h_n : int_arr(0 to phaseCount*tapCount-1)(coeffWidth-1 downto 0);
-	signal y_k : signed(sampleWidth+coeffWidth-1 downto 0);
+	signal x_n : fi_7Q8;
+	signal y_k : signed(sampleWidth-1 downto 0);
+	signal y_ex : signed(sampleWidth-1 downto 0) ;
+	signal phase: integer := 0;
+	signal sample_indicator : integer :=0;
 
 	signal clk: std_logic := '0';
 
 	begin
 		-- Instantiate filter
-		fir_filt: Polyphase_decimator generic map (sampleWidth, coeffWidth, phaseCount,tapCount) port map (x_n, h_n, clk, y_k);
+		fir_filt: Polyphase_decimator port map (x_n, clk, y_k);
+
+		-- Assign Our input signal the constant array defined in filterIO package
+		test_x <= test_input_I;
+		-- Expected output signal, as defined by the filterIO package
+		expected_y <= test_output_I;
 
 		p_main_test: 
 		process is
-			variable startIndex: integer;
-			variable phase: integer;
+			variable expecIndex: integer := 0;
+			-- variable sampleNum : integer;
 
 		begin
-			h_n <= test_h;
+			
 			wait for 20 ps;
 
-			for sample_num in 0 to numSamples-1 loop
-				startIndex := sample_num-filterOrder+1;
-				for j in startIndex to sample_num loop
-					if j >= 0 then
-						x_n(sample_num-j) <= test_x(j);
-					end if;
-				end loop;
+			for sampleNum in 0 to numSamples-1 loop
+				sample_indicator <= sampleNum;
+				-- Next sample 
+				x_n <= to_fi_7Q8(to_integer(test_x(sampleNum)),'0');
 
 				clk <= '1';
-			
 				wait for 20 ps;
-				
 				clk <= '0';
-				
 				wait for 20 ps;
+				
+				-- Keep track of phase
+				if phase < phaseCount-1 then
+					phase <= phase+1;
+				elsif phase = phaseCount-1 then
+					phase <= 0;
+				end if;
+
+
+				if phase = phaseCount-1 then
+					y_ex <= expected_y(expecIndex);
+					expecIndex := expecIndex + 1;
+					wait for 1 ps;
+					if y_ex /= y_k then
+						report LF
+						& "FAIL!" & LF
+						& "Unexpected filter output" & LF
+						& "-------------"
+						severity failure;
+					end if;
+				end if;
+
 
 			end loop;
 
