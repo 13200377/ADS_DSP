@@ -85,19 +85,7 @@ architecture ADS of ADS_project is
 			CLK : in std_logic;
 			VALS : out std_logic_vector(3 downto 0) );
 	end component;
-	
-	component PFB is
-		generic(
-			dataWidth: integer := 8;
-			phaseCount: integer;
-			tapCount: integer
-		);
-		port (
-			x_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
-			h_n : in int_arr(0 to phaseCount*tapCount-1)(dataWidth-1 downto 0);
-			y_k : out int_arr(0 to phaseCount-1)(dataWidth-1 downto 0)
-		);
-	end component;
+
 	
 	component PFB2 is
 		generic(

@@ -115,7 +115,7 @@ package body filter_types is
 									return sample_8bit is
 	variable imd : fi_15Q16;
 	begin
-		imd := x sra 15;
+		imd := shift_right(x, 15);
 		return resize(imd,8);
 	end function;
 

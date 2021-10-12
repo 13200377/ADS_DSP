@@ -1,0 +1,487 @@
+# Reading pref.tcl
+# do ADS_project_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/filter_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:04 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/filter_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Compiling package body filter_types
+# -- Loading package filter_types
+# End time: 14:42:04 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/shift_register.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:04 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity shift_register
+# -- Compiling architecture sr of shift_register
+# End time: 14:42:05 on Oct 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:05 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg_display
+# -- Compiling architecture display of seven_seg_display
+# End time: 14:42:05 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:05 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture s_seg of seven_seg
+# End time: 14:42:05 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:05 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity counter
+# -- Compiling architecture SYN of counter
+# End time: 14:42:05 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/spi_module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:05 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/spi_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 14:42:06 on Oct 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/leds.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:06 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/leds.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity leds
+# -- Compiling architecture my_leds of leds
+# End time: 14:42:06 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/ADS_project.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:42:06 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/ADS_project.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity ADS_project
+# -- Compiling architecture ADS of ADS_project
+# End time: 14:42:06 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do PISO_arr_tb.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/filter_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:50:13 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/filter_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Compiling package body filter_types
+# -- Loading package filter_types
+# End time: 14:50:13 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:50:13 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr
+# -- Compiling architecture PISO of PISO_arr
+# End time: 14:50:14 on Oct 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:50:14 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr_tb
+# -- Compiling architecture tb of PISO_arr_tb
+# End time: 14:50:14 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.PISO_arr_tb
+# vsim -voptargs="+acc" work.PISO_arr_tb 
+# Start time: 14:50:14 on Oct 12,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types(body)
+# Loading work.piso_arr_tb(tb)
+# Loading work.piso_arr(piso)
+add wave -position end  sim:/piso_arr_tb/serial_out
+do PISO_arr_tb.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/filter_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:12 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/filter_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Compiling package body filter_types
+# -- Loading package filter_types
+# End time: 14:52:12 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:12 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr
+# -- Compiling architecture PISO of PISO_arr
+# End time: 14:52:12 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:12 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr_tb
+# -- Compiling architecture tb of PISO_arr_tb
+# End time: 14:52:13 on Oct 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.PISO_arr_tb
+# End time: 14:52:14 on Oct 12,2021, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.PISO_arr_tb 
+# Start time: 14:52:14 on Oct 12,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types(body)
+# Loading work.piso_arr_tb(tb)
+# Loading work.piso_arr(piso)
+# 
+# signal clk : std_logic := '0';
+# ** Error: wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+# Error in macro ./PISO_arr_tb.do line 14
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+#     while executing
+# "signal clk : std_logic := '0'"
+add wave -position end  sim:/piso_arr_tb/serial_out
+add wave -position end  sim:/piso_arr_tb/serial_out
+do PISO_arr_tb.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/filter_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:40 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/filter_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Compiling package body filter_types
+# -- Loading package filter_types
+# End time: 14:52:40 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:40 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr
+# -- Compiling architecture PISO of PISO_arr
+# End time: 14:52:40 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:40 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr_tb
+# -- Compiling architecture tb of PISO_arr_tb
+# End time: 14:52:41 on Oct 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.PISO_arr_tb
+# End time: 14:52:42 on Oct 12,2021, Elapsed time: 0:00:28
+# Errors: 1, Warnings: 0
+# vsim -voptargs="+acc" work.PISO_arr_tb 
+# Start time: 14:52:42 on Oct 12,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types(body)
+# Loading work.piso_arr_tb(tb)
+# Loading work.piso_arr(piso)
+# 
+# 	
+# add wave sim:/PISO_arr_tb/serial_out
+# add wave sim:/PISO_arr_tb/serial_out2
+# 
+# run -all
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 650 ps  Iteration: 1  Instance: /piso_arr_tb
+# Break in Process main_test at F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd line 252
+do PISO_arr_tb.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "F:/intelFPGA_lite/ADS_project/test/rtl_work/_lib.qdb".
+# Error 133: Unable to remove directory "F:/intelFPGA_lite/ADS_project/test/rtl_work".
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/filter_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:25 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/filter_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Compiling package body filter_types
+# -- Loading package filter_types
+# End time: 14:54:25 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:25 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr
+# -- Compiling architecture PISO of PISO_arr
+# End time: 14:54:25 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:25 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr_tb
+# -- Compiling architecture tb of PISO_arr_tb
+# End time: 14:54:26 on Oct 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.PISO_arr_tb
+# End time: 14:54:28 on Oct 12,2021, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.PISO_arr_tb 
+# Start time: 14:54:28 on Oct 12,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types(body)
+# Loading work.piso_arr_tb(tb)
+# Loading work.piso_arr(piso)
+# 
+# signal clk : std_logic := '0';
+# ** Error: wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+# Error in macro ./PISO_arr_tb.do line 14
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+#     while executing
+# "signal clk : std_logic := '0'"
+do PISO_arr_tb.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# Error 31: Unable to unlink file "F:/intelFPGA_lite/ADS_project/test/rtl_work/_lib.qdb".
+# Error 133: Unable to remove directory "F:/intelFPGA_lite/ADS_project/test/rtl_work".
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/filter_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:47 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/filter_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Compiling package body filter_types
+# -- Loading package filter_types
+# End time: 14:54:47 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:47 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr
+# -- Compiling architecture PISO of PISO_arr
+# End time: 14:54:47 on Oct 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:54:47 on Oct 12,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package filter_types
+# -- Compiling entity PISO_arr_tb
+# -- Compiling architecture tb of PISO_arr_tb
+# End time: 14:54:48 on Oct 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.PISO_arr_tb
+# End time: 14:54:49 on Oct 12,2021, Elapsed time: 0:00:21
+# Errors: 1, Warnings: 0
+# vsim -voptargs="+acc" work.PISO_arr_tb 
+# Start time: 14:54:49 on Oct 12,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.filter_types(body)
+# Loading work.piso_arr_tb(tb)
+# Loading work.piso_arr(piso)
+# 
+# add wave sim:/PISO_arr_tb/clk
+# add wave sim:/PISO_arr_tb/n_rst
+# add wave sim:/PISO_arr_tb/parallel_in
+# add wave sim:/PISO_arr_tb/write_en
+# add wave sim:/PISO_arr_tb/write_ready
+# add wave sim:/PISO_arr_tb/serial_out
+# add wave sim:/PISO_arr_tb/read_en
+# add wave sim:/PISO_arr_tb/read_ready
+# add wave sim:/PISO_arr_tb/write_ready2
+# add wave sim:/PISO_arr_tb/read_ready2
+# add wave sim:/PISO_arr_tb/serial_out2
+# 
+# run -all
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 650 ps  Iteration: 1  Instance: /piso_arr_tb
+# Break in Process main_test at F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd line 252
