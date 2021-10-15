@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use work.filter_types.all;
 
-entity ADS_project is 
+entity ADS_project_echo is 
 	port(
 		miso: out std_logic;
 		mosi: in std_logic;
@@ -19,7 +19,7 @@ entity ADS_project is
 	);
 end entity;
 
-architecture ADS of ADS_project is
+architecture ADS of ADS_project_echo is
 	component seven_seg_display is
 		port( clk : in std_logic;
 				num : in std_logic_vector(15 downto 0);
@@ -54,17 +54,7 @@ architecture ADS of ADS_project is
 		);
 	end component;
 	
-	component FIFO is 
-		generic(data_width: positive := 8;
-				  depth: positive);
-		port(fifo_in : in std_logic_vector(data_width-1 downto 0);
-			  fifo_out: out std_logic_vector(data_width-1 downto 0);
-			  clk     : in std_logic;
-			  read_en : in std_logic;
-			  write_en: in std_logic;
-			  is_full : out std_logic;
-			  is_empty: out std_logic);
-	end component;
+
 	
 	component shift_register is
 		generic(data_width: positive := 8;
@@ -100,17 +90,26 @@ architecture ADS of ADS_project is
 	
 	signal prev_data_ready: std_logic := '0';
 	
-	constant DATA_DEPTH : integer := 4;
+	constant DATA_DEPTH : integer := 1;
 	constant DATA_WIDTH : integer := 8;
 	
-	signal sr_in: std_logic_vector(DATA_WIDTH-1 downto 0);
-	signal sr_out: std_logic_vector(DATA_WIDTH-1 downto 0);
-	signal sr_data: std_logic_vector(DATA_WIDTH*DATA_DEPTH-1 downto 0);
-	signal sr_clk: std_logic;
-	signal sr_read_en: std_logic := '0';
-	signal sr_write_en: std_logic := '1';
-	signal sr_is_full: std_logic;
-	signal sr_is_empty: std_logic;
+	signal tx_sr_in: std_logic_vector(DATA_WIDTH-1 downto 0);
+	signal tx_sr_val: std_logic_vector(DATA_WIDTH-1 downto 0)  := (others => '0');
+	signal tx_sr_data: std_logic_vector(DATA_WIDTH*DATA_DEPTH-1 downto 0);
+	signal tx_sr_clk: std_logic;
+	signal tx_sr_read_en: std_logic := '0';
+	signal tx_sr_write_en: std_logic := '1';
+	signal tx_sr_is_full: std_logic;
+	signal tx_sr_is_empty: std_logic;
+
+	signal rx_sr_in: std_logic_vector(DATA_WIDTH-1 downto 0);
+	signal rx_sr_val: std_logic_vector(DATA_WIDTH-1 downto 0) := (others => '0');
+	signal rx_sr_data: std_logic_vector(DATA_WIDTH*DATA_DEPTH-1 downto 0);
+	signal rx_sr_clk: std_logic;
+	signal rx_sr_read_en: std_logic := '0';
+	signal rx_sr_write_en: std_logic := '1';
+	signal rx_sr_is_full: std_logic;
+	signal rx_sr_is_empty: std_logic;
 	
 	signal tx_mode_active: std_logic := '0';
 	
@@ -128,33 +127,73 @@ begin
 	display: seven_seg_display port map(display_clk, display_num, seg_select, segments);
 	clocking: counter port map(clk, q);
 	spi: SPI_module port map (clk, sck, mosi, miso, cs, input_shiftreg, output_shiftreg, out_data_ready, in_data_ready, indicate_read, tx_empty);
-	--mem: FIFO generic map (8, 4) port map (fifo_in, fifo_out, fifo_clk, read_en, write_en, is_full, is_empty);
-	mem:  shift_register generic map (DATA_WIDTH, DATA_DEPTH) port map (sr_in, sr_out, sr_data, sr_clk, sr_read_en, sr_write_en, sr_is_full, sr_is_empty);
-	-- filter: pfb generic map (8, phaseCount,  tapCount) port map(x_n, h_n, y_k);
-	-- filter2: pfb2 generic map (8, phaseCount, tapCount) port map(x_n, h_n, clk);
-	-- led_bar: leds port map (byte, led_clk, vals);
+	tx_sr:  shift_register generic map (DATA_WIDTH, DATA_DEPTH) port map (tx_sr_in, tx_sr_val, tx_sr_data, tx_sr_clk, tx_sr_read_en, tx_sr_write_en, tx_sr_is_full, tx_sr_is_empty);
+	rx_sr:  shift_register generic map (DATA_WIDTH, DATA_DEPTH) port map (rx_sr_in, rx_sr_val, rx_sr_data, rx_sr_clk, rx_sr_read_en, rx_sr_write_en, rx_sr_is_full, rx_sr_is_empty);
 	display_clk <= q(16);
 	
-	display_num(15 downto 0) <= sr_data(15 downto 0);
+	display_num(15 downto 0) <= rx_sr_data(7 downto 0) & rx_sr_data(7 downto 0);
 	
-	check_end_tx: process(clk)
+	-- check_end_tx: process(clk)
+	-- begin
+	-- 	if rising_edge(clk) then
+	-- 		--On rising edge we check to see if slave has received anything
+	-- 		if in_data_ready = '1' then
+	-- 			x_prev <= input_shiftreg;
+	-- 			indicate_read <= '1';
+	-- 		end if;
+
+	-- 	elsif falling_edge(clk) then
+	-- 		-- When a new byte has been read update the output shiftreg
+	-- 		if indicate_read = '1' then
+	-- 			output_shiftreg <= x_prev;
+	-- 			out_data_ready <= '1';
+	-- 		end if;
+	-- 	end if;
+	-- end process;
+
+	-- next_output 
+	output_shiftreg <= rx_sr_val;
+
+	-- Move the SPI incoming byte to the rx shiftreg
+	rx_sr_in <= input_shiftreg;
+
+	-- SPI Rx
+	SPI_Rx : process (clk)
 	begin
+
 		if rising_edge(clk) then
-			--On rising edge we check to see if slave has received anything
-			if in_data_ready = '1' then
-				x_prev <= input_shiftreg;
+			-- If data is available from the SPI Module, in_data_ready will be high
+			if in_data_ready = '1' then 
+				rx_sr_clk <= '1';
 				indicate_read <= '1';
+			else
+				rx_sr_clk <= '0';
+				indicate_read <= '0';
 			end if;
 
 		elsif falling_edge(clk) then
-			-- When a new byte has been read update the output shiftreg
-			if indicate_read = '1' then
-				output_shiftreg <= x_prev;
-				out_data_ready <= '1';
-			end if;
+			-- At the falling edge, we move from the shift register to somewhere useful...
 		end if;
 	end process;
 
+	-- SPI Tx
+	SPI_Tx : process(clk)
+	begin
+		if rising_edge(clk) then
+			-- IF SPI is waiting to send then and tx_empty will be high
+			if tx_empty = '1' then
+				-- Next output has been loaded asynchronously,
+				-- we just need to indicate we are ready to tx
+				out_data_ready <= '1';
+			else
+				out_data_ready <= '0';
+			end if;
+		elsif falling_edge(clk) then
+			-- 
+		end if;
+	end process;
+
+	--todo: make 2 shift registers, one for rx and one for tx. It should hold 1 byte each 
+
 
 end architecture;
-		
