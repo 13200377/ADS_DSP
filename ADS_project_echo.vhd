@@ -103,8 +103,8 @@ architecture ADS of ADS_project_echo is
 
 	-- Filter IO signals
 	signal x_n : fi_7Q8;
-	signal filt_clk : std_logic;
-	signal count : integer := 0;
+	signal filt_clk : std_logic := '1';
+--	signal count : integer := 0;
 	signal y_k : signed(sampleWidth-1 downto 0);
 
 begin
@@ -166,20 +166,27 @@ begin
 	end process;
 
 	-- Filter Clock
-	sck_div : process(sck)
---	variable count : integer := 0;
+	-- sck_div : process(sck)
+	-- variable count : integer := 0;
+	-- begin
+	-- 	if rising_edge(sck) then
+	-- 		count := count + 1;
+	-- 		if count > 7 then --AND in_data_ready = '1' then
+	-- 			filt_clk <= NOT filt_clk;
+	-- 			count := 0;
+	-- 		end if;
+	-- 	end if;
+	-- 	-- if (count > 7) AND (in_data_ready = '1') then
+	-- 	-- 	filt_clk <= NOT filt_clk;
+	-- 	-- 	count := 0;
+	-- 	-- end if;
+	-- end process;
+
+	sck_div : process(indicate_read)
 	begin
-		if rising_edge(sck) then
-			count <= count + 1;
-		end if;
-		if (count = 8) AND (in_data_ready = '1') then
-			filt_clk <= NOT filt_clk;
-			count <= 0;
+		if rising_edge(indicate_read) then
+		 	filt_clk <= NOT filt_clk;
 		end if;
 	end process;
-
-
-	--todo: make 2 shift registers, one for rx and one for tx. It should hold 1 byte each 
-
 
 end architecture;
