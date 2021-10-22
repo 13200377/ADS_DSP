@@ -80,3 +80,5 @@ Modelsim_Project/
 vlog.opt
 
 vsim.wlf
+
+src/FFT_4port/
