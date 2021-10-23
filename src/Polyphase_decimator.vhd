@@ -8,12 +8,6 @@ use IEEE.numeric_std.all;
 use work.filter_types.all;
 
 entity Polyphase_decimator is
-    -- generic(
-    --     sampleWidth: integer := 8;
-	-- 	coeffWidth: integer := 16;
-	-- 	phaseCount: integer;
-	-- 	tapCount: integer
-    -- );
     port (
 		x_n : in fi_7Q8;
 		clk: in std_logic;

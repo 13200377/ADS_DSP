@@ -5,7 +5,8 @@ use IEEE.numeric_std.all;
 package filter_types is
 	type uint_arr is array(natural range <>) of unsigned;
 	type int_arr is array(natural range <>) of signed;
-
+	type integer_arr is array(natural range <>) of integer;
+	
 	constant sampleWidth : integer :=8;
 	constant coeffWidth : integer :=8;
 

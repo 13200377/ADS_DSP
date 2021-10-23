@@ -23,10 +23,10 @@ architecture sumArr_test of sumArr_tb is
 		);
 	end component;
 
-	constant dataWidth: integer := 16;
-	constant arrSize: integer := 3;
-	constant arr1: int_arr := (to_signed(-3005,dataWidth), to_signed(1922,dataWidth), to_signed(-36,dataWidth));
-	constant sum1: signed(dataWidth-1 downto 0) := to_signed(-1119,dataWidth);
+	constant dataWidth: integer := 32;
+	constant arrSize: integer := 4;
+	constant arr1: int_arr := (to_signed(-3005,dataWidth), to_signed(1922,dataWidth), to_signed(-36,dataWidth), to_signed(360,dataWidth));
+	constant sum1: signed(dataWidth-1 downto 0) := to_signed(-759,dataWidth);
 	
 	signal arr : int_arr(0 to arrSize-1)(dataWidth-1 downto 0);
 	signal numOut: signed(dataWidth-1 downto 0);
