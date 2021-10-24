@@ -64,7 +64,7 @@ architecture ADS of ADS_project is
 			write_ready: out std_logic;
 			write_en: in std_logic;
 			
-			y_n: out fi_15Q16;
+			y_n: out fi_7Q8;
 			read_ready: out std_logic;
 			read_en: in std_logic
 			
@@ -98,7 +98,7 @@ architecture ADS of ADS_project is
 	signal write_ready: std_logic;
 	signal write_en: std_logic;
 	
-	signal y_n: fi_15Q16;
+	signal y_n: fi_7Q8;
 	signal read_ready: std_logic;
 	signal read_en: std_logic;
 	
