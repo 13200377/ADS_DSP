@@ -26,40 +26,44 @@ architecture sr of deserializer is
 begin
 
 	data_in: process(clk)
-		variable count: integer := 0;
 		
+		variable count: integer := 0;
 		variable in_buffer: fi_7Q8;
 		variable data: tapped_delay_line;
 		
 		variable read_performed: boolean := false;
 		variable write_performed: boolean := false;
+		variable reset_performed: boolean := false;
 	begin
 		if rising_edge(clk) then
 			-- Check for write
 			if write_en = '1' then
 				in_buffer := serial_in;
 				write_performed := true;
+			else
+				write_performed := false;
 			end if;
 			-- Check for read
 			if read_en = '1' then
 				read_performed := true;
+			else
+				read_performed := false;
 			end if;
 			
 			-- Check for reset
 			if n_rst <= '0' then
 				in_buffer := to_fi_7Q8(0,'1');
-				data := (others => to_fi_7Q8(0,'1'));
-				count := 0;
+				
+				
+				reset_performed := true;
 				write_performed := false;
 				read_performed := false;
-				is_full <= '0';
-				is_empty <= '1';
-				read_ready <= '0';
+			else
+				reset_performed := false;
 			end if;
-		else
+		elsif falling_edge(clk) then
 			if read_performed then
 				read_ready <= '0';
-				read_performed := false;
 			end if;
 			
 			if write_performed then
@@ -74,18 +78,25 @@ begin
 				end if;
 				
 				-- Shift data down
-				for dataIndex in count-1 downto 1 loop
+				for dataIndex in depth-1 downto 1 loop
 					data(dataIndex) := data(dataIndex-1);
 				end loop;
 				
 				-- Place new data in
 				data(0) := in_buffer;
 					
-				write_performed := false;
 			end if;
 			
-			parallel_out <= data;
+			if reset_performed then
+				is_full <= '0';
+				is_empty <= '1';
+				read_ready <= '0';
+				count := 0;
+				data := (others => to_fi_7Q8(0,'1'));
+			end if;
 		end if;
+		
+		parallel_out <= data;
 	end process;
 	
 	

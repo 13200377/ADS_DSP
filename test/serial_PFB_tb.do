@@ -6,15 +6,14 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/test_filter_types.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/test_filterDef.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/sumArr.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PFB3.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/deserializer.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/serial_PFB.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/serial_PFB_tb.vhd}
+vcom -2008 -work work {./test_filter_types.vhd}
+vcom -2008 -work work {./test_filterDef.vhd}
+vcom -2008 -work work {./../src/sumArr.vhd}
+vcom -2008 -work work {./../src/PISO_arr.vhd}
+vcom -2008 -work work {./../src/PFB3.vhd}
+vcom -2008 -work work {./../src/deserializer.vhd}
+vcom -2008 -work work {./../src/serial_PFB.vhd}
+vcom -2008 -work work {./serial_PFB_tb.vhd}
 
 vsim -voptargs=+acc work.serial_PFB_tb
 
