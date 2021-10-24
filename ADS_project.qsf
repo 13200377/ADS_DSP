@@ -85,6 +85,24 @@ set_global_assignment -name SEARCH_PATH src
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
 set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
 set_global_assignment -name EDA_GENERATE_RTL_SIMULATION_COMMAND_SCRIPT ON -section_id eda_simulation
+set_global_assignment -name VHDL_FILE FFT/TWDLROM_3_1.vhd
+set_global_assignment -name VHDL_FILE FFT/SimpleDualPortRAM_generic.vhd
+set_global_assignment -name VHDL_FILE FFT/SDFCommutator3.vhd
+set_global_assignment -name VHDL_FILE FFT/SDFCommutator2.vhd
+set_global_assignment -name VHDL_FILE FFT/SDFCommutator1.vhd
+set_global_assignment -name VHDL_FILE FFT/RADIX22FFT_SDF2_2.vhd
+set_global_assignment -name VHDL_FILE FFT/RADIX22FFT_SDF1_3.vhd
+set_global_assignment -name VHDL_FILE FFT/RADIX22FFT_SDF1_1.vhd
+set_global_assignment -name VHDL_FILE FFT/RADIX22FFT_CTRL1_2.vhd
+set_global_assignment -name VHDL_FILE FFT/RADIX22FFT_CTRL1_1_block.vhd
+set_global_assignment -name VHDL_FILE FFT/RADIX22FFT_CTRL1_1.vhd
+set_global_assignment -name VHDL_FILE FFT/RADIX2FFT_bitNatural.vhd
+set_global_assignment -name VHDL_FILE FFT/HDL_DUT_tb_pkg.vhd
+set_global_assignment -name VHDL_FILE FFT/HDL_DUT_tb.vhd
+set_global_assignment -name VHDL_FILE FFT/HDL_DUT_pkg.vhd
+set_global_assignment -name VHDL_FILE FFT/HDL_DUT.vhd
+set_global_assignment -name VHDL_FILE FFT/FFT_HDL_Optimized.vhd
+set_global_assignment -name VHDL_FILE FFT/Complex3Multiply.vhd
 set_global_assignment -name VHDL_FILE src/tap_mux.vhd
 set_global_assignment -name VHDL_FILE src/sumArr.vhd
 set_global_assignment -name VHDL_FILE src/SPI_module.vhd
