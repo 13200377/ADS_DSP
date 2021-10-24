@@ -1,0 +1,431 @@
+{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb_pkg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb_pkg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package HDL_DUT_pkg
+-- Compiling package HDL_DUT_tb_pkg
+-- Compiling package body HDL_DUT_tb_pkg
+-- Loading package HDL_DUT_tb_pkg
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb_pkg.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb_pkg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:56 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package HDL_DUT_pkg
+-- Compiling package HDL_DUT_tb_pkg
+-- Compiling package body HDL_DUT_tb_pkg
+-- Loading package HDL_DUT_tb_pkg
+End time: 17:24:57 on Oct 10,2021, Elapsed time: 0:00:01
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF2_2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF2_2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_SDF2_2
+-- Compiling architecture rtl of RADIX22FFT_SDF2_2
+-- Loading entity SDFCommutator2
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_SDF1_3
+-- Compiling architecture rtl of RADIX22FFT_SDF1_3
+-- Loading entity Complex3Multiply
+-- Loading entity SDFCommutator3
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/TWDLROM_3_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/TWDLROM_3_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TWDLROM_3_1
+-- Compiling architecture rtl of TWDLROM_3_1
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1_block.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1_block.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_CTRL1_1_block
+-- Compiling architecture rtl of RADIX22FFT_CTRL1_1_block
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/Complex3Multiply.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/Complex3Multiply.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Complex3Multiply
+-- Compiling architecture rtl of Complex3Multiply
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator3.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:59 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator3.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SDFCommutator3
+-- Compiling architecture rtl of SDFCommutator3
+-- Loading entity SimpleDualPortRAM_generic
+End time: 17:24:59 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF2_2.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF2_2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:58 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF2_2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_SDF2_2
+-- Compiling architecture rtl of RADIX22FFT_SDF2_2
+-- Loading entity SDFCommutator2
+End time: 17:24:59 on Oct 10,2021, Elapsed time: 0:00:01
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_3.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:58 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_3.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_SDF1_3
+-- Compiling architecture rtl of RADIX22FFT_SDF1_3
+-- Loading entity Complex3Multiply
+-- Loading entity SDFCommutator3
+End time: 17:24:58 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/TWDLROM_3_1.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/TWDLROM_3_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:57 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/TWDLROM_3_1.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TWDLROM_3_1
+-- Compiling architecture rtl of TWDLROM_3_1
+End time: 17:24:57 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:58 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity HDL_DUT
+-- Compiling architecture rtl of HDL_DUT
+-- Loading package HDL_DUT_pkg
+-- Loading entity FFT_HDL_Optimized
+End time: 17:24:58 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX2FFT_bitNatural.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX2FFT_bitNatural.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:58 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX2FFT_bitNatural.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX2FFT_bitNatural
+-- Compiling architecture rtl of RADIX2FFT_bitNatural
+-- Loading entity SimpleDualPortRAM_generic
+End time: 17:24:58 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:58 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_STD
+-- Loading package HDL_DUT_pkg
+-- Loading package HDL_DUT_tb_pkg
+-- Compiling entity HDL_DUT_tb
+-- Compiling architecture rtl of HDL_DUT_tb
+-- Loading entity HDL_DUT
+End time: 17:24:58 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_CTRL1_1
+-- Compiling architecture rtl of RADIX22FFT_CTRL1_1
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SDFCommutator1
+-- Compiling architecture rtl of SDFCommutator1
+-- Loading entity SimpleDualPortRAM_generic
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_2.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:57 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_CTRL1_2
+-- Compiling architecture rtl of RADIX22FFT_CTRL1_2
+End time: 17:24:57 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator2.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:59 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SDFCommutator2
+-- Compiling architecture rtl of SDFCommutator2
+-- Loading entity SimpleDualPortRAM_generic
+End time: 17:24:59 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_CTRL1_2
+-- Compiling architecture rtl of RADIX22FFT_CTRL1_2
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SDFCommutator2
+-- Compiling architecture rtl of SDFCommutator2
+-- Loading entity SimpleDualPortRAM_generic
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/FFT_HDL_Optimized.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/FFT_HDL_Optimized.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:57 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/FFT_HDL_Optimized.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package HDL_DUT_pkg
+-- Compiling entity FFT_HDL_Optimized
+-- Compiling architecture rtl of FFT_HDL_Optimized
+-- Loading entity RADIX22FFT_CTRL1_1
+-- Loading entity RADIX22FFT_SDF1_1
+-- Loading entity RADIX22FFT_CTRL1_2
+-- Loading entity RADIX22FFT_SDF2_2
+-- Loading entity TWDLROM_3_1
+-- Loading entity RADIX22FFT_CTRL1_1_block
+-- Loading entity RADIX22FFT_SDF1_3
+-- Loading entity RADIX2FFT_bitNatural
+End time: 17:24:58 on Oct 10,2021, Elapsed time: 0:00:01
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1_block.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1_block.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:57 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1_block.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_CTRL1_1_block
+-- Compiling architecture rtl of RADIX22FFT_CTRL1_1_block
+End time: 17:24:57 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/Complex3Multiply.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/Complex3Multiply.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:56 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/Complex3Multiply.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Complex3Multiply
+-- Compiling architecture rtl of Complex3Multiply
+End time: 17:24:56 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/FFT_HDL_Optimized.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/FFT_HDL_Optimized.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package HDL_DUT_pkg
+-- Compiling entity FFT_HDL_Optimized
+-- Compiling architecture rtl of FFT_HDL_Optimized
+-- Loading entity RADIX22FFT_CTRL1_1
+-- Loading entity RADIX22FFT_SDF1_1
+-- Loading entity RADIX22FFT_CTRL1_2
+-- Loading entity RADIX22FFT_SDF2_2
+-- Loading entity TWDLROM_3_1
+-- Loading entity RADIX22FFT_CTRL1_1_block
+-- Loading entity RADIX22FFT_SDF1_3
+-- Loading entity RADIX2FFT_bitNatural
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SDFCommutator3
+-- Compiling architecture rtl of SDFCommutator3
+-- Loading entity SimpleDualPortRAM_generic
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity HDL_DUT
+-- Compiling architecture rtl of HDL_DUT
+-- Loading package HDL_DUT_pkg
+-- Loading entity FFT_HDL_Optimized
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_pkg.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_pkg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:56 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_pkg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package HDL_DUT_pkg
+End time: 17:24:56 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_pkg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_pkg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package HDL_DUT_pkg
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX2FFT_bitNatural.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX2FFT_bitNatural.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX2FFT_bitNatural
+-- Compiling architecture rtl of RADIX2FFT_bitNatural
+-- Loading entity SimpleDualPortRAM_generic
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SimpleDualPortRAM_generic.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SimpleDualPortRAM_generic.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:57 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SimpleDualPortRAM_generic.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SimpleDualPortRAM_generic
+-- Compiling architecture rtl of SimpleDualPortRAM_generic
+End time: 17:24:57 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:57 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_CTRL1_1.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_CTRL1_1
+-- Compiling architecture rtl of RADIX22FFT_CTRL1_1
+End time: 17:24:57 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_1.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:58 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_1.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_SDF1_1
+-- Compiling architecture rtl of RADIX22FFT_SDF1_1
+-- Loading entity SimpleDualPortRAM_generic
+-- Loading entity SDFCommutator1
+End time: 17:24:58 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator1.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 17:24:59 on Oct 10,2021
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SDFCommutator1.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SDFCommutator1
+-- Compiling architecture rtl of SDFCommutator1
+-- Loading entity SimpleDualPortRAM_generic
+End time: 17:24:59 on Oct 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SimpleDualPortRAM_generic.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/SimpleDualPortRAM_generic.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SimpleDualPortRAM_generic
+-- Compiling architecture rtl of SimpleDualPortRAM_generic
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/HDL_DUT_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_textio
+-- Loading package NUMERIC_STD
+-- Loading package HDL_DUT_pkg
+-- Loading package HDL_DUT_tb_pkg
+-- Compiling entity HDL_DUT_tb
+-- Compiling architecture rtl of HDL_DUT_tb
+-- Loading entity HDL_DUT
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Uni/2021 Spring/Embedded Studio A/HDL CODER MATLAB/HDL Output with testbench/FFT_DUT/RADIX22FFT_SDF1_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_SDF1_1
+-- Compiling architecture rtl of RADIX22FFT_SDF1_1
+-- Loading entity SimpleDualPortRAM_generic
+-- Loading entity SDFCommutator1
+
+} {} {}}

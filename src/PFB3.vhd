@@ -63,6 +63,7 @@ begin
 		
 		variable write_performed: boolean := false;
 		variable read_performed: boolean := false;
+		variable reset_performed: boolean := false;
 		variable dataReady: boolean := false;
 		
 		variable numVals: integer := 0;
@@ -72,21 +73,25 @@ begin
 			if write_en = '1' then
 				tempSum(phaseIndex) := tap_sum;
 				write_performed := true;
+			else
+				write_performed := false;
 			end if;
 		
 			-- Check for reads
 			if read_en = '1' then
 				read_performed := true;
+			else
+				read_performed := false;
 			end if;
 			
 			-- Check for reset
 			if n_rst = '0' then
+				reset_performed := true;
 				tempSum := (others => to_fi_15Q16(0,'0'));
 				write_performed := false;
 				read_performed := false;
-				dataReady := false;
-				phaseIndex <= phaseCount-1;
-				numVals := 0;
+			else
+				reset_performed := false;
 			end if;
 			
 		elsif falling_edge(clk) then
@@ -113,7 +118,6 @@ begin
 						dataReady := true;
 					end if;
 				end if;
-				write_performed := false;
 				
 				
 				-- If the next write will be to the final value
@@ -131,7 +135,12 @@ begin
 				end if;
 			end if;
 			
-			
+			-- Action reset
+			if reset_performed then
+				phaseIndex <= phaseCount-1;
+				dataReady := false;
+				numVals := 0;
+			end if;
 		end if;
 	end process;
 	
