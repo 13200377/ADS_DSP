@@ -1,80 +1,131 @@
-library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
-
+library IEEE; 
+use IEEE.std_logic_1164.all; 
+use IEEE.numeric_std.all; 
+ 
 entity FIFO is 
-	generic(data_width: positive := 8;
-			  depth: positive);
-	port(fifo_in : in std_logic_vector(data_width-1 downto 0);
-		  fifo_out: out std_logic_vector(data_width-1 downto 0);
-		  clk     : in std_logic := '0';
-		  read_en : in std_logic := '0';
-		  write_en: in std_logic := '0';
-		  is_full : out std_logic;
-		  is_empty: out std_logic);
-end entity;
-
-architecture circular_FIFO of FIFO is
-	type t_FIFO_DATA is array (0 to depth-1) of std_logic_vector(data_width-1 downto 0);
-	signal fifo_data: t_FIFO_DATA := (others => (others => '0'));
+    generic ( 
+        data_width : natural := 8; 
+        -- fifo_depth minimum required for almost_full and almsot_empty thresholds 
+        fifo_depth : natural range 16 to 8192 := 32 
+    ); 
+    port( 
+			clk  : in std_logic; 
+        -- Write Side 
+        
+        wr_enable : in std_logic;  
+        wr_data : in std_logic_vector(data_width-1 downto 0); 
+        full    : out std_logic; 
+        almost_full : out std_logic; 
+         
+        -- Read side 
+        rd_enable : in std_logic;  
+        rd_data : out std_logic_vector(data_width-1 downto 0); 
+        empty   : out std_logic; 
+        almost_empty : out std_logic  
+    ); 
+end FIFO; 
+ 
+ 
+architecture arch of FIFO is 
+ 
+type memory is array(0 to fifo_depth-1) of std_logic_vector(data_width-1 downto 0); 
+ 
+-- Block of memory  
+signal fifo_buffer : memory; 
+signal head : natural := 0; 
+signal tail : natural := 0;
+signal mem_count : natural := 0; -- amount of memory used 
+ 
+signal mem_available : std_logic; 
+ 
+signal rd_clk_vals: std_logic_vector(2 downto 0) := (others => '0'); 
+ 
+constant af_threshold : natural := fifo_depth - 5; 
+constant ae_threshold : natural := 5; 
+ 
+function circular_increment(x : natural; maxval : natural) 
+return natural is
+    begin 
+        if (x = (maxval-1)) then
+            return 0; 
+        else 
+            return (x +1); 
+        end if; 
+end function circular_increment; 
+ 
+ 
+begin 
+ 
+    -- Asynchronously assign signals for info about fifo fullness 
+    empty <= '1' when (mem_count = 0) else '0'; 
+    full <= '0' when (mem_count < fifo_depth) else '1'; 
+ 
+    almost_full <= '1' when (mem_count > af_threshold) else '0'; 
+    almost_empty <= '0' when (mem_count < ae_threshold) else '0'; 
+    -- mem_available <= '1' when (mem_count < fifo_depth-1) else '0'; 
+    -- mem_unempty <= '1' when head /= tail else '0';  
+    -- could also check when mem_count /= 0 
+ 
+	rd_data <= fifo_buffer(tail); 
 	
-	signal count: integer := 0;
-	signal write_index: integer := 0;
-	signal read_index: integer := 0;
 	
-	--signal output: std_logic_vector(data_with-1 downto 0);
-begin
-
-	data_in: process(clk)
-	begin
-		if rising_edge(clk) then
-			-- Read check
-			if read_en = '1' and count /= 0 then
-				-- Decrement count (emptiness has already been checked)
-				count <= count - 1;
-				-- Safely increment read_index
-				if read_index < depth -1 then
-					read_index <= read_index+1;
+    -- FIFO Recieve: 
+    -- 1. we need write enable high. alllows user to disable writes without disconnecting clock 
+    -- 2. we need memory available 
+    -- 3. data is written into the fifo on a wr_clock rising edge 
+    fifo_rx : process(clk) is 
+		variable read_performed: boolean := false;
+		variable write_performed: boolean := false;
+    begin 
+        -- Only write data in when write enable is high 
+        if rising_edge(clk)  then 
+            if (NOT full) AND wr_enable then 
+                fifo_buffer(head) <= std_logic_vector(signed(wr_data)); 
+                write_performed := true;
 				else
-					read_index <= 0;
+					write_performed := false;
 				end if;
-			end if;
-			
-			-- Write check
-			if write_en = '1' then
-				fifo_data(write_index) <= fifo_in; 
-				-- Safely increment write_index
-				if write_index < depth-1 then
-					write_index <= write_index + 1;
+      
+ 
+     
+		 -- FIFO Tx: 
+		 -- 1. we need read enable high. alllows user to disable reads without disconnecting clock 
+		 -- 2. we need there to be data in the fifo 
+		 -- 3. data is read from the fifo on a rd_clock rising edge 
+				-- Ensure there is data available 
+				if rd_enable = '1' and empty='0' then
+					 read_performed := true;
 				else
-					write_index <= 0;
+					read_performed := false;
 				end if;
 				
-				--Safely increment count
-				if count < depth then
-					count <= count + 1;
-				else -- This means old data has been overwriten
-					-- We leave count as is
-					-- The newest data will now be the next in line
-					-- Safely increment read_index
-					if read_index < depth -1 then
-						read_index <= read_index + 1; 
-					else
-						read_index <= 0;
-					end if;
+				if empty then
+					 -- Nothing new to output 
+					 --rd_data <= (others => '0'); 
+				end if; 
+			elsif falling_edge(clk) then
+				if write_performed then
+					--if head has hit the end, circle back, otherwise increment 
+                head <= circular_increment(head,fifo_depth); 
+                -- mem_count increases because new data is stored 
+                mem_count <= mem_count + 1; 
+					 
+					 if not empty then
+							--rd_data <= fifo_buffer(tail);
+					 end if;
+				end if;
+				
+				if read_performed then
+					--if tail has hit the end, circle back, otherwise increment 
+					 tail <= circular_increment(tail,fifo_depth); 
+					 
+					 --rd_data <= fifo_buffer(tail); 
+					 
+					 -- mem count decreases because one data unit has been removed 
+					 mem_count <= mem_count - 1; 
 				end if;
 			end if;
-			
-			
-		end if;
-	end process;
-	
-	fifo_out <= fifo_data(read_index);
-	
-	is_full <= '1' when count = depth
-						else '0';
-						
-	is_empty <= '1' when count = 0
-						 else '0';
-	
+    end process; 
+             
+ 
 end architecture;

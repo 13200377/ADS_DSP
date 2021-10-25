@@ -41,11 +41,7 @@ architecture polyphase_filter_bank of PFB3 is
     -- Declare our coefficient array
     signal h_n : coeff_array;    
 
-	signal tap_bank: pfb_product_arr := (
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0')
-    );
+	signal tap_bank: pfb_product_arr := ( others =>     to_fi_15Q16(0,'0'));
 	 
 	signal tap_sum: fi_15Q16;
 	

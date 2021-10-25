@@ -73,7 +73,7 @@ architecture ADS of ADS_project is
 
 	
 	-- Reset
-	signal n_rst: std_logic;
+	signal n_rst: std_logic := '1';
 	
 	-- Counter
 	signal q: std_logic_vector(25 downto 0);
@@ -111,11 +111,20 @@ begin
 										 x_n, write_ready, write_en,
 										 y_n, read_ready, read_en);
 	
-	--display_num(15 downto 0) <= sr_data(15 downto 0);
 	display_num(7 downto 0) <= input_shiftreg;
+	display_clk <= q(15);
 	
+	-- SPI to channelizer
+	x_n <= signed(input_shiftreg);
+	write_en <= write_ready and in_data_ready;
+	indicate_read <= write_en;
+	
+	-- channelizer so SPI
+	output_shiftreg <= std_logic_vector(y_n);
+	read_en <= read_ready tx_empty;
+	indicate_write <= read_en;
 	
 
-
+	n_rst <= '1';
 end architecture;
 		
