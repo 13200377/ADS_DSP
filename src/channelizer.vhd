@@ -10,11 +10,13 @@ entity channelizer is
 		clk: in std_logic;
 		n_rst: in std_logic;
 		
-		x_n: in fi_7Q8;
+		x_re: in fi_7Q8;
+		x_im: in fi_7Q8;
 		write_ready: out std_logic;
 		write_en: in std_logic;
 		
-		y_n: out fi_7Q8;
+		y_re: out fi_7Q8;
+		y_im: out fi_7Q8;
 		read_ready: out std_logic;
 		read_en: in std_logic
 		
@@ -52,34 +54,37 @@ architecture arc_channelizer of channelizer is
 			  );
 	END component;
 	
-	component FIFO_2Port is 
-		 generic ( 
-			  data_width : natural := 8; 
-			  -- fifo_depth minimum required for almost_full and almsot_empty thresholds 
-			  fifo_depth : natural range 16 to 8192 := 32 
-		 ); 
-		 port( 
-			  -- Write Side 
-			  wr_clk  : in std_logic; 
-			  wr_enable : in std_logic;  
-			  wr_data : in std_logic_vector(data_width-1 downto 0); 
-			  full    : in std_logic; 
-			  almost_full : in std_logic; 
-				
-			  -- Read side 
-			  rd_clk  : in std_logic; 
-			  rd_enable : in std_logic;  
-			  rd_data : out std_logic_vector(data_width-1 downto 0); 
-			  empty   : out std_logic; 
-			  almost_empty : out std_logic  
-		 ); 
+	component FIFO is 
+    generic ( 
+        data_width : natural := 8; 
+        -- fifo_depth minimum required for almost_full and almsot_empty thresholds 
+        fifo_depth : natural range 16 to 8192 := 32 
+    ); 
+    port( 
+			clk  : in std_logic; 
+        -- Write Side 
+        
+        wr_enable : in std_logic;  
+        wr_data : in std_logic_vector(data_width-1 downto 0); 
+        full    : out std_logic; 
+        almost_full : out std_logic; 
+         
+        -- Read side 
+        rd_enable : in std_logic;  
+        rd_data : out std_logic_vector(data_width-1 downto 0); 
+        empty   : out std_logic; 
+        almost_empty : out std_logic  
+    ); 
 	end component; 
 
 	signal PFB_write_en: std_logic;
-	signal PFB_write_ready: std_logic;
-	signal y_k: fi_15Q16;
 	signal PFB_read_en: std_logic;
-	signal PFB_read_ready: std_logic;
+	signal PFB_re_write_ready: std_logic;
+	signal PFB_im_write_ready: std_logic;
+	signal y_k_re: fi_15Q16;
+	signal y_k_im: fi_15Q16;
+	signal PFB_re_read_ready: std_logic;
+	signal PFB_im_read_ready: std_logic;
 	
 	signal reset: std_logic := '0';
 	signal clk_enable: std_logic;
@@ -91,55 +96,61 @@ architecture arc_channelizer of channelizer is
 	signal fftOut_im: signed(18 DOWNTO 0);
 	signal fftValidOut: std_logic;
 	
-	signal FIFO_wr_clk: std_logic;
 	signal FIFO_wr_enable: std_logic;
-	signal FIFO_wr_data: std_logic_vector(15 downto 0);
+	signal FIFO_wr_data: std_logic_vector(31 downto 0);
 	signal FIFO_full: std_logic;
 	signal FIFO_almost_full: std_logic;
 	
-	signal FIFO_rd_clk  : std_logic; 
 	signal FIFO_rd_enable: std_logic;  
-	signal FIFO_rd_data : std_logic_vector(15 downto 0); 
+	signal FIFO_rd_data : std_logic_vector(31 downto 0); 
 	signal FIFO_empty   : std_logic; 
 	signal FIFO_almost_empty : std_logic;
 
-	signal FIFO_vec: std_logic_vector(18 downto 0);
+	signal FIFO_re_vec: std_logic_vector(18 downto 0);
+	signal FIFO_im_vec: std_logic_vector(18 downto 0);
 	
 begin
-	s_pfb: serial_pfb port map (clk, n_rst, x_n, PFB_write_en, PFB_write_ready,
-							y_k, PFB_read_en, PFB_read_ready);
+	pfb_re: serial_pfb port map (clk, n_rst, x_re, PFB_write_en, PFB_re_write_ready,
+							y_k_re, PFB_read_en, PFB_re_read_ready);
+							
+	pfb_im: serial_pfb port map (clk, n_rst, x_im, PFB_write_en, PFB_im_write_ready,
+							y_k_im, PFB_read_en, PFB_im_read_ready);
 	
 	fft: HDL_DUT port map (clk, reset, 
 									clk_enable, fftIn_re, fftIn_im, fftValidIn, ce_out,
 									fftOut_re, fftOut_im, fftValidOut);
-	fifo: fifo_2port generic map (16, 16) port map (FIFO_wr_clk, FIFO_wr_enable, FIFO_wr_data,
+	fifo_module: fifo generic map (32, 16) port map (clk, FIFO_wr_enable, FIFO_wr_data,
 																	FIFO_full, FIFO_almost_full,
-																	FIFO_rd_clk, FIFO_rd_enable, FIFO_rd_data,
+																	FIFO_rd_enable, FIFO_rd_data,
 																	FIFO_empty, FIFO_almost_empty);
 	-- Input to pfb
-	PFB_write_en <= PFB_write_ready and write_ready;
-	write_ready <= PFB_write_ready;
+	PFB_write_en <= write_en;
+	write_ready <= PFB_re_write_ready and PFB_im_write_ready;
 	
 	-- PFB to FFT
-	fftValidIn <= PFB_read_ready;
-	PFB_read_en <= PFB_read_ready;
-	fftIn_re <= y_k;
+	fftValidIn <= PFB_re_read_ready and PFB_im_read_ready;
+	PFB_read_en <= fftValidIn;
+	fftIn_re <= resize(y_k_re,16);
+	fftIn_im <= resize(y_k_im,16);
 	
 	-- FFT to FIFO
-	FIFO_wr_enable <= FIFO_wr_enable and fftValidOut;
-	FIFO_vec <= std_logic_vector(fftOut_re);
-	FIFO_wr_data <= FIFO_vec(18 downto 3);
+	FIFO_wr_enable <= fftValidOut;
+	FIFO_re_vec <= std_logic_vector(fftOut_re);
+	FIFO_im_vec <= std_logic_vector(fftOut_im);
+	-- Pack the complex number into the FIFO with MSB real, LSB imaginary
+	FIFO_wr_data <= FIFO_re_vec(18 downto 3) & FIFO_im_vec(18 downto 3);
 	
 	
 	-- FIFO to out
+	FIFO_rd_enable <= read_en and not FIFO_empty;
 	read_ready <= not FIFO_empty;
-	FIFO_rd_enable <= read_en;
-	y_n <= signed(FIFO_rd_data);
 	
-	
-	-- WARNING: CANNOT DECIDE WHEN TO READ FROM FFT EXCEPT FOR CLK_EN
+	y_re <= signed(FIFO_rd_data(31 downto 16));
+	y_im <= signed(FIFO_rd_data(15 downto 0));
 	
 	reset <= not n_rst;
 	clk_enable <= '1';
+	
+	
 end architecture;
 		
