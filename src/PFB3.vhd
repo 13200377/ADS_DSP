@@ -44,7 +44,12 @@ architecture polyphase_filter_bank of PFB3 is
 	signal tap_bank: pfb_product_arr := (
             to_fi_15Q16(0,'0'), 
             to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0')
+			to_fi_15Q16(0,'0')
+            -- to_fi_15Q16(0,'0'), 
+			-- to_fi_15Q16(0,'0'), 
+            -- to_fi_15Q16(0,'0'), 
+			-- to_fi_15Q16(0,'0'), 
+            -- to_fi_15Q16(0,'0')
     );
 	 
 	signal tap_sum: fi_15Q16;

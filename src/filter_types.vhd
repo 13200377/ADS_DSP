@@ -5,13 +5,12 @@ use IEEE.numeric_std.all;
 package filter_types is
 	type uint_arr is array(natural range <>) of unsigned;
 	type int_arr is array(natural range <>) of signed;
-	type integer_arr is array(natural range <>) of integer;
-	
+
 	constant sampleWidth : integer :=8;
 	constant coeffWidth : integer :=8;
 
-	constant phaseCount : integer :=4;
-	constant tapCount: integer := 3;
+	constant phaseCount : integer :=8;
+	constant tapCount: integer := 8;
 	constant filterOrder: integer := phaseCount * tapCount;
 
 	subtype fi_7Q8 is signed(15 downto 0);
@@ -116,7 +115,7 @@ package body filter_types is
 									return sample_8bit is
 	variable imd : fi_15Q16;
 	begin
-		imd := shift_right(x, 15);
+		imd := shift_right(x,15);
 		return resize(imd,8);
 	end function;
 

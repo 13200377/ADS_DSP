@@ -80,3 +80,15 @@ Modelsim_Project/
 vlog.opt
 
 vsim.wlf
+
+*.bak1
+
+*.bak2
+
+msim_transcript
+
+rtl_work/
+
+ADS_project_run_msim_rtl_vhdl.do
+
+tcl_stacktrace.txt
