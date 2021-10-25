@@ -89,6 +89,7 @@ begin
 				  & "not enough data inside serial_PFB_input.dat" & LF
 				  & "----------------"
 				  severity failure;
+				stop;
 			end if;
 		end loop;
 		
@@ -106,6 +107,7 @@ begin
 				  & "not enough data inside serial_PFB_expected.dat" & LF
 				  & "----------------"
 				  severity failure;
+				stop;
 			end if;
 		end loop;
 		
@@ -143,6 +145,7 @@ begin
 				  & "read_ready failed to assert within MAX_PROCESSING TIME" & LF
 				  & "----------------"
 				  severity failure;
+				  
 			stop;
 		end if;
 		
@@ -176,6 +179,7 @@ begin
 				  & "read_ready failed to reset after reading all outputs" & LF
 				  & "----------------"
 				  severity failure;
+			stop;
 		end if;
 		----------------
 		report LF
