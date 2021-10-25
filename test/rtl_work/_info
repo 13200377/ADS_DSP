@@ -9,1099 +9,242 @@ z2
 !i10f 100
 cModel Technology
 Z0 dF:/intelFPGA_lite/ADS_project/test
-Echannelizer
-Z1 w1635141570
-Z2 DPx4 work 9 filterdef 0 22 0>F`0Nh<N4Khm_B6S[m_71
-Z3 DPx4 work 12 filter_types 0 22 Ul=i`Baz<f<L2XJCXUGFR3
-Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 24
-R0
-Z7 8../src/channelizer.vhd
-Z8 F../src/channelizer.vhd
-l0
-L8 1
-V0Nm7E2IQWY<dm:A09OecI0
-!s100 AE78Bl^GHYi;U^G2Pmo]E3
-Z9 OV;C;2020.1;71
-33
-Z10 !s110 1635157973
-!i10b 1
-Z11 !s108 1635157973.000000
-Z12 !s90 -reportprogress|300|-2008|-work|work|../src/channelizer.vhd|
-Z13 !s107 ../src/channelizer.vhd|
-!i113 1
-Z14 o-2008 -work work
-Z15 tExplicit 1 CvgOpt 0
-Aarc_channelizer
-R2
-R3
-R4
-R5
-R6
-DEx4 work 11 channelizer 0 22 0Nm7E2IQWY<dm:A09OecI0
-!i122 24
-l112
-L27 129
-V`;[DL]=NX_hLIhO>90JU72
-!s100 ;Wbg[V>i[nZjbad5CoWFX0
-R9
-33
-R10
-!i10b 1
-R11
-R12
-R13
-!i113 1
-R14
-R15
-Echannelizer_tb
-Z16 w1635157948
-R2
-R3
-Z17 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
-Z18 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
-R4
-R5
-R6
-!i122 25
-R0
-Z19 8../test/channelizer_tb.vhd
-Z20 F../test/channelizer_tb.vhd
-l0
-L13 1
-Vl2VC`9L2TA22NS8XU5WP@1
-!s100 dj>ihk87F91=^c]Z8De<Q3
-R9
-33
-Z21 !s110 1635157974
-!i10b 1
-R11
-Z22 !s90 -reportprogress|300|-2008|-work|work|../test/channelizer_tb.vhd|
-!s107 ../test/channelizer_tb.vhd|
-!i113 1
-R14
-R15
-Achannelizer_test
-R2
-R3
-R17
-R18
-R4
-R5
-R6
-DEx4 work 14 channelizer_tb 0 22 l2VC`9L2TA22NS8XU5WP@1
-!i122 25
-l63
-L17 227
-VaUW;U0LF946=Uc]RZzJ0c3
-!s100 `:?CLIWcPQMCzGW4WG2aZ1
-R9
-33
-R21
-!i10b 1
-R11
-R22
-Z23 !s107 ../test/channelizer_tb.vhd|
-!i113 1
-R14
-R15
-Ecomplex3multiply
-Z24 w1635071057
-R4
-R5
-R6
-!i122 17
-R0
-Z25 8../FFT/Complex3Multiply.vhd
-Z26 F../FFT/Complex3Multiply.vhd
-l0
-Z27 L22 1
-V@8Dn=aC]BF@0XF[>Xe[=`2
-!s100 nd6hoTcdCb`3BQff:l<8[3
-R9
-32
-Z28 !s110 1635157970
-!i10b 1
-Z29 !s108 1635157970.000000
-Z30 !s90 -reportprogress|300|../FFT/Complex3Multiply.vhd|
-Z31 !s107 ../FFT/Complex3Multiply.vhd|
-!i113 1
-R15
-Artl
-R4
-R5
-R6
-Z32 DEx4 work 16 complex3multiply 0 22 @8Dn=aC]BF@0XF[>Xe[=`2
-!i122 17
-l86
-L39 231
-V:HYGcoiD0aPG[ago:hAd^3
-!s100 08zQ1O0fLjGZ0Uj]2[^LO3
-R9
-32
-R28
-!i10b 1
-R29
-R30
-R31
-!i113 1
-R15
-Edeserializer
-R24
-R3
-R4
-R5
-R6
-!i122 6
-R0
-Z33 8../src/deserializer.vhd
-Z34 F../src/deserializer.vhd
-l0
-L7 1
-V;C1N3nFiIWcOh^Z0nHT9@0
-!s100 LjhWaEjk=_cTUe?2b?n8H3
-R9
-33
-Z35 !s110 1635157965
-!i10b 1
-Z36 !s108 1635157965.000000
-Z37 !s90 -reportprogress|300|-2008|-work|work|../src/deserializer.vhd|
-Z38 !s107 ../src/deserializer.vhd|
-!i113 1
-R14
-R15
-Asr
-R3
-R4
-R5
-R6
-DEx4 work 12 deserializer 0 22 ;C1N3nFiIWcOh^Z0nHT9@0
-!i122 6
-l26
-L24 80
-VZnEKJ=[2Fn6fL0Tec@b^D0
-!s100 fmDAR=Li1=2h9o10fB[ha0
-R9
-33
-R35
-!i10b 1
-R36
-R37
-R38
-!i113 1
-R14
-R15
-Efft_hdl_optimized
-R24
-Z39 DPx4 work 11 hdl_dut_pkg 0 22 eil8zkLQ@<VUgEhK?LQmM2
-R4
-R5
-R6
-!i122 22
-R0
-Z40 8../FFT/FFT_HDL_Optimized.vhd
-Z41 F../FFT/FFT_HDL_Optimized.vhd
-l0
-L25 1
-VKD=Oc0P[X3H^2[JmjfnQ43
-!s100 aL`Vbm1H6=8jC8G4KRNeg1
-R9
-32
-Z42 !s110 1635157972
-!i10b 1
-Z43 !s108 1635157972.000000
-Z44 !s90 -reportprogress|300|../FFT/FFT_HDL_Optimized.vhd|
-Z45 !s107 ../FFT/FFT_HDL_Optimized.vhd|
-!i113 1
-R15
-Artl
-Z46 DEx4 work 20 radix2fft_bitnatural 0 22 IM7[jRd^Pfmj>2`:`_RO?1
-Z47 DEx4 work 17 radix22fft_sdf1_3 0 22 G_bHnAFldPOPPi2YZPNe:1
-Z48 DEx4 work 24 radix22fft_ctrl1_1_block 0 22 S>k6]dF7?3i6cj<_6miCF3
-Z49 DEx4 work 11 twdlrom_3_1 0 22 6zLLT;V<dklUhQbJQm1nU2
-Z50 DEx4 work 17 radix22fft_sdf2_2 0 22 <HK^UW51bL6D:<j;I_L>41
-Z51 DEx4 work 18 radix22fft_ctrl1_2 0 22 _o1<4YNJ^47M98:?5X7YQ2
-Z52 DEx4 work 17 radix22fft_sdf1_1 0 22 6LHgaO?kDSh9g=jKOcfig0
-Z53 DEx4 work 18 radix22fft_ctrl1_1 0 22 F0Qe@l<W^zMT1?jiAbHXT3
-R39
-R4
-R5
-R6
-Z54 DEx4 work 17 fft_hdl_optimized 0 22 KD=Oc0P[X3H^2[JmjfnQ43
-!i122 22
-l227
-L39 432
-VD1_nB2=FYJlN:PGPCo<322
-!s100 NC=`3QcS0PB;QZK8^_EPR3
-R9
-32
-R42
-!i10b 1
-R43
-R44
-R45
-!i113 1
-R15
-Efifo
-Z55 w1635128005
-R4
-R5
-R6
-!i122 5
-R0
-Z56 8../src/fifo.vhd
-Z57 F../src/fifo.vhd
-l0
-L5 1
-VUZLSOQd^IbkNo;XHFQ>QP2
-!s100 ZV]ZF3`Rd82oIZc[YJM6F2
-R9
-33
-R35
-!i10b 1
-Z58 !s108 1635157964.000000
-Z59 !s90 -reportprogress|300|-2008|-work|work|../src/fifo.vhd|
-Z60 !s107 ../src/fifo.vhd|
-!i113 1
-R14
-R15
-Aarch
-R4
-R5
-R6
-DEx4 work 4 fifo 0 22 UZLSOQd^IbkNo;XHFQ>QP2
-!i122 5
-l57
-L29 103
-V0ZX[JIGfmG5]VZdEm1V_:3
-!s100 78fIVU@EXR>Jg_N[mNTdJ2
-R9
-33
-R35
-!i10b 1
-R58
-R59
-R60
-!i113 1
-R14
-R15
 Pfilter_types
-R4
-R5
-R6
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 0
-Z61 w1635155683
+Z4 w1635159528
 R0
-Z62 8../src/filter_types.vhd
-Z63 F../src/filter_types.vhd
+Z5 8F:/intelFPGA_lite/ADS_project/src/filter_types.vhd
+Z6 FF:/intelFPGA_lite/ADS_project/src/filter_types.vhd
 l0
 L5 1
 VUl=i`Baz<f<L2XJCXUGFR3
 !s100 Olo8@A:eNCSUeH`gS=;aV3
-R9
+Z7 OV;C;2020.1;71
 33
 b1
-Z64 !s110 1635157963
+Z8 !s110 1635162721
 !i10b 1
-Z65 !s108 1635157962.000000
-Z66 !s90 -reportprogress|300|-2008|-work|work|../src/filter_types.vhd|
-Z67 !s107 ../src/filter_types.vhd|
+Z9 !s108 1635162720.000000
+Z10 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/filter_types.vhd|
+Z11 !s107 F:/intelFPGA_lite/ADS_project/src/filter_types.vhd|
 !i113 1
-R14
-R15
+Z12 o-2008 -work work
+Z13 tExplicit 1 CvgOpt 0
 Bbody
+Z14 DPx4 work 12 filter_types 0 22 Ul=i`Baz<f<L2XJCXUGFR3
+R1
+R2
 R3
-R4
-R5
-R6
 !i122 0
 l0
 L48 1
 V>WWQd]R`lYnFMoQY@HHSM1
 !s100 IIfdMmSbo7VacI^BNWcDf2
-R9
+R7
 33
-R64
+R8
 !i10b 1
-R65
-R66
-R67
+R9
+R10
+R11
 !i113 1
-R14
-R15
+R12
+R13
 Pfilterdef
-R3
+R14
 DBx4 ieee 11 numeric_std 4 body 22 g_7F]fA0eD^jGFXGLS>z40
-R5
-R6
+R2
+R3
 !i122 1
-w1635155589
+w1635159519
 R0
-8../src/filterDef.vhd
-F../src/filterDef.vhd
+8F:/intelFPGA_lite/ADS_project/src/filterDef.vhd
+FF:/intelFPGA_lite/ADS_project/src/filterDef.vhd
 l0
 L6 1
 V0>F`0Nh<N4Khm_B6S[m_71
 !s100 OdI27X2S6eA@n0::3C6cF0
-R9
+R7
 33
-R64
+R8
 !i10b 1
-Z68 !s108 1635157963.000000
-!s90 -reportprogress|300|-2008|-work|work|../src/filterDef.vhd|
-!s107 ../src/filterDef.vhd|
+Z15 !s108 1635162721.000000
+!s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/filterDef.vhd|
+!s107 F:/intelFPGA_lite/ADS_project/src/filterDef.vhd|
 !i113 1
-R14
-R15
-Ehdl_dut
-R24
-R4
-R5
-R6
-!i122 23
-R0
-Z69 8../FFT/HDL_DUT.vhd
-Z70 F../FFT/HDL_DUT.vhd
-l0
-L43 1
-ViB[1CB9]FMO4^gNznUePK1
-!s100 oTj7H3VMe@36TSlTF[DHc0
-R9
-32
-R10
-!i10b 1
-R43
-Z71 !s90 -reportprogress|300|../FFT/HDL_DUT.vhd|
-Z72 !s107 ../FFT/HDL_DUT.vhd|
-!i113 1
-R15
-Artl
-R39
-R54
-R4
-R5
-R6
-DEx4 work 7 hdl_dut 0 22 iB[1CB9]FMO4^gNznUePK1
-!i122 23
-l80
-L58 38
-VSR>:bznBhHRe55U0<5AS13
-!s100 =XjmK`_^Z?l2hSc6GYija0
-R9
-32
-R10
-!i10b 1
-R43
-R71
-R72
-!i113 1
-R15
-Phdl_dut_pkg
-R4
-R5
-R6
-!i122 8
-R24
-R0
-8../FFT/HDL_DUT_pkg.vhd
-F../FFT/HDL_DUT_pkg.vhd
-l0
-L15 1
-Veil8zkLQ@<VUgEhK?LQmM2
-!s100 :a=BmdSGk14LdNASf9:5z3
-R9
-32
-Z73 !s110 1635157966
-!i10b 1
-R36
-!s90 -reportprogress|300|../FFT/HDL_DUT_pkg.vhd|
-!s107 ../FFT/HDL_DUT_pkg.vhd|
-!i113 1
-R15
+R12
+R13
 Epfb3
-Z74 w1635155762
+Z16 w1635155762
+Z17 DPx4 work 9 filterdef 0 22 0>F`0Nh<N4Khm_B6S[m_71
+R14
+R1
 R2
 R3
-R4
-R5
-R6
-!i122 4
+!i122 3
 R0
-Z75 8../src/PFB3.vhd
-Z76 F../src/PFB3.vhd
+Z18 8F:/intelFPGA_lite/ADS_project/src/PFB3.vhd
+Z19 FF:/intelFPGA_lite/ADS_project/src/PFB3.vhd
 l0
-Z77 L14 1
+L14 1
 VUN3<4:lC:<4cC7B2>5n7c3
 !s100 [3fSaH7[9F02[k1Z8>Z:@3
-R9
+R7
 33
-Z78 !s110 1635157964
+R8
 !i10b 1
-R58
-Z79 !s90 -reportprogress|300|-2008|-work|work|../src/PFB3.vhd|
-Z80 !s107 ../src/PFB3.vhd|
-!i113 1
-R14
 R15
+Z20 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/PFB3.vhd|
+Z21 !s107 F:/intelFPGA_lite/ADS_project/src/PFB3.vhd|
+!i113 1
+R12
+R13
 Apolyphase_filter_bank
+R17
+R14
+R1
 R2
 R3
-R4
-R5
-R6
 DEx4 work 4 pfb3 0 22 UN3<4:lC:<4cC7B2>5n7c3
-!i122 4
+!i122 3
 l49
 L29 128
 V7E2?9ZTA4JDTzi@:h_<WN0
 !s100 _mOfCL3Vdc4[?n>mzFmNj0
-R9
+R7
 33
-R78
+R8
 !i10b 1
-R58
-R79
-R80
-!i113 1
-R14
 R15
-Episo_arr
-R24
+R20
+R21
+!i113 1
+R12
+R13
+Epfb3_tb
+Z22 w1635162718
+Z23 DPx4 work 10 test_types 0 22 32C@gQm3_MFBJ<F=?O2Od1
+R17
+R14
+Z24 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R1
+R2
 R3
-R4
-R5
-R6
-!i122 3
+Z25 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+!i122 4
 R0
-Z81 8../src/PISO_arr.vhd
-Z82 F../src/PISO_arr.vhd
+Z26 8F:/intelFPGA_lite/ADS_project/test/PFB3_tb.vhd
+Z27 FF:/intelFPGA_lite/ADS_project/test/PFB3_tb.vhd
 l0
-L6 1
-VKQ@aUR8]SijZ1=emi^@>Y1
-!s100 lOBREE`^KKVM141UjVao@2
-R9
+L33 1
+VPbO9NkI`c1Y72`3H?A<LP3
+!s100 XWnPF8RaKJlEJ;_E0g9oo0
+R7
 33
-R78
+Z28 !s110 1635162722
 !i10b 1
-R58
-Z83 !s90 -reportprogress|300|-2008|-work|work|../src/PISO_arr.vhd|
-Z84 !s107 ../src/PISO_arr.vhd|
+Z29 !s108 1635162722.000000
+Z30 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/test/PFB3_tb.vhd|
+!s107 F:/intelFPGA_lite/ADS_project/test/PFB3_tb.vhd|
 !i113 1
+R12
+R13
+Apfb3_test
+R23
+R17
 R14
-R15
-Apiso
+R24
+R1
+R2
 R3
-R4
-R5
-R6
-DEx4 work 8 piso_arr 0 22 KQ@aUR8]SijZ1=emi^@>Y1
-!i122 3
-l27
-L26 91
-Vn>]A89Bn4n^hNTl<;4`F52
-!s100 `hjaUEBTkd>lcek<;[<>X2
-R9
+R25
+DEx4 work 7 pfb3_tb 0 22 PbO9NkI`c1Y72`3H?A<LP3
+!i122 4
+l84
+L36 151
+VIXRSgGYFU8N]S:Fz>HNzk1
+!s100 ZInk24fgI1dT=Pnf4I3=m0
+R7
 33
-R78
-!i10b 1
-R58
-R83
-R84
-!i113 1
-R14
-R15
-Eradix22fft_ctrl1_1
-R24
-R4
-R5
-R6
-!i122 12
-R0
-Z85 8../FFT/RADIX22FFT_CTRL1_1.vhd
-Z86 F../FFT/RADIX22FFT_CTRL1_1.vhd
-l0
-R27
-VF0Qe@l<W^zMT1?jiAbHXT3
-!s100 lHh@I[W;CM]Zc@<[`:dfW3
-R9
-32
-Z87 !s110 1635157968
-!i10b 1
-Z88 !s108 1635157967.000000
-Z89 !s90 -reportprogress|300|../FFT/RADIX22FFT_CTRL1_1.vhd|
-Z90 !s107 ../FFT/RADIX22FFT_CTRL1_1.vhd|
-!i113 1
-R15
-Artl
-R4
-R5
-R6
-R53
-!i122 12
-l66
-L35 175
-VBOEcY1N5Ug0BPoPINR1Ki1
-!s100 NmmTgaMSK2fUMMYR_9lW;1
-R9
-32
-R87
-!i10b 1
-R88
-R89
-R90
-!i113 1
-R15
-Eradix22fft_ctrl1_1_block
-R24
-R4
-R5
-R6
-!i122 20
-R0
-Z91 8../FFT/RADIX22FFT_CTRL1_1_block.vhd
-Z92 F../FFT/RADIX22FFT_CTRL1_1_block.vhd
-l0
-R27
-VS>k6]dF7?3i6cj<_6miCF3
-!s100 AziZkXX;BnYWVRobKDNQo0
-R9
-32
-Z93 !s110 1635157971
-!i10b 1
-Z94 !s108 1635157971.000000
-Z95 !s90 -reportprogress|300|../FFT/RADIX22FFT_CTRL1_1_block.vhd|
-Z96 !s107 ../FFT/RADIX22FFT_CTRL1_1_block.vhd|
-!i113 1
-R15
-Artl
-R4
-R5
-R6
-R48
-!i122 20
-l60
-L35 121
-VN=mEOXXhC7__4[lDbc^F60
-!s100 joPI?>1g=A?HDoe=6d09@3
-R9
-32
-R93
-!i10b 1
-R94
-R95
-R96
-!i113 1
-R15
-Eradix22fft_ctrl1_2
-R24
-R4
-R5
-R6
-!i122 15
-R0
-Z97 8../FFT/RADIX22FFT_CTRL1_2.vhd
-Z98 F../FFT/RADIX22FFT_CTRL1_2.vhd
-l0
-R27
-V_o1<4YNJ^47M98:?5X7YQ2
-!s100 ?IK6E`BH5Y`DlU?@_[6jT1
-R9
-32
-Z99 !s110 1635157969
-!i10b 1
-Z100 !s108 1635157969.000000
-Z101 !s90 -reportprogress|300|../FFT/RADIX22FFT_CTRL1_2.vhd|
-Z102 !s107 ../FFT/RADIX22FFT_CTRL1_2.vhd|
-!i113 1
-R15
-Artl
-R4
-R5
-R6
-R51
-!i122 15
-l54
-L36 166
-Vc=LRAID<P?HHi;mQBagFe2
-!s100 7ZS7K;4<iV6KZJjTj_Tb@0
-R9
-32
-R99
-!i10b 1
-R100
-R101
-R102
-!i113 1
-R15
-Eradix22fft_sdf1_1
-R24
-R4
-R5
-R6
-!i122 11
-R0
-Z103 8../FFT/RADIX22FFT_SDF1_1.vhd
-Z104 F../FFT/RADIX22FFT_SDF1_1.vhd
-l0
-R27
-V6LHgaO?kDSh9g=jKOcfig0
-!s100 5BczAS]RPTDH[nV_UZi[b0
-R9
-32
-Z105 !s110 1635157967
-!i10b 1
-R88
-Z106 !s90 -reportprogress|300|../FFT/RADIX22FFT_SDF1_1.vhd|
-Z107 !s107 ../FFT/RADIX22FFT_SDF1_1.vhd|
-!i113 1
-R15
-Artl
-Z108 DEx4 work 14 sdfcommutator1 0 22 6LNIAARaS^4R>h]NIS@A10
-Z109 DEx4 work 25 simpledualportram_generic 0 22 =7h4Y6aOkDE7m5^bmODC13
-R4
-R5
-R6
-R52
-!i122 11
-l128
-L40 247
-Vk6I^I52?o3UiEYWO1]94E0
-!s100 26l9h9YbB68K=HZZ^CYcH1
-R9
-32
-R105
-!i10b 1
-R88
-R106
-R107
-!i113 1
-R15
-Eradix22fft_sdf1_3
-R24
-R4
-R5
-R6
-!i122 19
-R0
-Z110 8../FFT/RADIX22FFT_SDF1_3.vhd
-Z111 F../FFT/RADIX22FFT_SDF1_3.vhd
-l0
-R27
-VG_bHnAFldPOPPi2YZPNe:1
-!s100 >j2YV?[K<mYBLn]f0N92G3
-R9
-32
-R93
-!i10b 1
-R29
-Z112 !s90 -reportprogress|300|../FFT/RADIX22FFT_SDF1_3.vhd|
-Z113 !s107 ../FFT/RADIX22FFT_SDF1_3.vhd|
-!i113 1
-R15
-Artl
-Z114 DEx4 work 14 sdfcommutator3 0 22 `FMhg:VGVZ:oPCo2?3NUJ0
-R32
-R4
-R5
-R6
-R47
-!i122 19
-l142
-L43 259
-VY<ZNX=fZ@Zja9D2GAoLUE2
-!s100 4hBG;Ch1G_FSSMBii`9_31
-R9
-32
-R93
-!i10b 1
-R29
-R112
-R113
-!i113 1
-R15
-Eradix22fft_sdf2_2
-R24
-R4
-R5
-R6
-!i122 14
-R0
-Z115 8../FFT/RADIX22FFT_SDF2_2.vhd
-Z116 F../FFT/RADIX22FFT_SDF2_2.vhd
-l0
-R27
-V<HK^UW51bL6D:<j;I_L>41
-!s100 nGSIeDHgmbHnA6P]lXRkE1
-R9
-32
-R99
-!i10b 1
-Z117 !s108 1635157968.000000
-Z118 !s90 -reportprogress|300|../FFT/RADIX22FFT_SDF2_2.vhd|
-Z119 !s107 ../FFT/RADIX22FFT_SDF2_2.vhd|
-!i113 1
-R15
-Artl
-Z120 DEx4 work 14 sdfcommutator2 0 22 _OCCYga>aBS<oo8BeDfjC1
-R4
-R5
-R6
-R50
-!i122 14
-l156
-L41 429
-V?_agg7n_bccff@;[8lPD=2
-!s100 ^;BVO8m1_LW1Vf_Q=i_gg2
-R9
-32
-R99
-!i10b 1
-R117
-R118
-R119
-!i113 1
-R15
-Eradix2fft_bitnatural
-R24
-R4
-R5
-R6
-!i122 21
-R0
-Z121 8../FFT/RADIX2FFT_bitNatural.vhd
-Z122 F../FFT/RADIX2FFT_bitNatural.vhd
-l0
-R27
-VIM7[jRd^Pfmj>2`:`_RO?1
-!s100 L>g9M^zoNiRbH;=M`1=>]1
-R9
-32
-R42
-!i10b 1
-R94
-Z123 !s90 -reportprogress|300|../FFT/RADIX2FFT_bitNatural.vhd|
-Z124 !s107 ../FFT/RADIX2FFT_bitNatural.vhd|
-!i113 1
-R15
-Artl
-R109
-R4
-R5
-R6
-R46
-!i122 21
-l101
-L36 269
-V>]6VzDnz<WhNRM8j?XoJ]2
-!s100 >l]12@VIP1MT;ij?kKUGK0
-R9
-32
-R42
-!i10b 1
-R94
-R123
-R124
-!i113 1
-R15
-Esdfcommutator1
-R24
-R4
-R5
-R6
-!i122 10
-R0
-Z125 8../FFT/SDFCommutator1.vhd
-Z126 F../FFT/SDFCommutator1.vhd
-l0
-R27
-V6LNIAARaS^4R>h]NIS@A10
-!s100 >Z0kH[1E:KUldE]@0?2k@0
-R9
-32
-R105
-!i10b 1
-Z127 !s108 1635157966.000000
-Z128 !s90 -reportprogress|300|../FFT/SDFCommutator1.vhd|
-Z129 !s107 ../FFT/SDFCommutator1.vhd|
-!i113 1
-R15
-Artl
-R109
-R4
-R5
-R6
-R108
-!i122 10
-l119
-L49 329
-V7Z85gNW9emi4V=dOU2[JH3
-!s100 Sj;WQ:gnLSgdJl9Z1;SiD2
-R9
-32
-R105
-!i10b 1
-R127
-R128
-R129
-!i113 1
-R15
-Esdfcommutator2
-R24
-R4
-R5
-R6
-!i122 13
-R0
-Z130 8../FFT/SDFCommutator2.vhd
-Z131 F../FFT/SDFCommutator2.vhd
-l0
-R27
-V_OCCYga>aBS<oo8BeDfjC1
-!s100 ozoY8?jj>g9oMJ4SC>WWP0
-R9
-32
-R87
-!i10b 1
-R117
-Z132 !s90 -reportprogress|300|../FFT/SDFCommutator2.vhd|
-Z133 !s107 ../FFT/SDFCommutator2.vhd|
-!i113 1
-R15
-Artl
-R109
-R4
-R5
-R6
-R120
-!i122 13
-l119
-L49 341
-V1:G]jEVM3NkW`lQ2W<JgF2
-!s100 IZXA;d8lznhh5S>KfhT6@3
-R9
-32
-R87
-!i10b 1
-R117
-R132
-R133
-!i113 1
-R15
-Esdfcommutator3
-R24
-R4
-R5
-R6
-!i122 18
-R0
-Z134 8../FFT/SDFCommutator3.vhd
-Z135 F../FFT/SDFCommutator3.vhd
-l0
-R27
-V`FMhg:VGVZ:oPCo2?3NUJ0
-!s100 h85?NXem6N?bko4<b7O:f1
-R9
-32
 R28
 !i10b 1
 R29
-Z136 !s90 -reportprogress|300|../FFT/SDFCommutator3.vhd|
-Z137 !s107 ../FFT/SDFCommutator3.vhd|
+R30
+Z31 !s107 F:/intelFPGA_lite/ADS_project/test/PFB3_tb.vhd|
 !i113 1
-R15
-Artl
-R109
-R4
-R5
-R6
-R114
-!i122 18
-l125
-L49 302
-VUVjmYU>i_obcz4PTn]HBP3
-!s100 ;zDz_c=j=Z^7RDfgImTjC3
-R9
-32
-R28
-!i10b 1
-R29
-R136
-R137
-!i113 1
-R15
-Eserial_pfb
-Z138 w1635137259
-R2
-R3
-R4
-R5
-R6
-!i122 7
-R0
-Z139 8../src/serial_PFB.vhd
-Z140 F../src/serial_PFB.vhd
-l0
-R77
-VL>dY>_8L5953LilE_[YAI1
-!s100 VeS7N4<=^>L_@@J8F^f[80
-R9
-33
-R35
-!i10b 1
-R36
-Z141 !s90 -reportprogress|300|-2008|-work|work|../src/serial_PFB.vhd|
-Z142 !s107 ../src/serial_PFB.vhd|
-!i113 1
-R14
-R15
-As_pfb
-R2
-R3
-R4
-R5
-R6
-DEx4 work 10 serial_pfb 0 22 L>dY>_8L5953LilE_[YAI1
-!i122 7
-l100
-L29 101
-VC0T3IC6l`2MzGVX0GSdYm2
-!s100 RPC>mPfeX9YW^ZUN0[7UM1
-R9
-33
-R35
-!i10b 1
-R36
-R141
-R142
-!i113 1
-R14
-R15
-Esimpledualportram_generic
-R24
-R4
-R5
-R6
-!i122 9
-R0
-Z143 8../FFT/SimpleDualPortRAM_generic.vhd
-Z144 F../FFT/SimpleDualPortRAM_generic.vhd
-l0
-R27
-V=7h4Y6aOkDE7m5^bmODC13
-!s100 h=AleCADY1G;Khn`F2:K03
-R9
-32
-R73
-!i10b 1
-R127
-Z145 !s90 -reportprogress|300|../FFT/SimpleDualPortRAM_generic.vhd|
-Z146 !s107 ../FFT/SimpleDualPortRAM_generic.vhd|
-!i113 1
-R15
-Artl
-R4
-R5
-R6
-R109
-!i122 9
-l46
-L37 25
-V>N07;jMikRNdoj00ZA@PI1
-!s100 _O58Pl@nR6i5@<UihLcDK0
-R9
-32
-R73
-!i10b 1
-R127
-R145
-R146
-!i113 1
-R15
+R12
+R13
 Esumarr
-Z147 w1630898888
+Z32 w1630898888
+R14
+R1
+R2
 R3
-R4
-R5
-R6
 !i122 2
 R0
-Z148 8../src/sumArr.vhd
-Z149 F../src/sumArr.vhd
+Z33 8F:/intelFPGA_lite/ADS_project/src/sumArr.vhd
+Z34 FF:/intelFPGA_lite/ADS_project/src/sumArr.vhd
 l0
 L7 1
 V@9V`I1noN6eQ2FfDGH<<;1
 !s100 jXK<_Om^`hTB0]IoVL2fg3
-R9
+R7
 33
-R78
+R8
 !i10b 1
-R68
-Z150 !s90 -reportprogress|300|-2008|-work|work|../src/sumArr.vhd|
-Z151 !s107 ../src/sumArr.vhd|
-!i113 1
-R14
 R15
+Z35 !s90 -reportprogress|300|-2008|-work|work|F:/intelFPGA_lite/ADS_project/src/sumArr.vhd|
+Z36 !s107 F:/intelFPGA_lite/ADS_project/src/sumArr.vhd|
+!i113 1
+R12
+R13
 Asum_array
+R14
+R1
+R2
 R3
-R4
-R5
-R6
 DEx4 work 6 sumarr 0 22 @9V`I1noN6eQ2FfDGH<<;1
 !i122 2
 l35
 L20 42
 VESF:MS[0S76h;EeU>?<GD3
 !s100 YZao?0j0DGkH=TzaHeY]J3
-R9
+R7
 33
-R78
+R8
 !i10b 1
-R68
-R150
-R151
+R15
+R35
+R36
 !i113 1
+R12
+R13
+Ptest_types
+R17
 R14
-R15
-Etwdlrom_3_1
-R24
-R4
-R5
-R6
-!i122 16
+R1
+R2
+R3
+R25
+!i122 4
+R22
 R0
-Z152 8../FFT/TWDLROM_3_1.vhd
-Z153 F../FFT/TWDLROM_3_1.vhd
-l0
+R26
 R27
-V6zLLT;V<dklUhQbJQm1nU2
-!s100 ^31U4YiV@ff=HldgFA@LP1
-R9
-32
-R99
+l0
+L12 1
+V32C@gQm3_MFBJ<F=?O2Od1
+!s100 J8Y]<5>lb1dHclnKFjF2H0
+R7
+33
+R28
 !i10b 1
-R100
-Z154 !s90 -reportprogress|300|../FFT/TWDLROM_3_1.vhd|
-Z155 !s107 ../FFT/TWDLROM_3_1.vhd|
+R29
+R30
+R31
 !i113 1
-R15
-Artl
-R4
-R5
-R6
-R49
-!i122 16
-l75
-L33 321
-VVj_XPTJT?eDL5BU<dN9?J3
-!s100 ?j[cGK>8TfX02UhfbeG9@0
-R9
-32
-R99
-!i10b 1
-R100
-R154
-R155
-!i113 1
-R15
+R12
+R13

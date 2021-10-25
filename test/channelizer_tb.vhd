@@ -60,6 +60,7 @@ architecture channelizer_test of channelizer_tb is
 	
 	constant MAX_PROCESSING_TIME: integer := 500; -- maximum number of cycles for output to be received
 	
+	signal phase_sums: integer_arr(0 to phaseCount-1) := (others => 0);
 begin
 	chan: channelizer port map (clk, n_rst, x_re, x_im, write_ready, write_en,
 											 y_re, y_im, read_ready, read_en);
@@ -82,6 +83,7 @@ begin
 		variable input_im: integer_arr(0 to input_data_size-1);
 		variable expected_re: integer_arr(0 to expected_data_size-1);
 		variable expected_im: integer_arr(0 to expected_data_size-1);
+		
 		
 	begin
 		
@@ -161,6 +163,24 @@ begin
 		end loop;
 		
 		
+		
+		-----------------------------
+		
+		
+		
+		for i in 0 to phaseCount-1 loop
+			for j in 0 to tapCount-1 loop
+				phase_sums(i) <= phase_sums(i) + to_integer(h_fi(j*phaseCount + i))*expected_re(j*phaseCount + i);
+			
+			end loop;
+			report LF & "phase " & integer'image(i) & " val " & integer'image(phase_sums(i)) &
+			"------------------"
+			severity note;
+		end loop;
+		
+		
+		
+		---------------
 		-- Begin loading in data to s_PFB
 		wait until falling_edge(clk);
 		
@@ -168,14 +188,15 @@ begin
 		for test_index in 0 to input_data_size-1 loop
 			wait until falling_edge(clk);
 			write_en <= '1';
-			--x_re <= to_signed(input_re(test_index), 16);
-			--x_im <= to_signed(input_im(test_index), 16);
-			x_re <= to_fi_7Q8(input_re(test_index), '0');
-			x_im <= to_fi_7Q8(input_im(test_index), '0');
+			x_re <= to_signed(input_re(test_index), 16);
+			x_im <= to_signed(input_im(test_index), 16);
+--			x_re <= to_fi_7Q8(input_re(test_index), '0');
+--			x_im <= to_fi_7Q8(input_im(test_index), '0');
 			wait until rising_edge(clk);
 		end loop;
 		
 		write_en <= '0';
+		
 		
 		---------------
 		-- Test read_ready gets asserted

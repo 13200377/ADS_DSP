@@ -26,7 +26,7 @@ vsim -voptargs=+acc work.channelizer_tb
 
 
 
-
+add wave -position end  sim:/channelizer_tb/phase_sums
 add wave -position end  sim:/channelizer_tb/clk	
 add wave -position end  sim:/channelizer_tb/n_rst
 

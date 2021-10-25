@@ -112,11 +112,8 @@ begin
 		
 		variable testSum: integer;
 		
-		variable expectedOutput: integer_arr (0 to phaseCount-1);
 	begin
 		file_open(x_file, "PFB3_tb_x.dat", read_mode);
-		file_open(h_file, "PFB3_tb_h.dat", read_mode);
-		file_open(expected_file, "PFB3_tb_expected.dat", read_mode);
 		
 		while not endfile(x_file) loop
 			readline(x_file, f_line);
@@ -126,6 +123,9 @@ begin
 			if dataIndex >= filterOrder then
 				dataIndex := dataIndex - filterOrder;
 				testIndex := testIndex + 1;
+				if testIndex >= num_tests then
+					exit;
+				end if;
 			end if;
 			lineNum := lineNum + 1;
 		end loop;
