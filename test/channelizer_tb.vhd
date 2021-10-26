@@ -55,7 +55,7 @@ architecture channelizer_test of channelizer_tb is
 	file expected_im_file : text;
 	
 	
-	constant input_data_size: integer := 128; -- Input enough data to gain one set of outputs
+	constant input_data_size: integer := 64; -- Input enough data to gain one set of outputs
 	constant expected_data_size: integer := 128;
 	
 	constant MAX_PROCESSING_TIME: integer := 500; -- maximum number of cycles for output to be received
@@ -90,7 +90,7 @@ begin
 		--------------------
 		-- FIle loading
 		--------------------
-		file_open(input_re_file, "InPhase_Input.dat", read_mode);
+		file_open(input_re_file, "filtIn_re.dat", read_mode);
 		
 		
 		for input_index in 0 to input_data_size-1 loop
@@ -102,14 +102,14 @@ begin
 				-- throw error
 				report LF
 				  & "FAIL!" & LF
-				  & "not enough data inside InPhase_Input.dat" & LF
+				  & "not enough data inside filtIn_re.dat" & LF
 				  & "----------------"
 				  severity failure;
 				stop;
 			end if;
 		end loop;
 		
-		file_open(input_im_file, "Quadrature_Input.dat", read_mode);
+		file_open(input_im_file, "filtIn_im.dat", read_mode);
 		for input_index in 0 to input_data_size-1 loop
 			if not endfile(input_im_file) then
 				readline(input_im_file, f_in_line);
@@ -119,7 +119,7 @@ begin
 				-- throw error
 				report LF
 				  & "FAIL!" & LF
-				  & "not enough data inside Quadrature_Input.dat" & LF
+				  & "not enough data inside filtIn_im.dat" & LF
 				  & "----------------"
 				  severity failure;
 				stop;
@@ -127,7 +127,7 @@ begin
 		end loop;
 		
 		-- Load expected value into array
-		file_open(expected_re_file, "InPhase_Output.dat", read_mode);
+		file_open(expected_re_file, "fftOut_re_expected.dat", read_mode);
 		for expected_index in 0 to expected_data_size-1 loop
 			if not endfile(expected_re_file) then
 				readline(expected_re_file, f_exp_line);
@@ -137,7 +137,7 @@ begin
 				-- throw error
 				report LF
 				  & "FAIL!" & LF
-				  & "not enough data inside InPhase_Output.dat" & LF
+				  & "not enough data inside fftOut_re_expected.dat" & LF
 				  & "----------------"
 				  severity failure;
 				stop;
@@ -145,7 +145,7 @@ begin
 		end loop;
 		
 		-- Load expected value into array
-		file_open(expected_im_file, "Quadrature_Output.dat", read_mode);
+		file_open(expected_im_file, "fftOut_im_expected.dat", read_mode);
 		for expected_index in 0 to expected_data_size-1 loop
 			if not endfile(expected_im_file) then
 				readline(expected_im_file, f_exp_line);
@@ -155,7 +155,7 @@ begin
 				-- throw error
 				report LF
 				  & "FAIL!" & LF
-				  & "not enough data inside Quadrature_Output.dat" & LF
+				  & "not enough data inside fftOut_im_expected.dat" & LF
 				  & "----------------"
 				  severity failure;
 				stop;
@@ -188,18 +188,14 @@ begin
 		for test_index in 0 to input_data_size-1 loop
 			wait until falling_edge(clk);
 			write_en <= '1';
-			x_re <= to_signed(input_re(test_index), 16);
-			x_im <= to_signed(input_im(test_index), 16);
---			x_re <= to_fi_7Q8(input_re(test_index), '0');
---			x_im <= to_fi_7Q8(input_im(test_index), '0');
+			x_re <= to_fi_7Q8(input_re(test_index),'0');
+			x_im <= to_fi_7Q8(input_im(test_index),'0');
+	
 			wait until rising_edge(clk);
 		end loop;
-		
+
 		write_en <= '0';
-		
-		
-		---------------
-		-- Test read_ready gets asserted
+-- Test read_ready gets asserted
 		---------------
 		for i in 0 to MAX_PROCESSING_TIME loop
 			if read_ready = '1' then

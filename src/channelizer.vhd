@@ -130,8 +130,8 @@ begin
 	-- PFB to FFT
 	fftValidIn <= PFB_re_read_ready and PFB_im_read_ready;
 	PFB_read_en <= fftValidIn;
-	fftIn_re <= resize(y_k_re,16);
-	fftIn_im <= resize(y_k_im,16);
+	fftIn_re <= resize(shift_right(y_k_re,8),16);
+	fftIn_im <= resize(shift_right(y_k_im,8),16);
 	
 	-- FFT to FIFO
 	FIFO_wr_enable <= fftValidOut;
@@ -148,8 +148,23 @@ begin
 	y_re <= signed(FIFO_rd_data(31 downto 16));
 	y_im <= signed(FIFO_rd_data(15 downto 0));
 	
-	reset <= not n_rst;
-	clk_enable <= '1';
+	-- reset <= not n_rst when ;
+	clk_enable <= not reset;
+
+	startup : process(clk)
+		variable count : integer := 0;
+	begin
+		if rising_edge(clk) then
+			count := count + 1;
+			if count > 5 then
+				reset <= '0';
+			else
+				reset <= '1';
+			end if;
+		end if;
+	end process;
+					
+
 	
 	
 end architecture;

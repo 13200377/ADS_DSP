@@ -6,9 +6,9 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-
 vcom -2008 -work work {../src/filter_types.vhd}
 vcom -2008 -work work {../src/filterDef.vhd}
+vcom -2008 -work work {./testBenchFilterIO.vhd}
 vcom -2008 -work work {../src/sumArr.vhd}
 vcom -2008 -work work {../src/PISO_arr.vhd}
 vcom -2008 -work work {../src/PFB3.vhd}
