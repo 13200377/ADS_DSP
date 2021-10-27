@@ -36,7 +36,7 @@ architecture s_PFB of serial_PFB is
 			write_en : in std_logic;
 			write_ready: out std_logic := '1';
 			
-			y_k : out pfb_output_arr;
+			y_k : out int_arr(0 to phaseCount-1)(31 downto 0);
 			read_en : in std_logic;
 			read_ready: out std_logic := '0'
 		);
@@ -69,7 +69,7 @@ architecture s_PFB of serial_PFB is
 			clk: in std_logic;
 			n_rst: in std_logic;
 			
-			parallel_in: in pfb_output_arr;
+			parallel_in: in int_arr(0 to arrSize-1)(dataWidth-1 downto 0);
 			write_en: in std_logic;
 			write_ready: out std_logic := '1';
 			
@@ -80,7 +80,7 @@ architecture s_PFB of serial_PFB is
 	end component;
 
 	signal x_n_delay_line : tapped_delay_line;
-	signal y_k_phases     : pfb_output_arr;
+	signal y_k_phases     : int_arr(0 to phaseCount-1)(31 downto 0);
 	
 	signal PFB_write_en : std_logic;
 	signal PFB_write_ready : std_logic;

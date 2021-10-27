@@ -13,7 +13,7 @@ entity PISO_arr is
 		clk: in std_logic;
 		n_rst: in std_logic;
 		
-		parallel_in: in pfb_output_arr;
+		parallel_in: in int_arr(0 to arrSize-1)(dataWidth-1 downto 0);
 		write_en: in std_logic;
 		write_ready: out std_logic := '1';
 		
@@ -27,7 +27,7 @@ architecture PISO of PISO_arr is
 begin
 	
 	data_movement: process (clk)
-		variable mem: pfb_output_arr;
+		variable mem: int_arr(0 to arrSize-1)(dataWidth-1 downto 0);
 		variable outputIndex: integer := 0;
 		
 		variable readPerformed: boolean := false;

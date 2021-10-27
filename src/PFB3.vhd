@@ -20,7 +20,7 @@ entity PFB3 is
 		write_en : in std_logic;
 		write_ready: out std_logic := '1';
 		
-		y_k : out pfb_output_arr;
+		y_k : out int_arr(0 to phaseCount-1)(31 downto 0);
 		read_en : in std_logic;
 		read_ready: out std_logic := '0'
 	);
@@ -54,8 +54,8 @@ begin
 	shift_index: -- shift the phase index. phaseIndex mux's taps, and demux's/commutates banks
 	process(clk) is
 		
-		variable tempSum : pfb_output_arr;
-		variable commutator_buffer : pfb_output_arr;
+		variable tempSum : int_arr(0 to phaseCount-1)(31 downto 0);
+		variable commutator_buffer : int_arr(0 to phaseCount-1)(31 downto 0);
 		
 		variable write_performed: boolean := false;
 		variable read_performed: boolean := false;
