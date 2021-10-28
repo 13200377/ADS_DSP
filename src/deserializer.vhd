@@ -6,7 +6,8 @@ use work.filter_types.all;
 
 entity deserializer is 
 	generic(data_width: positive := 8;
-			  depth: positive:= 4);
+			  depth: positive:= 4;
+			  clearOnRead: boolean := false);
 	
 	port(clk     : in std_logic := '0';
 		  n_rst   : in std_logic;
@@ -64,6 +65,10 @@ begin
 		elsif falling_edge(clk) then
 			if read_performed then
 				read_ready <= '0';
+				if clearOnRead then
+					count := 0;
+					data := (others => to_fi_7Q8(0,'1'));
+				end if;
 			end if;
 			
 			if write_performed then

@@ -100,6 +100,24 @@ architecture ADS of ADS_project is
 			read_ready: out std_logic := '0'
 		);
 	end component;
+	
+	component deserializer is 
+		generic(data_width: positive := 8;
+				  depth: positive:= 4;
+				  clearOnRead: boolean := false);
+		
+		port(clk     : in std_logic := '0';
+			  n_rst   : in std_logic;
+			  
+			  serial_in : in fi_7Q8;
+			  parallel_out: out tapped_delay_line;
+			  
+			  read_en:  in std_logic  := '0';
+			  write_en: in std_logic  := '0';
+			  read_ready: out std_logic := '0';
+			  is_full : out std_logic := '0';
+			  is_empty: out std_logic := '1');
+	end component;
 
 	component Filt_CLK IS
 	port 
@@ -171,6 +189,15 @@ architecture ADS of ADS_project is
 	signal piso_rd_en : std_logic;
 	signal piso_rd_ready : std_logic;
 
+	-- Deserializer
+	signal serial_in : in fi_7Q8;
+	signal parallel_out: out tapped_delay_line;
+
+	signal read_en:  in std_logic  := '0';
+	signal write_en: in std_logic  := '0';
+	signal read_ready: out std_logic := '0';
+	signal is_full : out std_logic := '0';
+	signal is_empty: out std_logic := '1');
 	-- pll
     signal clk_8MHz : std_logic;
 	signal clk_16MHz : std_logic;
@@ -195,8 +222,14 @@ begin
 	piso : PISO_arr generic map(2,sampleWidth,true)
 				port map(clk_16MHz, n_rst, piso_in, piso_wr_en, piso_wr_ready, piso_ser_out, piso_rd_en, piso_rd_ready);
 
+	des : deserializer generic map(sampleWidth, 2, true)
+			port map(clk, r_rst, serial_in, parallel_out, read_en, write_en, ready_ready,
+						is_full, is_empty);
+						
 	clk_div : Filt_CLK port map(pll_reset, clk_50MHz, clk_16MHz, clk_8MHz, pll_locked);
 
+	
+	
 	pll_reset <= '0';
 	n_rst <= '1' when pll_locked = '1' else '0';
 	
@@ -247,6 +280,17 @@ begin
 		end if;
 	end process;
 
+	
+
+	
+	-- Channelizer to PISO
+	piso_wr_en <= pfb_readd_ready and piso_wr_ready;
+	pfb_rd_ready <= piso_wr_en;
+	
+	-- PISO to SPI
+	out_data_ready <= tx_empty and piso_rd_ready;
+	piso_rd_en <= out_data_ready;
+	
 	-- SPI Tx
 	SPI_Tx : process(clk_16MHz)
 	begin
