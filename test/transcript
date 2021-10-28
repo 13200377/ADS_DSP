@@ -1,0 +1,491 @@
+# Errors: 6, Warnings: 0
+# Errors: 3, Warnings: 0
+# Errors: 0, Warnings: 0
+# Compile of FIFO.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of FIFO_2Port.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of Filt_CLK.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of filter_types.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of filterDef.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of PFB3.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of PISO_arr.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of serial_PFB.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of shift_register.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of spi_continuous.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of sumArr.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of channelizer.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of deserializer.vhd was successful.
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd was successful.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd was successful.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+vsim work.top_test
+# vsim work.top_test 
+# Start time: 22:09:23 on Oct 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.top_test(test)
+# ** Warning: (vsim-3473) Component instance "ADS : ADS_project" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd was successful.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+vsim work.top_test
+# End time: 22:31:45 on Oct 27,2021, Elapsed time: 0:22:22
+# Errors: 0, Warnings: 10
+# vsim work.top_test 
+# Start time: 22:31:45 on Oct 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.top_test(test)
+# ** Warning: (vsim-3473) Component instance "ADS : ADS_project" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd
+# Compile of ADS_project.vhd failed with 3 errors.
+# Compile of ADS_project.vhd failed with 3 errors.
+# Errors: 0, Warnings: 0
+# Compile of FIFO.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of FIFO_2Port.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of Filt_CLK.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of filter_types.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of filterDef.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of PFB3.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of PISO_arr.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of serial_PFB.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of shift_register.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of spi_continuous.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of sumArr.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of channelizer.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of deserializer.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of channelizer_toplevel_tb.vhd was successful.
+# Errors: 3, Warnings: 0
+# Errors: 3, Warnings: 0
+# Errors: 3, Warnings: 0
+# Compile of ADS_project.vhd failed.
+# Compile of ADS_project.vhd failed with 3 errors.
+# Compile of ADS_project.vhd failed with 3 errors.
+# Compile of channelizer_toplevel_tb.vhd failed with 3 errors.
+# Compile of ADS_project.vhd failed with 8 errors.
+# Compile of ADS_project.vhd failed with 2 errors.
+# Compile of ADS_project.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd failed with 3 errors.
+# Compile of channelizer_toplevel_tb.vhd failed with 5 errors.
+# Compile of channelizer_toplevel_tb.vhd was successful.
+vsim work.top_test
+# End time: 22:38:50 on Oct 27,2021, Elapsed time: 0:07:05
+# Errors: 0, Warnings: 15
+# vsim work.top_test 
+# Start time: 22:38:50 on Oct 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types(body)
+# Loading work.top_test(test)
+# Loading work.ads_project(ads)
+# Loading ieee.math_real(body)
+# Loading work.spi_continuous(spi)
+# Loading work.filterdef
+# Loading work.channelizer(arc_channelizer)
+# Loading work.serial_pfb(s_pfb)
+# Loading work.pfb3(polyphase_filter_bank)
+# Loading work.sumarr(sum_array)
+# Loading work.deserializer(sr)
+# Loading work.piso_arr(piso)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "parallel_in".
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS/PPC/pfb_re/ser File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd Line: 16
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./channelizer_tb.do PAUSED at line 24
+vsim work.top_test
+# vsim work.top_test 
+# Start time: 22:38:50 on Oct 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types(body)
+# Loading work.top_test(test)
+# Loading work.ads_project(ads)
+# Loading ieee.math_real(body)
+# Loading work.spi_continuous(spi)
+# Loading work.filterdef
+# Loading work.channelizer(arc_channelizer)
+# Loading work.serial_pfb(s_pfb)
+# Loading work.pfb3(polyphase_filter_bank)
+# Loading work.sumarr(sum_array)
+# Loading work.deserializer(sr)
+# Loading work.piso_arr(piso)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "parallel_in".
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS/PPC/pfb_re/ser File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd Line: 16
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./channelizer_tb.do PAUSED at line 24
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd failed with 1 errors.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd was successful.
+# Compile of ADS_project.vhd was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of serial_PFB.vhd failed with 3 errors.
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd failed with 1 errors.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd was successful.
+# Compile of ADS_project.vhd was successful.
+# 15 compiles, 1 failed with 1 error.
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd failed with 2 errors.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd was successful.
+# Compile of ADS_project.vhd was successful.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd was successful.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd was successful.
+# Compile of ADS_project.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+vsim work.top_test
+# vsim work.top_test 
+# Start time: 22:38:50 on Oct 27,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.filter_types(body)
+# Loading work.top_test(test)
+# Loading work.ads_project(ads)
+# Loading ieee.math_real(body)
+# Loading work.spi_continuous(spi)
+# Loading work.filterdef
+# Loading work.channelizer(arc_channelizer)
+# Loading work.serial_pfb(s_pfb)
+# Loading work.pfb3(polyphase_filter_bank)
+# Loading work.sumarr(sum_array)
+# Loading work.deserializer(sr)
+# Loading work.piso_arr(piso)
+# ** Warning: (vsim-3473) Component instance "fft : HDL_DUT" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS/PPC File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd
+# Loading work.fifo(arch)
+# Loading work.filt_clk(syn)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.mf_pllpack(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altpll(behavior)
+# Loading altera_mf.mf_cycloneiii_pll(vital_pll)
+# Loading altera_mf.mf_cda_mn_cntr(behave)
+# Loading altera_mf.mf_cda_scale_cntr(behave)
+add wave -position insertpoint  \
+sim:/top_test/sck \
+sim:/top_test/mosi \
+sim:/top_test/miso \
+sim:/top_test/indicate_read \
+sim:/top_test/cs
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS
+# ** Note: Cyclone IV E PLL locked to incoming clock
+#    Time: 313 ps  Iteration: 3  Instance: /top_test/ADS/clk_div/altpll_component/CYCLONEIII_ALTPLL/M5
+run
+add wave -position insertpoint  \
+sim:/top_test/ADS/IQ_in_ready
+add wave -position insertpoint  \
+sim:/top_test/ADS/spi_in_buff_out
+add wave -position insertpoint  \
+sim:/top_test/ADS/y_re_out \
+sim:/top_test/ADS/y_re \
+sim:/top_test/ADS/y_im_out \
+sim:/top_test/ADS/y_im \
+sim:/top_test/ADS/x_re_out \
+sim:/top_test/ADS/x_re \
+sim:/top_test/ADS/x_im_out \
+sim:/top_test/ADS/x_im \
+sim:/top_test/ADS/tx_sr_write_en \
+sim:/top_test/ADS/tx_sr_val \
+sim:/top_test/ADS/tx_sr_read_en \
+sim:/top_test/ADS/tx_sr_is_full \
+sim:/top_test/ADS/tx_sr_is_empty \
+sim:/top_test/ADS/tx_sr_in \
+sim:/top_test/ADS/tx_sr_data \
+sim:/top_test/ADS/tx_sr_clk \
+sim:/top_test/ADS/tx_empty \
+sim:/top_test/ADS/spi_in_buff_out \
+sim:/top_test/ADS/spi_in_buff \
+sim:/top_test/ADS/sck \
+sim:/top_test/ADS/pll_reset \
+sim:/top_test/ADS/pll_locked \
+sim:/top_test/ADS/piso_wr_ready \
+sim:/top_test/ADS/piso_wr_en \
+sim:/top_test/ADS/piso_ser_out \
+sim:/top_test/ADS/piso_rd_ready \
+sim:/top_test/ADS/piso_rd_en \
+sim:/top_test/ADS/piso_in \
+sim:/top_test/ADS/pfb_wr_ready \
+sim:/top_test/ADS/pfb_wr_en \
+sim:/top_test/ADS/pfb_rd_ready \
+sim:/top_test/ADS/pfb_rd_en \
+sim:/top_test/ADS/output_shiftreg \
+sim:/top_test/ADS/out_data_ready \
+sim:/top_test/ADS/n_rst \
+sim:/top_test/ADS/mosi \
+sim:/top_test/ADS/miso \
+sim:/top_test/ADS/IQ_in_ready \
+sim:/top_test/ADS/input_shiftreg \
+sim:/top_test/ADS/indicate_read \
+sim:/top_test/ADS/in_data_ready \
+sim:/top_test/ADS/DATA_WIDTH \
+sim:/top_test/ADS/DATA_DEPTH \
+sim:/top_test/ADS/cs \
+sim:/top_test/ADS/clk_50MHz \
+sim:/top_test/ADS/clk_16MHz \
+sim:/top_test/ADS/clk_8MHz
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3473) Component instance "fft : HDL_DUT" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS/PPC File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS
+# ** Note: Cyclone IV E PLL locked to incoming clock
+#    Time: 313 ps  Iteration: 3  Instance: /top_test/ADS/clk_div/altpll_component/CYCLONEIII_ALTPLL/M5
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd was successful.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd failed with 2 errors.
+# Compile of ADS_project.vhd failed with 4 errors.
+# 15 compiles, 2 failed with 6 errors.
+# Errors: 0, Warnings: 0
+# Compile of FIFO.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of FIFO_2Port.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of Filt_CLK.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of filter_types.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of filterDef.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of PFB3.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of PISO_arr.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of serial_PFB.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of shift_register.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of spi_continuous.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of sumArr.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of channelizer.vhd was successful.
+# Errors: 0, Warnings: 0
+# Compile of deserializer.vhd was successful.
+# Errors: 2, Warnings: 0
+# Errors: 4, Warnings: 0
+# Errors: 2, Warnings: 0
+# Errors: 4, Warnings: 0
+# Errors: 2, Warnings: 0
+# Compile of channelizer_toplevel_tb.vhd failed.
+# Errors: 4, Warnings: 0
+# Compile of ADS_project.vhd failed.
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd was successful.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of ADS_project.vhd failed with 4 errors.
+# Compile of channelizer_toplevel_tb.vhd failed with 2 errors.
+# 15 compiles, 2 failed with 6 errors.
+# Compile of FIFO.vhd was successful.
+# Compile of FIFO_2Port.vhd was successful.
+# Compile of Filt_CLK.vhd was successful.
+# Compile of filter_types.vhd was successful.
+# Compile of filterDef.vhd was successful.
+# Compile of PFB3.vhd was successful.
+# Compile of PISO_arr.vhd was successful.
+# Compile of serial_PFB.vhd was successful.
+# Compile of shift_register.vhd was successful.
+# Compile of spi_continuous.vhd was successful.
+# Compile of sumArr.vhd was successful.
+# Compile of channelizer.vhd was successful.
+# Compile of deserializer.vhd was successful.
+# Compile of ADS_project.vhd was successful.
+# Compile of channelizer_toplevel_tb.vhd failed with 2 errors.
+# 15 compiles, 1 failed with 2 errors.
+# Compile of channelizer_toplevel_tb.vhd failed with 2 errors.
+# Compile of channelizer_toplevel_tb.vhd failed with 2 errors.
+# Compile of channelizer_toplevel_tb.vhd was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.filter_types(body)
+# Loading work.top_test(test)
+# Loading work.ads_project(ads)
+# Loading work.spi_continuous(spi)
+# Loading work.filterdef
+# Loading work.channelizer(arc_channelizer)
+# Loading work.serial_pfb(s_pfb)
+# Loading work.pfb3(polyphase_filter_bank)
+# Loading work.sumarr(sum_array)
+# Loading work.deserializer(sr)
+# Loading work.piso_arr(piso)
+# ** Warning: (vsim-3473) Component instance "fft : HDL_DUT" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS/PPC File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd
+# Loading work.fifo(arch)
+# Warning in wave window restart: (vish-4014) No objects found matching '/top_test/ADS/spi_in_buff_out'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/top_test/ADS/y_re_out'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/top_test/ADS/y_im_out'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/top_test/ADS/x_re_out'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/top_test/ADS/x_im_out'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/top_test/ADS/spi_in_buff_out'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/top_test/ADS/clk_8MHz'. 
+run
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 0 ps  Iteration: 0  Instance: /top_test/ADS
+add wave -position insertpoint  \
+sim:/top_test/ADS/spi_in_buff \
+sim:/top_test/ADS/sck \
+sim:/top_test/ADS/mosi \
+sim:/top_test/ADS/miso \
+sim:/top_test/ADS/IQ_in_ready \
+sim:/top_test/ADS/cs
+# End time: 23:02:49 on Oct 27,2021, Elapsed time: 0:23:59
+# Errors: 0, Warnings: 4

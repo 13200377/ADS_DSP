@@ -233,52 +233,52 @@ begin
 	pll_reset <= '0';
 	n_rst <= '1' when pll_locked = '1' else '0';
 	
-	-- Move filter output to into PISO and then PISO onto spi
-	piso_in(0) <= y_re(15 downto 8);
-	piso_in(1) <=  y_im(15 downto 8);
-	output_shiftreg <= std_logic_vector(piso_ser_out);
+	-- -- Move filter output to into PISO and then PISO onto spi
+	-- piso_in(0) <= y_re(15 downto 8);
+	-- piso_in(1) <=  y_im(15 downto 8);
+	-- output_shiftreg <= std_logic_vector(piso_ser_out);
 
-	-- Move SPI byte into shiftreg
-	-- rx_sr_in <= input_shiftreg;
-	-- Shiftreg will output 2 values, load them into filter at the same time
-	-- x_re <= to_fi_7Q8(to_integer(signed(rx_sr_data(15 downto 8))),'0'); 
-	-- x_im <= to_fi_7Q8(to_integer(signed(rx_sr_data(7 downto 0))),'0');
-	x_re <= to_fi_7Q8(spi_in_buff(0),'0');
-	x_im <= to_fi_7Q8(spi_in_buff(1),'0');
+	-- -- Move SPI byte into shiftreg
+	-- -- rx_sr_in <= input_shiftreg;
+	-- -- Shiftreg will output 2 values, load them into filter at the same time
+	-- -- x_re <= to_fi_7Q8(to_integer(signed(rx_sr_data(15 downto 8))),'0'); 
+	-- -- x_im <= to_fi_7Q8(to_integer(signed(rx_sr_data(7 downto 0))),'0');
+	-- x_re <= to_fi_7Q8(spi_in_buff(0),'0');
+	-- x_im <= to_fi_7Q8(spi_in_buff(1),'0');
 
-	pfb_wr_en <= '1' when (pfb_wr_ready = '1' AND IQ_in_ready ='1') else '0';
+	-- pfb_wr_en <= '1' when (pfb_wr_ready = '1' AND IQ_in_ready ='1') else '0';
 
 
 	-- SPI Rx
-	SPI_Rx : process (clk_16MHz)
-		variable I : integer := 0;
-	begin
+	-- SPI_Rx : process (clk_16MHz)
+	-- 	variable I : integer := 0;
+	-- begin
 
-		if rising_edge(clk_16MHz) then
+	-- 	if rising_edge(clk_16MHz) then
 			
-			-- If data is available from the SPI Module, in_data_ready will be high
-			if in_data_ready = '1' then 
-				-- rx_sr_clk <= '1';
-				indicate_read <= '1';
+	-- 		-- If data is available from the SPI Module, in_data_ready will be high
+	-- 		if in_data_ready = '1' and indicate_read = '0' then 
+	-- 			-- rx_sr_clk <= '1';
+	-- 			indicate_read <= '1';
 
-				spi_in_buff(I) <= to_integer(signed(input_shiftreg));
+	-- 			spi_in_buff(I) <= to_integer(signed(input_shiftreg));
 
-				if I = 0 then
-					I := 1;
-					IQ_in_ready <= '0';
-				else
-					I := 0;
-					IQ_in_ready <= '1';
-				end if;
+	-- 			if I = 0 then
+	-- 				I := 1;
+	-- 				IQ_in_ready <= '0';
+	-- 			else
+	-- 				I := 0;
+	-- 				IQ_in_ready <= '1';
+	-- 			end if;
 
-			else
-				-- rx_sr_clk <= '0';
-				indicate_read <= '0';
-				IQ_in_ready <= '0';
-			end if;
-		elsif falling_edge(clk_16MHz) then
-		end if;
-	end process;
+	-- 		else
+	-- 			-- rx_sr_clk <= '0';
+	-- 			indicate_read <= '0';
+	-- 			IQ_in_ready <= '0';
+	-- 		end if;
+	-- 	elsif falling_edge(clk_16MHz) then
+	-- 	end if;
+	-- end process;
 
 	
 
@@ -296,29 +296,29 @@ begin
 	begin
 		if rising_edge(clk_16MHz) then
 
-			-- IF SPI is waiting to send then tx_empty will be high
-			if tx_empty = '1'  AND piso_rd_ready = '1' then
-				-- Next output has been loaded asynchronously,
-				-- we just need to indicate we are ready to tx
-				out_data_ready <= '1';
-				-- pfb_rd_en <= '1';
-			else
-				out_data_ready <= '0';
-				-- pfb_rd_en <= '0';
-			end if;
+	-- 		-- IF SPI is waiting to send then tx_empty will be high
+	-- 		if tx_empty = '1'  AND piso_rd_ready = '1' then
+	-- 			-- Next output has been loaded asynchronously,
+	-- 			-- we just need to indicate we are ready to tx
+	-- 			out_data_ready <= '1';
+	-- 			-- pfb_rd_en <= '1';
+	-- 		else
+	-- 			out_data_ready <= '0';
+	-- 			-- pfb_rd_en <= '0';
+	-- 		end if;
 
-		elsif falling_edge(clk_16MHz) then
-			-- If filter has completed we need to put data into piso_arr
-			if pfb_rd_ready = '1' AND piso_wr_ready = '1' then
-				pfb_rd_en <= '1';
-				-- Put data into piso_arr
-				piso_wr_en <= '1';
-			else
-				pfb_rd_en <= '0';
-				piso_wr_en <= '1';
-			end if;
-		end if;
-	end process;
+	-- 	elsif falling_edge(clk_16MHz) then
+	-- 		-- If filter has completed we need to put data into piso_arr
+	-- 		if pfb_rd_ready = '1' AND piso_wr_ready = '1' then
+	-- 			pfb_rd_en <= '1';
+	-- 			-- Put data into piso_arr
+	-- 			piso_wr_en <= '1';
+	-- 		else
+	-- 			pfb_rd_en <= '0';
+	-- 			piso_wr_en <= '1';
+	-- 		end if;
+	-- 	end if;
+	-- end process;
 
 end architecture;
 		

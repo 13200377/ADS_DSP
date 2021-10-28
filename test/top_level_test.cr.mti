@@ -1,0 +1,350 @@
+{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FIFO
+-- Compiling architecture arch of FIFO
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:36 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FIFO
+-- Compiling architecture arch of FIFO
+End time: 22:56:36 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling package filterDef
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:37 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling package filterDef
+End time: 22:56:37 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:37 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity PISO_arr
+-- Compiling architecture PISO of PISO_arr
+End time: 22:56:37 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:37 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Loading package filterDef
+-- Compiling entity serial_PFB
+-- Compiling architecture s_PFB of serial_PFB
+End time: 22:56:37 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity sumArr
+-- Compiling architecture sum_array of sumArr
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_register
+-- Compiling architecture sr of shift_register
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package filter_types
+-- Compiling package body filter_types
+-- Loading package filter_types
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:37 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package filter_types
+-- Compiling package body filter_types
+-- Loading package filter_types
+End time: 22:56:37 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:37 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shift_register
+-- Compiling architecture sr of shift_register
+End time: 22:56:38 on Oct 27,2021, Elapsed time: 0:00:01
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:38 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity sumArr
+-- Compiling architecture sum_array of sumArr
+End time: 22:56:38 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Loading package filterDef
+-- Compiling entity PFB3
+-- Compiling architecture polyphase_filter_bank of PFB3
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Loading package filterDef
+-- Compiling entity channelizer
+-- Compiling architecture arc_channelizer of channelizer
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:38 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity deserializer
+-- Compiling architecture sr of deserializer
+End time: 22:56:38 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:38 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Loading package filterDef
+-- Compiling entity channelizer
+-- Compiling architecture arc_channelizer of channelizer
+End time: 22:56:38 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity ADS_project
+-- Compiling architecture ADS of ADS_project
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Loading package filterDef
+-- Compiling entity serial_PFB
+-- Compiling architecture s_PFB of serial_PFB
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd}} {0 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:40 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity ADS_project
+-- Compiling architecture ADS of ADS_project
+** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd(206): Illegal target for signal assignment.
+** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd(206): (vcom-1136) Unknown identifier "pll_reset".
+** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd(207): (vcom-1136) Unknown identifier "pll_locked".
+** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd(207): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Note: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd(292): VHDL Compiler exiting
+End time: 22:56:40 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {12.0 16.0} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity PISO_arr
+-- Compiling architecture PISO of PISO_arr
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Filt_CLK.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Filt_CLK.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Filt_CLK
+-- Compiling architecture SYN of filt_clk
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Filt_CLK.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Filt_CLK.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:36 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Filt_CLK.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Filt_CLK
+-- Compiling architecture SYN of filt_clk
+End time: 22:56:37 on Oct 27,2021, Elapsed time: 0:00:01
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:\Users\Tood\OneDrive - UTS\Documents\Git Repo\ADS_DSP\test\channelizer_toplevel_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package ENV
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity TOP_TEST
+-- Compiling architecture test of TOP_TEST
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd}} {0 {vcom -work work -2008 -explicit {C:\Users\Tood\OneDrive - UTS\Documents\Git Repo\ADS_DSP\test\channelizer_toplevel_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:39 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:\Users\Tood\OneDrive - UTS\Documents\Git Repo\ADS_DSP\test\channelizer_toplevel_tb.vhd 
+-- Loading package STANDARD
+-- Loading package ENV
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity TOP_TEST
+-- Compiling architecture test of TOP_TEST
+** Error: C:\Users\Tood\OneDrive - UTS\Documents\Git Repo\ADS_DSP\test\channelizer_toplevel_tb.vhd(72): near "wait": syntax error
+** Error: C:\Users\Tood\OneDrive - UTS\Documents\Git Repo\ADS_DSP\test\channelizer_toplevel_tb.vhd(77): Illegal sequential statement.
+** Note: C:\Users\Tood\OneDrive - UTS\Documents\Git Repo\ADS_DSP\test\channelizer_toplevel_tb.vhd(233): VHDL Compiler exiting
+End time: 22:56:40 on Oct 27,2021, Elapsed time: 0:00:01
+
+} {13.0 15.0} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity SPI_continuous
+-- Compiling architecture SPI of SPI_continuous
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FIFO_2Port
+-- Compiling architecture arch of FIFO_2port
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:36 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FIFO_2Port
+-- Compiling architecture arch of FIFO_2port
+End time: 22:56:36 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:38 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity SPI_continuous
+-- Compiling architecture SPI of SPI_continuous
+End time: 22:56:38 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Compiling entity deserializer
+-- Compiling architecture sr of deserializer
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 22:56:37 on Oct 27,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package filter_types
+-- Loading package filterDef
+-- Compiling entity PFB3
+-- Compiling architecture polyphase_filter_bank of PFB3
+End time: 22:56:37 on Oct 27,2021, Elapsed time: 0:00:00
+
+} {} {}}
