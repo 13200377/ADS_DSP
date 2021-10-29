@@ -12,8 +12,8 @@ entity deserializer is
 	port(clk     : in std_logic := '0';
 		  n_rst   : in std_logic;
 		  
-		  serial_in : in fi_7Q8;
-		  parallel_out: out tapped_delay_line;
+		  serial_in : in sample;
+		  parallel_out: out int_arr(0 to depth-1)(data_width-1 downto 0);
 		  
 		  read_en:  in std_logic  := '0';
 		  write_en: in std_logic  := '0';
@@ -29,8 +29,8 @@ begin
 	data_in: process(clk)
 		
 		variable count: integer := 0;
-		variable in_buffer: fi_7Q8;
-		variable data: tapped_delay_line;
+		variable in_buffer: sample;
+		variable data: int_arr(0 to depth-1)(data_width-1 downto 0);
 		
 		variable read_performed: boolean := false;
 		variable write_performed: boolean := false;
@@ -53,7 +53,7 @@ begin
 			
 			-- Check for reset
 			if n_rst <= '0' then
-				in_buffer := to_fi_7Q8(0,'1');
+				in_buffer := to_signed(0,sampleWidth);
 				
 				
 				reset_performed := true;
@@ -67,7 +67,8 @@ begin
 				read_ready <= '0';
 				if clearOnRead then
 					count := 0;
-					data := (others => to_fi_7Q8(0,'1'));
+					data := (others => to_signed(0,sampleWidth));
+					is_full <= '0';
 				end if;
 			end if;
 			
@@ -97,8 +98,8 @@ begin
 				is_empty <= '1';
 				read_ready <= '0';
 				count := 0;
-				data := (others => to_fi_7Q8(0,'1'));
-			end if;
+				data := (others => to_signed(0,sampleWidth));
+				end if;
 		end if;
 		
 		parallel_out <= data;

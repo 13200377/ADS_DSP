@@ -4,7 +4,7 @@ use IEEE.numeric_std.all;
 use work.filter_types.all;
 
 package filterDef is
--- Filter Coefficients as fi_7Q8
+-- Filter Coefficients as sample
 constant h_fi : coeff_array := 
 		(to_signed(-1,16),	to_signed(1,16),
 		to_signed(1,16),	to_signed(1,16),

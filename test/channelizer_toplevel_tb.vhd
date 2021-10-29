@@ -1,9 +1,13 @@
-library std;
-use std.env.all;
-
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+
+library std;
+use std.env.all;
+use std.textio.all;
+use ieee.std_logic_textio.all; -- require for writing/reading std_logic etc.
+
+
 use work.filter_types.all;
 
 
@@ -46,6 +50,18 @@ architecture test of TOP_TEST is
 	constant SCK_PERIOD: time := 200 ps; -- 5MHz
 
 	constant SLOW_PERIOD: time := 6 ns;
+
+	constant MAX_PROCESSING_TIME: integer := 500; -- maximum number of cycles for output to be received
+
+	file input_re_file : text;
+	file input_im_file : text;
+	file expected_re_file : text;
+	file expected_im_file : text;
+	
+	
+	constant input_data_size: integer := 64; -- Input enough data to gain one set of outputs
+	constant expected_data_size: integer := 128;
+			
 	
 	function reverse_vector(a: in std_logic_vector)
 	return std_logic_vector is
@@ -61,7 +77,7 @@ begin
 	-- SPI: SPI_module port map (global_clk, sck, mosi, miso, cs, 
 	-- 										input_shiftreg, output_shiftreg, out_data_ready,
 	-- 										in_data_ready, indicate_read, tx_empty);
-    ADS: ADS_project port map(miso,mosi,cs,sck,global_clk,slow_clk);
+    ADS: ADS_project port map(miso,mosi,cs,sck,global_clk,global_clk);
 	-- Clock generation
 	-- This runs in parallel with the p_main_test
 	p_clock : process is
@@ -91,22 +107,116 @@ begin
 		variable rx_val: unsigned(7 downto 0) := to_unsigned(0,8);
 		-- rx_signal is rx_val as a logic vector
 		variable rx_signal: std_logic_vector(7 downto 0);
+
+		-- File variables
+		variable f_in_line : line;
+		variable f_in_int  : integer;
+		variable f_exp_line: line;
+		variable f_exp_int : integer;
+		
+		-- Test variables
+		variable input_re: integer_arr(0 to input_data_size-1);
+		variable input_im: integer_arr(0 to input_data_size-1);
+		variable expected_re: integer_arr(0 to expected_data_size-1);
+		variable expected_im: integer_arr(0 to expected_data_size-1);
+
 	begin
+
+			--------------------
+		-- FIle loading
+		--------------------
+		file_open(input_re_file, "filtIn_re.dat", read_mode);
+		
+		
+		for input_index in 0 to input_data_size-1 loop
+			if not endfile(input_re_file) then
+				readline(input_re_file, f_in_line);
+				read(f_in_line, input_re(input_index));
+			else
+				-- If end of file has been reached before all data is loaded
+				-- throw error
+				report LF
+				  & "FAIL!" & LF
+				  & "not enough data inside filtIn_re.dat" & LF
+				  & "----------------"
+				  severity failure;
+				stop;
+			end if;
+		end loop;
+		
+		file_open(input_im_file, "filtIn_im.dat", read_mode);
+		for input_index in 0 to input_data_size-1 loop
+			if not endfile(input_im_file) then
+				readline(input_im_file, f_in_line);
+				read(f_in_line, input_im(input_index));
+			else
+				-- If end of file has been reached before all data is loaded
+				-- throw error
+				report LF
+				  & "FAIL!" & LF
+				  & "not enough data inside filtIn_im.dat" & LF
+				  & "----------------"
+				  severity failure;
+				stop;
+			end if;
+		end loop;
+		
+		-- Load expected value into array
+		file_open(expected_re_file, "fftOut_re_expected.dat", read_mode);
+		for expected_index in 0 to expected_data_size-1 loop
+			if not endfile(expected_re_file) then
+				readline(expected_re_file, f_exp_line);
+				read(f_exp_line, expected_re(expected_index));
+			else
+				-- If end of file has been reached before all data is loaded
+				-- throw error
+				report LF
+				  & "FAIL!" & LF
+				  & "not enough data inside fftOut_re_expected.dat" & LF
+				  & "----------------"
+				  severity failure;
+				stop;
+			end if;
+		end loop;
+		
+		-- Load expected value into array
+		file_open(expected_im_file, "fftOut_im_expected.dat", read_mode);
+		for expected_index in 0 to expected_data_size-1 loop
+			if not endfile(expected_im_file) then
+				readline(expected_im_file, f_exp_line);
+				read(f_exp_line, expected_im(expected_index));
+			else
+				-- If end of file has been reached before all data is loaded
+				-- throw error
+				report LF
+				  & "FAIL!" & LF
+				  & "not enough data inside fftOut_im_expected.dat" & LF
+				  & "----------------"
+				  severity failure;
+				stop;
+			end if;
+		end loop;
+		
+		
+		
+		-----------------------------
+		
+
 		--------------
 		-- test MOSI
 		--------------
 		
+		wait for CLK_PERIOD*8;
 		-- In this test the testbench acts as a master transmitting to the slave
 		cs <='1';
 		wait for CLK_PERIOD*8;
 
 		-- cycle through different test values
-		while tx_val <= 255 loop
-			tx_signal := std_logic_vector(tx_val); -- convert tx_val to logic vector
+		for test_index in 0 to 63 loop
+			-- Send a real value
+			tx_signal := reverse_vector(std_logic_vector(to_signed(input_re(test_index),8))); -- convert test_index to logic vector
 			cs <= '0';
-			
 			wait for CLK_PERIOD*8;
-			
 			-- begin transmitting bits
 			bit_count := 0;
 			while bit_count < 8 loop
@@ -115,121 +225,86 @@ begin
 				sck <='1';
 				wait for SCK_PERIOD/2;
 				sck <= '0';
-				
 				if bit_count = 7 then
 					exit;
 				end if;
-				
 				bit_count := bit_count + 1;
 			end loop;
-			
 			wait for CLK_PERIOD*8;
-			
-			-- cs <='1';
-			
-			-- wait for CLK_PERIOD*4;
-			
-			-- Check the module is indicating data has been received
-			-- if in_data_ready = '0' then
-			-- 	report LF
-			-- 	  & "FAIL!" & LF
-			-- 	  & "in_data_ready failed to assert" & LF
-			-- 	  & "----------------"
-			-- 	  severity failure;
-			-- end if;
-						
-			-- -- Check the data received is correct
-			-- if reverse_vector(input_shiftreg(7 downto 0)) /= tx_signal(7 downto 0) then
-			-- 	report LF
-			-- 	  & "FAIL!" & LF
-			-- 	  & "input_shiftreg has incorrect value" & LF
-			-- 	  & "----------------"
-			-- 	  severity failure;
-			-- end if;
-			
-			-- Now indicate we have read this value
-			indicate_read <= '1';
-			
-			wait for CLK_PERIOD*2;
-			
-			indicate_read <= '0';
-			
-
-			wait for CLK_PERIOD*8;
-			
-			if tx_val = 255 then -- We need this condition because of integer wrap
-				exit;
-			end if;
-			
-			tx_val := tx_val + 1;
-		end loop;
-		
-		--------------
-		-- test MISO
-		--------------
-		
-		
-		while rx_val <= 255 loop
-			wait for CLK_PERIOD*2;
-			-- Load data in to SPI
-			rx_signal := std_logic_vector(rx_val); -- convert incrementer to logic vector
-			output_shiftreg <= rx_signal;
-			
-			wait for CLK_PERIOD*2;
-			out_data_ready <= '1'; -- Indicate data is ready
-			wait for CLK_PERIOD*2; -- Wait to load data into internal register
-			out_data_ready <= '0';
-			
-			wait for CLK_PERIOD*2;
+			-- Send an imaginary value
+			tx_signal := reverse_vector(std_logic_vector(to_signed(input_im(test_index),8))); -- convert test_index to logic vector
 			cs <= '0';
-			wait for CLK_PERIOD*4;
-			
-			-- We now test each bit output from the module
-			-- to ensure it is the value we expect
-			bit_count := 7;
-			while bit_count >= 0 loop
-				sck <= '1';
+			wait for CLK_PERIOD*8;
+			-- begin transmitting bits
+			bit_count := 0;
+			while bit_count < 8 loop
+				mosi <= tx_signal(bit_count);
 				wait for SCK_PERIOD/2;
-				
-				-- Check miso pin has correct value
-				-- if miso /= rx_signal(bit_count) then
-				-- 	report LF
-				-- 	  & "FAIL!" & LF
-				-- 	  & "miso has incorrect value" & LF
-				-- 	  & "----------------"
-				-- 	  severity failure;
-				-- end if;
-				
-				sck<='0';
+				sck <='1';
 				wait for SCK_PERIOD/2;
-				
-				
-				if bit_count = 0 then
+				sck <= '0';
+				if bit_count = 7 then
 					exit;
 				end if;
-				bit_count := bit_count - 1;
+				bit_count := bit_count + 1;
 			end loop;
+			wait for CLK_PERIOD*8;
 			
-			wait for CLK_PERIOD*4;
-			-- cs <= '1';
-			
-			if rx_val = 255 then
-				exit;
-			end if;
-			
-			rx_val := rx_val + 1;
 		end loop;
-		
-		
-		-- Success
-		
-		report LF
-		  & "SUCCESS!" & LF
-		  & "----------------"
-		  severity note;
 
-		-- Stop the simulation
-		stop;
+		-- =====
+		-- LET the FFT Finish 
+		-- =====
+		for i in 0 to MAX_PROCESSING_TIME loop
+			wait until rising_edge(global_clk);
+		end loop;
+
+		-- =====
+		-- Send 8 more values
+		-- =====
+		for test_index in 0 to 7 loop
+			-- Send a real value
+			tx_signal := reverse_vector(std_logic_vector(to_signed(input_re(test_index),8))); -- convert test_index to logic vector
+			cs <= '0';
+			wait for CLK_PERIOD*8;
+			-- begin transmitting bits
+			bit_count := 0;
+			while bit_count < 8 loop
+				mosi <= tx_signal(bit_count);
+				wait for SCK_PERIOD/2;
+				sck <='1';
+				wait for SCK_PERIOD/2;
+				sck <= '0';
+				if bit_count = 7 then
+					exit;
+				end if;
+				bit_count := bit_count + 1;
+			end loop;
+			wait for CLK_PERIOD*8;
+			-- Send an imaginary value
+			tx_signal := reverse_vector(std_logic_vector(to_signed(input_im(test_index),8))); -- convert test_index to logic vector
+			cs <= '0';
+			wait for CLK_PERIOD*8;
+			-- begin transmitting bits
+			bit_count := 0;
+			while bit_count < 8 loop
+				mosi <= tx_signal(bit_count);
+				wait for SCK_PERIOD/2;
+				sck <='1';
+				wait for SCK_PERIOD/2;
+				sck <= '0';
+				if bit_count = 7 then
+					exit;
+				end if;
+				bit_count := bit_count + 1;
+			end loop;
+			wait for CLK_PERIOD*8;
+			
+		end loop;
+
+		for i in 0 to MAX_PROCESSING_TIME loop
+			wait until rising_edge(global_clk);
+		end loop;
 
 	end process p_main_test;
 

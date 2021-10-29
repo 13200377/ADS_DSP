@@ -10,13 +10,13 @@ entity channelizer is
 		clk: in std_logic;
 		n_rst: in std_logic;
 		
-		x_re: in fi_7Q8;
-		x_im: in fi_7Q8;
+		x_re: in sample;
+		x_im: in sample;
 		write_ready: out std_logic;
 		write_en: in std_logic;
 		
-		y_re: out fi_7Q8;
-		y_im: out fi_7Q8;
+		y_re: out sample;
+		y_im: out sample;
 		read_ready: out std_logic;
 		read_en: in std_logic
 		
@@ -30,11 +30,11 @@ architecture arc_channelizer of channelizer is
 			clk: in std_logic;
 			n_rst: in std_logic;
 			
-			x_n : in fi_7Q8;
+			x_n : in sample;
 			write_en : in std_logic;
 			write_ready: out std_logic := '1';
 			
-			y_k : out fi_15Q16;
+			y_k : out filtOutput;
 			read_en : in std_logic;
 			read_ready: out std_logic := '0'
 		);
@@ -81,8 +81,8 @@ architecture arc_channelizer of channelizer is
 	signal PFB_read_en: std_logic;
 	signal PFB_re_write_ready: std_logic;
 	signal PFB_im_write_ready: std_logic;
-	signal y_k_re: fi_15Q16;
-	signal y_k_im: fi_15Q16;
+	signal y_k_re: filtOutput;
+	signal y_k_im: filtOutput;
 	signal PFB_re_read_ready: std_logic;
 	signal PFB_im_read_ready: std_logic;
 	
@@ -97,12 +97,12 @@ architecture arc_channelizer of channelizer is
 	signal fftValidOut: std_logic;
 	
 	signal FIFO_wr_enable: std_logic;
-	signal FIFO_wr_data: std_logic_vector(31 downto 0);
+	signal FIFO_wr_data: std_logic_vector(sampleWidth*2-1 downto 0);
 	signal FIFO_full: std_logic;
 	signal FIFO_almost_full: std_logic;
 	
 	signal FIFO_rd_enable: std_logic;  
-	signal FIFO_rd_data : std_logic_vector(31 downto 0); 
+	signal FIFO_rd_data : std_logic_vector(sampleWidth*2-1 downto 0); 
 	signal FIFO_empty   : std_logic; 
 	signal FIFO_almost_empty : std_logic;
 
@@ -119,7 +119,7 @@ begin
 	fft: HDL_DUT port map (clk, reset, 
 									clk_enable, fftIn_re, fftIn_im, fftValidIn, ce_out,
 									fftOut_re, fftOut_im, fftValidOut);
-	fifo_module: fifo generic map (32, 16) port map (clk, FIFO_wr_enable, FIFO_wr_data,
+	fifo_module: fifo generic map (sampleWidth*2, phaseCount*2) port map (clk, FIFO_wr_enable, FIFO_wr_data,
 																	FIFO_full, FIFO_almost_full,
 																	FIFO_rd_enable, FIFO_rd_data,
 																	FIFO_empty, FIFO_almost_empty);
@@ -130,23 +130,23 @@ begin
 	-- PFB to FFT
 	fftValidIn <= PFB_re_read_ready and PFB_im_read_ready;
 	PFB_read_en <= fftValidIn;
-	fftIn_re <= resize(shift_right(y_k_re,8),16);
-	fftIn_im <= resize(shift_right(y_k_im,8),16);
+	fftIn_re <= y_k_re;
+	fftIn_im <= y_k_im;
 	
 	-- FFT to FIFO
 	FIFO_wr_enable <= fftValidOut;
 	FIFO_re_vec <= std_logic_vector(fftOut_re);
 	FIFO_im_vec <= std_logic_vector(fftOut_im);
 	-- Pack the complex number into the FIFO with MSB real, LSB imaginary
-	FIFO_wr_data <= FIFO_re_vec(18 downto 3) & FIFO_im_vec(18 downto 3);
+	FIFO_wr_data <= FIFO_re_vec(14 downto 7) & FIFO_im_vec(14 downto 7);
 	
 	
 	-- FIFO to out
 	FIFO_rd_enable <= read_en and not FIFO_empty;
 	read_ready <= not FIFO_empty;
 	
-	y_re <= signed(FIFO_rd_data(31 downto 16));
-	y_im <= signed(FIFO_rd_data(15 downto 0));
+	y_re <= signed(FIFO_rd_data(15 downto 8));
+	y_im <= signed(FIFO_rd_data(7 downto 0));
 	
 	-- reset <= not n_rst when ;
 	clk_enable <= not reset;
@@ -163,8 +163,6 @@ begin
 			end if;
 		end if;
 	end process;
-					
-
 	
 	
 end architecture;

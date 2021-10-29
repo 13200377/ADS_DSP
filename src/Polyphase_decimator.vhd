@@ -9,7 +9,7 @@ use work.filter_types.all;
 
 entity Polyphase_decimator is
     port (
-		x_n : in fi_7Q8;
+		x_n : in sample;
 		clk: in std_logic;
 		y_m : out signed(sampleWidth-1 downto 0)
     );
@@ -44,13 +44,8 @@ architecture fir of Polyphase_decimator is
 		);
 	end component;
 	
-	-- signal x_7Q8 : fi_7Q8;
-	signal tdl : tapped_delay_line := (to_fi_7Q8(0,'1'),	to_fi_7Q8(0,'1'),
-										to_fi_7Q8(0,'1'),	to_fi_7Q8(0,'1'),
-										to_fi_7Q8(0,'1'),	to_fi_7Q8(0,'1'),
-										to_fi_7Q8(0,'1'),	to_fi_7Q8(0,'1'),
-										to_fi_7Q8(0,'1'),	to_fi_7Q8(0,'1'),
-										to_fi_7Q8(0,'1'),	to_fi_7Q8(0,'1') );	
+	-- signal x_7Q8 : sample;
+	signal tdl : tapped_delay_line := (others => to_signed(0,sampleWidth));
 
 	signal filt_out : pfb_output_arr;
 	signal filt_sum : signed(31 downto 0);

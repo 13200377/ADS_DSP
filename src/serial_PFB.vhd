@@ -16,11 +16,11 @@ entity serial_PFB is
 		clk: in std_logic;
 		n_rst: in std_logic;
 		
-		x_n : in fi_7Q8;
+		x_n : in sample;
 		write_en : in std_logic;
 		write_ready: out std_logic := '1';
 		
-		y_k : out fi_15Q16;
+		y_k : out filtOutput;
 		read_en : in std_logic;
 		read_ready: out std_logic := '0'
 	);
@@ -36,7 +36,7 @@ architecture s_PFB of serial_PFB is
 			write_en : in std_logic;
 			write_ready: out std_logic := '1';
 			
-			y_k : out int_arr(0 to phaseCount-1)(31 downto 0);
+			y_k : out pfb_output_arr;
 			read_en : in std_logic;
 			read_ready: out std_logic := '0'
 		);
@@ -49,8 +49,8 @@ architecture s_PFB of serial_PFB is
 		port(clk     : in std_logic := '0';
 		  n_rst   : in std_logic;
 		  
-		  serial_in : in fi_7Q8;
-		  parallel_out: out tapped_delay_line;
+		  serial_in : in sample;
+		  parallel_out: out int_arr(0 to depth-1)(data_width-1 downto 0);
 		  
 		  read_en:  in std_logic  := '0';
 		  write_en: in std_logic  := '0';
@@ -79,8 +79,10 @@ architecture s_PFB of serial_PFB is
 		);
 	end component;
 
-	signal x_n_delay_line : tapped_delay_line;
-	signal y_k_phases     : int_arr(0 to phaseCount-1)(31 downto 0);
+	signal x_n_delay_line :	tapped_delay_line;
+	signal des_int_arr : int_arr(0 to filterOrder-1)(sampleWidth-1 downto 0);
+	signal y_k_phases     : pfb_output_arr;
+	signal y_k_intarr : int_arr(0 to phaseCount-1)(filtOutputWidth-1 downto 0);
 	
 	signal PFB_write_en : std_logic;
 	signal PFB_write_ready : std_logic;
@@ -101,23 +103,25 @@ begin
 	pfb_module: PFB3 port map (clk, n_rst, x_n_delay_line, PFB_write_en, PFB_write_ready,
 										y_k_phases, PFB_read_en, PFB_read_ready);
 										
-	des: deserializer generic map (16, filterOrder) 
-							port map (clk, n_rst, x_n, x_n_delay_line,
+	des: deserializer generic map (sampleWidth, filterOrder) 
+							port map (clk, n_rst, x_n, des_int_arr,
 										 des_read_en, des_write_en,
 										 des_read_ready, des_full, des_empty);
 	
-	ser: PISO_arr generic map(phaseCount, 32, true)
-					  port map (clk, n_rst, y_k_phases, ser_write_en, ser_write_ready,
+	ser: PISO_arr generic map(phaseCount, filtOutputWidth, true)
+					  port map (clk, n_rst, y_k_intarr, ser_write_en, ser_write_ready,
 									y_k, ser_read_en, ser_read_ready);
 	-- Input to des
 	des_write_en <= write_en;
 	write_ready <= PFB_write_ready; -- Deserializer is always write ready, so we check for PFB instead
 	
 	-- Des to PFB
+	x_n_delay_line <= int_arr_to_tdl(des_int_arr);
 	PFB_write_en <= PFB_write_ready and des_read_ready;
 	des_read_en <= PFB_write_en;
 	
 	-- PFB to Ser
+	y_k_intarr <= pfb_out_to_intarr(y_k_phases);
 	PFB_read_en <= PFB_read_ready and ser_write_ready;
 	ser_write_en <= PFB_read_en;
 	

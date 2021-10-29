@@ -15,31 +15,31 @@ package filter_types is
 	constant tapCount: integer := 8;
 	constant filterOrder: integer := phaseCount * tapCount;
 
-	subtype fi_7Q8 is signed(15 downto 0);
-	subtype fi_15Q16 is signed(31 downto 0);
-	subtype sample_8bit is signed(7 downto 0);
+	subtype sample is signed(15 downto 0);
+	subtype filtOutput is signed(31 downto 0);
+	subtype sample is signed(7 downto 0);
 
-	type coeff_array is array(0 to filterOrder-1) of fi_7Q8;
-	type tapped_delay_line is array (0 to phaseCount*tapCount-1) of fi_7Q8;
-	type pfb_product_arr is array (0 to tapCount-1) of fi_15Q16;
-	type pfb_output_arr is array (0 to phaseCount-1) of fi_15Q16;
+	type coeff_array is array(0 to filterOrder-1) of sample;
+	type tapped_delay_line is array (0 to phaseCount*tapCount-1) of sample;
+	type pfb_product_arr is array (0 to tapCount-1) of filtOutput;
+	type pfb_output_arr is array (0 to phaseCount-1) of filtOutput;
 
 	-- This function creates a fixed point Q7.8 number.
 	-- If is_frac = 1, the integer x is interpreted as a Q0.7 number
 	-- If is_frac = 0, the integer x is interpreted as a Q7.0 number
 	function to_fi_7Q8( x 	: in integer; 
 						is_frac : in std_logic)
-					    return fi_7Q8;
+					    return sample;
 
 	function to_fi_15Q16( x 	: in integer; 
 					is_frac : in std_logic)
-					return fi_15Q16;
+					return filtOutput;
 
-	function fi_product_to_output( x  : in fi_15Q16)
-								   return fi_7Q8;
+	function fi_product_to_output( x  : in filtOutput)
+								   return sample;
 
-	function fi_filtsum_to_output( x : in fi_15Q16)
-									return sample_8bit;
+	function fi_filtsum_to_output( x : in filtOutput)
+									return sample;
 
 	function prod_arr_to_int_arr(x : in pfb_product_arr)
 								return int_arr;
@@ -49,7 +49,7 @@ end package;
 package body filter_types is
 	function to_fi_7Q8(x : in integer;
 					   is_frac : in std_logic)
-				       return fi_7Q8 is
+				       return sample is
 
 		variable y : signed(15 downto 0);
 		variable imd : signed(7 downto 0);
@@ -70,7 +70,7 @@ package body filter_types is
 
 	function to_fi_15Q16( x 	: in integer; 
 						is_frac : in std_logic)
-						return fi_15Q16 is
+						return filtOutput is
 		variable y : signed(31 downto 0);
 		variable x_signed : signed(15 downto 0);
 	begin 
@@ -89,8 +89,8 @@ package body filter_types is
 	end function;
 
 	
-	function fi_product_to_output( x  : in fi_15Q16)
-								   return fi_7Q8 is 
+	function fi_product_to_output( x  : in filtOutput)
+								   return sample is 
 		variable y : signed(31 downto 0);
 		variable sign_mask : signed(15 downto 0);
 	begin 
@@ -113,9 +113,9 @@ package body filter_types is
 		return out_arr;
 	end function;
 
-	function fi_filtsum_to_output( x : in fi_15Q16)
-									return sample_8bit is
-	variable imd : fi_15Q16;
+	function fi_filtsum_to_output( x : in filtOutput)
+									return sample is
+	variable imd : filtOutput;
 	begin
 		imd := shift_right(x, 15);
 		return resize(imd,8);

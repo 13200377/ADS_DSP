@@ -20,13 +20,13 @@ architecture channelizer_test of channelizer_tb is
 			clk: in std_logic;
 			n_rst: in std_logic;
 			
-			x_re: in fi_7Q8;
-			x_im: in fi_7Q8;
+			x_re: in sample;
+			x_im: in sample;
 			write_ready: out std_logic;
 			write_en: in std_logic;
 			
-			y_re: out fi_7Q8;
-			y_im: out fi_7Q8;
+			y_re: out sample;
+			y_im: out sample;
 			read_ready: out std_logic;
 			read_en: in std_logic
 			
@@ -37,13 +37,13 @@ architecture channelizer_test of channelizer_tb is
 	signal clk: std_logic := '0';
 	signal n_rst: std_logic := '1';
 	
-	signal x_re: fi_7q8;
-	signal x_im: fi_7q8;
+	signal x_re: sample;
+	signal x_im: sample;
 	signal write_en : std_logic := '0';
 	signal write_ready: std_logic;
 	
-	signal y_re: fi_7Q8;
-	signal y_im: fi_7Q8;
+	signal y_re: sample;
+	signal y_im: sample;
 	signal read_en: std_logic := '0';
 	signal read_ready: std_logic;
 	

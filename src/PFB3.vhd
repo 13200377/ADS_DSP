@@ -20,7 +20,7 @@ entity PFB3 is
 		write_en : in std_logic;
 		write_ready: out std_logic := '1';
 		
-		y_k : out int_arr(0 to phaseCount-1)(31 downto 0);
+		y_k : out pfb_output_arr;
 		read_en : in std_logic;
 		read_ready: out std_logic := '0'
 	);
@@ -41,9 +41,9 @@ architecture polyphase_filter_bank of PFB3 is
     -- Declare our coefficient array
     signal h_n : coeff_array;    
 
-	signal tap_bank: pfb_product_arr := ( others =>     to_fi_15Q16(0,'0'));
-	 
-	signal tap_sum: fi_15Q16;
+	signal tap_bank: pfb_product_arr := ( others =>     to_signed(0,filtProductWidth));
+	signal tap_out : int_arr(0 to tapCount-1)(filtOutputWidth-1 downto 0);
+	signal tap_sum: filtOutput;
 	
 	signal phaseIndex : integer := phaseCount-1;
 begin
@@ -54,8 +54,8 @@ begin
 	shift_index: -- shift the phase index. phaseIndex mux's taps, and demux's/commutates banks
 	process(clk) is
 		
-		variable tempSum : int_arr(0 to phaseCount-1)(31 downto 0);
-		variable commutator_buffer : int_arr(0 to phaseCount-1)(31 downto 0);
+		variable tempSum : pfb_output_arr;
+		variable commutator_buffer : pfb_output_arr;
 		
 		variable write_performed: boolean := false;
 		variable read_performed: boolean := false;
@@ -83,7 +83,7 @@ begin
 			-- Check for reset
 			if n_rst = '0' then
 				reset_performed := true;
-				tempSum := (others => to_fi_15Q16(0,'0'));
+				tempSum := (others => to_signed(0,filtOutputWidth));
 				write_performed := false;
 				read_performed := false;
 			else
@@ -141,8 +141,8 @@ begin
 	end process;
 	
 	-- sum individual taps
-
-	sum : sumArr generic map (32, tapCount) port map (prod_arr_to_int_arr(tap_bank), tap_sum);
+	tap_out <= tap_bank_to_output(tap_bank);
+	sum : sumArr generic map (filtOutputWidth, tapCount) port map (tap_out, tap_sum);
 	
 	-- generate taps. Mux's filter coefficients and multiplies with x_n
 	gen_taps:

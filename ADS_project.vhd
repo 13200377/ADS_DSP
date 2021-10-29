@@ -10,9 +10,8 @@ entity ADS_project is
 		cs: in std_logic;
 		sck: in std_logic;
 		
-		clk_50MHz: in std_logic
-		--clk_16MHz : in std_logic
-
+		clk_50MHz: in std_logic;
+		clk_16MHz : in std_logic
 		
 		-- seg_select: out std_logic_vector(3 downto 0);
 		-- segments: out std_logic_vector(7 downto 0);
@@ -68,13 +67,13 @@ architecture ADS of ADS_project is
 		clk: in std_logic;
 		n_rst: in std_logic;
 		
-		x_re: in fi_7Q8;
-		x_im: in fi_7Q8;
+		x_re: in sample;
+		x_im: in sample;
 		write_ready: out std_logic;
 		write_en: in std_logic;
 		
-		y_re: out fi_7Q8;
-		y_im: out fi_7Q8;
+		y_re: out sample;
+		y_im: out sample;
 		read_ready: out std_logic;
 		read_en: in std_logic
 		
@@ -109,8 +108,8 @@ architecture ADS of ADS_project is
 		port(clk     : in std_logic := '0';
 			  n_rst   : in std_logic;
 			  
-			  serial_in : in fi_7Q8;
-			  parallel_out: out tapped_delay_line;
+			  serial_in : in sample;
+			  parallel_out: out int_arr(0 to depth-1)(data_width-1 downto 0);
 			  
 			  read_en:  in std_logic  := '0';
 			  write_en: in std_logic  := '0';
@@ -129,15 +128,6 @@ architecture ADS of ADS_project is
 		locked		: OUT STD_LOGIC 
 	);
 	end component;
-
-	-- SPI signals
-	signal input_shiftreg: std_logic_vector(7 downto 0);
-	signal output_shiftreg: std_logic_vector(7 downto 0) := "00000000";
-	signal out_data_ready: std_logic := '0';
-	signal in_data_ready: std_logic := '0';
-	signal indicate_read: std_logic := '0';
-	signal tx_empty: std_logic;
-	
 	--constant DATA_DEPTH : integer := 4;
 	--constant DATA_WIDTH : integer := 8;
 	
@@ -150,7 +140,7 @@ architecture ADS of ADS_project is
 	signal tx_sr_write_en: std_logic := '1';
 	signal tx_sr_is_full: std_logic;
 	signal tx_sr_is_empty: std_logic;
-
+	
 	-- rx shiftreg
 	-- signal rx_sr_in: std_logic_vector(sampleWidth-1 downto 0);
 	-- signal rx_sr_val: std_logic_vector(sampleWidth-1 downto 0) := (others => '0');
@@ -160,7 +150,7 @@ architecture ADS of ADS_project is
 	-- signal rx_sr_write_en: std_logic := '1';
 	-- signal rx_sr_is_full: std_logic;
 	-- signal rx_sr_is_empty: std_logic;
-
+	
 	
 	-- LED bar
 	-- signal byte: std_logic_vector(7 downto 0);
@@ -168,19 +158,19 @@ architecture ADS of ADS_project is
 	
 	-- PFB signals
 	signal n_rst : std_logic := '1';
-	signal x_re: fi_7Q8;
-	signal x_im: fi_7Q8;
+	signal x_re: sample;
+	signal x_im: sample;
 	signal pfb_wr_ready : std_logic;
 	signal pfb_wr_en : std_logic := '0';
-
-	signal y_re : fi_7Q8;
-	signal y_im : fi_7Q8;
+	
+	signal y_re : sample;
+	signal y_im : sample;
 	signal pfb_rd_ready : std_logic;
 	signal pfb_rd_en : std_logic :='0';
-
+	
 	-- Signal that 2 samples have been recieved
 	signal IQ_in_ready : std_logic := '0';
-
+	
 	-- PISO Arr
 	signal piso_in : int_arr(0 to 1)(sampleWidth-1 downto 0);
 	signal piso_wr_en : std_logic;
@@ -188,30 +178,38 @@ architecture ADS of ADS_project is
 	signal piso_ser_out : signed(sampleWidth-1 downto 0);
 	signal piso_rd_en : std_logic;
 	signal piso_rd_ready : std_logic;
-
+	
 	-- Deserializer
-	signal serial_in : in fi_7Q8;
-	signal parallel_out: out tapped_delay_line;
-
-	signal read_en:  in std_logic  := '0';
-	signal write_en: in std_logic  := '0';
-	signal read_ready: out std_logic := '0';
-	signal is_full : out std_logic := '0';
-	signal is_empty: out std_logic := '1');
+	signal des_serial_in : sample;
+	signal des_parallel_out: int_arr(0 to 1)(sampleWidth-1 downto 0);
+	
+	signal des_read_en:  std_logic  := '0';
+	signal des_write_en: std_logic  := '0';
+	signal des_read_ready: std_logic := '0';
+	signal des_is_full : std_logic := '0';
+	signal des_is_empty: std_logic := '1';
 	-- pll
     signal clk_8MHz : std_logic;
-	signal clk_16MHz : std_logic;
+	-- signal clk_16MHz : std_logic;
 	signal pll_reset : std_logic; -- active high reset
 	signal pll_locked : std_logic; -- high when locked
+	
 
-	signal spi_in_buff : integer_arr(0 to 1);
-
+	-- SPI signals
+	signal spi_input_shiftreg: std_logic_vector(7 downto 0);
+	signal spi_output_shiftreg: std_logic_vector(7 downto 0) := "00000000";
+	signal spi_out_data_ready: std_logic := '0';
+	signal spi_in_data_ready: std_logic := '0';
+	signal spi_indicate_read: std_logic := '0';
+	signal spi_tx_empty: std_logic;
+	
 
 begin
-
-	spi: SPI_continuous generic map (8) port map (clk_16MHz, sck, mosi, miso, cs, input_shiftreg, output_shiftreg, out_data_ready, in_data_ready, indicate_read, tx_empty);
+	
+	spi: SPI_continuous generic map (8) port map (clk_16MHz, sck, mosi, miso, cs, spi_input_shiftreg, spi_output_shiftreg, spi_out_data_ready, spi_in_data_ready, spi_indicate_read, spi_tx_empty);
+	-- spi: SPI_module generic map (8) port map (clk_16MHz, sck, mosi, miso, cs, spi_input_shiftreg, spi_output_shiftreg, spi_out_data_ready, spi_in_data_ready, spi_indicate_read, spi_tx_empty);
 	-- led_bar: leds port map (byte, led_clk, vals);
-
+	
 	-- tx_sr:  shift_register generic map (sampleWidth, 1) 
 	-- 						port map (tx_sr_in, tx_sr_val, tx_sr_data, tx_sr_clk, tx_sr_read_en, tx_sr_write_en, tx_sr_is_full, tx_sr_is_empty);
 	-- rx_sr:  shift_register generic map (sampleWidth, 2) 
@@ -223,102 +221,37 @@ begin
 				port map(clk_16MHz, n_rst, piso_in, piso_wr_en, piso_wr_ready, piso_ser_out, piso_rd_en, piso_rd_ready);
 
 	des : deserializer generic map(sampleWidth, 2, true)
-			port map(clk, r_rst, serial_in, parallel_out, read_en, write_en, ready_ready,
-						is_full, is_empty);
+			port map(clk_16MHz, n_rst, des_serial_in, des_parallel_out, des_read_en, des_write_en, des_read_ready,
+						des_is_full, des_is_empty);
 						
-	clk_div : Filt_CLK port map(pll_reset, clk_50MHz, clk_16MHz, clk_8MHz, pll_locked);
+	-- clk_div : Filt_CLK port map(pll_reset, clk_50MHz, clk_16MHz, clk_8MHz, pll_locked);
 
-	
-	
 	pll_reset <= '0';
-	n_rst <= '1' when pll_locked = '1' else '0';
-	
-	-- -- Move filter output to into PISO and then PISO onto spi
-	-- piso_in(0) <= y_re(15 downto 8);
-	-- piso_in(1) <=  y_im(15 downto 8);
-	-- output_shiftreg <= std_logic_vector(piso_ser_out);
-
-	-- -- Move SPI byte into shiftreg
-	-- -- rx_sr_in <= input_shiftreg;
-	-- -- Shiftreg will output 2 values, load them into filter at the same time
-	-- -- x_re <= to_fi_7Q8(to_integer(signed(rx_sr_data(15 downto 8))),'0'); 
-	-- -- x_im <= to_fi_7Q8(to_integer(signed(rx_sr_data(7 downto 0))),'0');
-	-- x_re <= to_fi_7Q8(spi_in_buff(0),'0');
-	-- x_im <= to_fi_7Q8(spi_in_buff(1),'0');
-
-	-- pfb_wr_en <= '1' when (pfb_wr_ready = '1' AND IQ_in_ready ='1') else '0';
-
+	n_rst <= '1';
+	-- n_rst <= '1' when pll_locked = '1' else '0';
 
 	-- SPI Rx
-	-- SPI_Rx : process (clk_16MHz)
-	-- 	variable I : integer := 0;
-	-- begin
+	des_serial_in <= signed(spi_input_shiftreg);
+	des_write_en <= spi_in_data_ready AND (NOT des_is_full);
+	spi_indicate_read <= des_write_en;
 
-	-- 	if rising_edge(clk_16MHz) then
-			
-	-- 		-- If data is available from the SPI Module, in_data_ready will be high
-	-- 		if in_data_ready = '1' and indicate_read = '0' then 
-	-- 			-- rx_sr_clk <= '1';
-	-- 			indicate_read <= '1';
-
-	-- 			spi_in_buff(I) <= to_integer(signed(input_shiftreg));
-
-	-- 			if I = 0 then
-	-- 				I := 1;
-	-- 				IQ_in_ready <= '0';
-	-- 			else
-	-- 				I := 0;
-	-- 				IQ_in_ready <= '1';
-	-- 			end if;
-
-	-- 		else
-	-- 			-- rx_sr_clk <= '0';
-	-- 			indicate_read <= '0';
-	-- 			IQ_in_ready <= '0';
-	-- 		end if;
-	-- 	elsif falling_edge(clk_16MHz) then
-	-- 	end if;
-	-- end process;
-
-	
-
-	
-	-- Channelizer to PISO
-	piso_wr_en <= pfb_readd_ready and piso_wr_ready;
-	pfb_rd_ready <= piso_wr_en;
-	
-	-- PISO to SPI
-	out_data_ready <= tx_empty and piso_rd_ready;
-	piso_rd_en <= out_data_ready;
-	
 	-- SPI Tx
-	SPI_Tx : process(clk_16MHz)
-	begin
-		if rising_edge(clk_16MHz) then
+	spi_output_shiftreg <= std_logic_vector(piso_ser_out);
+	spi_out_data_ready <= spi_tx_empty AND piso_rd_ready;
 
-	-- 		-- IF SPI is waiting to send then tx_empty will be high
-	-- 		if tx_empty = '1'  AND piso_rd_ready = '1' then
-	-- 			-- Next output has been loaded asynchronously,
-	-- 			-- we just need to indicate we are ready to tx
-	-- 			out_data_ready <= '1';
-	-- 			-- pfb_rd_en <= '1';
-	-- 		else
-	-- 			out_data_ready <= '0';
-	-- 			-- pfb_rd_en <= '0';
-	-- 		end if;
+	-- DESER to Chanelizer
+	x_re <= des_parallel_out(1);
+	x_im <= des_parallel_out(0);
+	pfb_wr_en <= pfb_wr_ready AND des_is_full;
+	des_read_en <= pfb_wr_en;
 
-	-- 	elsif falling_edge(clk_16MHz) then
-	-- 		-- If filter has completed we need to put data into piso_arr
-	-- 		if pfb_rd_ready = '1' AND piso_wr_ready = '1' then
-	-- 			pfb_rd_en <= '1';
-	-- 			-- Put data into piso_arr
-	-- 			piso_wr_en <= '1';
-	-- 		else
-	-- 			pfb_rd_en <= '0';
-	-- 			piso_wr_en <= '1';
-	-- 		end if;
-	-- 	end if;
-	-- end process;
+	-- Channelizer to Serializer
+	piso_in(1) <= y_re;
+	piso_in(0) <= y_im;
+	piso_wr_en <= piso_wr_ready AND pfb_rd_ready;
+	pfb_rd_en <= piso_wr_en;
+	
+	piso_rd_en <= spi_out_data_ready;
 
 end architecture;
 		

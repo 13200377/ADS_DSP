@@ -20,11 +20,11 @@ architecture serial_FB_test of serial_PFB_tb is
 			clk: in std_logic;
 			n_rst: in std_logic;
 			
-			x_n : in fi_7Q8;
+			x_n : in sample;
 			write_en : in std_logic;
 			write_ready: out std_logic := '1';
 			
-			y_k : out fi_15Q16;
+			y_k : out filtOutput;
 			read_en : in std_logic;
 			read_ready: out std_logic := '0'
 		);
@@ -33,11 +33,11 @@ architecture serial_FB_test of serial_PFB_tb is
 	signal clk: std_logic := '0';
 	signal n_rst: std_logic := '1';
 	
-	signal x_n: fi_7q8;
+	signal x_n: sample;
 	signal write_en : std_logic := '0';
 	signal write_ready: std_logic;
 	
-	signal y_k: fi_15Q16;
+	signal y_k: filtOutput;
 	signal read_en: std_logic := '0';
 	signal read_ready: std_logic;
 	
