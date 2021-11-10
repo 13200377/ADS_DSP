@@ -34,7 +34,8 @@ type memory is array(0 to fifo_depth-1) of std_logic_vector(data_width-1 downto 
 signal fifo_buffer : memory; 
 signal head : natural := 0; 
 signal tail : natural := 0;
-signal mem_count : natural := 0; -- amount of memory used 
+
+signal mem_count : natural := 0;
  
 signal mem_available : std_logic; 
  
@@ -76,6 +77,8 @@ begin
     fifo_rx : process(clk) is 
 		variable read_performed: boolean := false;
 		variable write_performed: boolean := false;
+        variable mem_count_var : natural := 0; -- amount of memory used 
+
     begin 
         -- Only write data in when write enable is high 
         if rising_edge(clk)  then 
@@ -107,8 +110,8 @@ begin
 				if write_performed then
 					--if head has hit the end, circle back, otherwise increment 
                 head <= circular_increment(head,fifo_depth); 
-                -- mem_count increases because new data is stored 
-                mem_count <= mem_count + 1; 
+                -- mem_count_var increases because new data is stored 
+                mem_count_var := mem_count_var + 1; 
 					 
 					 if not empty then
 							--rd_data <= fifo_buffer(tail);
@@ -122,9 +125,10 @@ begin
 					 --rd_data <= fifo_buffer(tail); 
 					 
 					 -- mem count decreases because one data unit has been removed 
-					 mem_count <= mem_count - 1; 
+					 mem_count_var := mem_count_var - 1; 
 				end if;
 			end if;
+        mem_count <= mem_count_var;
     end process; 
              
  
