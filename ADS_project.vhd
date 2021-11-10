@@ -10,8 +10,8 @@ entity ADS_project is
 		cs: in std_logic;
 		sck: in std_logic;
 		
-		clk_50MHz: in std_logic;
-		clk_16MHz : in std_logic
+		clk_50MHz: in std_logic
+		-- clk_16MHz : in std_logic
 		
 		-- seg_select: out std_logic_vector(3 downto 0);
 		-- segments: out std_logic_vector(7 downto 0);
@@ -132,14 +132,14 @@ architecture ADS of ADS_project is
 	--constant DATA_WIDTH : integer := 8;
 	
 	-- tx shiftreg
-	signal tx_sr_in: std_logic_vector(sampleWidth-1 downto 0);
-	signal tx_sr_val: std_logic_vector(sampleWidth-1 downto 0)  := (others => '0');
-	signal tx_sr_data: std_logic_vector(sampleWidth-1 downto 0);
-	signal tx_sr_clk: std_logic;
-	signal tx_sr_read_en: std_logic := '0';
-	signal tx_sr_write_en: std_logic := '1';
-	signal tx_sr_is_full: std_logic;
-	signal tx_sr_is_empty: std_logic;
+	-- signal tx_sr_in: std_logic_vector(sampleWidth-1 downto 0);
+	-- signal tx_sr_val: std_logic_vector(sampleWidth-1 downto 0)  := (others => '0');
+	-- signal tx_sr_data: std_logic_vector(sampleWidth-1 downto 0);
+	-- signal tx_sr_clk: std_logic;
+	-- signal tx_sr_read_en: std_logic := '0';
+	-- signal tx_sr_write_en: std_logic := '1';
+	-- signal tx_sr_is_full: std_logic;
+	-- signal tx_sr_is_empty: std_logic;
 	
 	-- rx shiftreg
 	-- signal rx_sr_in: std_logic_vector(sampleWidth-1 downto 0);
@@ -190,7 +190,7 @@ architecture ADS of ADS_project is
 	signal des_is_empty: std_logic := '1';
 	-- pll
     signal clk_8MHz : std_logic;
-	-- signal clk_16MHz : std_logic;
+	signal clk_16MHz : std_logic;
 	signal pll_reset : std_logic; -- active high reset
 	signal pll_locked : std_logic; -- high when locked
 	
@@ -224,11 +224,11 @@ begin
 			port map(clk_16MHz, n_rst, des_serial_in, des_parallel_out, des_read_en, des_write_en, des_read_ready,
 						des_is_full, des_is_empty);
 						
-	-- clk_div : Filt_CLK port map(pll_reset, clk_50MHz, clk_16MHz, clk_8MHz, pll_locked);
+	clk_div : Filt_CLK port map(pll_reset, clk_50MHz, clk_16MHz, clk_8MHz, pll_locked);
 
-	pll_reset <= '0';
-	n_rst <= '1';
-	-- n_rst <= '1' when pll_locked = '1' else '0';
+	-- pll_reset <= '0';
+	-- n_rst <= '1';
+	n_rst <= '1' when pll_locked = '1' else '0';
 
 	-- SPI Rx
 	des_serial_in <= signed(spi_input_shiftreg);
@@ -246,8 +246,8 @@ begin
 	des_read_en <= pfb_wr_en;
 
 	-- Channelizer to Serializer
-	piso_in(1) <= y_re;
-	piso_in(0) <= y_im;
+	piso_in(0) <= y_re;
+	piso_in(1) <= y_im;
 	piso_wr_en <= piso_wr_ready AND pfb_rd_ready;
 	pfb_rd_en <= piso_wr_en;
 	

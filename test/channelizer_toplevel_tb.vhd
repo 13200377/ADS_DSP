@@ -51,7 +51,7 @@ architecture test of TOP_TEST is
 
 	constant SLOW_PERIOD: time := 6 ns;
 
-	constant MAX_PROCESSING_TIME: integer := 500; -- maximum number of cycles for output to be received
+	constant MAX_PROCESSING_TIME: integer := 100; -- maximum number of cycles for output to be received
 
 	file input_re_file : text;
 	file input_im_file : text;

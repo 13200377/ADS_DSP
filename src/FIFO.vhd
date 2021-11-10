@@ -6,7 +6,7 @@ entity FIFO is
     generic ( 
         data_width : natural := 8; 
         -- fifo_depth minimum required for almost_full and almsot_empty thresholds 
-        fifo_depth : natural range 16 to 8192 := 32 
+        fifo_depth : natural range 8 to 8192 := 32 
     ); 
     port( 
 			clk  : in std_logic; 

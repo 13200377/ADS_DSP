@@ -66,6 +66,7 @@ architecture SPI of SPI_continuous is
         variable in_reg : std_logic_vector(frame_size-1 downto 0) := (others => '0');
         variable tx_reg: std_logic_vector(frame_size-1 downto 0);
         variable out_reg: std_logic_vector(frame_size-1 downto 0);
+        variable out_reg_hasnewdata : std_logic := '0';
         variable tx_empty_var : std_logic := '1';
 
     begin
@@ -92,13 +93,13 @@ architecture SPI of SPI_continuous is
                 out_reg := output_shiftreg; -- Load data into internal reg
                 -- If tx_reg is waiting for data
                 if out_bitcounter = 0 then
-                    tx_reg := out_reg;
-                    tx_empty <= '1';
-                    tx_empty_var := '1';
-                    out_bitcounter := 7;
-                else 
-                    tx_empty_var := '0';            -- Indicate internal reg has data
+                    tx_reg := output_shiftreg;
                     tx_empty <= '0';
+                    tx_empty_var := '0';
+                    out_bitcounter := 7;
+                    out_reg_hasnewdata := '0';
+                else 
+                    out_reg_hasnewdata := '1';
                 end if;
             end if;
 
@@ -124,13 +125,15 @@ architecture SPI of SPI_continuous is
                 -- reset 
                 if out_bitcounter = 0 then
                     -- we are out of data and grabbing new byte that was loaded to out_reg
-                    if tx_empty_var = '0' then
+                    if out_reg_hasnewdata = '1' then
                         tx_reg := out_reg;
-                        tx_empty_var := '1';
-                        tx_empty <= '1';
+                        out_reg_hasnewdata := '0';
+                        tx_empty_var := '0';
+                        tx_empty <= '0';
                     else 
                         -- we are out of data waiting for more
-                        -- tx_empty_var := '1';
+                        tx_empty_var := '1';
+                        tx_empty <= '1';
                     end if;
                     -- out_bitcounter := frame_size-1;
                 else

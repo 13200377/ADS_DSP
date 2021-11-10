@@ -1,0 +1,17 @@
+vlib work
+vcom  HDL_DUT_pkg.vhd
+vcom  SimpleDualPortRAM_generic.vhd
+vcom  SDFCommutator1.vhd
+vcom  RADIX22FFT_SDF1_1.vhd
+vcom  RADIX22FFT_CTRL1_1.vhd
+vcom  SDFCommutator2.vhd
+vcom  RADIX22FFT_SDF2_2.vhd
+vcom  RADIX22FFT_CTRL1_2.vhd
+vcom  TWDLROM_3_1.vhd
+vcom  Complex3Multiply.vhd
+vcom  SDFCommutator3.vhd
+vcom  RADIX22FFT_SDF1_3.vhd
+vcom  RADIX22FFT_CTRL1_1_block.vhd
+vcom  RADIX2FFT_bitNatural.vhd
+vcom  FFT_HDL_Optimized.vhd
+vcom  HDL_DUT.vhd

@@ -1,16 +1,4 @@
-{{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:29 on Oct 29,2021
-vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity FIFO
--- Compiling architecture arch of FIFO
-End time: 16:41:29 on Oct 29,2021, Elapsed time: 0:00:00
-
-} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Polyphase_decimator.vhd}} {0 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Polyphase_decimator.vhd}
+{{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Polyphase_decimator.vhd}} {0 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Polyphase_decimator.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 Start time: 09:14:03 on Oct 29,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Polyphase_decimator.vhd 
@@ -25,7 +13,19 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 ** Note: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Polyphase_decimator.vhd(75): VHDL Compiler exiting
 End time: 09:14:03 on Oct 29,2021, Elapsed time: 0:00:00
 
-} {12.0 13.0} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd}
+} {12.0 13.0} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:03:53 on Nov 10,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FIFO
+-- Compiling architecture arch of FIFO
+End time: 16:03:53 on Nov 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -35,22 +35,9 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package filter_types
 -- Compiling package filterDef
 
-} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX2FFT_bitNatural.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX2FFT_bitNatural.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:32 on Oct 29,2021
-vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX2FFT_bitNatural.vhd 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity RADIX2FFT_bitNatural
--- Compiling architecture rtl of RADIX2FFT_bitNatural
--- Loading entity SimpleDualPortRAM_generic
-End time: 16:41:33 on Oct 29,2021, Elapsed time: 0:00:01
-
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:30 on Oct 29,2021
+Start time: 16:03:55 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -61,30 +48,20 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package filterDef
 -- Compiling entity serial_PFB
 -- Compiling architecture s_PFB of serial_PFB
-End time: 16:41:31 on Oct 29,2021, Elapsed time: 0:00:01
+End time: 16:03:55 on Nov 10,2021, Elapsed time: 0:00:00
 
-} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_2.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_2.vhd}
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX2FFT_bitNatural.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX2FFT_bitNatural.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:33 on Oct 29,2021
-vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_2.vhd 
+Start time: 16:03:56 on Nov 10,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX2FFT_bitNatural.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity RADIX22FFT_CTRL1_2
--- Compiling architecture rtl of RADIX22FFT_CTRL1_2
-End time: 16:41:33 on Oct 29,2021, Elapsed time: 0:00:00
-
-} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Loading package filter_types
--- Compiling entity sumArr
--- Compiling architecture sum_array of sumArr
+-- Compiling entity RADIX2FFT_bitNatural
+-- Compiling architecture rtl of RADIX2FFT_bitNatural
+-- Loading entity SimpleDualPortRAM_generic
+End time: 16:03:56 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd} {2 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -98,9 +75,32 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package filter_types
 ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd(91): (vcom-1272) Length of expected is 8; length of slice name is 16.
 
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package filter_types
+-- Compiling entity sumArr
+-- Compiling architecture sum_array of sumArr
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_2.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:03:57 on Nov 10,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_2.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_CTRL1_2
+-- Compiling architecture rtl of RADIX22FFT_CTRL1_2
+End time: 16:03:57 on Nov 10,2021, Elapsed time: 0:00:00
+
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:28 on Oct 29,2021
+Start time: 16:03:53 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/channelizer.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -111,22 +111,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package filterDef
 -- Compiling entity channelizer
 -- Compiling architecture arc_channelizer of channelizer
-End time: 16:41:28 on Oct 29,2021, Elapsed time: 0:00:00
-
-} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Loading package filter_types
--- Compiling entity ADS_project
--- Compiling architecture ADS of ADS_project
+End time: 16:03:53 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SimpleDualPortRAM_generic.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SimpleDualPortRAM_generic.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:35 on Oct 29,2021
+Start time: 16:03:58 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SimpleDualPortRAM_generic.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -134,11 +123,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package NUMERIC_STD
 -- Compiling entity SimpleDualPortRAM_generic
 -- Compiling architecture rtl of SimpleDualPortRAM_generic
-End time: 16:41:35 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:58 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:31 on Oct 29,2021
+Start time: 16:03:55 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -147,35 +136,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package MATH_REAL
 -- Compiling entity SPI_continuous
 -- Compiling architecture SPI of SPI_continuous
-End time: 16:41:31 on Oct 29,2021, Elapsed time: 0:00:00
-
-} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:29 on Oct 29,2021
-vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity FIFO_2Port
--- Compiling architecture arch of FIFO_2port
-End time: 16:41:29 on Oct 29,2021, Elapsed time: 0:00:00
-
-} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:28 on Oct 29,2021
-vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package ENV
--- Loading package std_logic_textio
--- Loading package MATH_REAL
--- Loading package filter_types
--- Compiling entity TOP_TEST
--- Compiling architecture test of TOP_TEST
-End time: 16:41:28 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:55 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -190,9 +151,37 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity TOP_TEST
 -- Compiling architecture test of TOP_TEST
 
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:03:54 on Nov 10,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/FIFO_2Port.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FIFO_2Port
+-- Compiling architecture arch of FIFO_2port
+End time: 16:03:54 on Nov 10,2021, Elapsed time: 0:00:00
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:03:53 on Nov 10,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/channelizer_toplevel_tb.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ENV
+-- Loading package std_logic_textio
+-- Loading package MATH_REAL
+-- Loading package filter_types
+-- Compiling entity TOP_TEST
+-- Compiling architecture test of TOP_TEST
+End time: 16:03:53 on Nov 10,2021, Elapsed time: 0:00:00
+
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator3.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator3.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:35 on Oct 29,2021
+Start time: 16:03:58 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator3.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -201,11 +190,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Compiling entity SDFCommutator3
 -- Compiling architecture rtl of SDFCommutator3
 -- Loading entity SimpleDualPortRAM_generic
-End time: 16:41:35 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:58 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF2_2.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF2_2.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:34 on Oct 29,2021
+Start time: 16:03:57 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF2_2.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -214,7 +203,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Compiling entity RADIX22FFT_SDF2_2
 -- Compiling architecture rtl of RADIX22FFT_SDF2_2
 -- Loading entity SDFCommutator2
-End time: 16:41:34 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:57 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1_block.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1_block.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -245,7 +234,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:30 on Oct 29,2021
+Start time: 16:03:54 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -255,11 +244,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package filter_types
 -- Compiling entity PISO_arr
 -- Compiling architecture PISO of PISO_arr
-End time: 16:41:30 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:54 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:31 on Oct 29,2021
+Start time: 16:03:55 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -269,7 +258,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package filter_types
 -- Compiling entity sumArr
 -- Compiling architecture sum_array of sumArr
-End time: 16:41:31 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:55 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -301,7 +290,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1_block.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1_block.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:33 on Oct 29,2021
+Start time: 16:03:56 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1_block.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -309,11 +298,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package NUMERIC_STD
 -- Compiling entity RADIX22FFT_CTRL1_1_block
 -- Compiling architecture rtl of RADIX22FFT_CTRL1_1_block
-End time: 16:41:33 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:57 on Nov 10,2021, Elapsed time: 0:00:01
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:28 on Oct 29,2021
+Start time: 16:03:53 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -323,7 +312,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package filter_types
 -- Compiling entity deserializer
 -- Compiling architecture sr of deserializer
-End time: 16:41:29 on Oct 29,2021, Elapsed time: 0:00:01
+End time: 16:03:53 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/FFT_HDL_Optimized.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/FFT_HDL_Optimized.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -345,18 +334,18 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/HDL_DUT_pkg.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/HDL_DUT_pkg.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:32 on Oct 29,2021
+Start time: 16:03:56 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/HDL_DUT_pkg.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
 -- Compiling package HDL_DUT_pkg
-End time: 16:41:32 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:56 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:28 on Oct 29,2021
+Start time: 16:03:53 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -366,11 +355,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package filter_types
 -- Compiling entity ADS_project
 -- Compiling architecture ADS of ADS_project
-End time: 16:41:28 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:53 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:33 on Oct 29,2021
+Start time: 16:03:56 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -378,7 +367,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package NUMERIC_STD
 -- Compiling entity RADIX22FFT_CTRL1_1
 -- Compiling architecture rtl of RADIX22FFT_CTRL1_1
-End time: 16:41:33 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:56 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF1_1.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF1_1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -402,7 +391,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/TWDLROM_3_1.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/TWDLROM_3_1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:35 on Oct 29,2021
+Start time: 16:03:58 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/TWDLROM_3_1.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -410,11 +399,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package NUMERIC_STD
 -- Compiling entity TWDLROM_3_1
 -- Compiling architecture rtl of TWDLROM_3_1
-End time: 16:41:36 on Oct 29,2021, Elapsed time: 0:00:01
+End time: 16:03:58 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:30 on Oct 29,2021
+Start time: 16:03:54 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -425,7 +414,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package filterDef
 -- Compiling entity PFB3
 -- Compiling architecture polyphase_filter_bank of PFB3
-End time: 16:41:30 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:54 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/Complex3Multiply.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/Complex3Multiply.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -449,7 +438,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator2.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator2.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:35 on Oct 29,2021
+Start time: 16:03:58 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator2.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -458,11 +447,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Compiling entity SDFCommutator2
 -- Compiling architecture rtl of SDFCommutator2
 -- Loading entity SimpleDualPortRAM_generic
-End time: 16:41:35 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:58 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:31 on Oct 29,2021
+Start time: 16:03:55 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -470,11 +459,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package NUMERIC_STD
 -- Compiling entity shift_register
 -- Compiling architecture sr of shift_register
-End time: 16:41:31 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:55 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:29 on Oct 29,2021
+Start time: 16:03:54 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -485,11 +474,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Compiling package body filter_types
 -- Loading package filter_types
 ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd(91): (vcom-1272) Length of expected is 8; length of slice name is 16.
-End time: 16:41:30 on Oct 29,2021, Elapsed time: 0:00:01
+End time: 16:03:54 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/Complex3Multiply.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/Complex3Multiply.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:31 on Oct 29,2021
+Start time: 16:03:55 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/Complex3Multiply.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -497,7 +486,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package NUMERIC_STD
 -- Compiling entity Complex3Multiply
 -- Compiling architecture rtl of Complex3Multiply
-End time: 16:41:32 on Oct 29,2021, Elapsed time: 0:00:01
+End time: 16:03:55 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -524,18 +513,18 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Filt_CLK.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Filt_CLK.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:29 on Oct 29,2021
+Start time: 16:03:54 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/Filt_CLK.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity Filt_CLK
 -- Compiling architecture SYN of filt_clk
-End time: 16:41:29 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:54 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF1_1.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF1_1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:33 on Oct 29,2021
+Start time: 16:03:57 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF1_1.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -545,7 +534,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Compiling architecture rtl of RADIX22FFT_SDF1_1
 -- Loading entity SimpleDualPortRAM_generic
 -- Loading entity SDFCommutator1
-End time: 16:41:34 on Oct 29,2021, Elapsed time: 0:00:01
+End time: 16:03:57 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF2_2.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF2_2.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -570,7 +559,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/HDL_DUT.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/HDL_DUT.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:32 on Oct 29,2021
+Start time: 16:03:56 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/HDL_DUT.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -580,11 +569,11 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Compiling architecture rtl of HDL_DUT
 -- Loading package HDL_DUT_pkg
 -- Loading entity FFT_HDL_Optimized
-End time: 16:41:32 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:56 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:30 on Oct 29,2021
+Start time: 16:03:54 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -593,16 +582,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading package MATH_REAL
 -- Loading package filter_types
 -- Compiling package filterDef
-End time: 16:41:30 on Oct 29,2021, Elapsed time: 0:00:00
-
-} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity RADIX22FFT_CTRL1_1
--- Compiling architecture rtl of RADIX22FFT_CTRL1_1
+End time: 16:03:54 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator1.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -614,9 +594,40 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture rtl of SDFCommutator1
 -- Loading entity SimpleDualPortRAM_generic
 
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_CTRL1_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RADIX22FFT_CTRL1_1
+-- Compiling architecture rtl of RADIX22FFT_CTRL1_1
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package filter_types
+-- Loading package filterDef
+-- Compiling entity PFB3
+-- Compiling architecture polyphase_filter_bank of PFB3
+
+} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator3.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SDFCommutator3
+-- Compiling architecture rtl of SDFCommutator3
+-- Loading entity SimpleDualPortRAM_generic
+
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/FFT_HDL_Optimized.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/FFT_HDL_Optimized.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:32 on Oct 29,2021
+Start time: 16:03:55 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/FFT_HDL_Optimized.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -633,29 +644,7 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Loading entity RADIX22FFT_CTRL1_1_block
 -- Loading entity RADIX22FFT_SDF1_3
 -- Loading entity RADIX2FFT_bitNatural
-End time: 16:41:32 on Oct 29,2021, Elapsed time: 0:00:00
-
-} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator3.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator3.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity SDFCommutator3
--- Compiling architecture rtl of SDFCommutator3
--- Loading entity SimpleDualPortRAM_generic
-
-} {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Loading package filter_types
--- Loading package filterDef
--- Compiling entity PFB3
--- Compiling architecture polyphase_filter_bank of PFB3
+End time: 16:03:56 on Nov 10,2021, Elapsed time: 0:00:01
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/HDL_DUT.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/HDL_DUT.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -694,19 +683,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity Filt_CLK
 -- Compiling architecture SYN of filt_clk
 
-} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator1.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator1.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:34 on Oct 29,2021
-vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator1.vhd 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity SDFCommutator1
--- Compiling architecture rtl of SDFCommutator1
--- Loading entity SimpleDualPortRAM_generic
-End time: 16:41:35 on Oct 29,2021, Elapsed time: 0:00:01
-
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SimpleDualPortRAM_generic.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SimpleDualPortRAM_generic.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -715,6 +691,19 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity SimpleDualPortRAM_generic
 -- Compiling architecture rtl of SimpleDualPortRAM_generic
+
+} {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator1.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 16:03:57 on Nov 10,2021
+vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/SDFCommutator1.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SDFCommutator1
+-- Compiling architecture rtl of SDFCommutator1
+-- Loading entity SimpleDualPortRAM_generic
+End time: 16:03:58 on Nov 10,2021, Elapsed time: 0:00:01
 
 } {} {}} {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd} {1 {vcom -work work -2008 -explicit -stats=none {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -728,7 +717,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 
 } {} {}} {{C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF1_3.vhd}} {1 {vcom -work work -2008 -explicit {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF1_3.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-Start time: 16:41:34 on Oct 29,2021
+Start time: 16:03:57 on Nov 10,2021
 vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/FFT/RADIX22FFT_SDF1_3.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -738,6 +727,6 @@ vcom -reportprogress 300 -work work -2008 -explicit C:/Users/Tood/OneDrive - UTS
 -- Compiling architecture rtl of RADIX22FFT_SDF1_3
 -- Loading entity Complex3Multiply
 -- Loading entity SDFCommutator3
-End time: 16:41:34 on Oct 29,2021, Elapsed time: 0:00:00
+End time: 16:03:57 on Nov 10,2021, Elapsed time: 0:00:00
 
 } {} {}}

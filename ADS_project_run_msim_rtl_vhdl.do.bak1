@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd}
+vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/shift_register.vhd}
+vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/seven_seg_display.vhd}
+vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/seven_seg.vhd}
+vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/counter.vhd}
+vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_module.vhd}
+vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/leds.vhd}
+vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd}
+
