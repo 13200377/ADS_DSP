@@ -138,7 +138,7 @@ begin
 	FIFO_re_vec <= std_logic_vector(fftOut_re);
 	FIFO_im_vec <= std_logic_vector(fftOut_im);
 	-- Pack the complex number into the FIFO with MSB real, LSB imaginary
-	FIFO_wr_data <= std_logic_vector(resize(shift_right(signed(FIFO_re_vec),8),8)) & std_logic_vector(resize(shift_right(signed(FIFO_re_vec),8),8));
+	FIFO_wr_data <= std_logic_vector(resize(shift_right(signed(FIFO_re_vec),8),8)) & std_logic_vector(resize(shift_right(signed(FIFO_im_vec),8),8));
 	-- FIFO_wr_data <= FIFO_re_vec(14 downto 7) & FIFO_im_vec(14 downto 7);
 	
 	

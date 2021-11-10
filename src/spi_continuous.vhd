@@ -75,11 +75,11 @@ architecture SPI of SPI_continuous is
 
             -- Chip select released, init outbitcounter
             if cs_record(2 downto 1) = "11" then
-                in_bitcounter := 0;
-                out_bitcounter :=  0;
-                out_reg := (others => '0');
-                tx_empty_var := '1';
-                tx_empty <= '1';
+                -- in_bitcounter := 0;
+                -- out_bitcounter :=  0;
+                -- out_reg := (others => '0');
+                -- tx_empty_var := '1';
+                -- tx_empty <= '1';
             end if;
 
             -- Data input (mosi)
@@ -132,6 +132,7 @@ architecture SPI of SPI_continuous is
                         tx_empty <= '0';
                     else 
                         -- we are out of data waiting for more
+                        tx_reg := (others => '0');
                         tx_empty_var := '1';
                         tx_empty <= '1';
                     end if;
