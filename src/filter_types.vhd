@@ -1,94 +1,95 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
+use IEEE.math_real.all;
 
 package filter_types is
 	type uint_arr is array(natural range <>) of unsigned;
 	type int_arr is array(natural range <>) of signed;
+	type integer_arr is array(natural range <>) of integer;
+	
+	constant phaseCount : integer :=8;
+	constant tapCount: integer := 8;
+	constant filterOrder: integer := phaseCount * tapCount;
 
 	constant sampleWidth : integer :=8;
+<<<<<<< HEAD
 	constant coeffWidth : integer :=8;
 
 	constant phaseCount : integer :=8;
 	constant tapCount: integer := 8;
 	constant filterOrder: integer := phaseCount * tapCount;
+=======
+	constant coeffWidth : integer :=6;
+	constant filtOutputWidth : integer := sampleWidth + coeffWidth + integer(ceil(log2(real(phaseCount))))-1;
+	constant filtProductWidth : integer := sampleWidth + coeffWidth;
+>>>>>>> FFT_Integration
 
-	subtype fi_7Q8 is signed(15 downto 0);
-	subtype fi_15Q16 is signed(31 downto 0);
-	subtype sample_8bit is signed(7 downto 0);
+	subtype sample is signed(sampleWidth-1 downto 0);
+	subtype filtOutput is signed(filtOutputWidth-1 downto 0);
+	subtype filtProduct is signed(filtProductwidth-1 downto 0);
+	subtype coefficient is signed(coeffWidth-1 downto 0);
 
-	type coeff_array is array(0 to filterOrder-1) of fi_7Q8;
-	type tapped_delay_line is array (0 to phaseCount*tapCount-1) of fi_7Q8;
-	type pfb_product_arr is array (0 to tapCount-1) of fi_15Q16;
-	type pfb_output_arr is array (0 to phaseCount-1) of fi_15Q16;
+	type coeff_array is array(0 to filterOrder-1) of coefficient;
+	type tapped_delay_line is array (0 to filterOrder-1) of sample;
+	type pfb_output_arr is array (0 to phaseCount-1) of filtOutput;
+	type pfb_product_arr is array (0 to tapCount-1) of filtProduct;
 
 	-- This function creates a fixed point Q7.8 number.
 	-- If is_frac = 1, the integer x is interpreted as a Q0.7 number
 	-- If is_frac = 0, the integer x is interpreted as a Q7.0 number
-	function to_fi_7Q8( x 	: in integer; 
-						is_frac : in std_logic)
-					    return fi_7Q8;
+	-- function to_fi_7Q8( x 	: in integer; 
+	-- 					is_frac : in std_logic)
+	-- 				    return sample;
 
-	function to_fi_15Q16( x 	: in integer; 
-					is_frac : in std_logic)
-					return fi_15Q16;
+	-- function to_fi_15Q16( x 	: in integer; 
+	-- 				is_frac : in std_logic)
+	-- 				return filtOutput;
 
-	function fi_product_to_output( x  : in fi_15Q16)
-								   return fi_7Q8;
+	function fi_product_to_output( x  : in filtOutput)
+								   return sample;
 
-	function fi_filtsum_to_output( x : in fi_15Q16)
-									return sample_8bit;
+	function fi_filtsum_to_output( x : in filtOutput)
+									return sample;
 
 	function prod_arr_to_int_arr(x : in pfb_product_arr)
 								return int_arr;
 
+	function int_arr_to_tdl(x : in int_arr(0 to filterOrder-1)(sampleWidth-1 downto 0))
+					return tapped_delay_line;
+
+	function pfb_out_to_intarr(x : in pfb_output_arr )
+			return int_arr;
+
+	function tap_bank_to_output(x : in pfb_product_arr)
+			return int_arr;
+
 end package;
 
 package body filter_types is
-	function to_fi_7Q8(x : in integer;
-					   is_frac : in std_logic)
-				       return fi_7Q8 is
 
-		variable y : signed(15 downto 0);
-		variable imd : signed(7 downto 0);
-	begin 
-		imd := to_signed(x,8);
-		if (is_frac = '1') then
-			-- Put y in the low 8 bits
-			y := resize(imd,16);
-		elsif (is_frac = '0') then
-			-- Move to high 8,              
-			y := (resize(imd,16) sll 8);
-		else
-			-- Move to high 8,              
-			y := (resize(imd,16) sll 8);
-			end if;
-		return y;
+	function int_arr_to_tdl(x : in int_arr(0 to filterOrder-1)(sampleWidth-1 downto 0))
+		return tapped_delay_line is
+			variable out_arr : tapped_delay_line;
+		begin
+			for i in 0 to x'length-1 loop
+				out_arr(i) := x(i);
+			end loop;
+		return out_arr;
 	end function;
 
-	function to_fi_15Q16( x 	: in integer; 
-						is_frac : in std_logic)
-						return fi_15Q16 is
-		variable y : signed(31 downto 0);
-		variable x_signed : signed(15 downto 0);
-	begin 
-		x_signed := to_signed(x,16);
-		if (is_frac = '1') then
-			y := resize(x_signed,32);
-		elsif (is_frac = '0') then
-			-- Move to high 8,           
-			y := (resize(x_signed,32) sll 16);
-			return y;
-		else
-			-- Move to high 8,               
-			y := (resize(x_signed,32) sll 16);
-			end if;
-		return y;
-	end function;
-
+	function pfb_out_to_intarr(x : in pfb_output_arr )
+	return int_arr is
+		variable out_arr : int_arr(0 to phaseCount-1)(filtOutputWidth-1 downto 0);
+	begin
+		for i in 0 to x'length-1 loop
+			out_arr(i) := x(i);
+		end loop;
+	return out_arr;
+end function;
 	
-	function fi_product_to_output( x  : in fi_15Q16)
-								   return fi_7Q8 is 
+	function fi_product_to_output( x  : in filtOutput)
+								   return sample is 
 		variable y : signed(31 downto 0);
 		variable sign_mask : signed(15 downto 0);
 	begin 
@@ -103,7 +104,7 @@ package body filter_types is
 	-- We do this when we want to use sumArr on a pfb_produc_arr!		
 	function prod_arr_to_int_arr(x : in pfb_product_arr)
 			return int_arr is
-	variable out_arr : int_arr(0 to x'length-1)(31 downto 0);
+	variable out_arr : int_arr(0 to x'length-1)(filtOutputWidth-1 downto 0);
 	begin
 		for i in 0 to x'length-1 loop
 			out_arr(i) := signed(x(i));
@@ -111,13 +112,30 @@ package body filter_types is
 		return out_arr;
 	end function;
 
-	function fi_filtsum_to_output( x : in fi_15Q16)
-									return sample_8bit is
-	variable imd : fi_15Q16;
+	function fi_filtsum_to_output( x : in filtOutput)
+									return sample is
+	variable imd : filtOutput;
 	begin
+<<<<<<< HEAD
 		imd := shift_right(x,15);
+=======
+		imd := shift_right(x, 15);
+>>>>>>> FFT_Integration
 		return resize(imd,8);
 	end function;
+
+	
+	function tap_bank_to_output(x : in pfb_product_arr)
+			return int_arr is
+		variable out_arr : int_arr(0 to tapCount-1)(filtOutputWidth-1 downto 0);
+	begin
+		for i in 0 to x'length-1 loop
+			out_arr(i) := resize(x(i),filtOutputWidth);
+		end loop;
+		return out_arr;
+	end function;
+
+
 
 
 

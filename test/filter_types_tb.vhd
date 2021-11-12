@@ -33,9 +33,9 @@ end entity;
 architecture filt_test of filter_types_tb is
 
 	-- Create signals for data io to filter
-	signal x_n : fi_7Q8;
+	signal x_n : sample;
     signal expected_x : signed(15 downto 0);
-    signal p_k : fi_15Q16;
+    signal p_k : filtOutput;
 	-- signal y_k : signed(sampleWidth-1 downto 0);
     
 	-- signal clk: std_logic := '0';
@@ -44,7 +44,7 @@ architecture filt_test of filter_types_tb is
     
     p_main_test: 
     process is
-        variable p_k_var : fi_15Q16;
+        variable p_k_var : filtOutput;
 	begin
         -- Test to_fi_7Q8 fcn as fractional parts
         -- for x in -128 to 127 loop
@@ -61,7 +61,7 @@ architecture filt_test of filter_types_tb is
         --     end if;
         -- end loop;
         
-        -- -- Test fi_7Q8 as decimal parts
+        -- -- Test sample as decimal parts
         -- for x in -128 to 127 loop
         --     x_n <= to_fi_7Q8(x,'0');
         --     expected_x <= to_signed(x,16) sll 8;

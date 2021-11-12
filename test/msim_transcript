@@ -1,0 +1,200 @@
+# Reading pref.tcl
+# do ADS_project_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/filter_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:52:55 on Oct 24,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/filter_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Compiling package body filter_types
+# -- Loading package filter_types
+# End time: 16:52:56 on Oct 24,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/shift_register.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:52:56 on Oct 24,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/shift_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity shift_register
+# -- Compiling architecture sr of shift_register
+# End time: 16:52:57 on Oct 24,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:52:57 on Oct 24,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/seven_seg_display.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg_display
+# -- Compiling architecture display of seven_seg_display
+# End time: 16:52:57 on Oct 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:52:57 on Oct 24,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/seven_seg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity seven_seg
+# -- Compiling architecture s_seg of seven_seg
+# End time: 16:52:58 on Oct 24,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:52:58 on Oct 24,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity counter
+# -- Compiling architecture SYN of counter
+# End time: 16:52:58 on Oct 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/spi_module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:52:58 on Oct 24,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/spi_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 16:52:59 on Oct 24,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/leds.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:52:59 on Oct 24,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/src/leds.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity leds
+# -- Compiling architecture my_leds of leds
+# End time: 16:52:59 on Oct 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/ADS_project.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:52:59 on Oct 24,2021
+# vcom -reportprogress 300 -2008 -work work F:/intelFPGA_lite/ADS_project/ADS_project.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity ADS_project
+# -- Compiling architecture ADS of ADS_project
+# End time: 16:52:59 on Oct 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+cd ..
+# reading modelsim.ini
+ls
+# 8-bit-processor.qpf
+# ADS_Project.cr.mti
+# ADS_Project.mpf
+# ADS_Project_test.cr.mti
+# ADS_Project_test.mpf
+# ADS_project.qpf
+# ADS_project.qsf
+# ADS_project.vhd
+# ADS_project.vhd.bak
+# ADS_project_assignment_defaults.qdf
+# ADS_project_echo.vhd
+# ADS_project_nativelink_simulation.rpt
+# FFT
+# FFT_8port_fft_ii_0_opt_twi1.hex
+# FFT_8port_fft_ii_0_opt_twr1.hex
+# db
+# greybox_tmp
+# incremental_db
+# modelsim.ini
+# output_files
+# platformDesign
+# platformDesign.qsys
+# platformDesign.sopcinfo
+# simulation
+# src
+# test
+# transcript
+# unnamed
+cd FFT
+# reading F:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
+do HDL_DUT_tb_sim.do
+# vsim -voptargs="+acc" work.HDL_DUT_tb 
+# Start time: 16:53:23 on Oct 24,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.hdl_dut_pkg
+# Loading work.hdl_dut_tb_pkg(body)
+# Loading work.hdl_dut_tb(rtl)
+# Loading work.hdl_dut(rtl)
+# Loading work.fft_hdl_optimized(rtl)
+# Loading work.radix22fft_ctrl1_1(rtl)
+# Loading work.radix22fft_sdf1_1(rtl)
+# Loading work.simpledualportram_generic(rtl)
+# Loading work.sdfcommutator1(rtl)
+# Loading work.radix22fft_ctrl1_2(rtl)
+# Loading work.radix22fft_sdf2_2(rtl)
+# Loading work.sdfcommutator2(rtl)
+# Loading work.twdlrom_3_1(rtl)
+# Loading work.radix22fft_ctrl1_1_block(rtl)
+# Loading work.radix22fft_sdf1_3(rtl)
+# Loading work.complex3multiply(rtl)
+# Loading work.sdfcommutator3(rtl)
+# Loading work.radix2fft_bitnatural(rtl)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Tood  Hostname: DESKTOP-KN970A4  ProcessID: 5068
+#           Attempting to use alternate WLF file "./wlftbx4rhc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbx4rhc
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."/=": metavalue detected, returning TRUE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_twdlROM_3
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /hdl_dut_tb/u_HDL_DUT/u_FFT_HDL_Optimized/u_NaturalOrder_Stage
+# ** Note: **************TEST COMPLETED (PASSED)**************
+#    Time: 1180 ns  Iteration: 1  Instance: /hdl_dut_tb

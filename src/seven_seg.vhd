@@ -25,7 +25,8 @@ begin
 									 "0111001" when "1100", -- 067 C
 									 "1011110" when "1101", -- 068 D
 									 "1111001" when "1110", -- 069 E
-									 "1110001" when "1111"; -- 070 F
+									 "1110001" when "1111", -- 070 F
+									 "0000000" when others;
 		seg_inv(7) <= '0'; -- dp
 	seg <= not seg_inv;
 end s_seg;

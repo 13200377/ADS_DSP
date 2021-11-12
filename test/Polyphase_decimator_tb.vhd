@@ -41,7 +41,7 @@ architecture decimator_test of Polyphase_decimator_tb is
 	-- 	tapCount: integer
     -- );
     port (
-		x_n : in fi_7Q8;
+		x_n : in sample;
 		clk: in std_logic;
 		y_m : out signed(sampleWidth-1 downto 0)
     );
@@ -66,7 +66,7 @@ architecture decimator_test of Polyphase_decimator_tb is
 	signal expected_y :  int_arr(0 to numSamples/phaseCount-1)(sampleWidth-1 downto 0);
 
 	-- Create signals for data io to filter
-	signal x_n : fi_7Q8;
+	signal x_n : sample;
 	signal y_k : signed(sampleWidth-1 downto 0);
 	signal y_ex : signed(sampleWidth-1 downto 0) ;
 	signal phase: integer := 0;

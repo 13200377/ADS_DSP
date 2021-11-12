@@ -3,10 +3,6 @@ use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
 use work.filter_types.all;
--- package filter_types is
--- 	type uint_arr is array(natural range <>) of unsigned;
--- 	type int_arr is array(natural range <>) of signed;
--- end package;
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -16,24 +12,25 @@ use work.filter_types.all;
 use work.filterDef.all;
 
 entity PFB3 is
-	-- generic(
-	-- 	sampleWidth: integer := 8;
-	-- 	coeffWidth: integer := 8;
-	-- 	phaseCount: integer;
-	-- 	tapCount: integer
-	-- );
 	port (
-		x_n : in tapped_delay_line;
 		clk: in std_logic;
-		y_k : out pfb_output_arr
+		n_rst: in std_logic;
+		
+		x_n : in tapped_delay_line;
+		write_en : in std_logic;
+		write_ready: out std_logic := '1';
+		
+		y_k : out pfb_output_arr;
+		read_en : in std_logic;
+		read_ready: out std_logic := '0'
 	);
 end entity;
 
 architecture polyphase_filter_bank of PFB3 is
 	component sumArr is
 		generic(
-			dataWidth: integer;
-			arrSize: integer
+			dataWidth: integer := 8;
+			arrSize: integer := 1
 		);
 		port(
 			arr : in int_arr(0 to arrSize-1)(dataWidth-1 downto 0);
@@ -44,22 +41,11 @@ architecture polyphase_filter_bank of PFB3 is
     -- Declare our coefficient array
     signal h_n : coeff_array;    
 
-	signal tap_bank: pfb_product_arr := (
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0'), 
-            to_fi_15Q16(0,'0')
-    );
-	-- signal tap_bank_truncated: int_arr(0 to tapCount-1)(sampleWidth - 1 downto 0);
-	--signal commutator_buffer: int_arr(0 to tapCount-1)(sampleWidth-1 downto 0);
+	signal tap_bank: pfb_product_arr := ( others =>     to_signed(0,filtProductWidth));
+	signal tap_out : int_arr(0 to tapCount-1)(filtOutputWidth-1 downto 0);
+	signal tap_sum: filtOutput;
 	
-	signal tap_sum: fi_15Q16;
-	
-	signal phaseIndex : integer := 0;
+	signal phaseIndex : integer := phaseCount-1;
 begin
 
     -- Coefficient array is internally generated in filter_types
@@ -70,28 +56,93 @@ begin
 		
 		variable tempSum : pfb_output_arr;
 		variable commutator_buffer : pfb_output_arr;
+		
+		variable write_performed: boolean := false;
+		variable read_performed: boolean := false;
+		variable reset_performed: boolean := false;
+		variable dataReady: boolean := false;
+		
+		variable numVals: integer := 0;
 	begin
 		if rising_edge(clk) then
-			if phaseIndex = 0 then
-				phaseIndex <= phaseCount - 1;
+			-- Check for writes
+			if write_en = '1' then
+				tempSum(phaseIndex) := tap_sum;
+				write_performed := true;
 			else
-				phaseIndex <= phaseIndex - 1;
+				write_performed := false;
 			end if;
-		-- end if;
-	
-		-- Output 
+		
+			-- Check for reads
+			if read_en = '1' then
+				read_performed := true;
+			else
+				read_performed := false;
+			end if;
+			
+			-- Check for reset
+			if n_rst = '0' then
+				reset_performed := true;
+				tempSum := (others => to_signed(0,filtOutputWidth));
+				write_performed := false;
+				read_performed := false;
+			else
+				reset_performed := false;
+			end if;
+			
 		elsif falling_edge(clk) then
-			tempSum(phaseIndex) := tap_sum;
-			if phaseIndex = 0 then
-				commutator_buffer := tempSum;
-				y_k <= commutator_buffer;
+			-- Action read
+			if read_performed then
+				read_ready <= '0';
+				write_ready <= '1';
+				dataReady := false;
 			end if;
-			--y_k(phaseIndex) <= tempSum(phaseIndex);
+			
+			-- Action write
+			if write_performed then
+				if numVals < filterOrder then
+					numVals := numVals + 1;
+				end if;
+				
+				
+				if phaseIndex = 0 then
+					commutator_buffer := tempSum;
+					y_k <= commutator_buffer;
+					if numVals >= phaseCount*(tapCount-1) + 1 then
+						read_ready <= '1';
+						write_ready <= '1';
+						dataReady := true;
+					end if;
+				end if;
+				
+				
+				-- If the next write will be to the final value
+				-- but the read has not been cleared yet
+				-- indicate that write should not be made
+				if phaseIndex = 1 and dataReady then
+					write_ready <= '0';
+				end if;
+				
+				-- Increment phaseIndex with wrapping
+				if phaseIndex = 0 then
+					phaseIndex <= phaseCount - 1;
+				else
+					phaseIndex <= phaseIndex - 1;
+				end if;
+			end if;
+			
+			-- Action reset
+			if reset_performed then
+				phaseIndex <= phaseCount-1;
+				dataReady := false;
+				numVals := 0;
+			end if;
 		end if;
 	end process;
 	
 	-- sum individual taps
-	sum : sumArr generic map (32, tapCount) port map (prod_arr_to_int_arr(tap_bank), tap_sum);
+	tap_out <= tap_bank_to_output(tap_bank);
+	sum : sumArr generic map (filtOutputWidth, tapCount) port map (tap_out, tap_sum);
 	
 	-- generate taps. Mux's filter coefficients and multiplies with x_n
 	gen_taps:
