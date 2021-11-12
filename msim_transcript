@@ -1,0 +1,1617 @@
+# Reading pref.tcl
+# do ADS_project_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/Program Files/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:18 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:20:18 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/leds.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:18 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/leds.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity leds
+# -- Compiling architecture my_leds of leds
+# End time: 13:20:18 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:18 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filter_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package filter_types
+# -- Compiling package body filter_types
+# -- Loading package filter_types
+# End time: 13:20:18 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:18 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/deserializer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity deserializer
+# -- Compiling architecture sr of deserializer
+# End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:19 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/filterDef.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling package filterDef
+# End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:19 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/ADS_project.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity ADS_project
+# -- Compiling architecture ADS of ADS_project
+# End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:19 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/sumArr.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity sumArr
+# -- Compiling architecture sum_array of sumArr
+# End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serializer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:19 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serializer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Compiling entity serializer
+# -- Compiling architecture PISO of serializer
+# End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:19 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Loading package filterDef
+# -- Compiling entity serial_PFB
+# -- Compiling architecture s_PFB of serial_PFB
+# End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:20:19 on Oct 25,2021
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PFB3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package filter_types
+# -- Loading package filterDef
+# -- Compiling entity PFB3
+# -- Compiling architecture polyphase_filter_bank of PFB3
+# End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# Modified modelsim.ini
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:08 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:21:08 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:21:17 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 13:21:17 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.spi_module_tb
+# vsim work.spi_module_tb 
+# Start time: 13:21:20 on Oct 25,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.spi_module_tb(test)
+# Loading ieee.math_real(body)
+# Loading work.spi_module(spi)
+add wave -position insertpoint  \
+sim:/spi_module_tb/tx_empty \
+sim:/spi_module_tb/SCK_PERIOD \
+sim:/spi_module_tb/sck \
+sim:/spi_module_tb/output_shiftreg \
+sim:/spi_module_tb/out_data_ready \
+sim:/spi_module_tb/mosi \
+sim:/spi_module_tb/miso \
+sim:/spi_module_tb/input_shiftreg \
+sim:/spi_module_tb/indicate_read \
+sim:/spi_module_tb/in_data_ready \
+sim:/spi_module_tb/global_clk \
+sim:/spi_module_tb/cs \
+sim:/spi_module_tb/CLK_PERIOD
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /spi_module_tb/SPI
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 1054800 ps  Iteration: 0  Instance: /spi_module_tb
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd line 222
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 1059 ns  Iteration: 0  Instance: /spi_module_tb
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd line 222
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:24:41 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:24:41 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:24:43 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 13:24:43 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_module_tb(test)
+# Loading work.spi_module(spi)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /spi_module_tb/SPI
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 2 ns  Iteration: 0  Process: /spi_module_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd line 127
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 2 ns  Iteration: 0  Process: /spi_module_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd line 136
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:25:59 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 13:25:59 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_module_tb(test)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /spi_module_tb/SPI
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 2080 ps  Iteration: 0  Process: /spi_module_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd line 127
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:27:47 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:27:47 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:27:49 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 13:27:49 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_module_tb(test)
+# Loading work.spi_module(spi)
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /spi_module_tb/SPI
+run
+run
+run
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 2080 ps  Iteration: 0  Process: /spi_module_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_module_tb.vhd line 127
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:29:56 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:29:56 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:30:04 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/SPI_module.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:30:04 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:30:28 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(44): near "vairable": (vcom-1576) expecting BEGIN.
+# End time: 13:30:28 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:30:36 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(44): near "vairable": (vcom-1576) expecting BEGIN.
+# End time: 13:30:36 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:30:55 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(44): (vcom-1136) Unknown identifier "fram_size".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(44): (vcom-1591) Bad expression in left bound of range expression.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(44): Type error in range expression.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(44): (vcom-1294) Declaration with designator "out_reg" already exists in this region.
+# ** =====> Prior declaration of "out_reg" is at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(39).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(65): near "out_bitcounter": syntax error
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(71): Signal "out_bitcounter" cannot be target of variable assignment statement.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(71): Target type ieee.NUMERIC_STD.UNSIGNED in variable assignment is different from expression type std.STANDARD.INTEGER.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(72): (vcom-1136) Unknown identifier "other".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(78): Target of signal assignment is not a signal.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(90): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(92): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(96): near "if": (vcom-1576) expecting PROCESS.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(104): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): near "else": (vcom-1576) expecting END.
+# End time: 13:30:55 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:31:36 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(65): near "out_bitcounter": syntax error
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(71): Signal "out_bitcounter" cannot be target of variable assignment statement.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(71): Target type ieee.NUMERIC_STD.UNSIGNED in variable assignment is different from expression type std.STANDARD.INTEGER.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(72): Signal "out_reg" cannot be target of variable assignment statement.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(72): (vcom-1136) Unknown identifier "other".
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(90): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(92): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(96): near "if": (vcom-1576) expecting PROCESS.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(104): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): near "else": (vcom-1576) expecting END.
+# End time: 13:31:36 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 10, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:04 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(71): Target type ieee.NUMERIC_STD.UNSIGNED in variable assignment is different from expression type std.STANDARD.INTEGER.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(72): Signal "out_reg" cannot be target of variable assignment statement.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(72): (vcom-1136) Unknown identifier "other".
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(87): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(90): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(92): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(96): near "if": (vcom-1576) expecting PROCESS.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(104): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): near "else": (vcom-1576) expecting END.
+# End time: 13:32:04 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 9, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:32:42 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(72): Signal "out_reg" cannot be target of variable assignment statement.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(72): (vcom-1136) Unknown identifier "other".
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(87): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(90): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(92): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(96): near "if": (vcom-1576) expecting PROCESS.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(104): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): near "else": (vcom-1576) expecting END.
+# End time: 13:32:43 on Oct 25,2021, Elapsed time: 0:00:01
+# Errors: 8, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:33:01 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(72): (vcom-1136) Unknown identifier "other".
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(87): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(90): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(92): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(96): near "if": (vcom-1576) expecting PROCESS.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(104): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): near "else": (vcom-1576) expecting END.
+# End time: 13:33:01 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:33:44 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(87): Target of signal assignment is not a signal.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(92): Target of signal assignment is not a signal.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(107): near "tx_reg": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(118): (vcom-1136) Unknown identifier "out_bit_counter".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(118): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(121): near "if": (vcom-1576) expecting PROCESS.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(123): (vcom-1600) No feasible entries for subprogram "TO_INTEGER".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_UNSIGNED return NATURAL] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1449)
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_SIGNED return INTEGER] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1457)
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(125): near "process": (vcom-1576) expecting ';'.
+# End time: 13:33:44 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 8, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:34:08 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(92): Target of signal assignment is not a signal.
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(107): near "tx_reg": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(118): (vcom-1136) Unknown identifier "out_bit_counter".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(118): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(121): near "if": (vcom-1576) expecting PROCESS.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(123): (vcom-1600) No feasible entries for subprogram "TO_INTEGER".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_UNSIGNED return NATURAL] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1449)
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_SIGNED return INTEGER] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1457)
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(125): near "process": (vcom-1576) expecting ';'.
+# End time: 13:34:08 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:34:21 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(107): near "tx_reg": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(118): (vcom-1136) Unknown identifier "out_bit_counter".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(118): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(121): near "if": (vcom-1576) expecting PROCESS.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(123): (vcom-1600) No feasible entries for subprogram "TO_INTEGER".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_UNSIGNED return NATURAL] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1449)
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_SIGNED return INTEGER] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1457)
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(125): near "process": (vcom-1576) expecting ';'.
+# End time: 13:34:21 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:34:48 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(105): near "tx_reg": (vcom-1576) expecting GENERATE or THEN or USE.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): (vcom-1136) Unknown identifier "out_bit_counter".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(119): near "if": (vcom-1576) expecting PROCESS.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(121): (vcom-1600) No feasible entries for subprogram "TO_INTEGER".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_UNSIGNED return NATURAL] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1449)
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_SIGNED return INTEGER] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1457)
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(123): near "process": (vcom-1576) expecting ';'.
+# End time: 13:34:48 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:35:05 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): (vcom-1136) Unknown identifier "out_bit_counter".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(116): Bad right hand side (infix expression) in variable assignment.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(121): (vcom-1600) No feasible entries for subprogram "TO_INTEGER".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_UNSIGNED return NATURAL] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1449)
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_SIGNED return INTEGER] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1457)
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(43): Variable declaration 'in_reg' not allowed in this region.
+# ** Note: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(126): VHDL Compiler exiting
+# End time: 13:35:05 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:35:12 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(121): (vcom-1600) No feasible entries for subprogram "TO_INTEGER".
+#    Visible subprograms are:
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_UNSIGNED return NATURAL] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1449)
+#       (explicit) NUMERIC_STD.TO_INTEGER[UNRESOLVED_SIGNED return INTEGER] at $MODEL_TECH/../vhdl_src/ieee/mti_numeric_std.vhd(1457)
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(43): Variable declaration 'in_reg' not allowed in this region.
+# ** Note: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(126): VHDL Compiler exiting
+# End time: 13:35:12 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:35:27 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(70): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(84): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(99): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(43): Variable declaration 'in_reg' not allowed in this region.
+# ** Note: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(126): VHDL Compiler exiting
+# End time: 13:35:27 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:35:59 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(71): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(85): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# ** Warning: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(100): (vcom-1083) Implicit array operator "=" always returns FALSE (left length 3 is not equal to right length 2).
+# End time: 13:35:59 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:17 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:37:18 on Oct 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:19 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:37:20 on Oct 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:33 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_module
+# -- Compiling architecture SPI of SPI_Module
+# End time: 13:37:33 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:37:49 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 13:37:49 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:38:41 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 13:38:41 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:38:58 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_module_tb
+# -- Compiling architecture test of SPI_module_tb
+# End time: 13:38:58 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.spi_continuous
+# End time: 13:39:03 on Oct 25,2021, Elapsed time: 0:17:43
+# Errors: 1, Warnings: 1
+# vsim work.spi_continuous 
+# Start time: 13:39:03 on Oct 25,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.spi_continuous(spi)
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:39:39 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 13:39:39 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.spi_continuous_tb
+# End time: 13:39:42 on Oct 25,2021, Elapsed time: 0:00:39
+# Errors: 0, Warnings: 0
+# vsim work.spi_continuous_tb 
+# Start time: 13:39:42 on Oct 25,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.spi_continuous_tb(test)
+# Loading ieee.math_real(body)
+# Loading work.spi_continuous(spi)
+add wave -position insertpoint  \
+sim:/spi_continuous_tb/tx_empty \
+sim:/spi_continuous_tb/SCK_PERIOD \
+sim:/spi_continuous_tb/sck \
+sim:/spi_continuous_tb/output_shiftreg \
+sim:/spi_continuous_tb/out_data_ready \
+sim:/spi_continuous_tb/mosi \
+sim:/spi_continuous_tb/miso \
+sim:/spi_continuous_tb/input_shiftreg \
+sim:/spi_continuous_tb/indicate_read \
+sim:/spi_continuous_tb/in_data_ready \
+sim:/spi_continuous_tb/global_clk \
+sim:/spi_continuous_tb/cs \
+sim:/spi_continuous_tb/CLK_PERIOD
+run
+run
+run
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:42:49 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 13:42:49 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:43:03 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 13:43:03 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+run
+run
+run
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:45:56 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(96): near "=": syntax error
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(102): near "if": (vcom-1576) expecting PROCESS.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(129): near "process": (vcom-1576) expecting ';'.
+# End time: 13:45:56 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# D:/Program Files/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:48:14 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 13:48:14 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.spi_continuous_tb
+# End time: 13:48:19 on Oct 25,2021, Elapsed time: 0:08:37
+# Errors: 0, Warnings: 0
+# vsim work.spi_continuous_tb 
+# Start time: 13:48:19 on Oct 25,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.spi_continuous_tb(test)
+# Loading ieee.math_real(body)
+# Loading work.spi_continuous(spi)
+add wave -position insertpoint  \
+sim:/spi_continuous_tb/tx_empty \
+sim:/spi_continuous_tb/SCK_PERIOD \
+sim:/spi_continuous_tb/sck \
+sim:/spi_continuous_tb/output_shiftreg \
+sim:/spi_continuous_tb/out_data_ready \
+sim:/spi_continuous_tb/mosi \
+sim:/spi_continuous_tb/miso \
+sim:/spi_continuous_tb/input_shiftreg \
+sim:/spi_continuous_tb/indicate_read \
+sim:/spi_continuous_tb/in_data_ready \
+sim:/spi_continuous_tb/global_clk \
+sim:/spi_continuous_tb/cs \
+sim:/spi_continuous_tb/CLK_PERIOD
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 4200 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 136
+add wave -position insertpoint  \
+sim:/spi_continuous_tb/SPI/sck_record
+add wave -position insertpoint  \
+sim:/spi_continuous_tb/SPI/cs_record
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 4200 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 136
+#  Trace back: invalid command name ".main_pane.cs.2.pw"
+#     while executing
+# "$w cget -opaqueresize"
+#     (procedure "::tk::panedwindow::ReleaseSash" line 2)
+#     invoked from within
+# "::tk::panedwindow::ReleaseSash $w $opaque"
+#     (procedure "::tk::panedwindow::2DReleaseSash" line 8)
+#     invoked from within
+# "::tk::panedwindow::2DReleaseSash .main_pane.wave.interior.cs.body.pw 0 443 2047 720 0"
+#     (command bound to event)
+#    <2:D:/Program Files/intelFPGA_lite/20.1/modelsim_ase/win32aloem/tk8.6/bgerror.tcl:106: ::tkerror {invalid command name ".main_pane.cs.2.pw"}
+#    <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ".main_pane.cs.2.pw"}
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:52:20 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 13:52:21 on Oct 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:52:23 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 13:52:23 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 4200 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 137
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:54:55 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 13:54:55 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:54:56 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 13:54:57 on Oct 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 4200 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 137
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint \
+/spi_continuous_tb/SPI/data_in/out_bitcounter \
+/spi_continuous_tb/SPI/data_in/in_bitcounter 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 4200 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 137
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 6320 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 137
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:07:46 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:07:46 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:07:49 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:07:49 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.spi_continuous_tb
+# End time: 14:07:54 on Oct 25,2021, Elapsed time: 0:19:35
+# Errors: 2, Warnings: 0
+# vsim work.spi_continuous_tb 
+# Start time: 14:07:54 on Oct 25,2021
+# Loading std.standard
+# Loading std.env(body)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.spi_continuous_tb(test)
+# Loading ieee.math_real(body)
+# Loading work.spi_continuous(spi)
+# WARNING: No extended dataflow license exists
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:08:10 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:08:10 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:08:13 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:08:13 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave -position insertpoint \
+/spi_continuous_tb/SPI/data_in/out_bitcounter \
+/spi_continuous_tb/SPI/data_in/in_bitcounter 
+add wave -position insertpoint  \
+sim:/spi_continuous_tb/SPI/tx_reg_empty \
+sim:/spi_continuous_tb/SPI/tx_reg \
+sim:/spi_continuous_tb/SPI/tx_empty \
+sim:/spi_continuous_tb/SPI/sck_record \
+sim:/spi_continuous_tb/SPI/sck \
+sim:/spi_continuous_tb/SPI/output_shiftreg \
+sim:/spi_continuous_tb/SPI/out_reg \
+sim:/spi_continuous_tb/SPI/out_data_ready \
+sim:/spi_continuous_tb/SPI/out_bitcounter \
+sim:/spi_continuous_tb/SPI/mosi \
+sim:/spi_continuous_tb/SPI/miso \
+sim:/spi_continuous_tb/SPI/input_shiftreg \
+sim:/spi_continuous_tb/SPI/indicate_read \
+sim:/spi_continuous_tb/SPI/in_data_ready \
+sim:/spi_continuous_tb/SPI/in_bitcounter \
+sim:/spi_continuous_tb/SPI/frame_size \
+sim:/spi_continuous_tb/SPI/cs_record \
+sim:/spi_continuous_tb/SPI/cs \
+sim:/spi_continuous_tb/SPI/clk \
+sim:/spi_continuous_tb/SPI/bitcounter_width
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 4200 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 137
+add wave -position insertpoint  \
+sim:/spi_continuous_tb/tx_empty \
+sim:/spi_continuous_tb/SCK_PERIOD \
+sim:/spi_continuous_tb/sck \
+sim:/spi_continuous_tb/output_shiftreg \
+sim:/spi_continuous_tb/out_data_ready \
+sim:/spi_continuous_tb/mosi \
+sim:/spi_continuous_tb/miso \
+sim:/spi_continuous_tb/input_shiftreg \
+sim:/spi_continuous_tb/indicate_read \
+sim:/spi_continuous_tb/in_data_ready \
+sim:/spi_continuous_tb/global_clk \
+sim:/spi_continuous_tb/cs \
+sim:/spi_continuous_tb/CLK_PERIOD
+add wave -position insertpoint \
+/spi_continuous_tb/p_main_test/bit_count 
+add wave -position insertpoint \
+/spi_continuous_tb/SPI/data_in/out_bitcounter \
+/spi_continuous_tb/SPI/data_in/in_bitcounter 
+# Can't move the Now cursor.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+# ** Failure: 
+# FAIL!
+# input_shiftreg has incorrect value
+# ----------------
+#    Time: 4200 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 137
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:11:30 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:11:30 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:11:32 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:11:32 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+# ** Failure: 
+# FAIL!
+# in_data_ready failed to assert
+# ----------------
+#    Time: 4200 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 128
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:13:00 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:13:00 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:13:02 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:13:02 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 543220 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:24:28 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(79): near "=": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Note: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(141): VHDL Compiler exiting
+# End time: 14:24:28 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# D:/Program Files/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:24:57 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:24:57 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:24:59 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:25:00 on Oct 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+run
+run
+run
+run
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 543220 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:32:54 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:32:54 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:32:57 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:32:57 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 543220 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+add wave -position insertpoint \
+/spi_continuous_tb/SPI/data_in/tx_reg 
+add wave -position insertpoint \
+/spi_continuous_tb/SPI/data_in/out_reg 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 543220 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:51:46 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(94): (vcom-1136) Unknown identifier "out_bit_counter".
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(94): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+# ** Error: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(96): Signal "tx_empty" cannot be target of variable assignment statement.
+# ** Note: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd(151): VHDL Compiler exiting
+# End time: 14:51:46 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# D:/Program Files/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:12 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:52:12 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:14 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:52:14 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 543220 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:53:43 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:53:44 on Oct 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:53:46 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:53:46 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 545140 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:38 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 14:55:38 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:40 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 14:55:40 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+restart
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 545140 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 545340 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+run
+# ** Failure: 
+# FAIL!
+# miso has incorrect value
+# ----------------
+#    Time: 545540 ps  Iteration: 0  Process: /spi_continuous_tb/p_main_test File: C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 190
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:00:02 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/spi_continuous.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SPI_continuous
+# -- Compiling architecture SPI of SPI_continuous
+# End time: 15:00:02 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:00:04 on Oct 25,2021
+# vcom -reportprogress 300 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package ENV
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SPI_continuous_tb
+# -- Compiling architecture test of SPI_continuous_tb
+# End time: 15:00:04 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.spi_continuous_tb(test)
+# Loading work.spi_continuous(spi)
+run
+run
+# ** Note: 
+# SUCCESS!
+# ----------------
+#    Time: 1034400 ps  Iteration: 0  Instance: /spi_continuous_tb
+# Break in Process p_main_test at C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/test/SPI_continuous_tb.vhd line 223
+# End time: 15:05:09 on Oct 25,2021, Elapsed time: 0:57:15
+# Errors: 0, Warnings: 0
