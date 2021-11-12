@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.filter_types.all;
 
-entity PISO_arr is
+entity serializer is
 	generic (
 		arrSize: positive;
 		dataWidth: positive;
@@ -23,7 +23,7 @@ entity PISO_arr is
 	);
 end entity;
 
-architecture PISO of PISO_arr is
+architecture PISO of serializer is
 begin
 	
 	data_movement: process (clk)

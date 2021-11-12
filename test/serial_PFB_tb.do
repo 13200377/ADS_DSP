@@ -10,7 +10,7 @@ vmap work rtl_work
 vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/test_filter_types.vhd}
 vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/test_filterDef.vhd}
 vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/sumArr.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd}
+vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/serializer.vhd}
 vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PFB3.vhd}
 vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/deserializer.vhd}
 vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/serial_PFB.vhd}

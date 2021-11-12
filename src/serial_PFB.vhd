@@ -27,7 +27,7 @@ entity serial_PFB is
 end entity;
 
 architecture s_PFB of serial_PFB is
-	component PFB3 is
+	component PFB is
 		port (
 			clk: in std_logic;
 			n_rst: in std_logic;
@@ -59,7 +59,7 @@ architecture s_PFB of serial_PFB is
 		  is_empty: out std_logic := '1');
 	end component;
 	
-	component PISO_arr is
+	component serializer is
 		generic (
 			arrSize: positive;
 			dataWidth: positive;
@@ -100,7 +100,7 @@ architecture s_PFB of serial_PFB is
 	signal ser_read_en: std_logic;
 	signal ser_read_ready: std_logic;
 begin
-	pfb_module: PFB3 port map (clk, n_rst, x_n_delay_line, PFB_write_en, PFB_write_ready,
+	pfb_module: PFB port map (clk, n_rst, x_n_delay_line, PFB_write_en, PFB_write_ready,
 										y_k_phases, PFB_read_en, PFB_read_ready);
 										
 	des: deserializer generic map (sampleWidth, filterOrder) 
@@ -108,7 +108,7 @@ begin
 										 des_read_en, des_write_en,
 										 des_read_ready, des_full, des_empty);
 	
-	ser: PISO_arr generic map(phaseCount, filtOutputWidth, true)
+	ser: serializer generic map(phaseCount, filtOutputWidth, true)
 					  port map (clk, n_rst, y_k_intarr, ser_write_en, ser_write_ready,
 									y_k, ser_read_en, ser_read_ready);
 	-- Input to des

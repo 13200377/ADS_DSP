@@ -80,7 +80,7 @@ architecture ADS of ADS_project is
 	);
 	end component;
 
-	component PISO_arr is
+	component serializer is
 		generic (
 			arrSize: positive;
 			dataWidth: positive;
@@ -128,34 +128,7 @@ architecture ADS of ADS_project is
 		locked		: OUT STD_LOGIC 
 	);
 	end component;
-	--constant DATA_DEPTH : integer := 4;
-	--constant DATA_WIDTH : integer := 8;
-	
-	-- tx shiftreg
-	-- signal tx_sr_in: std_logic_vector(sampleWidth-1 downto 0);
-	-- signal tx_sr_val: std_logic_vector(sampleWidth-1 downto 0)  := (others => '0');
-	-- signal tx_sr_data: std_logic_vector(sampleWidth-1 downto 0);
-	-- signal tx_sr_clk: std_logic;
-	-- signal tx_sr_read_en: std_logic := '0';
-	-- signal tx_sr_write_en: std_logic := '1';
-	-- signal tx_sr_is_full: std_logic;
-	-- signal tx_sr_is_empty: std_logic;
-	
-	-- rx shiftreg
-	-- signal rx_sr_in: std_logic_vector(sampleWidth-1 downto 0);
-	-- signal rx_sr_val: std_logic_vector(sampleWidth-1 downto 0) := (others => '0');
-	-- signal rx_sr_data: std_logic_vector(sampleWidth*2-1 downto 0);
-	-- signal rx_sr_clk: std_logic;
-	-- signal rx_sr_read_en: std_logic := '0';
-	-- signal rx_sr_write_en: std_logic := '1';
-	-- signal rx_sr_is_full: std_logic;
-	-- signal rx_sr_is_empty: std_logic;
-	
-	
-	-- LED bar
-	-- signal byte: std_logic_vector(7 downto 0);
-	-- signal led_clk: std_logic := '0';
-	
+
 	-- PFB signals
 	signal n_rst : std_logic := '1';
 	signal x_re: sample;
@@ -207,17 +180,11 @@ architecture ADS of ADS_project is
 begin
 	
 	spi: SPI_continuous generic map (8) port map (clk_16MHz, sck, mosi, miso, cs, spi_input_shiftreg, spi_output_shiftreg, spi_out_data_ready, spi_in_data_ready, spi_indicate_read, spi_tx_empty);
-	-- spi: SPI_module generic map (8) port map (clk_16MHz, sck, mosi, miso, cs, spi_input_shiftreg, spi_output_shiftreg, spi_out_data_ready, spi_in_data_ready, spi_indicate_read, spi_tx_empty);
-	-- led_bar: leds port map (byte, led_clk, vals);
-	
-	-- tx_sr:  shift_register generic map (sampleWidth, 1) 
-	-- 						port map (tx_sr_in, tx_sr_val, tx_sr_data, tx_sr_clk, tx_sr_read_en, tx_sr_write_en, tx_sr_is_full, tx_sr_is_empty);
-	-- rx_sr:  shift_register generic map (sampleWidth, 2) 
-	-- 						port map (rx_sr_in, rx_sr_val, rx_sr_data, rx_sr_clk, rx_sr_read_en, rx_sr_write_en, rx_sr_is_full, rx_sr_is_empty);
+
 	PPC: channelizer port map(clk_16MHz, n_rst, x_re, x_im, pfb_wr_ready, pfb_wr_en, 
 										  y_re, y_im, pfb_rd_ready, pfb_rd_en);
 
-	piso : PISO_arr generic map(2,sampleWidth,true)
+	piso : serializer generic map(2,sampleWidth,true)
 				port map(clk_16MHz, n_rst, piso_in, piso_wr_en, piso_wr_ready, piso_ser_out, piso_rd_en, piso_rd_ready);
 
 	des : deserializer generic map(sampleWidth, 2, true)

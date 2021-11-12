@@ -31,8 +31,8 @@
 
 -- -------------------------------------------------------------
 -- 
--- Module: HDL_DUT
--- Source Path: FFT_DUT/HDL_DUT
+-- Module: FFT8
+-- Source Path: FFT_DUT/FFT8
 -- Hierarchy Level: 0
 -- 
 -- -------------------------------------------------------------
@@ -40,7 +40,7 @@ LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.numeric_std.ALL;
 
-ENTITY HDL_DUT IS
+ENTITY FFT8 IS
   PORT( clk                               :   IN    std_logic;
         reset                             :   IN    std_logic;
         clk_enable                        :   IN    std_logic;
@@ -52,10 +52,10 @@ ENTITY HDL_DUT IS
         fftOut_im                         :   OUT   signed(18 DOWNTO 0);  -- sfix19
         fftValidOut                       :   OUT   std_logic
         );
-END HDL_DUT;
+END FFT8;
 
 
-ARCHITECTURE rtl OF HDL_DUT IS
+ARCHITECTURE rtl OF FFT8 IS
 
   ATTRIBUTE multstyle : string;
 

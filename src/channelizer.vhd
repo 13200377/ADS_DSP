@@ -40,7 +40,7 @@ architecture arc_channelizer of channelizer is
 		);
 	end component;
 	
-	component HDL_DUT IS
+	component FFT8 IS
 	  PORT( clk                               :   IN    std_logic;
 			  reset                             :   IN    std_logic;
 			  clk_enable                        :   IN    std_logic;
@@ -116,7 +116,7 @@ begin
 	pfb_im: serial_pfb port map (clk, n_rst, x_im, PFB_write_en, PFB_im_write_ready,
 							y_k_im, PFB_read_en, PFB_im_read_ready);
 	
-	fft: HDL_DUT port map (clk, reset, 
+	fft: FFT8 port map (clk, reset, 
 									clk_enable, fftIn_re, fftIn_im, fftValidIn, ce_out,
 									fftOut_re, fftOut_im, fftValidOut);
 	fifo_module: fifo generic map (sampleWidth*2, phaseCount*2) port map (clk, FIFO_wr_enable, FIFO_wr_data,

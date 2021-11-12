@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE6E22C8
-set_global_assignment -name TOP_LEVEL_ENTITY ADS_project_echo
+set_global_assignment -name TOP_LEVEL_ENTITY ADS_project
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:19:34  JULY 28, 2021"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 SP1.02i Lite Edition"
@@ -48,9 +48,6 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_75 -to cs
 set_location_assignment PIN_100 -to miso
 set_location_assignment PIN_73 -to mosi
@@ -75,6 +72,11 @@ set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name SMART_RECOMPILE ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
 set_location_assignment PIN_23 -to clk_50MHz
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE FFT/FFT8.vhd
+set_global_assignment -name VHDL_FILE src/PFB.vhd
 set_global_assignment -name VHDL_FILE src/spi_continuous.vhd
 set_global_assignment -name SOURCE_FILE src/Filt_PLL.cmp
 set_global_assignment -name VHDL_FILE src/Filt_CLK.vhd
@@ -104,9 +106,7 @@ set_global_assignment -name VHDL_FILE src/seven_seg_display.vhd
 set_global_assignment -name VHDL_FILE src/seven_seg.vhd
 set_global_assignment -name VHDL_FILE src/serial_PFB.vhd
 set_global_assignment -name VHDL_FILE src/Polyphase_decimator.vhd
-set_global_assignment -name VHDL_FILE src/PISO_arr.vhd
-set_global_assignment -name VHDL_FILE src/PFB3.vhd
-set_global_assignment -name VHDL_FILE src/PFB2.vhd
+set_global_assignment -name VHDL_FILE src/serializer.vhd
 set_global_assignment -name VHDL_FILE src/parallel_reg.vhd
 set_global_assignment -name VHDL_FILE src/leds.vhd
 set_global_assignment -name VHDL_FILE src/int_mux.vhd
@@ -124,4 +124,3 @@ set_global_assignment -name QIP_FILE Filt_CLK.qip
 set_global_assignment -name SIGNALTAP_FILE output_files/channelizer.stp
 set_global_assignment -name SIGNALTAP_FILE output_files/ads_project.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name SLD_FILE db/ads_project_auto_stripped.stp

@@ -98,17 +98,17 @@
 # -- Compiling architecture sum_array of sumArr
 # End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd}
+# vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serializer.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 13:20:19 on Oct 25,2021
-# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd 
+# vcom -reportprogress 300 -2008 -work work C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serializer.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Loading package filter_types
-# -- Compiling entity PISO_arr
-# -- Compiling architecture PISO of PISO_arr
+# -- Compiling entity serializer
+# -- Compiling architecture PISO of serializer
 # End time: 13:20:19 on Oct 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -2008 -work work {C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serial_PFB.vhd}

@@ -10,7 +10,7 @@ vcom -2008 -work work {../src/filter_types.vhd}
 vcom -2008 -work work {../src/filterDef.vhd}
 vcom -2008 -work work {./testBenchFilterIO.vhd}
 vcom -2008 -work work {../src/sumArr.vhd}
-vcom -2008 -work work {../src/PISO_arr.vhd}
+vcom -2008 -work work {../src/serializer.vhd}
 vcom -2008 -work work {../src/PFB3.vhd}
 vcom -2008 -work work {../src/fifo.vhd}
 vcom -2008 -work work {../src/deserializer.vhd}

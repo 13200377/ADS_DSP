@@ -14,7 +14,7 @@ end entity;
 
 
 architecture tb of PISO_arr_tb is
-	component PISO_arr is
+	component serializer is
 		generic (
 			arrSize: positive;
 			dataWidth: positive;
@@ -57,10 +57,10 @@ architecture tb of PISO_arr_tb is
 	
 	--signal test_vals: int_arr(0 to arrSize-1)(dataWidth-1 downto 0);
 begin
-	forward_piso: PISO_arr generic map(arrSize, dataWidth, outputFromStart=>true)
+	forward_piso: serializer generic map(arrSize, dataWidth, outputFromStart=>true)
 									port map(clk, n_rst, parallel_in, write_en, write_ready,
 												serial_out, read_en, read_ready);
-	back_piso: PISO_arr generic map(arrSize, dataWidth, outputFromStart=>false)
+	back_piso: serializer generic map(arrSize, dataWidth, outputFromStart=>false)
 										port map(clk, n_rst, parallel_in, write_en, write_ready2,
 													serial_out2, read_en, read_ready2);
 	clocking: process

@@ -6,7 +6,7 @@ vlib rtl_work
 vmap work rtl_work
 
 vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/filter_types.vhd}
-vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/PISO_arr.vhd}
+vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/src/serializer.vhd}
 vcom -2008 -work work {F:/intelFPGA_lite/ADS_project/test/PISO_arr_tb.vhd}
 
 vsim -voptargs=+acc work.PISO_arr_tb

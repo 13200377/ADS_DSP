@@ -623,8 +623,8 @@ R5
 R6
 !i122 848
 R0
-Z102 8C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd
-Z103 FC:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd
+Z102 8C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serializer.vhd
+Z103 FC:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serializer.vhd
 l0
 L6 1
 VkUzhjiAT^1jbmfn8Da4XH3
@@ -634,8 +634,8 @@ R9
 R85
 !i10b 1
 R89
-Z104 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd|
-Z105 !s107 C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/PISO_arr.vhd|
+Z104 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serializer.vhd|
+Z105 !s107 C:/Users/Tood/OneDrive - UTS/Documents/Git Repo/ADS_DSP/src/serializer.vhd|
 !i113 1
 R14
 R15
@@ -645,7 +645,7 @@ R3
 R4
 R5
 R6
-DEx4 work 8 piso_arr 0 22 kUzhjiAT^1jbmfn8Da4XH3
+DEx4 work 8 serializer 0 22 kUzhjiAT^1jbmfn8Da4XH3
 !i122 848
 l27
 L26 91

@@ -13,17 +13,9 @@ package filter_types is
 	constant filterOrder: integer := phaseCount * tapCount;
 
 	constant sampleWidth : integer :=8;
-<<<<<<< HEAD
-	constant coeffWidth : integer :=8;
-
-	constant phaseCount : integer :=8;
-	constant tapCount: integer := 8;
-	constant filterOrder: integer := phaseCount * tapCount;
-=======
 	constant coeffWidth : integer :=6;
 	constant filtOutputWidth : integer := sampleWidth + coeffWidth + integer(ceil(log2(real(phaseCount))))-1;
 	constant filtProductWidth : integer := sampleWidth + coeffWidth;
->>>>>>> FFT_Integration
 
 	subtype sample is signed(sampleWidth-1 downto 0);
 	subtype filtOutput is signed(filtOutputWidth-1 downto 0);
@@ -116,11 +108,7 @@ end function;
 									return sample is
 	variable imd : filtOutput;
 	begin
-<<<<<<< HEAD
-		imd := shift_right(x,15);
-=======
 		imd := shift_right(x, 15);
->>>>>>> FFT_Integration
 		return resize(imd,8);
 	end function;
 

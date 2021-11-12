@@ -82,3 +82,7 @@ vlog.opt
 vsim.wlf
 
 src/FFT_4port/
+
+*.bak1
+
+*.bak2
